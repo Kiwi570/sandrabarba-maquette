@@ -1,0 +1,151 @@
+{
+ "mission": "contact",
+ "taille": "390x844",
+ "depart": "/",
+ "erreurs": [],
+ "etapes": [
+  {
+   "k": 0,
+   "geste": "arrivée",
+   "resultat": "ok",
+   "gestes": 0,
+   "secondes": 3.4,
+   "adresse": "/",
+   "y": 0,
+   "hauteurPage": 10860,
+   "titres": [
+    "h1 La vie est un combat. Ne le vivez plus seul·e."
+   ],
+   "actions": [
+    "Sandra Barba",
+    "Menu",
+    "Prendre rendez-vous",
+    "07 60 36 58 32",
+    "LE DEUIL",
+    "LA PEUR",
+    "LE COUPLE",
+    "LES VIOLENCES",
+    "LE SOMMEIL",
+    "L’ÉPUISEMENT",
+    "LES EXAMENS",
+    "MA FILLE",
+    "LA NAISSANCE",
+    "Appeler"
+   ],
+   "prixVus": [
+    "65 €"
+   ],
+   "telephonesVus": [
+    "07 60 36 58 32"
+   ],
+   "prixDansLaPage": [
+    "65 €"
+   ],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-0.png"
+  },
+  {
+   "k": 1,
+   "geste": "menu",
+   "resultat": "ok",
+   "gestes": 1,
+   "secondes": 4.3,
+   "adresse": "/",
+   "y": 0,
+   "hauteurPage": 10860,
+   "titres": [
+    "h1 La vie est un combat. Ne le vivez plus seul·e."
+   ],
+   "actions": [
+    "Sandra Barba",
+    "Fermer",
+    "Accueil",
+    "Psychothérapie",
+    "Sophrologie",
+    "Violences",
+    "Rendez-vous",
+    "Appeler 07 60 36 58 32",
+    "Prendre rendez-vous",
+    "07 60 36 58 32",
+    "LE DEUIL",
+    "LA PEUR",
+    "LE COUPLE",
+    "LES VIOLENCES"
+   ],
+   "prixVus": [
+    "65 €"
+   ],
+   "telephonesVus": [
+    "07 60 36 58 32"
+   ],
+   "prixDansLaPage": [
+    "65 €"
+   ],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": true
+  },
+  {
+   "k": 2,
+   "geste": "cliquer Rendez-vous",
+   "resultat": "ok",
+   "gestes": 2,
+   "secondes": 6.5,
+   "adresse": "/rendez-vous",
+   "y": 0,
+   "hauteurPage": 3959,
+   "titres": [
+    "h1 Un appel, un SMS, ou trois questions."
+   ],
+   "actions": [
+    "Sandra Barba",
+    "Menu",
+    "Votre demande",
+    "Envoyer un SMS",
+    "0 7 6 0 3 6 5 8 3 2",
+    "Appeler",
+    "Rendez-vous"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "65 €"
+   ],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 3,
+   "geste": "defiler 3",
+   "resultat": "ok",
+   "gestes": 5,
+   "secondes": 10.1,
+   "adresse": "/rendez-vous",
+   "y": 2202,
+   "hauteurPage": 3959,
+   "titres": [],
+   "actions": [
+    "Appeler le 07 60 36 58 32",
+    "07 60 36 58 32"
+   ],
+   "prixVus": [],
+   "telephonesVus": [
+    "07 60 36 58 32"
+   ],
+   "prixDansLaPage": [
+    "65 €"
+   ],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-3.png"
+  }
+ ]
+}

@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Psychothérapie, couple et famille : Sandra Barba, Aubignan et en visio</title>
+<meta name="description" content="Une approche psychanalytique humaine et contemporaine : affronter un moment difficile, se reconstruire, vivre. Coaching couple et famille. Séance d’1 h, 65 €.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://sandrabarba-maquette.vercel.app/psychotherapie">
+<style>:root{--fond:#161d36;--texte:#ece3d4;--voile-fond:#161d36;--ouverture-fond:#161d36;--menu-fond:#161d36}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/instrument-serif.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/fonts/bricolage-tuiles.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#161d36">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sandra Barba">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Psychothérapie, couple et famille : Sandra Barba, Aubignan et en visio">
+<meta property="og:description" content="Une approche psychanalytique humaine et contemporaine : affronter un moment difficile, se reconstruire, vivre. Coaching couple et famille. Séance d’1 h, 65 €.">
+<meta property="og:url" content="https://sandrabarba-maquette.vercel.app/psychotherapie">
+<meta property="og:image" content="https://sandrabarba-maquette.vercel.app/assets/partage/psychotherapie-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Le divan de velours gris du cabinet, dans la lumière d’une fenêtre">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Psychothérapie et sophrologie Sandra Barba","url":"https://sandrabarba-maquette.vercel.app/","telephone":"+33760365832","email":"info@sandrabarba.fr","address":{"@type":"PostalAddress","streetAddress":"89 rue du Portail-Neuf","postalCode":"84810","addressLocality":"Aubignan","addressCountry":"FR"},"description":"Psychothérapie, sophrologie, coaching de couple et de famille à Aubignan (Vaucluse) et en visio, depuis 2005. Accompagnement des femmes victimes de violences.","priceRange":"65 €"}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="iris" aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="84" height="62"><span class="voile-tuiles" data-voile-libelle>Psychothérapie</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <img class="ouverture-logo" src="/assets/images/logo-clair.svg" alt="" width="132" height="97" data-ouverture-objet>
+  <p class="ouverture-tuiles"><span class="tuile">LA</span><span class="tuile">VIE</span><span class="tuile">EST</span><span class="tuile">UN</span><span class="tuile">COMBAT</span></p>
+  <p class="ouverture-nom">Sandra Barba</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil">
+      <img src="/assets/images/logo.svg" alt="" width="58" height="43"><span class="entete-nom"><b>Sandra Barba</b><small>Psychothérapie · Sophrologie</small></span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/psychotherapie" data-libelle="Psychothérapie" aria-current="page">Psychothérapie</a></li><li><a href="/sophrologie" data-libelle="Sophrologie">Sophrologie</a></li><li><a href="/violences" data-libelle="Violences">Violences</a></li><li><a href="/rendez-vous" data-libelle="Rendez-vous">Rendez-vous</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/rendez-vous#demande" data-libelle="Rendez-vous">Prendre rendez-vous</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/psychotherapie" class="menu-lien" data-libelle="Psychothérapie" aria-current="page">Psychothérapie</a></li><li style="--i:2"><a href="/sophrologie" class="menu-lien" data-libelle="Sophrologie">Sophrologie</a></li><li style="--i:3"><a href="/violences" class="menu-lien" data-libelle="Violences">Violences</a></li><li style="--i:4"><a href="/rendez-vous" class="menu-lien" data-libelle="Rendez-vous">Rendez-vous</a></li></ul>
+  <p><a class="bouton" href="tel:+33760365832">Appeler 07 60 36 58 32</a></p>
+  <p class="menu-adresse">89 rue du Portail-Neuf, 84810 Aubignan<br>Du lundi au samedi, sur rendez-vous · parking gratuit à proximité</p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="page-ouverture po-psy ton-pierre" id="debut">
+  <div class="conteneur po-psy-tete">
+    <p class="surtitre" data-anime="gsap">Psychothérapie · couple · famille</p>
+    <h1 class="page-titre"><span class="titre-tuiles" data-grille="typo" data-effet="titre-tuiles" data-iris-centre><span class="titre-tuiles-ligne"><span class="tuile tuile--titre">PARLER</span></span></span><span class="ligne-masque"><span class="titre-ligne">pour comprendre ce qui se répète.</span></span></h1>
+    <div class="po-psy-bas">
+      <p class="page-chapo" data-anime="gsap">Une approche psychanalytique humaine, résolument contemporaine : un travail de parole et de (re)construction, enrichi par la sophrologie selon les étapes du suivi.</p>
+      <div class="page-actions" data-anime="gsap">
+        <p><a href="/rendez-vous#demande" class="bouton" data-libelle="Rendez-vous" data-action-principale>Prendre rendez-vous</a> <a class="tel tel--sombre" href="tel:+33760365832">07 60 36 58 32</a></p>
+        <p class="info-cle" data-info-cle>Séance d’1 h · 65 € · au cabinet ou en visio</p>
+      </div>
+    </div>
+  </div>
+  <div class="po-psy-bandeau" data-effet="voile-divan">
+    <figure class="media po-psy-media" data-grok data-fx="parallaxe" data-fx-force="8" style="--cadrage:50% 55%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/divan-mobile-640.webp 640w, /assets/images/grok/divan-mobile-1080.webp 1080w" sizes="100vw">
+    <img src="/assets/images/grok/divan-1280.webp" srcset="/assets/images/grok/divan-640.webp 640w, /assets/images/grok/divan-1280.webp 1280w, /assets/images/grok/divan-1920.webp 1920w" sizes="100vw" alt="Le divan de velours gris, un plaid plié et un coussin, dans la lumière d’une petite fenêtre" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    <div class="po-psy-voile" aria-hidden="true"></div>
+  </div>
+</section>
+<section class="trois-temps" id="temps">
+  <span class="temps-ligne" data-effet="trois-temps" aria-hidden="true"></span>
+  <div class="temps ton-nuit">
+    <div class="conteneur temps-grille">
+      <p class="surtitre temps-sur" data-anime>Trois temps</p>
+      <p class="temps-num" data-anime data-visuel><span class="tuile">1</span></p>
+      <div>
+        <h2 class="titre-section" data-anime="lignes">On avance, à votre rythme.</h2>
+        <h3 class="temps-titre" data-anime="lignes">Affronter un moment difficile</h3>
+        <p data-anime>Un deuil, une maladie, un divorce, un licenciement, un burn-out : on ne traverse pas seul·e une étape difficile.</p>
+      </div>
+    </div>
+  </div><div class="temps ton-crepuscule">
+    <div class="conteneur temps-grille">
+      <p class="temps-num" data-anime data-visuel><span class="tuile">2</span></p>
+      <div>
+        <h3 class="temps-titre" data-anime="lignes">Se reconstruire</h3>
+        <p data-anime>Sentiments d’échec, angoisses, lassitude : comprendre d’où ils viennent et faire évoluer les schémas qui se répètent.</p>
+      </div>
+    </div>
+  </div><div class="temps ton-aube">
+    <div class="conteneur temps-grille">
+      <p class="temps-num" data-anime data-visuel><span class="tuile">3</span></p>
+      <div>
+        <h3 class="temps-titre" data-anime="lignes">Retrouver le sourire, vivre</h3>
+        <p data-anime>Connaître ses forces, gagner en confiance, prendre ses décisions, gérer ses émotions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="themes ton-pierre" id="themes">
+  <div class="conteneur themes-grille">
+    <div>
+      <p class="surtitre" data-anime>Ce qu’on peut y déposer</p>
+      <h2 class="titre-section" data-anime="lignes">Les mots qui amènent au cabinet.</h2>
+      <ul class="nuage-tuiles" data-anime="cascade"><li><span class="tuile">LE DEUIL</span></li><li><span class="tuile">LE DIVORCE</span></li><li><span class="tuile">LA MALADIE</span></li><li><span class="tuile">LE LICENCIEMENT</span></li><li><span class="tuile">LE BURN-OUT</span></li><li><span class="tuile">L’ANGOISSE</span></li><li><span class="tuile">L’ANXIÉTÉ</span></li><li><span class="tuile">LA DÉPRIME</span></li><li><span class="tuile">LE SENTIMENT D’ÉCHEC</span></li><li><span class="tuile">LA PERTE D’APPÉTIT</span></li><li><span class="tuile">LE POIDS</span></li><li><span class="tuile">LE MANQUE DE DÉSIR</span></li><li><span class="tuile">LES OBSESSIONS</span></li><li><span class="tuile">LA CONFIANCE</span></li><li><span class="tuile">LES DÉCISIONS</span></li><li><span class="tuile">LES ÉMOTIONS</span></li></ul>
+      <p class="themes-methode" data-anime>« La référence à l’inconscient est à la base de cette approche. » Le travail se fait par la parole : vous cherchez vos propres réponses, accompagné·e.</p>
+    </div>
+    <figure class="media themes-media" data-anime="rideau" style="--cadrage:55% 45%">
+  <picture>
+    <img src="/assets/images/cabinet-photo-800.webp" srcset="/assets/images/cabinet-photo-480.webp 480w, /assets/images/cabinet-photo-640.webp 640w, /assets/images/cabinet-photo-800.webp 800w" sizes="(max-width: 760px) 100vw, 34vw" alt="Photo du cabinet : divan gris, lampe en bois flotté et fauteuil" width="800" height="1000" loading="lazy" decoding="async">
+  </picture><figcaption class="media-legende">La vraie pièce</figcaption>
+</figure>
+  </div>
+</section>
+<section class="couple ton-nuit" id="couple">
+  <div class="conteneur couple-grille">
+    <figure class="media couple-media" data-grok data-fx="parallaxe" data-fx-force="10" style="--cadrage:50% 60%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/grok/deux-fauteuils-784.webp" srcset="/assets/images/grok/deux-fauteuils-480.webp 480w, /assets/images/grok/deux-fauteuils-640.webp 640w, /assets/images/grok/deux-fauteuils-784.webp 784w" sizes="(max-width: 760px) 100vw, 42vw" alt="Deux fauteuils de velours gris tournés l’un vers l’autre" width="784" height="1176" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    <div>
+      <p class="surtitre" data-anime>Couple et famille</p>
+      <h2 class="titre-section" data-anime="lignes">Vous n’arrivez plus à vous parler ?</h2>
+      <p data-anime>Argent, jalousie, infidélité, belle-famille, enfants : « Vivre en couple n’est pas toujours un long fleuve tranquille. » Le coaching couple aide à rétablir l’écoute et la communication, puis à prendre une décision, sans que la séparation soit automatique.</p>
+      <p class="carte-prix" data-anime><span class="tuile tuile--mini">COACHING COUPLE · 1 H 15</span><span class="tuile tuile--mini tuile--rose" data-prix>65 €</span></p>
+      <p data-anime>Entre une mère et sa fille résident les tensions du « je t’aime » et du « je te déteste ». Le coaching famille aide chacune à retrouver son rôle et sa place.</p>
+      <p class="carte-prix" data-anime><span class="tuile tuile--mini">COACHING FAMILLE · 1 H</span><span class="tuile tuile--mini tuile--rose" data-prix>65 €</span></p>
+      <p data-anime><a href="/rendez-vous?seance=couple#demande" class="lien-fleche" data-libelle="Rendez-vous">Réserver cette séance</a></p>
+    </div>
+  </div>
+</section>
+<section class="formations ton-crepuscule" id="formations">
+  <div class="conteneur formations-grille">
+    <div>
+      <p class="surtitre" data-anime>Ses formations</p>
+      <h2 class="titre-section" data-anime="lignes">Diplômes et certificats</h2>
+      <p data-anime>Psychanalyse et pratique de la psychothérapie à l’EFPP d’Aix-en-Provence, thérapies cognitives et comportementales, stress post-traumatique, coaching conjugal, sophrologie.</p>
+    </div>
+    <div class="diplomes" data-anime="cascade">
+      <figure class="media diplome" data-fx="vitesse" data-fx-force="2" style="--cadrage:50% 50%;aspect-ratio:3 / 2">
+  <picture>
+    <img src="/assets/images/diplome-efpp-800.webp" srcset="/assets/images/diplome-efpp-480.webp 480w, /assets/images/diplome-efpp-640.webp 640w, /assets/images/diplome-efpp-800.webp 800w" sizes="(max-width: 760px) 100vw, 26vw" alt="Attestation de l’EFPP d’Aix-en-Provence, praticien en psychothérapie" width="800" height="533" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <figure class="media diplome" data-fx="vitesse" data-fx-force="2" style="--cadrage:50% 50%;aspect-ratio:3 / 2">
+  <picture>
+    <img src="/assets/images/diplome-stress-800.webp" srcset="/assets/images/diplome-stress-480.webp 480w, /assets/images/diplome-stress-640.webp 640w, /assets/images/diplome-stress-800.webp 800w" sizes="(max-width: 760px) 100vw, 26vw" alt="Certificat de formation de spécialiste du stress post-traumatique" width="800" height="533" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </div>
+  </div>
+</section>
+<section class="fin ton-pierre" id="fin">
+  <div class="conteneur fin-grille">
+    <div>
+      <h2 class="titre-section titre-grand" data-anime="lignes">Et si vous commenciez par en parler ?</h2>
+      <p data-anime>Une première séance pour faire le point, au cabinet ou en visio.</p>
+      <p class="fin-actions" data-anime><a href="/rendez-vous#demande" class="bouton" data-libelle="Rendez-vous">Prendre rendez-vous</a><a class="tel tel--sombre" href="tel:+33760365832">07 60 36 58 32</a></p>
+    </div>
+    <div class="fin-cote">
+    <figure class="media fin-media" data-grok data-fx="parallaxe" data-fx-force="8" style="--cadrage:40% 60%;aspect-ratio:3 / 2">
+  <picture>
+    <img src="/assets/images/grok/visio-784.webp" srcset="/assets/images/grok/visio-480.webp 480w, /assets/images/grok/visio-640.webp 640w, /assets/images/grok/visio-784.webp 784w" sizes="(max-width: 760px) 100vw, 34vw" alt="Un ordinateur portable à demi ouvert sur un bureau en bois, à côté d’une tasse" width="784" height="1176" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    <ul class="tarifs-tuiles" data-anime="cascade">
+      <li><span class="tarif-nom">Au cabinet</span><span class="tuile tuile--mini">1 h</span><span class="tuile tuile--mini tuile--rose" data-prix>65 €</span></li><li><span class="tarif-nom">En visio</span><span class="tuile tuile--mini">1 h</span><span class="tuile tuile--mini tuile--rose" data-prix>65 €</span></li><li><span class="tarif-nom">À deux, en famille</span><span class="tuile tuile--mini">1 h à 1 h 15</span><span class="tuile tuile--mini tuile--rose" data-prix>65 €</span></li>
+    </ul>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <img src="/assets/images/logo.svg" alt="" width="96" height="70" loading="lazy">
+      <p><strong>Sandra Barba</strong><br>Psychothérapie, sophrologie, couple et famille. Aubignan (Vaucluse) et en visio, depuis 2005.</p>
+      <p>89 rue du Portail-Neuf, 84810 Aubignan<br><a href="tel:+33760365832">07 60 36 58 32</a><br><span class="email">info@sandrabarba.fr</span></p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p><strong>Sommaire</strong></p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/psychotherapie" data-libelle="Psychothérapie" aria-current="page">Psychothérapie</a></li><li><a href="/sophrologie" data-libelle="Sophrologie">Sophrologie</a></li><li><a href="/violences" data-libelle="Violences">Violences</a></li><li><a href="/rendez-vous" data-libelle="Rendez-vous">Rendez-vous</a></li><li><a href="#haut" data-sans-transition>Retour en haut</a></li></ul>
+    </nav>
+    <div class="pied-aide">
+      <p><strong>En cas de violences</strong></p>
+      <p>En danger : <a href="tel:17">17</a> ou <a href="tel:112">112</a>. Par SMS : <a href="sms:114">114</a>.<br>Pour être écoutée : <a href="tel:3919">3919</a>, gratuit et anonyme, 24 h/24.</p>
+    </div>
+  </div>
+  <div class="conteneur pied-bas">
+    <p>Mentions légales · <span class="a-completer">à compléter</span></p>
+    <p>Politique de confidentialité · <span class="a-completer">à compléter</span></p>
+    <p>Pratique de psychothérapie hors du cadre réglementé et sophrologie · SIRET 514 610 393 00019 · APE 8690F</p>
+    <p>Maquette de présentation : les formulaires sont simulés, rien n’est envoyé.</p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33760365832">Appeler</a>
+  <a class="bouton barre-rdv" href="/rendez-vous#demande" data-libelle="Rendez-vous" data-fil-lien><span class="tuile tuile--mini" data-fil-mot hidden></span><span>Rendez-vous</span></a>
+</div>
+<div class="fil" data-grille="fil" data-effet="fil-mot" aria-hidden="true"><span class="fil-rail"></span><span class="fil-tuile tuile tuile--mini" data-fil-tuile>VOTRE MOT</span></div>
+</body>
+</html>

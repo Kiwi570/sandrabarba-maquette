@@ -1,0 +1,225 @@
+[
+ {
+  "source": "recu/site/logo.png",
+  "nom": "logo",
+  "role": "logo",
+  "alt": "Logo Sandra Barba : un B cerclé et trois traits de pinceau"
+ },
+ {
+  "source": "recu/grok/mur-de-nuit.jpg",
+  "source_mobile": "recu/grok/mur-de-nuit-mobile.jpg",
+  "nom": "grok/mur-de-nuit",
+  "role": "ouverture",
+  "mobile": true,
+  "page": "Accueil",
+  "emplacement": "fond de l'ouverture, derrière la boîte lumineuse (la boîte et ses lettres sont dessinées par le code)",
+  "priorite": "Indispensable",
+  "beaute": 5,
+  "zone_texte": "gauche",
+  "alt": "",
+  "consigne_scene": "A bare wall of old lime plaster painted deep navy blue, seen straight on at night, gently uneven hand-troweled texture with soft brush marks, a wide warm glow of lamp light spilling onto the right half of the wall from an unseen source, the left half falling into deep calm shadow, a thin pale limestone skirting at the very bottom, completely empty wall, no frame, no sign, no object, no furniture, no window"
+ },
+ {
+  "source": "recu/grok/cabinet-lumiere.jpg",
+  "source_mobile": "recu/grok/cabinet-lumiere-mobile.jpg",
+  "nom": "grok/cabinet-lumiere",
+  "role": "section-fond",
+  "mobile": true,
+  "page": "Accueil",
+  "emplacement": "section « Le cabinet d'Aubignan » (la lumière de la lampe suit la main)",
+  "priorite": "Indispensable",
+  "beaute": 5,
+  "zone_texte": "gauche",
+  "alt": "La pièce du cabinet en lumière douce : poutres blanchies, divan de velours gris, fauteuil gris et lampe en bois flotté",
+  "consigne_scene": "Wide view of a small calm consulting room in an old village house: a low ceiling of old wooden beams limewashed white, lime-plastered off-white walls, a charcoal grey velvet chaise longue against the back wall with a few soft grey cushions and a neatly folded grey throw, a grey velvet egg-shaped armchair with a white wool cushion on the right, between them a tall floor lamp whose base is made of bleached driftwood branches with a simple taupe linen shade, switched on and glowing warmly, a round shaggy cream wool rug on a warm wood floor, a small square painting in orange tones on the wall, soft late-afternoon daylight from the left, empty room, no person",
+  "ratio": "3:2",
+  "cadrage": [
+   55,
+   55
+  ]
+ },
+ {
+  "source": "recu/grok/deux-fauteuils.jpg",
+  "nom": "grok/deux-fauteuils",
+  "role": "carte-service",
+  "page": "Psychothérapie",
+  "emplacement": "section couple et famille",
+  "priorite": "Indispensable",
+  "beaute": 5,
+  "alt": "Deux fauteuils de velours gris tournés l'un vers l'autre, dans la lumière du soir",
+  "consigne_scene": "Two grey velvet armchairs facing each other at a slight angle across a round cream wool rug, in a room with lime-plastered white walls and limewashed old beams just visible at the top, a small low wooden table between them with two plain ceramic cups, warm soft side light, empty chairs, no person",
+  "ratio": "2:3",
+  "largeurs": [
+   480,
+   640,
+   784
+  ]
+ },
+ {
+  "source": "recu/grok/visio.jpg",
+  "nom": "grok/visio",
+  "role": "carte-service",
+  "page": "Accueil et Rendez-vous",
+  "emplacement": "carte « En visio »",
+  "priorite": "Indispensable",
+  "beaute": 5,
+  "alt": "Un ordinateur portable fermé à demi sur un bureau en bois, à côté d'une tasse et d'un bocal de verre",
+  "consigne_scene": "A simple wooden writing desk against a lime-plastered off-white wall, on it a slim laptop half open seen from the side so the screen is not visible, a plain ceramic cup of tea, a round glass jar with green moss inside, a sheer white curtain with a faint pattern of dandelion seeds glowing in a small window on the right, calm warm daylight, no person",
+  "ratio": "2:3",
+  "largeurs": [
+   480,
+   640,
+   784
+  ]
+ },
+ {
+  "source": "recu/grok/divan.jpg",
+  "source_mobile": "recu/grok/divan-mobile.jpg",
+  "nom": "grok/divan",
+  "role": "ouverture",
+  "mobile": true,
+  "page": "Psychothérapie",
+  "emplacement": "ouverture de la page Psychothérapie (bandeau sous le grand titre)",
+  "priorite": "Indispensable",
+  "beaute": 4,
+  "zone_texte": "haut",
+  "alt": "Le divan de velours gris, un plaid plié et un coussin, dans la lumière d'une petite fenêtre",
+  "consigne_scene": "Close view of the end of a charcoal grey velvet chaise longue in a room with lime-plastered white walls, a soft grey cushion and a neatly folded grey fleece throw resting on it, a narrow beam of warm late-afternoon light from a small deep window falling across the velvet and the wall, deep soft shadows, quiet and safe, empty, no person"
+ },
+ {
+  "source": "recu/grok/voilage.jpg",
+  "source_mobile": "recu/grok/voilage-mobile.jpg",
+  "nom": "grok/voilage",
+  "role": "ouverture",
+  "mobile": true,
+  "page": "Sophrologie",
+  "emplacement": "ouverture de la page Sophrologie",
+  "priorite": "Indispensable",
+  "beaute": 5,
+  "zone_texte": "gauche",
+  "alt": "Un voilage léger aux aigrettes de pissenlit soulevé par l'air devant une petite fenêtre",
+  "consigne_scene": "A small deep window set in a thick lime-plastered white wall, a sheer white voile curtain printed with a faint pattern of dandelion seeds gently lifted by a breath of air and glowing with soft morning light, the right side of the frame bright, the left side calm and pale for text, simple, serene, no person, no outside view visible"
+ },
+ {
+  "source": "recu/grok/rai-de-lumiere.jpg",
+  "source_mobile": "recu/grok/rai-de-lumiere-mobile.jpg",
+  "nom": "grok/rai-de-lumiere",
+  "role": "ouverture",
+  "mobile": true,
+  "page": "Violences",
+  "emplacement": "ouverture de la page Violences, sortir du silence",
+  "priorite": "Indispensable",
+  "beaute": 4,
+  "zone_texte": "gauche",
+  "alt": "Un rai de lumière chaude qui s'élargit sur un mur sombre",
+  "consigne_scene": "A dim room with a deep navy painted lime plaster wall, a single soft beam of warm golden daylight entering from the right and widening across the wall and the floor, dust-free clean air, calm and hopeful rather than dark, the left half of the frame deep and quiet for text, empty, no person, no door, no window frame visible"
+ },
+ {
+  "source": "recu/site/psychotherapie-sophrologie-sandra-barba.jpg",
+  "nom": "sandra-rampe",
+  "role": "portrait",
+  "page": "Accueil",
+  "emplacement": "section « Je suis comme vous. Une femme. »",
+  "beaute": 5,
+  "cadrage": [
+   45,
+   42
+  ],
+  "alt": "Sandra Barba, souriante, accoudée à une rampe en fer forgé devant un mur de pierre"
+ },
+ {
+  "source": "recu/site/sandrabarba.jpg",
+  "nom": "sandra-laine",
+  "role": "portrait",
+  "page": "Rendez-vous",
+  "emplacement": "ouverture de la page Rendez-vous",
+  "beaute": 4,
+  "cadrage": [
+   50,
+   38
+  ],
+  "alt": "Sandra Barba souriante, emmitouflée dans un pull de laine blanc"
+ },
+ {
+  "source": "recu/site/sandra-barba-specialisee-femmes.jpg",
+  "nom": "sandra-bibliotheque",
+  "role": "portrait",
+  "page": "Sophrologie",
+  "emplacement": "section « Avec Sandra »",
+  "beaute": 3,
+  "cadrage": [
+   50,
+   35
+  ],
+  "alt": "Sandra Barba en noir et blanc devant une bibliothèque"
+ },
+ {
+  "source": "recu/site/cabinet-fauteuil.jpg",
+  "nom": "cabinet-photo",
+  "role": "vignette",
+  "page": "Accueil",
+  "emplacement": "section cabinet : la vraie pièce, en vignette",
+  "beaute": 3,
+  "ratio": "4:5",
+  "cadrage": [
+   50,
+   50
+  ],
+  "alt": "Le vrai cabinet : la lampe en bois flotté et le fauteuil œuf"
+ },
+ {
+  "source": "recu/site/entree-boite.jpg",
+  "nom": "aimer-la-vie",
+  "role": "vignette",
+  "page": "Accueil",
+  "emplacement": "ouverture : la vraie boîte lumineuse de l'entrée, en petit",
+  "beaute": 3,
+  "ratio": "4:3",
+  "cadrage": [
+   55,
+   50
+  ],
+  "alt": "La vraie boîte lumineuse « AIMER LA VIE » sur le bureau de l'entrée du cabinet, à côté d'un bocal de mousse"
+ },
+ {
+  "source": "recu/site/conference-prevention-violences.jpg",
+  "nom": "presse",
+  "role": "vignette",
+  "page": "Violences",
+  "emplacement": "coupure de presse sur l'association Vivre Femmes",
+  "beaute": 3,
+  "ratio": "4:5",
+  "cadrage": [
+   50,
+   22
+  ],
+  "alt": "Article de presse : « Éveiller les consciences sur les violences invisibles »"
+ },
+ {
+  "source": "recu/site/diplomes-certificats-5.jpg",
+  "nom": "diplome-efpp",
+  "role": "vignette",
+  "page": "Psychothérapie",
+  "emplacement": "formations",
+  "beaute": 3,
+  "alt": "Attestation de l'EFPP d'Aix-en-Provence, praticien en psychothérapie"
+ },
+ {
+  "source": "recu/site/diplomes-certificats-3.jpg",
+  "nom": "diplome-sophrologie",
+  "role": "vignette",
+  "page": "Sophrologie",
+  "emplacement": "formations",
+  "beaute": 3,
+  "alt": "Certificat de sophrologie en relaxation dynamique et relationnelle, École de Provence"
+ },
+ {
+  "source": "recu/site/diplome-sandra-barba-tcc.jpg",
+  "nom": "diplome-stress",
+  "role": "vignette",
+  "page": "Violences",
+  "emplacement": "formations",
+  "beaute": 3,
+  "alt": "Certificat de formation spécialiste du stress post-traumatique"
+ }
+]

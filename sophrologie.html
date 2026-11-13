@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sophrologie à Aubignan et en visio : Sandra Barba</title>
+<meta name="description" content="Relaxation dynamique de Caycedo : stress, sommeil, examens, confiance, préparation à l’accouchement. Une première séance pour faire le point, puis un programme adapté.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://sandrabarba-maquette.vercel.app/sophrologie">
+<style>:root{--fond:#161d36;--texte:#ece3d4;--voile-fond:#161d36;--ouverture-fond:#161d36;--menu-fond:#161d36}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/instrument-serif.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/fonts/bricolage-tuiles.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#161d36">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sandra Barba">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Sophrologie à Aubignan et en visio : Sandra Barba">
+<meta property="og:description" content="Relaxation dynamique de Caycedo : stress, sommeil, examens, confiance, préparation à l’accouchement. Une première séance pour faire le point, puis un programme adapté.">
+<meta property="og:url" content="https://sandrabarba-maquette.vercel.app/sophrologie">
+<meta property="og:image" content="https://sandrabarba-maquette.vercel.app/assets/partage/sophrologie-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Un voilage léger soulevé par l’air devant une petite fenêtre">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Psychothérapie et sophrologie Sandra Barba","url":"https://sandrabarba-maquette.vercel.app/","telephone":"+33760365832","email":"info@sandrabarba.fr","address":{"@type":"PostalAddress","streetAddress":"89 rue du Portail-Neuf","postalCode":"84810","addressLocality":"Aubignan","addressCountry":"FR"},"description":"Psychothérapie, sophrologie, coaching de couple et de famille à Aubignan (Vaucluse) et en visio, depuis 2005. Accompagnement des femmes victimes de violences.","priceRange":"65 €"}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="iris" aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="84" height="62"><span class="voile-tuiles" data-voile-libelle>Sophrologie</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <img class="ouverture-logo" src="/assets/images/logo-clair.svg" alt="" width="132" height="97" data-ouverture-objet>
+  <p class="ouverture-tuiles"><span class="tuile">LA</span><span class="tuile">VIE</span><span class="tuile">EST</span><span class="tuile">UN</span><span class="tuile">COMBAT</span></p>
+  <p class="ouverture-nom">Sandra Barba</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil">
+      <img src="/assets/images/logo.svg" alt="" width="58" height="43"><span class="entete-nom"><b>Sandra Barba</b><small>Psychothérapie · Sophrologie</small></span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/psychotherapie" data-libelle="Psychothérapie">Psychothérapie</a></li><li><a href="/sophrologie" data-libelle="Sophrologie" aria-current="page">Sophrologie</a></li><li><a href="/violences" data-libelle="Violences">Violences</a></li><li><a href="/rendez-vous" data-libelle="Rendez-vous">Rendez-vous</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/rendez-vous#demande" data-libelle="Rendez-vous">Prendre rendez-vous</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/psychotherapie" class="menu-lien" data-libelle="Psychothérapie">Psychothérapie</a></li><li style="--i:2"><a href="/sophrologie" class="menu-lien" data-libelle="Sophrologie" aria-current="page">Sophrologie</a></li><li style="--i:3"><a href="/violences" class="menu-lien" data-libelle="Violences">Violences</a></li><li style="--i:4"><a href="/rendez-vous" class="menu-lien" data-libelle="Rendez-vous">Rendez-vous</a></li></ul>
+  <p><a class="bouton" href="tel:+33760365832">Appeler 07 60 36 58 32</a></p>
+  <p class="menu-adresse">89 rue du Portail-Neuf, 84810 Aubignan<br>Du lundi au samedi, sur rendez-vous · parking gratuit à proximité</p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="page-ouverture po-sophro ton-aube" id="debut">
+  <div class="po-sophro-grille">
+    <div class="po-sophro-texte">
+      <p class="surtitre" data-anime="gsap">Sophrologie · méthode Caycedo</p>
+      <h1 class="page-titre"><span class="titre-tuiles" data-grille="typo" data-effet="titre-tuiles" data-iris-centre><span class="titre-tuiles-ligne"><span class="tuile tuile--titre">INSPIREZ</span></span></span><span class="ligne-masque"><span class="titre-ligne">Il n’y a pas de magie : retrouvez-vous.</span></span></h1>
+      <p class="page-chapo" data-anime="gsap">Une technique de relaxation associée à des mouvements simples et réalisables par tous, pour les particuliers comme pour les entreprises, depuis 2005.</p>
+      <div class="page-actions" data-anime="gsap">
+        <p><a href="/rendez-vous?seance=cabinet#demande" class="bouton" data-libelle="Rendez-vous" data-action-principale>Prendre rendez-vous</a> <a class="tel tel--sombre" href="tel:+33760365832">07 60 36 58 32</a></p>
+        <p class="info-cle" data-info-cle>Séance d’1 h · 65 € · au cabinet ou en visio</p>
+      </div>
+    </div>
+    <figure class="media po-sophro-media" data-grok data-fx="zoom" data-fx-force="10" style="--cadrage:62% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/voilage-mobile-640.webp 640w, /assets/images/grok/voilage-mobile-1080.webp 1080w" sizes="(max-width: 760px) 100vw, 52vw">
+    <img src="/assets/images/grok/voilage-1280.webp" srcset="/assets/images/grok/voilage-640.webp 640w, /assets/images/grok/voilage-1280.webp 1280w, /assets/images/grok/voilage-1920.webp 1920w" sizes="(max-width: 760px) 100vw, 52vw" alt="Un voilage léger aux aigrettes de pissenlit soulevé par l’air devant une petite fenêtre" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  </div>
+</section>
+<section class="souffle ton-nuit" id="souffle" data-souffle data-inspirez="INSPIREZ" data-expirez="EXPIREZ" data-fin="MERCI">
+  <div class="conteneur souffle-grille">
+    <div>
+      <p class="surtitre" data-anime>Essayez</p>
+      <h2 class="titre-section" data-anime="lignes">Respirez avec la boîte.</h2>
+      <p data-anime>Maintenez le bouton pour inspirer, relâchez pour expirer. Trois respirations, à votre rythme.</p>
+      <p class="souffle-actions" data-anime><button type="button" class="bouton souffle-bouton" data-souffle-bouton>Maintenir pour inspirer</button><span class="souffle-compte" data-souffle-compte aria-live="polite">0 / 3</span></p>
+      <p class="souffle-note" data-anime>Un exercice de découverte, qui ne remplace pas une séance.</p>
+    </div>
+    <div class="souffle-objet" data-visuel data-grille="manipuler">
+      <div class="boite boite--souffle" data-effet="boite-respire" role="img" aria-label="Respirez avec la boîte.">
+  <div class="boite-cadre"><div class="boite-panneau">
+    <p class="boite-rangee" data-rangee="0" aria-hidden="true"></p>
+    <p class="boite-rangee" data-rangee="1" aria-hidden="true"><span class="l">I</span><span class="l">N</span><span class="l">S</span><span class="l">P</span><span class="l">I</span><span class="l">R</span><span class="l">E</span><span class="l">Z</span></p>
+    <p class="boite-rangee" data-rangee="2" aria-hidden="true"></p>
+  </div></div>
+</div>
+    </div>
+  </div>
+</section>
+<section class="pour-qui ton-pierre" id="pour-qui">
+  <div class="conteneur pour-qui-grille">
+    <div>
+      <p class="surtitre" data-anime>Pour qui, pour quoi</p>
+      <h2 class="titre-section" data-anime="lignes">Tous les âges, toutes les conditions physiques.</h2>
+      <ul class="nuage-tuiles" data-anime="cascade"><li><span class="tuile">LE STRESS</span></li><li><span class="tuile">LE SOMMEIL</span></li><li><span class="tuile">LES EXAMENS</span></li><li><span class="tuile">LA CONCENTRATION</span></li><li><span class="tuile">LA CONFIANCE EN SOI</span></li><li><span class="tuile">LES PEURS</span></li><li><span class="tuile">LA MATERNITÉ</span></li><li><span class="tuile">L’ACCOUCHEMENT</span></li><li><span class="tuile">LES TICS</span></li><li><span class="tuile">LES TOC</span></li><li><span class="tuile">LES ACOUPHÈNES</span></li><li><span class="tuile">L’ARRÊT DU TABAC</span></li><li><span class="tuile">LE SPORT</span></li><li><span class="tuile">LE DÉPASSEMENT DE SOI</span></li><li><span class="tuile">DIRE NON</span></li><li><span class="tuile">LA PEUR DU DENTISTE</span></li></ul>
+    </div>
+    <figure class="avec">
+      <figure class="media avec-media" data-anime="rideau" style="--cadrage:50% 30%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/sandra-bibliotheque-784.webp" srcset="/assets/images/sandra-bibliotheque-480.webp 480w, /assets/images/sandra-bibliotheque-640.webp 640w, /assets/images/sandra-bibliotheque-784.webp 784w" sizes="(max-width: 760px) 100vw, 30vw" alt="Sandra Barba en noir et blanc devant une bibliothèque" width="784" height="980" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <figcaption class="avec-texte"><span class="petit-titre">Avec Sandra Barba</span>Diplômée de l’École de Provence en sophrologie et communication (relaxation dynamique et relationnelle), elle pratique depuis 2005, en cabinet et en entreprise. Valeurs : empathie, écoute, bienveillance.</figcaption>
+    </figure>
+  </div>
+</section>
+<section class="methode ton-aube" id="methode">
+  <div class="conteneur methode-grille">
+    <figure class="media methode-media" data-fx="parallaxe" data-fx-force="8" style="--cadrage:55% 50%">
+  <picture>
+    <img src="/assets/images/cabinet-photo-800.webp" srcset="/assets/images/cabinet-photo-480.webp 480w, /assets/images/cabinet-photo-640.webp 640w, /assets/images/cabinet-photo-800.webp 800w" sizes="(max-width: 760px) 100vw, 34vw" alt="Photo du cabinet : divan gris, lampe en bois flotté et fauteuil" width="800" height="1000" loading="lazy" decoding="async">
+  </picture><figcaption class="media-legende">Le cabinet, à Aubignan</figcaption>
+</figure>
+    <div>
+      <p class="surtitre" data-anime>La méthode</p>
+      <h2 class="titre-section" data-anime="lignes">La relaxation dynamique de Caycedo.</h2>
+      <p data-anime>Créée par le Dr Alfonso Caycedo, psychiatre, la sophrologie s’inspire du yoga et de la méditation. Sa relaxation dynamique compte 12 degrés, mis en place entre 1967 et 2000, autour de trois principes :</p>
+      <ul class="principes" data-anime="cascade"><li><span class="tuile">1</span>Le schéma corporel</li><li><span class="tuile">2</span>La pensée positive</li><li><span class="tuile">3</span>La réalité objective</li></ul>
+      <ol class="deroule" data-anime="cascade"><li><strong>Faire le point</strong> Une première séance pour comprendre vos besoins.</li><li><strong>Choisir un programme</strong> Un programme adapté, qui peut évoluer en chemin.</li><li><strong>Décider</strong> Vous restez décisionnaire de vos séances.</li></ol>
+    </div>
+  </div>
+</section>
+<section class="fin ton-pierre" id="fin">
+  <div class="conteneur fin-grille">
+    <div>
+      <h2 class="titre-section titre-grand" data-anime="lignes">Prête, prêt à respirer autrement ?</h2>
+      <p data-anime>Une séance d’1 h, 65 €, au cabinet d’Aubignan ou en visio.</p>
+      <p class="fin-actions" data-anime><a href="/rendez-vous?seance=cabinet#demande" class="bouton" data-libelle="Rendez-vous">Prendre rendez-vous</a><a class="tel tel--sombre" href="tel:+33760365832">07 60 36 58 32</a></p>
+    </div>
+    <figure class="media diplome" data-fx="vitesse" data-fx-force="2" style="--cadrage:50% 50%;aspect-ratio:3 / 2">
+  <picture>
+    <img src="/assets/images/diplome-sophrologie-800.webp" srcset="/assets/images/diplome-sophrologie-480.webp 480w, /assets/images/diplome-sophrologie-640.webp 640w, /assets/images/diplome-sophrologie-800.webp 800w" sizes="(max-width: 760px) 100vw, 30vw" alt="Certificat de sophrologie en relaxation dynamique et relationnelle, École de Provence" width="800" height="533" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <img src="/assets/images/logo.svg" alt="" width="96" height="70" loading="lazy">
+      <p><strong>Sandra Barba</strong><br>Psychothérapie, sophrologie, couple et famille. Aubignan (Vaucluse) et en visio, depuis 2005.</p>
+      <p>89 rue du Portail-Neuf, 84810 Aubignan<br><a href="tel:+33760365832">07 60 36 58 32</a><br><span class="email">info@sandrabarba.fr</span></p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p><strong>Sommaire</strong></p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/psychotherapie" data-libelle="Psychothérapie">Psychothérapie</a></li><li><a href="/sophrologie" data-libelle="Sophrologie" aria-current="page">Sophrologie</a></li><li><a href="/violences" data-libelle="Violences">Violences</a></li><li><a href="/rendez-vous" data-libelle="Rendez-vous">Rendez-vous</a></li><li><a href="#haut" data-sans-transition>Retour en haut</a></li></ul>
+    </nav>
+    <div class="pied-aide">
+      <p><strong>En cas de violences</strong></p>
+      <p>En danger : <a href="tel:17">17</a> ou <a href="tel:112">112</a>. Par SMS : <a href="sms:114">114</a>.<br>Pour être écoutée : <a href="tel:3919">3919</a>, gratuit et anonyme, 24 h/24.</p>
+    </div>
+  </div>
+  <div class="conteneur pied-bas">
+    <p>Mentions légales · <span class="a-completer">à compléter</span></p>
+    <p>Politique de confidentialité · <span class="a-completer">à compléter</span></p>
+    <p>Pratique de psychothérapie hors du cadre réglementé et sophrologie · SIRET 514 610 393 00019 · APE 8690F</p>
+    <p>Maquette de présentation : les formulaires sont simulés, rien n’est envoyé.</p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33760365832">Appeler</a>
+  <a class="bouton barre-rdv" href="/rendez-vous#demande" data-libelle="Rendez-vous" data-fil-lien><span class="tuile tuile--mini" data-fil-mot hidden></span><span>Rendez-vous</span></a>
+</div>
+<div class="fil" data-grille="fil" data-effet="fil-mot" aria-hidden="true"><span class="fil-rail"></span><span class="fil-tuile tuile tuile--mini" data-fil-tuile>VOTRE MOT</span></div>
+</body>
+</html>

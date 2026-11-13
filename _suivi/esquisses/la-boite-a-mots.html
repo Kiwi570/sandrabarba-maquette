@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Esquisse · La boîte à mots</title>
+<style>
+@font-face { font-family: 'Bricolage'; src: url('/_suivi/esquisses/polices/bricolage.ttf'); font-weight: 200 800; font-stretch: 75% 100%; }
+@font-face { font-family: 'Instrument Serif'; src: url('/_suivi/esquisses/polices/instrument-serif.ttf'); }
+@font-face { font-family: 'Instrument Serif'; src: url('/_suivi/esquisses/polices/instrument-serif-italique.ttf'); font-style: italic; }
+@font-face { font-family: 'Hanken'; src: url('/_suivi/esquisses/polices/hanken.ttf'); font-weight: 100 900; }
+:root { --nuit: #161d36; --nuit2: #1f2847; --pierre: #ece3d4; --framboise: #e0457b; --corail: #f19a6b; --blanc: #fffaf1; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body { background: var(--nuit); color: var(--pierre); font-family: 'Hanken', sans-serif; overflow: hidden; }
+/* mur peint, lumière de la boîte */
+.mur { position: fixed; inset: 0; background:
+  radial-gradient(60% 70% at 72% 46%, rgba(255,226,186,.30), rgba(255,226,186,.08) 45%, transparent 70%),
+  radial-gradient(120% 90% at 20% 0%, #232d50 0%, var(--nuit) 60%); }
+.mur::after { content: ''; position: absolute; inset: 0; opacity: .5; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 .5 0 0 0 0 .5 0 0 0 0 .5 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E"); }
+header { position: relative; z-index: 2; display: flex; align-items: center; gap: 28px; height: 84px; padding: 0 48px; }
+.marque { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--pierre); }
+.marque img { width: 64px; height: auto; filter: drop-shadow(0 0 1px rgba(255,255,255,.4)); }
+.marque b { font-family: 'Instrument Serif'; font-weight: 400; font-size: 26px; letter-spacing: .01em; display: block; line-height: 1; }
+.marque small { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; opacity: .75; }
+nav { margin-left: auto; display: flex; gap: 26px; font-size: 15px; }
+nav a { color: var(--pierre); text-decoration: none; opacity: .88; }
+.tel { font-size: 15px; font-variant-numeric: tabular-nums; opacity: .9; }
+.bouton { display: inline-flex; align-items: center; gap: 10px; background: var(--framboise); color: #fff; text-decoration: none; font-weight: 600; font-size: 16px; padding: 14px 22px; border-radius: 999px; }
+.scene { position: relative; z-index: 1; display: grid; grid-template-columns: 0.92fr 1.08fr; gap: 40px; align-items: center; height: calc(100vh - 84px); padding: 0 48px 40px 64px; }
+.sur { font-size: 13px; letter-spacing: .16em; text-transform: uppercase; color: var(--corail); margin-bottom: 26px; }
+h1 { font-family: 'Instrument Serif'; font-weight: 400; font-size: clamp(54px, 6vw, 92px); line-height: .98; letter-spacing: -.01em; color: var(--blanc); }
+h1 em { color: var(--corail); }
+.texte p { font-size: 18px; line-height: 1.55; max-width: 34ch; margin-top: 26px; color: #d9d2c6; }
+.actions { display: flex; align-items: center; gap: 24px; margin-top: 34px; }
+.actions .tel { font-size: 18px; }
+.info { margin-top: 26px; font-size: 15px; letter-spacing: .02em; color: #c9c3d2; display: flex; gap: 14px; flex-wrap: wrap; }
+.info span { display: inline; }
+.info span + span::before { content: '·'; margin-right: 14px; color: var(--framboise); }
+
+/* la boîte lumineuse */
+.objet { position: relative; display: grid; justify-items: center; gap: 34px; }
+.boite { position: relative; width: min(640px, 92%); aspect-ratio: 4 / 3; border-radius: 10px; padding: 22px;
+  background: linear-gradient(180deg, #fbfaf6, #e6e2d9); box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 40px 70px -20px rgba(0,0,0,.6), 0 0 140px 30px rgba(255,228,190,.22); }
+.panneau { position: relative; height: 100%; border-radius: 4px; overflow: hidden;
+  background: radial-gradient(80% 90% at 50% 45%, #fffef8 0%, #fbf3df 70%, #efe1c3 100%);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.06), inset 0 10px 30px rgba(0,0,0,.08);
+  display: grid; grid-template-rows: repeat(3, 1fr); padding: 6% 7%; }
+.rangee { position: relative; display: flex; justify-content: center; align-items: center; gap: .32em; font-family: 'Bricolage'; font-stretch: 75%; font-weight: 700; font-size: clamp(34px, 4.6vw, 70px); color: #111; letter-spacing: .02em; }
+.rangee::after { content: ''; position: absolute; left: -4%; right: -4%; bottom: 8%; height: 2px; background: rgba(0,0,0,.08); }
+.rangee span { display: inline-block; text-shadow: 0 1px 0 rgba(255,255,255,.6), 0 2px 3px rgba(0,0,0,.18); }
+.rangee .vide { color: transparent; text-shadow: none; }
+.fente { outline: 2px dashed rgba(224,69,123,.45); outline-offset: -6px; border-radius: 4px; }
+.curseur-boite { position: absolute; right: 9%; bottom: 13%; width: 2px; height: 22%; background: var(--framboise); }
+.etagere { position: relative; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 14px; max-width: 660px; }
+.tuile { font-family: 'Bricolage'; font-stretch: 75%; font-weight: 700; font-size: 21px; letter-spacing: .06em; color: #141414; background: linear-gradient(180deg, #fffdf7, #ece6d8); padding: 9px 14px 8px; border-radius: 3px; box-shadow: 0 1px 0 rgba(255,255,255,.7) inset, 0 8px 16px -6px rgba(0,0,0,.6); }
+.tuile:nth-child(2n) { transform: rotate(-2deg) translateY(2px); }
+.tuile:nth-child(3n) { transform: rotate(1.6deg); }
+.tuile.prise { transform: translate(-40px, -70px) rotate(-6deg); box-shadow: 0 22px 30px -10px rgba(0,0,0,.65); outline: 2px solid var(--corail); outline-offset: 3px; }
+.indice { position: absolute; right: 2%; top: -34px; font-size: 14px; color: var(--corail); letter-spacing: .04em; }
+@media (max-width: 760px) {
+  body { overflow: hidden; }
+  header { height: 64px; padding: 0 18px; }
+  .marque img { width: 44px; } .marque b { font-size: 21px; } .marque small { font-size: 11px; }
+  nav, header .tel, header .bouton { display: none; }
+  .menu { margin-left: auto; font-size: 15px; border: 1px solid rgba(255,255,255,.35); border-radius: 999px; padding: 9px 16px; }
+  .scene { grid-template-columns: 1fr; height: auto; padding: 8px 18px; gap: 18px; }
+  .sur { font-size: 12px; margin-bottom: 12px; }
+  h1 { font-size: 46px; }
+  .texte p { display: none; }
+  .actions { margin-top: 18px; gap: 16px; }
+  .info { margin-top: 12px; font-size: 13px; }
+  .boite { width: 100%; padding: 12px; }
+  .rangee { font-size: 30px; }
+  .etagere { gap: 8px; } .tuile { font-size: 15px; padding: 7px 10px; }
+  .tuile.prise { transform: translate(-10px, -40px) rotate(-6deg); }
+  .indice { top: -24px; font-size: 12px; }
+}
+@media (min-width: 761px) { .menu { display: none; } }
+</style>
+</head>
+<body>
+<div class="mur"></div>
+<header>
+  <a class="marque" href="#"><img src="/_suivi/esquisses/img/logo.png" alt=""><span><b>Sandra Barba</b><small>Psychothérapie · Sophrologie</small></span></a>
+  <nav><a href="#">Psychothérapie</a><a href="#">Sophrologie</a><a href="#">Violences</a><a href="#">Rendez-vous</a></nav>
+  <span class="tel">07 60 36 58 32</span>
+  <a class="bouton" href="#">Prendre rendez-vous</a>
+  <span class="menu">Menu</span>
+</header>
+<main class="scene">
+  <div class="texte">
+    <p class="sur">Aubignan · et en visio · depuis 2005</p>
+    <h1>La vie est un combat.<br><em>Ne le vivez plus seul·e.</em></h1>
+    <p>Depuis 2005, Sandra Barba accompagne les adultes et les couples, et tout particulièrement les femmes victimes de violences.</p>
+    <div class="actions"><a class="bouton" href="#">Prendre rendez-vous</a><span class="tel">07 60 36 58 32</span></div>
+    <p class="info"><span>Séance d’1 h · 65 €</span><span>Au cabinet ou en visio</span><span>Du lundi au samedi</span></p>
+  </div>
+  <div class="objet">
+    <div class="boite">
+      <div class="panneau">
+        <div class="rangee"><span>QUEL</span><span>MOT</span></div>
+        <div class="rangee"><span>VOUS</span><span>AMÈNE</span><span>?</span></div>
+        <div class="rangee fente"><span class="vide">LA PEUR</span></div>
+        <i class="curseur-boite"></i>
+      </div>
+    </div>
+    <div class="etagere">
+      <span class="indice">Glissez votre mot dans la boîte ↑</span>
+      <span class="tuile">LE DEUIL</span><span class="tuile prise">LA PEUR</span><span class="tuile">LE COUPLE</span><span class="tuile">LE SILENCE</span><span class="tuile">LE SOMMEIL</span><span class="tuile">L’ÉPUISEMENT</span><span class="tuile">LES EXAMENS</span><span class="tuile">MA FILLE</span>
+    </div>
+  </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,11 @@
+[
+  { "cle": "deuil", "tuile": "LE DEUIL", "approche": "Psychothérapie", "page": "psychotherapie", "ancre": "themes", "texte": "Un deuil, une séparation, une maladie, un licenciement : une étape difficile se traverse mieux quand on n'est pas seul·e à la porter." },
+  { "cle": "peur", "tuile": "LA PEUR", "approche": "Psychothérapie et sophrologie", "page": "psychotherapie", "ancre": "themes", "texte": "Peurs, phobies, angoisses : comprendre ce qui se rejoue, et apprendre au corps à s'apaiser." },
+  { "cle": "couple", "tuile": "LE COUPLE", "approche": "Coaching couple · 1 h 15 · 65 €", "page": "psychotherapie", "ancre": "couple", "texte": "Vous n'arrivez plus à vous parler ? Se comprendre, communiquer, puis prendre une décision ensemble." },
+  { "cle": "violences", "tuile": "LES VIOLENCES", "approche": "Sa spécialité depuis 2005", "page": "violences", "ancre": "", "texte": "Violences subies dans l'enfance ou dans le couple, physiques, psychologiques, sexuelles ou économiques : mettre des mots, en parler, sortir du silence." },
+  { "cle": "sommeil", "tuile": "LE SOMMEIL", "approche": "Sophrologie", "page": "sophrologie", "ancre": "pour-qui", "texte": "Sommeil, stress, tensions : la sophrologie apprend à relâcher par la respiration et des mouvements simples, réalisables par tous." },
+  { "cle": "epuisement", "tuile": "L’ÉPUISEMENT", "approche": "Psychothérapie", "page": "psychotherapie", "ancre": "themes", "texte": "Burn-out, lassitude, sentiment d'échec : faire le point, puis avancer à votre rythme." },
+  { "cle": "examens", "tuile": "LES EXAMENS", "approche": "Sophrologie", "page": "sophrologie", "ancre": "pour-qui", "texte": "Concentration, confiance, gestion des peurs : se préparer à un examen ou à une épreuve." },
+  { "cle": "fille", "tuile": "MA FILLE", "approche": "Coaching famille · 1 h · 65 €", "page": "psychotherapie", "ancre": "couple", "texte": "Entre une mère et sa fille résident les tensions du « je t'aime » et du « je te déteste » : retrouver chacune sa place." },
+  { "cle": "naissance", "tuile": "LA NAISSANCE", "approche": "Sophrologie", "page": "sophrologie", "ancre": "pour-qui", "texte": "Maternité, préparation positive à l'accouchement, accueil d'un bébé : la sophrologie accompagne l'attente." }
+]

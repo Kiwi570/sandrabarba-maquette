@@ -1,0 +1,395 @@
+{
+ "mission": "rdv-confirmation",
+ "taille": "1440x900",
+ "depart": "/",
+ "erreurs": [],
+ "etapes": [
+  {
+   "k": 0,
+   "geste": "arrivée",
+   "resultat": "ok",
+   "gestes": 0,
+   "secondes": 3.5,
+   "adresse": "/",
+   "y": 0,
+   "hauteurPage": 8927,
+   "titres": [
+    "h1 La vie est un combat. Ne le vivez plus seul·e."
+   ],
+   "actions": [
+    "Sandra Barba PSYCHOTHÉRAPIE · SOPHROLOGIE",
+    "Psychothérapie",
+    "Sophrologie",
+    "Violences",
+    "Rendez-vous",
+    "Prendre rendez-vous",
+    "07 60 36 58 32",
+    "LE DEUIL",
+    "LA PEUR",
+    "LE COUPLE",
+    "LES VIOLENCES",
+    "LE SOMMEIL",
+    "L’ÉPUISEMENT",
+    "LES EXAMENS"
+   ],
+   "prixVus": [
+    "65 €"
+   ],
+   "telephonesVus": [
+    "07 60 36 58 32"
+   ],
+   "prixDansLaPage": [
+    "65 €"
+   ],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-0.png"
+  },
+  {
+   "k": 1,
+   "geste": "cliquer Prendre rendez-vous",
+   "resultat": "ok",
+   "gestes": 1,
+   "secondes": 5.8,
+   "adresse": "/rendez-vous#demande",
+   "y": 568,
+   "hauteurPage": 2852,
+   "titres": [
+    "h2 Trois questions, puis Sandra vous répond."
+   ],
+   "actions": [
+    "Sandra Barba PSYCHOTHÉRAPIE · SOPHROLOGIE",
+    "Psychothérapie",
+    "Sophrologie",
+    "Violences",
+    "Rendez-vous",
+    "Prendre rendez-vous",
+    "Suivant"
+   ],
+   "prixVus": [
+    "65 €"
+   ],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "65 €"
+   ],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 2,
+   "geste": "cliquer Séance au cabinet",
+   "resultat": "ok",
+   "gestes": 2,
+   "secondes": 8,
+   "adresse": "/rendez-vous#demande",
+   "y": 568,
+   "hauteurPage": 2852,
+   "titres": [
+    "h2 Trois questions, puis Sandra vous répond."
+   ],
+   "actions": [
+    "Sandra Barba PSYCHOTHÉRAPIE · SOPHROLOGIE",
+    "Psychothérapie",
+    "Sophrologie",
+    "Violences",
+    "Rendez-vous",
+    "Prendre rendez-vous",
+    "Suivant"
+   ],
+   "prixVus": [
+    "65 €"
+   ],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "65 €"
+   ],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 3,
+   "geste": "cliquer Suivant",
+   "resultat": "ok",
+   "gestes": 3,
+   "secondes": 10.1,
+   "adresse": "/rendez-vous#demande",
+   "y": 568,
+   "hauteurPage": 2852,
+   "titres": [
+    "h2 Trois questions, puis Sandra vous répond."
+   ],
+   "actions": [
+    "Sandra Barba PSYCHOTHÉRAPIE · SOPHROLOGIE",
+    "Psychothérapie",
+    "Sophrologie",
+    "Violences",
+    "Rendez-vous",
+    "Prendre rendez-vous",
+    "Retour",
+    "Suivant"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 4,
+   "geste": "cliquer Au cabinet, à Aubignan",
+   "resultat": "ok",
+   "gestes": 4,
+   "secondes": 12.3,
+   "adresse": "/rendez-vous#demande",
+   "y": 568,
+   "hauteurPage": 2852,
+   "titres": [
+    "h2 Trois questions, puis Sandra vous répond."
+   ],
+   "actions": [
+    "Sandra Barba PSYCHOTHÉRAPIE · SOPHROLOGIE",
+    "Psychothérapie",
+    "Sophrologie",
+    "Violences",
+    "Rendez-vous",
+    "Prendre rendez-vous",
+    "Retour",
+    "Suivant"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 5,
+   "geste": "cliquer en fin de journée",
+   "resultat": "ok",
+   "gestes": 5,
+   "secondes": 14.5,
+   "adresse": "/rendez-vous#demande",
+   "y": 568,
+   "hauteurPage": 2852,
+   "titres": [
+    "h2 Trois questions, puis Sandra vous répond."
+   ],
+   "actions": [
+    "Sandra Barba PSYCHOTHÉRAPIE · SOPHROLOGIE",
+    "Psychothérapie",
+    "Sophrologie",
+    "Violences",
+    "Rendez-vous",
+    "Prendre rendez-vous",
+    "Retour",
+    "Suivant"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 6,
+   "geste": "cliquer Suivant",
+   "resultat": "ok",
+   "gestes": 6,
+   "secondes": 16.6,
+   "adresse": "/rendez-vous#demande",
+   "y": 568,
+   "hauteurPage": 2982,
+   "titres": [
+    "h2 Trois questions, puis Sandra vous répond."
+   ],
+   "actions": [
+    "Sandra Barba PSYCHOTHÉRAPIE · SOPHROLOGIE",
+    "Psychothérapie",
+    "Sophrologie",
+    "Violences",
+    "Rendez-vous",
+    "Prendre rendez-vous"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 7,
+   "geste": "remplir prénom=Claire",
+   "resultat": "ok",
+   "gestes": 7,
+   "secondes": 16.6,
+   "adresse": "/rendez-vous#demande",
+   "y": 568,
+   "hauteurPage": 2982,
+   "titres": [
+    "h2 Trois questions, puis Sandra vous répond."
+   ],
+   "actions": [
+    "Sandra Barba PSYCHOTHÉRAPIE · SOPHROLOGIE",
+    "Psychothérapie",
+    "Sophrologie",
+    "Violences",
+    "Rendez-vous",
+    "Prendre rendez-vous"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 8,
+   "geste": "remplir téléphone=06 12 34 56 78",
+   "resultat": "ok",
+   "gestes": 8,
+   "secondes": 16.6,
+   "adresse": "/rendez-vous#demande",
+   "y": 568,
+   "hauteurPage": 2982,
+   "titres": [
+    "h2 Trois questions, puis Sandra vous répond."
+   ],
+   "actions": [
+    "Sandra Barba PSYCHOTHÉRAPIE · SOPHROLOGIE",
+    "Psychothérapie",
+    "Sophrologie",
+    "Violences",
+    "Rendez-vous",
+    "Prendre rendez-vous"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 9,
+   "geste": "defiler",
+   "resultat": "ok",
+   "gestes": 9,
+   "secondes": 17.4,
+   "adresse": "/rendez-vous#demande",
+   "y": 1333,
+   "hauteurPage": 2982,
+   "titres": [
+    "h2 89 rue du Portail-Neuf, Aubignan."
+   ],
+   "actions": [
+    "Retour",
+    "Envoyer la demande"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 10,
+   "geste": "cliquer Envoyer la demande",
+   "resultat": "ok",
+   "gestes": 10,
+   "secondes": 19.5,
+   "adresse": "/rendez-vous#demande",
+   "y": 1333,
+   "hauteurPage": 2852,
+   "titres": [
+    "h2 89 rue du Portail-Neuf, Aubignan."
+   ],
+   "actions": [
+    "Appeler le 07 60 36 58 32"
+   ],
+   "prixVus": [],
+   "telephonesVus": [
+    "07 60 36 58 32"
+   ],
+   "prixDansLaPage": [],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 11,
+   "geste": "attendre 1500",
+   "resultat": "ok",
+   "gestes": 10,
+   "secondes": 21,
+   "adresse": "/rendez-vous#demande",
+   "y": 1333,
+   "hauteurPage": 2852,
+   "titres": [
+    "h2 89 rue du Portail-Neuf, Aubignan."
+   ],
+   "actions": [
+    "Appeler le 07 60 36 58 32"
+   ],
+   "prixVus": [],
+   "telephonesVus": [
+    "07 60 36 58 32"
+   ],
+   "prixDansLaPage": [],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 12,
+   "geste": "remonter",
+   "resultat": "ok",
+   "gestes": 11,
+   "secondes": 21.8,
+   "adresse": "/rendez-vous#demande",
+   "y": 568,
+   "hauteurPage": 2852,
+   "titres": [
+    "h2 Trois questions, puis Sandra vous répond."
+   ],
+   "actions": [
+    "Sandra Barba PSYCHOTHÉRAPIE · SOPHROLOGIE",
+    "Psychothérapie",
+    "Sophrologie",
+    "Violences",
+    "Rendez-vous",
+    "Prendre rendez-vous",
+    "Faire une autre demande"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-12.png"
+  }
+ ]
+}

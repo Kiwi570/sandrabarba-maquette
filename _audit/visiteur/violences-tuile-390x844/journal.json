@@ -1,0 +1,126 @@
+{
+ "mission": "violences-tuile",
+ "taille": "390x844",
+ "depart": "/",
+ "erreurs": [],
+ "etapes": [
+  {
+   "k": 0,
+   "geste": "arrivée",
+   "resultat": "ok",
+   "gestes": 0,
+   "secondes": 3.4,
+   "adresse": "/",
+   "y": 0,
+   "hauteurPage": 10860,
+   "titres": [
+    "h1 La vie est un combat. Ne le vivez plus seul·e."
+   ],
+   "actions": [
+    "Sandra Barba",
+    "Menu",
+    "Prendre rendez-vous",
+    "07 60 36 58 32",
+    "LE DEUIL",
+    "LA PEUR",
+    "LE COUPLE",
+    "LES VIOLENCES",
+    "L’ÉPUISEMENT",
+    "LES EXAMENS",
+    "MA FILLE",
+    "LA NAISSANCE",
+    "Appeler",
+    "Rendez-vous"
+   ],
+   "prixVus": [
+    "65 €"
+   ],
+   "telephonesVus": [
+    "07 60 36 58 32"
+   ],
+   "prixDansLaPage": [
+    "65 €"
+   ],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-0.png"
+  },
+  {
+   "k": 1,
+   "geste": "cliquer LES VIOLENCES",
+   "resultat": "ok",
+   "gestes": 1,
+   "secondes": 5.8,
+   "adresse": "/",
+   "y": 0,
+   "hauteurPage": 10880,
+   "titres": [
+    "h1 La vie est un combat. Ne le vivez plus seul·e."
+   ],
+   "actions": [
+    "Sandra Barba",
+    "Menu",
+    "Prendre rendez-vous",
+    "07 60 36 58 32",
+    "Prendre rendez-vous · les violences",
+    "En savoir plus",
+    "Choisir un autre mot",
+    "Appeler",
+    "LES VIOLENCES Rendez-vous"
+   ],
+   "prixVus": [
+    "65 €"
+   ],
+   "telephonesVus": [
+    "07 60 36 58 32"
+   ],
+   "prixDansLaPage": [
+    "65 €"
+   ],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 2,
+   "geste": "attendre 1500",
+   "resultat": "ok",
+   "gestes": 1,
+   "secondes": 7.3,
+   "adresse": "/",
+   "y": 0,
+   "hauteurPage": 10880,
+   "titres": [
+    "h1 La vie est un combat. Ne le vivez plus seul·e."
+   ],
+   "actions": [
+    "Sandra Barba",
+    "Menu",
+    "Prendre rendez-vous",
+    "07 60 36 58 32",
+    "Prendre rendez-vous · les violences",
+    "En savoir plus",
+    "Choisir un autre mot",
+    "Appeler",
+    "LES VIOLENCES Rendez-vous"
+   ],
+   "prixVus": [
+    "65 €"
+   ],
+   "telephonesVus": [
+    "07 60 36 58 32"
+   ],
+   "prixDansLaPage": [
+    "65 €"
+   ],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-2.png"
+  }
+ ]
+}

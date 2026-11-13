@@ -1,0 +1,5282 @@
+{
+  "dossier": "/home/claude/sandrabarba-maquette/recu/site",
+  "date": "2026-11-13T13:51:03.033Z",
+  "detection": "mesures sharp seulement",
+  "planches": [
+    "planche.jpg",
+    "planche-2.jpg",
+    "planche-3.jpg",
+    "planche-4.jpg"
+  ],
+  "legende_planche": "cadre jaune : sujet ; croix rouge : cadrage ; fond rose : à vérifier",
+  "doublons": [
+    {
+      "garder": "diplomes-certificats-7.jpg",
+      "ecarter": "nouveau-diplome-meilleur-accompagnement.jpg",
+      "type": "doublon",
+      "distance": 5,
+      "ressemblance": 0.98
+    }
+  ],
+  "images": [
+    {
+      "fichier": "logo.png",
+      "nom": "logo",
+      "drapeau": "logo",
+      "largeur": 733,
+      "hauteur": 490,
+      "ratio": "3:2",
+      "ratio_valeur": 1.496,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 71758,
+      "transparence": true,
+      "sujet": {
+        "x": 18.8,
+        "y": 13.6,
+        "l": 68.8,
+        "h": 72.7,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        56,
+        47
+      ],
+      "cadrage_css": "56% 47%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.71,
+          "ton": "clair",
+          "recouvre_sujet": 0.39
+        },
+        {
+          "cote": "haut",
+          "score": 0.64,
+          "ton": "clair",
+          "recouvre_sujet": 0.42
+        },
+        {
+          "cote": "bas",
+          "score": 0.55,
+          "ton": "clair",
+          "recouvre_sujet": 0.42
+        },
+        {
+          "cote": "droite",
+          "score": 0.39,
+          "ton": "clair",
+          "recouvre_sujet": 0.5
+        }
+      ],
+      "qualite": {
+        "nettete": 20.2,
+        "bruit": 0.14,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "1c080d0f23452702",
+      "drapeaux": [
+        "logo",
+        "calme gauche"
+      ]
+    },
+    {
+      "fichier": "couple-distancie.jpg",
+      "nom": "couple-distancie",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1333,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 213628,
+      "transparence": false,
+      "sujet": {
+        "x": 28.1,
+        "y": 0,
+        "l": 71.9,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        72,
+        47
+      ],
+      "cadrage_css": "72% 47%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.51,
+          "ton": "clair",
+          "recouvre_sujet": 0.28
+        },
+        {
+          "cote": "haut",
+          "score": 0.27,
+          "ton": "clair",
+          "recouvre_sujet": 0.72
+        },
+        {
+          "cote": "bas",
+          "score": 0.14,
+          "ton": "clair",
+          "recouvre_sujet": 0.63
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 21.8,
+        "bruit": 0.57,
+        "compression": 1.23,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "0292929214141696",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "pose-yoga.jpg",
+      "nom": "pose-yoga",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1333,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 176960,
+      "transparence": false,
+      "sujet": {
+        "x": 3.1,
+        "y": 4.5,
+        "l": 96.9,
+        "h": 90.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        42,
+        59
+      ],
+      "cadrage_css": "42% 59%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.41,
+          "ton": "clair",
+          "recouvre_sujet": 0.84
+        },
+        {
+          "cote": "gauche",
+          "score": 0.18,
+          "ton": "clair",
+          "recouvre_sujet": 0.84
+        },
+        {
+          "cote": "droite",
+          "score": 0.16,
+          "ton": "moyen",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "bas",
+          "score": 0.11,
+          "ton": "moyen",
+          "recouvre_sujet": 0.84
+        }
+      ],
+      "qualite": {
+        "nettete": 8.6,
+        "bruit": 0.33,
+        "compression": 1.62,
+        "faible": true,
+        "raisons": [
+          "compression visible"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "a5854d3139322c09",
+      "drapeaux": [
+        "autre",
+        "compression visible"
+      ]
+    },
+    {
+      "fichier": "psychotherapie-sophrologie-sandra-barba.jpg",
+      "nom": "psychotherapie-sophrologie-sandra-barba",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1333,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 327015,
+      "transparence": false,
+      "sujet": {
+        "x": 12.5,
+        "y": 4.5,
+        "l": 84.4,
+        "h": 90.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        46,
+        59
+      ],
+      "cadrage_css": "46% 59%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.23,
+          "ton": "moyen",
+          "recouvre_sujet": 0.74
+        },
+        {
+          "cote": "gauche",
+          "score": 0.13,
+          "ton": "moyen",
+          "recouvre_sujet": 0.62
+        },
+        {
+          "cote": "droite",
+          "score": 0.06,
+          "ton": "moyen",
+          "recouvre_sujet": 0.84
+        },
+        {
+          "cote": "bas",
+          "score": 0.04,
+          "ton": "sombre",
+          "recouvre_sujet": 0.73
+        }
+      ],
+      "qualite": {
+        "nettete": 20,
+        "bruit": 0.71,
+        "compression": 1.27,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "a1486cc9968c8c0c",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "psychotherapie.jpg",
+      "nom": "psychotherapie",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1331,
+      "ratio": "3:2",
+      "ratio_valeur": 1.503,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 316297,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        52
+      ],
+      "cadrage_css": "50% 52%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.15,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "gauche",
+          "score": 0.11,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "bas",
+          "score": 0.01,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 14.1,
+        "bruit": 0.56,
+        "compression": 1.51,
+        "faible": true,
+        "raisons": [
+          "compression visible"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "4b6322233332352d",
+      "drapeaux": [
+        "autre",
+        "compression visible"
+      ]
+    },
+    {
+      "fichier": "service-image.jpg",
+      "nom": "service-image",
+      "drapeau": "autre",
+      "largeur": 1100,
+      "hauteur": 733,
+      "ratio": "3:2",
+      "ratio_valeur": 1.501,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 51066,
+      "transparence": false,
+      "sujet": {
+        "x": 3.1,
+        "y": 18.2,
+        "l": 84.4,
+        "h": 77.3,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        65,
+        67
+      ],
+      "cadrage_css": "65% 67%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.4,
+          "ton": "clair",
+          "recouvre_sujet": 0.41
+        },
+        {
+          "cote": "gauche",
+          "score": 0.31,
+          "ton": "clair",
+          "recouvre_sujet": 0.71
+        },
+        {
+          "cote": "droite",
+          "score": 0.15,
+          "ton": "clair",
+          "recouvre_sujet": 0.53
+        },
+        {
+          "cote": "bas",
+          "score": 0.15,
+          "ton": "moyen",
+          "recouvre_sujet": 0.74
+        }
+      ],
+      "qualite": {
+        "nettete": 21.6,
+        "bruit": 0.44,
+        "compression": 0.92,
+        "faible": true,
+        "raisons": [
+          "1100 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "585252d3c34f7373",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "psychotherapie-sophrologie-sandra-barba-2.jpg",
+      "nom": "psychotherapie-sophrologie-sandra-barba-2",
+      "drapeau": "autre",
+      "largeur": 851,
+      "hauteur": 851,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "jpeg",
+      "poids": 38229,
+      "transparence": false,
+      "sujet": {
+        "x": 34.4,
+        "y": 28.1,
+        "l": 37.5,
+        "h": 37.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        43
+      ],
+      "cadrage_css": "49% 43%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.99,
+          "ton": "clair",
+          "recouvre_sujet": 0.01
+        },
+        {
+          "cote": "gauche",
+          "score": 0.92,
+          "ton": "clair",
+          "recouvre_sujet": 0.05
+        },
+        {
+          "cote": "droite",
+          "score": 0.87,
+          "ton": "clair",
+          "recouvre_sujet": 0.11
+        },
+        {
+          "cote": "haut",
+          "score": 0.86,
+          "ton": "clair",
+          "recouvre_sujet": 0.07
+        }
+      ],
+      "qualite": {
+        "nettete": 7.2,
+        "bruit": 0.02,
+        "compression": 1.15,
+        "faible": true,
+        "raisons": [
+          "851 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "02001a1e5a1a0810",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "calme bas/gauche/droite/haut"
+      ]
+    },
+    {
+      "fichier": "sortir-dependance-affective.jpg",
+      "nom": "sortir-dependance-affective",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1325,
+      "ratio": "3:2",
+      "ratio_valeur": 1.509,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 163689,
+      "transparence": false,
+      "sujet": {
+        "x": 18.8,
+        "y": 0,
+        "l": 81.3,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        67,
+        38
+      ],
+      "cadrage_css": "67% 38%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.54,
+          "ton": "clair",
+          "recouvre_sujet": 0.51
+        },
+        {
+          "cote": "bas",
+          "score": 0.46,
+          "ton": "clair",
+          "recouvre_sujet": 0.71
+        },
+        {
+          "cote": "haut",
+          "score": 0.33,
+          "ton": "clair",
+          "recouvre_sujet": 0.81
+        },
+        {
+          "cote": "droite",
+          "score": 0.18,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 10.7,
+        "bruit": 0.29,
+        "compression": 1.64,
+        "faible": true,
+        "raisons": [
+          "compression visible"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "ecdcc97b3bdac2a0",
+      "drapeaux": [
+        "autre",
+        "compression visible"
+      ]
+    },
+    {
+      "fichier": "se-refaire-beaute.jpg",
+      "nom": "se-refaire-beaute",
+      "drapeau": "autre",
+      "largeur": 1500,
+      "hauteur": 2000,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 468365,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 6.3,
+        "l": 100,
+        "h": 93.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        52,
+        55
+      ],
+      "cadrage_css": "52% 55%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.15,
+          "ton": "clair",
+          "recouvre_sujet": 0.82
+        },
+        {
+          "cote": "gauche",
+          "score": 0.14,
+          "ton": "moyen",
+          "recouvre_sujet": 0.94
+        },
+        {
+          "cote": "bas",
+          "score": 0.07,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.94
+        }
+      ],
+      "qualite": {
+        "nettete": 24.2,
+        "bruit": 0.85,
+        "compression": 0.9,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "c9899cbcb23ee1e9",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "specialisee-e-therapie.jpg",
+      "nom": "specialisee-e-therapie",
+      "drapeau": "autre",
+      "largeur": 750,
+      "hauteur": 1096,
+      "ratio": "0.68",
+      "ratio_valeur": 0.684,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 274196,
+      "transparence": false,
+      "sujet": {
+        "x": 4.5,
+        "y": 0,
+        "l": 90.9,
+        "h": 96.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        52,
+        47
+      ],
+      "cadrage_css": "52% 47%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.01,
+          "ton": "clair",
+          "recouvre_sujet": 0.83
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.86
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.86
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.91
+        }
+      ],
+      "qualite": {
+        "nettete": 112,
+        "bruit": 0.54,
+        "compression": 1.03,
+        "faible": true,
+        "raisons": [
+          "750 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "6d1d252539113131",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "specialisee-e-therapie-2.jpg",
+      "nom": "specialisee-e-therapie-2",
+      "drapeau": "autre",
+      "largeur": 720,
+      "hauteur": 960,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 70299,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        50
+      ],
+      "cadrage_css": "49% 50%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 15.7,
+        "bruit": 0.34,
+        "compression": 1.53,
+        "faible": true,
+        "raisons": [
+          "720 px de large",
+          "compression visible"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "985acdc493a55666",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "compression visible"
+      ]
+    },
+    {
+      "fichier": "pervers-narcissique-enfant-capricieux.png",
+      "nom": "pervers-narcissique-enfant-capricieux",
+      "drapeau": "autre",
+      "largeur": 512,
+      "hauteur": 512,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "png",
+      "poids": 462754,
+      "transparence": false,
+      "sujet": {
+        "x": 40.6,
+        "y": 15.6,
+        "l": 28.1,
+        "h": 84.4,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        52,
+        55
+      ],
+      "cadrage_css": "52% 55%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.82,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.68,
+          "ton": "sombre",
+          "recouvre_sujet": 0.18
+        },
+        {
+          "cote": "haut",
+          "score": 0.6,
+          "ton": "sombre",
+          "recouvre_sujet": 0.16
+        },
+        {
+          "cote": "bas",
+          "score": 0.43,
+          "ton": "sombre",
+          "recouvre_sujet": 0.28
+        }
+      ],
+      "qualite": {
+        "nettete": 39.6,
+        "bruit": 1.45,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "512 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "cc92b2b0923333b1",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "calme gauche/droite"
+      ]
+    },
+    {
+      "fichier": "conference-pervers-pervers-narcissiques.jpg",
+      "nom": "conference-pervers-pervers-narcissiques",
+      "drapeau": "autre",
+      "largeur": 821,
+      "hauteur": 1500,
+      "ratio": "0.55",
+      "ratio_valeur": 0.547,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 165967,
+      "transparence": false,
+      "sujet": {
+        "x": 11.1,
+        "y": 12.5,
+        "l": 83.3,
+        "h": 78.1,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        56,
+        54
+      ],
+      "cadrage_css": "56% 54%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.16,
+          "ton": "clair",
+          "recouvre_sujet": 0.54
+        },
+        {
+          "cote": "gauche",
+          "score": 0.04,
+          "ton": "clair",
+          "recouvre_sujet": 0.56
+        },
+        {
+          "cote": "bas",
+          "score": 0.03,
+          "ton": "clair",
+          "recouvre_sujet": 0.61
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.67
+        }
+      ],
+      "qualite": {
+        "nettete": 54.5,
+        "bruit": 0.36,
+        "compression": 0.96,
+        "faible": true,
+        "raisons": [
+          "821 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "3b1f071b79691707",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "conference-prevention-violences.jpg",
+      "nom": "conference-prevention-violences",
+      "drapeau": "lieu",
+      "largeur": 841,
+      "hauteur": 963,
+      "ratio": "0.87",
+      "ratio_valeur": 0.873,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 248953,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 92.9,
+        "h": 81.3,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        35
+      ],
+      "cadrage_css": "49% 35%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.16,
+          "ton": "clair",
+          "recouvre_sujet": 0.43
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.81
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.67
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.93
+        }
+      ],
+      "qualite": {
+        "nettete": 83.3,
+        "bruit": 1.39,
+        "compression": 1.13,
+        "faible": true,
+        "raisons": [
+          "841 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "63992f07979dd5d1",
+      "drapeaux": [
+        "lieu",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "sophrologie-quelques-mots.jpg",
+      "nom": "sophrologie-quelques-mots",
+      "drapeau": "lieu",
+      "largeur": 1230,
+      "hauteur": 639,
+      "ratio": "1.92",
+      "ratio_valeur": 1.925,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 125875,
+      "transparence": false,
+      "sujet": {
+        "x": 3.1,
+        "y": 5.9,
+        "l": 93.8,
+        "h": 88.2,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        45
+      ],
+      "cadrage_css": "48% 45%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.2,
+          "ton": "clair",
+          "recouvre_sujet": 0.78
+        },
+        {
+          "cote": "bas",
+          "score": 0.14,
+          "ton": "clair",
+          "recouvre_sujet": 0.78
+        },
+        {
+          "cote": "droite",
+          "score": 0.04,
+          "ton": "clair",
+          "recouvre_sujet": 0.81
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.81
+        }
+      ],
+      "qualite": {
+        "nettete": 33.7,
+        "bruit": 0.56,
+        "compression": 0.99,
+        "faible": true,
+        "raisons": [
+          "1230 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "4d2b334d4d332b0c",
+      "drapeaux": [
+        "lieu",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "nouveau-diplome-meilleur-accompagnement.jpg",
+      "nom": "nouveau-diplome-meilleur-accompagnement",
+      "drapeau": "autre",
+      "largeur": 828,
+      "hauteur": 582,
+      "ratio": "1.42",
+      "ratio_valeur": 1.423,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 122490,
+      "transparence": false,
+      "sujet": {
+        "x": 28.1,
+        "y": 17.4,
+        "l": 46.9,
+        "h": 65.2,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        51,
+        50
+      ],
+      "cadrage_css": "51% 50%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.53,
+          "ton": "clair",
+          "recouvre_sujet": 0.19
+        },
+        {
+          "cote": "droite",
+          "score": 0.52,
+          "ton": "clair",
+          "recouvre_sujet": 0.24
+        },
+        {
+          "cote": "bas",
+          "score": 0.46,
+          "ton": "clair",
+          "recouvre_sujet": 0.24
+        },
+        {
+          "cote": "haut",
+          "score": 0.36,
+          "ton": "clair",
+          "recouvre_sujet": 0.24
+        }
+      ],
+      "qualite": {
+        "nettete": 74.6,
+        "bruit": 1.47,
+        "compression": 1.1,
+        "faible": true,
+        "raisons": [
+          "828 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "21171717070f2d55",
+      "doublon_de": {
+        "fichier": "diplomes-certificats-7.jpg",
+        "type": "doublon",
+        "distance": 5,
+        "ressemblance": 0.98
+      },
+      "drapeaux": [
+        "autre",
+        "petite",
+        "doublon de diplomes-certificats-7.jpg"
+      ]
+    },
+    {
+      "fichier": "constat-deni-social-violences.jpg",
+      "nom": "constat-deni-social-violences",
+      "drapeau": "autre",
+      "largeur": 1428,
+      "hauteur": 1386,
+      "ratio": "1.03",
+      "ratio_valeur": 1.03,
+      "orientation": "carre",
+      "format": "jpeg",
+      "poids": 151462,
+      "transparence": false,
+      "sujet": {
+        "x": 21.9,
+        "y": 25.8,
+        "l": 43.8,
+        "h": 51.6,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        42,
+        52
+      ],
+      "cadrage_css": "42% 52%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.8,
+          "ton": "sombre",
+          "recouvre_sujet": 0.07
+        },
+        {
+          "cote": "haut",
+          "score": 0.68,
+          "ton": "sombre",
+          "recouvre_sujet": 0.12
+        },
+        {
+          "cote": "bas",
+          "score": 0.61,
+          "ton": "sombre",
+          "recouvre_sujet": 0.16
+        },
+        {
+          "cote": "gauche",
+          "score": 0.47,
+          "ton": "sombre",
+          "recouvre_sujet": 0.23
+        }
+      ],
+      "qualite": {
+        "nettete": 3.4,
+        "bruit": 0.3,
+        "compression": 0.97,
+        "faible": true,
+        "raisons": [
+          "floue"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "d0e4e060e0e0e0b0",
+      "drapeaux": [
+        "autre",
+        "floue",
+        "calme droite/haut"
+      ]
+    },
+    {
+      "fichier": "epuisement-psychique-emotionnel.jpg",
+      "nom": "epuisement-psychique-emotionnel",
+      "drapeau": "autre",
+      "largeur": 1080,
+      "hauteur": 1080,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "jpeg",
+      "poids": 114317,
+      "transparence": false,
+      "sujet": {
+        "x": 12.5,
+        "y": 9.4,
+        "l": 78.1,
+        "h": 84.4,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        41
+      ],
+      "cadrage_css": "49% 41%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.1,
+          "ton": "clair",
+          "recouvre_sujet": 0.58
+        },
+        {
+          "cote": "bas",
+          "score": 0.07,
+          "ton": "clair",
+          "recouvre_sujet": 0.64
+        },
+        {
+          "cote": "droite",
+          "score": 0.03,
+          "ton": "clair",
+          "recouvre_sujet": 0.65
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.57
+        }
+      ],
+      "qualite": {
+        "nettete": 45.9,
+        "bruit": 0.43,
+        "compression": 0.97,
+        "faible": true,
+        "raisons": [
+          "1080 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "7b2b2f3332773387",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "astuces-psy.jpg",
+      "nom": "astuces-psy",
+      "drapeau": "autre",
+      "largeur": 1441,
+      "hauteur": 762,
+      "ratio": "1.89",
+      "ratio_valeur": 1.891,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 116076,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        54
+      ],
+      "cadrage_css": "48% 54%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.39,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "haut",
+          "score": 0.33,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0.27,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0.17,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 4.9,
+        "bruit": 0.33,
+        "compression": 1.45,
+        "faible": true,
+        "raisons": [
+          "floue",
+          "compression visible"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "e7f2f87dfcf8f0f8",
+      "drapeaux": [
+        "autre",
+        "floue",
+        "compression visible"
+      ]
+    },
+    {
+      "fichier": "grand-merci-tous-commentaires.png",
+      "nom": "grand-merci-tous-commentaires",
+      "drapeau": "lieu",
+      "largeur": 693,
+      "hauteur": 1500,
+      "ratio": "0.46",
+      "ratio_valeur": 0.462,
+      "orientation": "portrait",
+      "format": "png",
+      "poids": 447777,
+      "transparence": true,
+      "sujet": {
+        "x": 6.7,
+        "y": 21.9,
+        "l": 60,
+        "h": 78.1,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        28,
+        73
+      ],
+      "cadrage_css": "28% 73%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.7,
+          "ton": "clair",
+          "recouvre_sujet": 0.13
+        },
+        {
+          "cote": "haut",
+          "score": 0.39,
+          "ton": "clair",
+          "recouvre_sujet": 0.22
+        },
+        {
+          "cote": "bas",
+          "score": 0.33,
+          "ton": "clair",
+          "recouvre_sujet": 0.6
+        },
+        {
+          "cote": "gauche",
+          "score": 0.21,
+          "ton": "clair",
+          "recouvre_sujet": 0.65
+        }
+      ],
+      "qualite": {
+        "nettete": 74.6,
+        "bruit": 0.14,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "693 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "5157373d643d3d56",
+      "drapeaux": [
+        "lieu",
+        "petite",
+        "calme droite"
+      ]
+    },
+    {
+      "fichier": "ecole-arrive-si-nous.jpg",
+      "nom": "ecole-arrive-si-nous",
+      "drapeau": "autre",
+      "largeur": 1228,
+      "hauteur": 826,
+      "ratio": "3:2",
+      "ratio_valeur": 1.487,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 148571,
+      "transparence": false,
+      "sujet": {
+        "x": 3.1,
+        "y": 4.5,
+        "l": 90.6,
+        "h": 81.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        57
+      ],
+      "cadrage_css": "47% 57%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.21,
+          "ton": "clair",
+          "recouvre_sujet": 0.79
+        },
+        {
+          "cote": "droite",
+          "score": 0.05,
+          "ton": "clair",
+          "recouvre_sujet": 0.69
+        },
+        {
+          "cote": "bas",
+          "score": 0.04,
+          "ton": "clair",
+          "recouvre_sujet": 0.55
+        },
+        {
+          "cote": "gauche",
+          "score": 0.01,
+          "ton": "clair",
+          "recouvre_sujet": 0.75
+        }
+      ],
+      "qualite": {
+        "nettete": 27.6,
+        "bruit": 0.3,
+        "compression": 0.99,
+        "faible": true,
+        "raisons": [
+          "1228 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "0c0c0e2b0f2d0d15",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "campagne-italienne-contre-violences.jpg",
+      "nom": "campagne-italienne-contre-violences",
+      "drapeau": "lieu",
+      "largeur": 822,
+      "hauteur": 1196,
+      "ratio": "0.69",
+      "ratio_valeur": 0.687,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 145331,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 3.1,
+        "l": 95.5,
+        "h": 93.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        44,
+        43
+      ],
+      "cadrage_css": "44% 43%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.94
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.83
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.87
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 18.4,
+        "bruit": 0.37,
+        "compression": 1.08,
+        "faible": true,
+        "raisons": [
+          "822 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "b68661e1f0f8f890",
+      "drapeaux": [
+        "lieu",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "etes-vous-sous-emprise.jpg",
+      "nom": "etes-vous-sous-emprise",
+      "drapeau": "autre",
+      "largeur": 879,
+      "hauteur": 826,
+      "ratio": "1.06",
+      "ratio_valeur": 1.064,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 276111,
+      "transparence": false,
+      "sujet": {
+        "x": 3.1,
+        "y": 25.8,
+        "l": 75,
+        "h": 71,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        49
+      ],
+      "cadrage_css": "49% 49%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.47,
+          "ton": "clair",
+          "recouvre_sujet": 0.2
+        },
+        {
+          "cote": "droite",
+          "score": 0.35,
+          "ton": "clair",
+          "recouvre_sujet": 0.32
+        },
+        {
+          "cote": "gauche",
+          "score": 0.1,
+          "ton": "clair",
+          "recouvre_sujet": 0.65
+        },
+        {
+          "cote": "bas",
+          "score": 0.05,
+          "ton": "clair",
+          "recouvre_sujet": 0.68
+        }
+      ],
+      "qualite": {
+        "nettete": 118.6,
+        "bruit": 1.7,
+        "compression": 1.13,
+        "faible": true,
+        "raisons": [
+          "879 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "cf9ba30f9e87c7c3",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "psychotherapie-pourquoi.jpg",
+      "nom": "psychotherapie-pourquoi",
+      "drapeau": "autre",
+      "largeur": 734,
+      "hauteur": 888,
+      "ratio": "0.83",
+      "ratio_valeur": 0.827,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 103779,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 96.3,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        44
+      ],
+      "cadrage_css": "47% 44%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 11.5,
+        "bruit": 0.43,
+        "compression": 0.99,
+        "faible": true,
+        "raisons": [
+          "734 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "3164471b1b0f4745",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "reflexion-comportements-quotidien.jpg",
+      "nom": "reflexion-comportements-quotidien",
+      "drapeau": "lieu",
+      "largeur": 750,
+      "hauteur": 752,
+      "ratio": "1:1",
+      "ratio_valeur": 0.997,
+      "orientation": "carre",
+      "format": "jpeg",
+      "poids": 124102,
+      "transparence": false,
+      "sujet": {
+        "x": 9.4,
+        "y": 3.1,
+        "l": 84.4,
+        "h": 96.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        46
+      ],
+      "cadrage_css": "50% 46%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.01,
+          "ton": "moyen",
+          "recouvre_sujet": 0.74
+        },
+        {
+          "cote": "haut",
+          "score": 0.01,
+          "ton": "clair",
+          "recouvre_sujet": 0.77
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.82
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.84
+        }
+      ],
+      "qualite": {
+        "nettete": 81.6,
+        "bruit": 0.78,
+        "compression": 1.11,
+        "faible": true,
+        "raisons": [
+          "750 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "d3993b333b3d5c5d",
+      "drapeaux": [
+        "lieu",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "types-meres-toxiques.jpg",
+      "nom": "types-meres-toxiques",
+      "drapeau": "lieu",
+      "largeur": 822,
+      "hauteur": 578,
+      "ratio": "1.42",
+      "ratio_valeur": 1.422,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 59407,
+      "transparence": false,
+      "sujet": {
+        "x": 9.4,
+        "y": 0,
+        "l": 84.4,
+        "h": 56.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        36,
+        26
+      ],
+      "cadrage_css": "36% 26%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.7,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.47,
+          "ton": "clair",
+          "recouvre_sujet": 0.48
+        },
+        {
+          "cote": "gauche",
+          "score": 0.32,
+          "ton": "clair",
+          "recouvre_sujet": 0.43
+        },
+        {
+          "cote": "haut",
+          "score": 0.24,
+          "ton": "clair",
+          "recouvre_sujet": 0.84
+        }
+      ],
+      "qualite": {
+        "nettete": 5,
+        "bruit": 0.39,
+        "compression": 1.16,
+        "faible": true,
+        "raisons": [
+          "822 px de large",
+          "floue"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "3171717078c2c6e1",
+      "drapeaux": [
+        "lieu",
+        "petite",
+        "floue",
+        "calme bas"
+      ]
+    },
+    {
+      "fichier": "coaching-7-etapes-confiance.jpg",
+      "nom": "coaching-7-etapes-confiance",
+      "drapeau": "portrait",
+      "largeur": 733,
+      "hauteur": 620,
+      "ratio": "1.18",
+      "ratio_valeur": 1.182,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 67884,
+      "transparence": false,
+      "sujet": {
+        "x": 6.3,
+        "y": 7.1,
+        "l": 90.6,
+        "h": 82.1,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        45,
+        40
+      ],
+      "cadrage_css": "45% 40%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.22,
+          "ton": "clair",
+          "recouvre_sujet": 0.69
+        },
+        {
+          "cote": "bas",
+          "score": 0.04,
+          "ton": "clair",
+          "recouvre_sujet": 0.63
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.76
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.72
+        }
+      ],
+      "qualite": {
+        "nettete": 42.4,
+        "bruit": 0.33,
+        "compression": 1.03,
+        "faible": true,
+        "raisons": [
+          "733 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "3313716361636343",
+      "drapeaux": [
+        "portrait",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "joyeuses-fetes-paques.jpg",
+      "nom": "joyeuses-fetes-paques",
+      "drapeau": "autre",
+      "largeur": 800,
+      "hauteur": 534,
+      "ratio": "3:2",
+      "ratio_valeur": 1.498,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 193991,
+      "transparence": false,
+      "sujet": {
+        "x": 3.1,
+        "y": 0,
+        "l": 93.8,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        53
+      ],
+      "cadrage_css": "49% 53%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.88
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.88
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.94
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.82
+        }
+      ],
+      "qualite": {
+        "nettete": 48,
+        "bruit": 1.32,
+        "compression": 1.02,
+        "faible": true,
+        "raisons": [
+          "800 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "e8dc96cac6948ce6",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "psychopathe-feminin-avez-vous.jpg",
+      "nom": "psychopathe-feminin-avez-vous",
+      "drapeau": "portrait",
+      "largeur": 820,
+      "hauteur": 511,
+      "ratio": "16:10",
+      "ratio_valeur": 1.605,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 74708,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        51
+      ],
+      "cadrage_css": "48% 51%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.08,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0.06,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "gauche",
+          "score": 0.01,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 22.8,
+        "bruit": 0.73,
+        "compression": 1.02,
+        "faible": true,
+        "raisons": [
+          "820 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "32f091b297e66071",
+      "drapeaux": [
+        "portrait",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "maltraitante-emotionnelle-trace.jpg",
+      "nom": "maltraitante-emotionnelle-trace",
+      "drapeau": "autre",
+      "largeur": 857,
+      "hauteur": 484,
+      "ratio": "16:9",
+      "ratio_valeur": 1.771,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 52856,
+      "transparence": false,
+      "sujet": {
+        "x": 25,
+        "y": 21.1,
+        "l": 43.8,
+        "h": 73.7,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        52
+      ],
+      "cadrage_css": "50% 52%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.59,
+          "ton": "sombre",
+          "recouvre_sujet": 0.17
+        },
+        {
+          "cote": "droite",
+          "score": 0.57,
+          "ton": "sombre",
+          "recouvre_sujet": 0.16
+        },
+        {
+          "cote": "gauche",
+          "score": 0.54,
+          "ton": "sombre",
+          "recouvre_sujet": 0.28
+        },
+        {
+          "cote": "bas",
+          "score": 0.29,
+          "ton": "sombre",
+          "recouvre_sujet": 0.37
+        }
+      ],
+      "qualite": {
+        "nettete": 13.6,
+        "bruit": 0.42,
+        "compression": 1.24,
+        "faible": true,
+        "raisons": [
+          "857 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "cceaf2f16060f8bb",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "pourquoi-anxiete-est-elle.jpg",
+      "nom": "pourquoi-anxiete-est-elle",
+      "drapeau": "autre",
+      "largeur": 526,
+      "hauteur": 526,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "jpeg",
+      "poids": 32351,
+      "transparence": false,
+      "sujet": {
+        "x": 3.1,
+        "y": 3.1,
+        "l": 87.5,
+        "h": 93.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        38,
+        54
+      ],
+      "cadrage_css": "38% 54%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.45,
+          "ton": "clair",
+          "recouvre_sujet": 0.72
+        },
+        {
+          "cote": "bas",
+          "score": 0.2,
+          "ton": "clair",
+          "recouvre_sujet": 0.8
+        },
+        {
+          "cote": "haut",
+          "score": 0.17,
+          "ton": "clair",
+          "recouvre_sujet": 0.8
+        },
+        {
+          "cote": "gauche",
+          "score": 0.11,
+          "ton": "clair",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 64.9,
+        "bruit": 0.4,
+        "compression": 1.12,
+        "faible": true,
+        "raisons": [
+          "526 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "f3c4dcf0f8fe71cc",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "cabinet-psychotherapie-sandra-barba.jpg",
+      "nom": "cabinet-psychotherapie-sandra-barba",
+      "drapeau": "lieu",
+      "largeur": 1500,
+      "hauteur": 2000,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 365066,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        44,
+        56
+      ],
+      "cadrage_css": "44% 56%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.24,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "gauche",
+          "score": 0.05,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0.05,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0.04,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 21.7,
+        "bruit": 0.6,
+        "compression": 0.94,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "f82637363a31f07c",
+      "drapeaux": [
+        "lieu"
+      ]
+    },
+    {
+      "fichier": "sandrabarba.jpg",
+      "nom": "sandrabarba",
+      "drapeau": "autre",
+      "largeur": 960,
+      "hauteur": 960,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "jpeg",
+      "poids": 118417,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        52,
+        49
+      ],
+      "cadrage_css": "52% 49%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.09,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "haut",
+          "score": 0.09,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0.05,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0.02,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 20.2,
+        "bruit": 0.83,
+        "compression": 1.35,
+        "faible": true,
+        "raisons": [
+          "960 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "3032030321f488e4",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "sandra-barba-specialisee-femmes.jpg",
+      "nom": "sandra-barba-specialisee-femmes",
+      "drapeau": "autre",
+      "largeur": 544,
+      "hauteur": 960,
+      "ratio": "9:16",
+      "ratio_valeur": 0.567,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 54131,
+      "transparence": false,
+      "sujet": {
+        "x": 5.3,
+        "y": 3.1,
+        "l": 89.5,
+        "h": 93.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        53
+      ],
+      "cadrage_css": "50% 53%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.81
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.82
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.82
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.82
+        }
+      ],
+      "qualite": {
+        "nettete": 24.3,
+        "bruit": 0.52,
+        "compression": 1.05,
+        "faible": true,
+        "raisons": [
+          "544 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "1839396c78797959",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "quoi.jpg",
+      "nom": "quoi",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1333,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 177968,
+      "transparence": false,
+      "sujet": {
+        "x": 3.1,
+        "y": 13.6,
+        "l": 53.1,
+        "h": 72.7,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        28,
+        41
+      ],
+      "cadrage_css": "28% 41%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.7,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.49,
+          "ton": "clair",
+          "recouvre_sujet": 0.32
+        },
+        {
+          "cote": "bas",
+          "score": 0.45,
+          "ton": "clair",
+          "recouvre_sujet": 0.32
+        },
+        {
+          "cote": "gauche",
+          "score": 0.18,
+          "ton": "clair",
+          "recouvre_sujet": 0.67
+        }
+      ],
+      "qualite": {
+        "nettete": 10.5,
+        "bruit": 0.34,
+        "compression": 1.62,
+        "faible": true,
+        "raisons": [
+          "compression visible"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "806c6e4f0b89c3ea",
+      "drapeaux": [
+        "autre",
+        "compression visible",
+        "calme droite"
+      ]
+    },
+    {
+      "fichier": "quoi-2.jpg",
+      "nom": "quoi-2",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1222,
+      "ratio": "16:10",
+      "ratio_valeur": 1.637,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 119894,
+      "transparence": false,
+      "sujet": {
+        "x": 31.3,
+        "y": 5,
+        "l": 25,
+        "h": 90,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        45
+      ],
+      "cadrage_css": "47% 45%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.83,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.71,
+          "ton": "clair",
+          "recouvre_sujet": 0.2
+        },
+        {
+          "cote": "bas",
+          "score": 0.69,
+          "ton": "clair",
+          "recouvre_sujet": 0.21
+        },
+        {
+          "cote": "haut",
+          "score": 0.66,
+          "ton": "clair",
+          "recouvre_sujet": 0.21
+        }
+      ],
+      "qualite": {
+        "nettete": 14.6,
+        "bruit": 0.43,
+        "compression": 1.21,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "4a4d4c8c8c4c984c",
+      "drapeaux": [
+        "autre",
+        "calme droite/gauche/bas/haut"
+      ]
+    },
+    {
+      "fichier": "quoi-3.jpg",
+      "nom": "quoi-3",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1333,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 380322,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 4.5,
+        "l": 100,
+        "h": 90.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        53,
+        56
+      ],
+      "cadrage_css": "53% 56%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.1,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 40.7,
+        "bruit": 0.64,
+        "compression": 1.18,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "e62eacf570e89c94",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "sophrologue-depuis-2005-entreprise.jpg",
+      "nom": "sophrologue-depuis-2005-entreprise",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 2000,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "jpeg",
+      "poids": 646563,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 3.1,
+        "l": 100,
+        "h": 96.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        46,
+        61
+      ],
+      "cadrage_css": "46% 61%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.14,
+          "ton": "clair",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 35.9,
+        "bruit": 0.98,
+        "compression": 1.25,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "3036606021a0b4e3",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "quoi-4.jpg",
+      "nom": "quoi-4",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1429,
+      "ratio": "1.4",
+      "ratio_valeur": 1.4,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 260084,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 4.3,
+        "l": 68.8,
+        "h": 87,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        43,
+        40
+      ],
+      "cadrage_css": "43% 40%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.67,
+          "ton": "moyen",
+          "recouvre_sujet": 0.19
+        },
+        {
+          "cote": "bas",
+          "score": 0.46,
+          "ton": "moyen",
+          "recouvre_sujet": 0.52
+        },
+        {
+          "cote": "gauche",
+          "score": 0.38,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        },
+        {
+          "cote": "haut",
+          "score": 0.37,
+          "ton": "moyen",
+          "recouvre_sujet": 0.6
+        }
+      ],
+      "qualite": {
+        "nettete": 29.4,
+        "bruit": 0.44,
+        "compression": 1.22,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "c8cc9ac8c8ccecbc",
+      "drapeaux": [
+        "autre",
+        "calme droite"
+      ]
+    },
+    {
+      "fichier": "quoi-5.jpg",
+      "nom": "quoi-5",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1333,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 287880,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 96.9,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        55
+      ],
+      "cadrage_css": "50% 55%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.04,
+          "ton": "moyen",
+          "recouvre_sujet": 0.84
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.88
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.97
+        }
+      ],
+      "qualite": {
+        "nettete": 24.2,
+        "bruit": 0.45,
+        "compression": 1.17,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "936363656d6d6343",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "quoi-6.jpg",
+      "nom": "quoi-6",
+      "drapeau": "autre",
+      "largeur": 1200,
+      "hauteur": 800,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 222456,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        46
+      ],
+      "cadrage_css": "47% 46%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.01,
+          "ton": "sombre",
+          "recouvre_sujet": 0.87
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 12.4,
+        "bruit": 0.6,
+        "compression": 1.11,
+        "faible": true,
+        "raisons": [
+          "1200 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "e2b6b2b4a4c6ced0",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "agrement-sophrologie-confiance-securite.jpg",
+      "nom": "agrement-sophrologie-confiance-securite",
+      "drapeau": "autre",
+      "largeur": 567,
+      "hauteur": 614,
+      "ratio": "0.92",
+      "ratio_valeur": 0.923,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 190691,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 21.9,
+        "l": 96.7,
+        "h": 78.1,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        64
+      ],
+      "cadrage_css": "48% 64%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.39,
+          "ton": "clair",
+          "recouvre_sujet": 0.36
+        },
+        {
+          "cote": "droite",
+          "score": 0.18,
+          "ton": "clair",
+          "recouvre_sujet": 0.72
+        },
+        {
+          "cote": "gauche",
+          "score": 0.07,
+          "ton": "clair",
+          "recouvre_sujet": 0.78
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.97
+        }
+      ],
+      "qualite": {
+        "nettete": 9.7,
+        "bruit": 0.31,
+        "compression": 1.02,
+        "faible": true,
+        "raisons": [
+          "567 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "9f233333b303e0f0",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "sophrologie-aide-soutien-professionnelle.jpg",
+      "nom": "sophrologie-aide-soutien-professionnelle",
+      "drapeau": "autre",
+      "largeur": 761,
+      "hauteur": 331,
+      "ratio": "21:9",
+      "ratio_valeur": 2.299,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 26736,
+      "transparence": false,
+      "sujet": {
+        "x": 12.5,
+        "y": 7.1,
+        "l": 78.1,
+        "h": 71.4,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        52,
+        46
+      ],
+      "cadrage_css": "52% 46%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.53,
+          "ton": "clair",
+          "recouvre_sujet": 0.3
+        },
+        {
+          "cote": "gauche",
+          "score": 0.15,
+          "ton": "clair",
+          "recouvre_sujet": 0.49
+        },
+        {
+          "cote": "droite",
+          "score": 0.09,
+          "ton": "clair",
+          "recouvre_sujet": 0.55
+        },
+        {
+          "cote": "haut",
+          "score": 0.08,
+          "ton": "clair",
+          "recouvre_sujet": 0.62
+        }
+      ],
+      "qualite": {
+        "nettete": 34.7,
+        "bruit": 0.45,
+        "compression": 1.21,
+        "faible": true,
+        "raisons": [
+          "761 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "06133b5355332b01",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "therapie-couple.jpg",
+      "nom": "therapie-couple",
+      "drapeau": "portrait",
+      "largeur": 2000,
+      "hauteur": 1333,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 184029,
+      "transparence": false,
+      "sujet": {
+        "x": 6.3,
+        "y": 13.6,
+        "l": 87.5,
+        "h": 72.7,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        43
+      ],
+      "cadrage_css": "47% 43%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.31,
+          "ton": "clair",
+          "recouvre_sujet": 0.61
+        },
+        {
+          "cote": "haut",
+          "score": 0.29,
+          "ton": "clair",
+          "recouvre_sujet": 0.53
+        },
+        {
+          "cote": "gauche",
+          "score": 0.25,
+          "ton": "clair",
+          "recouvre_sujet": 0.61
+        },
+        {
+          "cote": "bas",
+          "score": 0.22,
+          "ton": "clair",
+          "recouvre_sujet": 0.53
+        }
+      ],
+      "qualite": {
+        "nettete": 20.5,
+        "bruit": 0.56,
+        "compression": 1.27,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "b96d6d4c6c6d6979",
+      "drapeaux": [
+        "portrait"
+      ]
+    },
+    {
+      "fichier": "mere-fille.jpg",
+      "nom": "mere-fille",
+      "drapeau": "portrait",
+      "largeur": 780,
+      "hauteur": 450,
+      "ratio": "16:9",
+      "ratio_valeur": 1.733,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 62440,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 78.1,
+        "h": 94.7,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        21,
+        43
+      ],
+      "cadrage_css": "21% 43%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.33,
+          "ton": "clair",
+          "recouvre_sujet": 0.43
+        },
+        {
+          "cote": "haut",
+          "score": 0.1,
+          "ton": "clair",
+          "recouvre_sujet": 0.78
+        },
+        {
+          "cote": "bas",
+          "score": 0.05,
+          "ton": "clair",
+          "recouvre_sujet": 0.66
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.95
+        }
+      ],
+      "qualite": {
+        "nettete": 40.2,
+        "bruit": 0.98,
+        "compression": 1.19,
+        "faible": true,
+        "raisons": [
+          "780 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "3233f3696cf9b1f0",
+      "drapeaux": [
+        "portrait",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "psycho-sandra-barba.png",
+      "nom": "psycho-sandra-barba",
+      "drapeau": "autre",
+      "largeur": 792,
+      "hauteur": 1480,
+      "ratio": "0.54",
+      "ratio_valeur": 0.535,
+      "orientation": "portrait",
+      "format": "png",
+      "poids": 162306,
+      "transparence": false,
+      "sujet": {
+        "x": 22.2,
+        "y": 6.3,
+        "l": 44.4,
+        "h": 90.6,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        51
+      ],
+      "cadrage_css": "47% 51%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.41,
+          "ton": "sombre",
+          "recouvre_sujet": 0.15
+        },
+        {
+          "cote": "gauche",
+          "score": 0.31,
+          "ton": "sombre",
+          "recouvre_sujet": 0.4
+        },
+        {
+          "cote": "haut",
+          "score": 0.29,
+          "ton": "sombre",
+          "recouvre_sujet": 0.36
+        },
+        {
+          "cote": "bas",
+          "score": 0.2,
+          "ton": "sombre",
+          "recouvre_sujet": 0.4
+        }
+      ],
+      "qualite": {
+        "nettete": 66.6,
+        "bruit": 0.11,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "792 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "987064e0f958f064",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "psychotherapie-2.jpg",
+      "nom": "psychotherapie-2",
+      "drapeau": "autre",
+      "largeur": 1300,
+      "hauteur": 600,
+      "ratio": "2.17",
+      "ratio_valeur": 2.167,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 26503,
+      "transparence": false,
+      "sujet": {
+        "x": 15.6,
+        "y": 6.7,
+        "l": 75,
+        "h": 86.7,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        51,
+        58
+      ],
+      "cadrage_css": "51% 58%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.34,
+          "ton": "clair",
+          "recouvre_sujet": 0.61
+        },
+        {
+          "cote": "gauche",
+          "score": 0.32,
+          "ton": "moyen",
+          "recouvre_sujet": 0.53
+        },
+        {
+          "cote": "droite",
+          "score": 0.13,
+          "ton": "clair",
+          "recouvre_sujet": 0.66
+        },
+        {
+          "cote": "bas",
+          "score": 0.1,
+          "ton": "moyen",
+          "recouvre_sujet": 0.61
+        }
+      ],
+      "qualite": {
+        "nettete": 10.7,
+        "bruit": 0.27,
+        "compression": 0.94,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "cccccc6d670b193c",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "service-image-2.jpg",
+      "nom": "service-image-2",
+      "drapeau": "portrait",
+      "largeur": 426,
+      "hauteur": 282,
+      "ratio": "3:2",
+      "ratio_valeur": 1.511,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 49630,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 9.1,
+        "l": 100,
+        "h": 86.4,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        49
+      ],
+      "cadrage_css": "49% 49%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.86
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.86
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.74
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 54.2,
+        "bruit": 1.23,
+        "compression": 1.11,
+        "faible": true,
+        "raisons": [
+          "426 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "bd1f6b6969f1f363",
+      "drapeaux": [
+        "portrait",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "consultation-ligne.jpg",
+      "nom": "consultation-ligne",
+      "drapeau": "autre",
+      "largeur": 1500,
+      "hauteur": 784,
+      "ratio": "1.91",
+      "ratio_valeur": 1.913,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 171575,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 93.8,
+        "h": 94.1,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        52
+      ],
+      "cadrage_css": "50% 52%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.08,
+          "ton": "moyen",
+          "recouvre_sujet": 0.94
+        },
+        {
+          "cote": "gauche",
+          "score": 0.03,
+          "ton": "clair",
+          "recouvre_sujet": 0.94
+        },
+        {
+          "cote": "bas",
+          "score": 0.03,
+          "ton": "clair",
+          "recouvre_sujet": 0.78
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.8
+        }
+      ],
+      "qualite": {
+        "nettete": 8.6,
+        "bruit": 0.45,
+        "compression": 1.03,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "c9d9d999991c2c0c",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "stock-vector-stop-violence.jpg",
+      "nom": "stock-vector-stop-violence",
+      "drapeau": "lieu",
+      "largeur": 1317,
+      "hauteur": 1600,
+      "ratio": "0.82",
+      "ratio_valeur": 0.823,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 385014,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 9.4,
+        "l": 96.3,
+        "h": 90.6,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        63
+      ],
+      "cadrage_css": "50% 63%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.33,
+          "ton": "clair",
+          "recouvre_sujet": 0.7
+        },
+        {
+          "cote": "gauche",
+          "score": 0.2,
+          "ton": "clair",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "droite",
+          "score": 0.19,
+          "ton": "clair",
+          "recouvre_sujet": 0.82
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 34.4,
+        "bruit": 0.49,
+        "compression": 1.05,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "4c8f8f0656869e91",
+      "drapeaux": [
+        "lieu"
+      ]
+    },
+    {
+      "fichier": "victime-violence.jpg",
+      "nom": "victime-violence",
+      "drapeau": "lieu",
+      "largeur": 800,
+      "hauteur": 540,
+      "ratio": "3:2",
+      "ratio_valeur": 1.481,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 55091,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        56,
+        51
+      ],
+      "cadrage_css": "56% 51%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.08,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "haut",
+          "score": 0.06,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 26.5,
+        "bruit": 0.99,
+        "compression": 1.54,
+        "faible": true,
+        "raisons": [
+          "800 px de large",
+          "compression visible"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "e624f6b2b29c98f2",
+      "drapeaux": [
+        "lieu",
+        "petite",
+        "compression visible"
+      ]
+    },
+    {
+      "fichier": "staticmapservice.png",
+      "nom": "staticmapservice",
+      "drapeau": "autre",
+      "largeur": 489,
+      "hauteur": 391,
+      "ratio": "5:4",
+      "ratio_valeur": 1.251,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 42298,
+      "transparence": false,
+      "sujet": {
+        "x": 15.6,
+        "y": 34.6,
+        "l": 59.4,
+        "h": 46.2,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        51,
+        55
+      ],
+      "cadrage_css": "51% 55%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.79,
+          "ton": "clair",
+          "recouvre_sujet": 0.01
+        },
+        {
+          "cote": "droite",
+          "score": 0.69,
+          "ton": "clair",
+          "recouvre_sujet": 0.17
+        },
+        {
+          "cote": "gauche",
+          "score": 0.68,
+          "ton": "clair",
+          "recouvre_sujet": 0.28
+        },
+        {
+          "cote": "bas",
+          "score": 0.63,
+          "ton": "clair",
+          "recouvre_sujet": 0.27
+        }
+      ],
+      "qualite": {
+        "nettete": 61.1,
+        "bruit": 0.83,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "489 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "dbc98a6c8c34dc4c",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "calme haut/droite/gauche"
+      ]
+    },
+    {
+      "fichier": "diplomes-certificats.jpg",
+      "nom": "diplomes-certificats",
+      "drapeau": "autre",
+      "largeur": 1387,
+      "hauteur": 2000,
+      "ratio": "0.69",
+      "ratio_valeur": 0.694,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 251188,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 13,
+        "h": 90.6,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        7,
+        44
+      ],
+      "cadrage_css": "7% 44%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.65,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.43,
+          "ton": "clair",
+          "recouvre_sujet": 0.13
+        },
+        {
+          "cote": "bas",
+          "score": 0.22,
+          "ton": "clair",
+          "recouvre_sujet": 0.1
+        },
+        {
+          "cote": "gauche",
+          "score": 0.1,
+          "ton": "clair",
+          "recouvre_sujet": 0.29
+        }
+      ],
+      "qualite": {
+        "nettete": 83.8,
+        "bruit": 0.33,
+        "compression": 0.95,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "d0c7dbdbd3d3d3d4",
+      "drapeaux": [
+        "autre",
+        "calme droite"
+      ]
+    },
+    {
+      "fichier": "diplomes-certificats-2.jpg",
+      "nom": "diplomes-certificats-2",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1405,
+      "ratio": "1.42",
+      "ratio_valeur": 1.423,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 598803,
+      "transparence": false,
+      "sujet": {
+        "x": 3.1,
+        "y": 4.3,
+        "l": 90.6,
+        "h": 87,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        44,
+        39
+      ],
+      "cadrage_css": "44% 39%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.06,
+          "ton": "clair",
+          "recouvre_sujet": 0.68
+        },
+        {
+          "cote": "droite",
+          "score": 0.04,
+          "ton": "clair",
+          "recouvre_sujet": 0.73
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.8
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.79
+        }
+      ],
+      "qualite": {
+        "nettete": 120.6,
+        "bruit": 0.84,
+        "compression": 1.1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "4796604ccececc6d",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "diplome-sandra-barba-tcc.jpg",
+      "nom": "diplome-sandra-barba-tcc",
+      "drapeau": "autre",
+      "largeur": 1684,
+      "hauteur": 1190,
+      "ratio": "1.42",
+      "ratio_valeur": 1.415,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 176557,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        47
+      ],
+      "cadrage_css": "49% 47%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.09,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 72.3,
+        "bruit": 0.5,
+        "compression": 0.97,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "e8aab22b0786aee8",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "diplomes-certificats-3.jpg",
+      "nom": "diplomes-certificats-3",
+      "drapeau": "autre",
+      "largeur": 1592,
+      "hauteur": 1133,
+      "ratio": "1.41",
+      "ratio_valeur": 1.405,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 238444,
+      "transparence": false,
+      "sujet": {
+        "x": 6.3,
+        "y": 8.7,
+        "l": 78.1,
+        "h": 52.2,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        29,
+        28
+      ],
+      "cadrage_css": "29% 28%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.55,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.38,
+          "ton": "clair",
+          "recouvre_sujet": 0.44
+        },
+        {
+          "cote": "droite",
+          "score": 0.37,
+          "ton": "clair",
+          "recouvre_sujet": 0.32
+        },
+        {
+          "cote": "haut",
+          "score": 0.13,
+          "ton": "clair",
+          "recouvre_sujet": 0.59
+        }
+      ],
+      "qualite": {
+        "nettete": 44.1,
+        "bruit": 0.7,
+        "compression": 1.01,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "43676393ce869393",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "diplomes-certificats-4.jpg",
+      "nom": "diplomes-certificats-4",
+      "drapeau": "autre",
+      "largeur": 1313,
+      "hauteur": 932,
+      "ratio": "1.41",
+      "ratio_valeur": 1.409,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 153496,
+      "transparence": false,
+      "sujet": {
+        "x": 3.1,
+        "y": 4.3,
+        "l": 93.8,
+        "h": 91.3,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        49
+      ],
+      "cadrage_css": "50% 49%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.01,
+          "ton": "clair",
+          "recouvre_sujet": 0.84
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.84
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.82
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.82
+        }
+      ],
+      "qualite": {
+        "nettete": 43,
+        "bruit": 0.54,
+        "compression": 1.03,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "4d94d4d4dccccc45",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "diplomes-certificats-5.jpg",
+      "nom": "diplomes-certificats-5",
+      "drapeau": "autre",
+      "largeur": 1230,
+      "hauteur": 898,
+      "ratio": "1.37",
+      "ratio_valeur": 1.37,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 133031,
+      "transparence": false,
+      "sujet": {
+        "x": 21.9,
+        "y": 12.5,
+        "l": 59.4,
+        "h": 75,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        53,
+        50
+      ],
+      "cadrage_css": "53% 50%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.39,
+          "ton": "clair",
+          "recouvre_sujet": 0.34
+        },
+        {
+          "cote": "bas",
+          "score": 0.29,
+          "ton": "clair",
+          "recouvre_sujet": 0.38
+        },
+        {
+          "cote": "haut",
+          "score": 0.27,
+          "ton": "clair",
+          "recouvre_sujet": 0.38
+        },
+        {
+          "cote": "droite",
+          "score": 0.25,
+          "ton": "clair",
+          "recouvre_sujet": 0.4
+        }
+      ],
+      "qualite": {
+        "nettete": 60.5,
+        "bruit": 0.61,
+        "compression": 1.01,
+        "faible": true,
+        "raisons": [
+          "1230 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "458e8e968686ebcb",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "diplomes-certificats-6.jpg",
+      "nom": "diplomes-certificats-6",
+      "drapeau": "autre",
+      "largeur": 1195,
+      "hauteur": 788,
+      "ratio": "3:2",
+      "ratio_valeur": 1.516,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 96892,
+      "transparence": false,
+      "sujet": {
+        "x": 12.5,
+        "y": 9.1,
+        "l": 75,
+        "h": 77.3,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        37,
+        37
+      ],
+      "cadrage_css": "37% 37%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.52,
+          "ton": "clair",
+          "recouvre_sujet": 0.53
+        },
+        {
+          "cote": "bas",
+          "score": 0.48,
+          "ton": "clair",
+          "recouvre_sujet": 0.46
+        },
+        {
+          "cote": "haut",
+          "score": 0.37,
+          "ton": "clair",
+          "recouvre_sujet": 0.56
+        },
+        {
+          "cote": "gauche",
+          "score": 0.24,
+          "ton": "clair",
+          "recouvre_sujet": 0.53
+        }
+      ],
+      "qualite": {
+        "nettete": 82.9,
+        "bruit": 0.38,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1195 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "69693329795c3839",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "diplomes-certificats-7.jpg",
+      "nom": "diplomes-certificats-7",
+      "drapeau": "autre",
+      "largeur": 1024,
+      "hauteur": 724,
+      "ratio": "1.41",
+      "ratio_valeur": 1.414,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 225587,
+      "transparence": false,
+      "sujet": {
+        "x": 34.4,
+        "y": 17.4,
+        "l": 40.6,
+        "h": 65.2,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        51,
+        52
+      ],
+      "cadrage_css": "51% 52%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.57,
+          "ton": "clair",
+          "recouvre_sujet": 0.09
+        },
+        {
+          "cote": "droite",
+          "score": 0.52,
+          "ton": "clair",
+          "recouvre_sujet": 0.24
+        },
+        {
+          "cote": "bas",
+          "score": 0.47,
+          "ton": "clair",
+          "recouvre_sujet": 0.2
+        },
+        {
+          "cote": "haut",
+          "score": 0.36,
+          "ton": "clair",
+          "recouvre_sujet": 0.2
+        }
+      ],
+      "qualite": {
+        "nettete": 72.5,
+        "bruit": 1.27,
+        "compression": 1.37,
+        "faible": true,
+        "raisons": [
+          "1024 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "211f1717070f2b11",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "diplomes-certificats-8.jpg",
+      "nom": "diplomes-certificats-8",
+      "drapeau": "autre",
+      "largeur": 586,
+      "hauteur": 819,
+      "ratio": "0.72",
+      "ratio_valeur": 0.716,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 36607,
+      "transparence": false,
+      "sujet": {
+        "x": 4.3,
+        "y": 3.1,
+        "l": 91.3,
+        "h": 75,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        37,
+        41
+      ],
+      "cadrage_css": "37% 41%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.81,
+          "ton": "clair",
+          "recouvre_sujet": 0.34
+        },
+        {
+          "cote": "droite",
+          "score": 0.66,
+          "ton": "clair",
+          "recouvre_sujet": 0.67
+        },
+        {
+          "cote": "haut",
+          "score": 0.53,
+          "ton": "clair",
+          "recouvre_sujet": 0.83
+        },
+        {
+          "cote": "gauche",
+          "score": 0.51,
+          "ton": "clair",
+          "recouvre_sujet": 0.67
+        }
+      ],
+      "qualite": {
+        "nettete": 103,
+        "bruit": 0.18,
+        "compression": 0.98,
+        "faible": true,
+        "raisons": [
+          "586 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "400c0c7c1f010100",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "calme bas/droite"
+      ]
+    },
+    {
+      "fichier": "diplomes-certificats-9.jpg",
+      "nom": "diplomes-certificats-9",
+      "drapeau": "autre",
+      "largeur": 589,
+      "hauteur": 811,
+      "ratio": "0.73",
+      "ratio_valeur": 0.726,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 56941,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 9.4,
+        "l": 87.5,
+        "h": 71.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        44,
+        24
+      ],
+      "cadrage_css": "44% 24%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.58,
+          "ton": "clair",
+          "recouvre_sujet": 0.41
+        },
+        {
+          "cote": "droite",
+          "score": 0.28,
+          "ton": "clair",
+          "recouvre_sujet": 0.49
+        },
+        {
+          "cote": "gauche",
+          "score": 0.18,
+          "ton": "clair",
+          "recouvre_sujet": 0.72
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.64
+        }
+      ],
+      "qualite": {
+        "nettete": 123.9,
+        "bruit": 0.34,
+        "compression": 1.03,
+        "faible": true,
+        "raisons": [
+          "589 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "1f7f2f260f370313",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "pervers-narcissique-enfant-capricieux-2.jpg",
+      "nom": "pervers-narcissique-enfant-capricieux-2",
+      "drapeau": "autre",
+      "largeur": 518,
+      "hauteur": 539,
+      "ratio": "0.96",
+      "ratio_valeur": 0.961,
+      "orientation": "carre",
+      "format": "jpeg",
+      "poids": 124786,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 3.1,
+        "l": 77.4,
+        "h": 96.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        45,
+        58
+      ],
+      "cadrage_css": "45% 58%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.24,
+          "ton": "clair",
+          "recouvre_sujet": 0.42
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.71
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.77
+        }
+      ],
+      "qualite": {
+        "nettete": 79.8,
+        "bruit": 1.86,
+        "compression": 1.36,
+        "faible": true,
+        "raisons": [
+          "518 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "8c9e9c8c36362e96",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "astuces-psy-2.jpg",
+      "nom": "astuces-psy-2",
+      "drapeau": "autre",
+      "largeur": 703,
+      "hauteur": 960,
+      "ratio": "3:4",
+      "ratio_valeur": 0.732,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 84446,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 95.8,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        51
+      ],
+      "cadrage_css": "47% 51%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.18,
+          "ton": "sombre",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "haut",
+          "score": 0.14,
+          "ton": "clair",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "gauche",
+          "score": 0.11,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0.07,
+          "ton": "moyen",
+          "recouvre_sujet": 0.89
+        }
+      ],
+      "qualite": {
+        "nettete": 36.8,
+        "bruit": 0.48,
+        "compression": 1.48,
+        "faible": true,
+        "raisons": [
+          "703 px de large",
+          "compression visible"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "c02f6f6b2b3030c0",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "compression visible"
+      ]
+    },
+    {
+      "fichier": "coaching-7-etapes-confiance-2.jpg",
+      "nom": "coaching-7-etapes-confiance-2",
+      "drapeau": "portrait",
+      "largeur": 688,
+      "hauteur": 687,
+      "ratio": "1:1",
+      "ratio_valeur": 1.001,
+      "orientation": "carre",
+      "format": "jpeg",
+      "poids": 94934,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 3.1,
+        "l": 100,
+        "h": 96.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        52
+      ],
+      "cadrage_css": "50% 52%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 38.9,
+        "bruit": 0.71,
+        "compression": 0.99,
+        "faible": true,
+        "raisons": [
+          "688 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "cd8e0f8f0d4d0e0e",
+      "drapeaux": [
+        "portrait",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "campagne-italienne-contre-violences-2.jpg",
+      "nom": "campagne-italienne-contre-violences-2",
+      "drapeau": "autre",
+      "largeur": 828,
+      "hauteur": 1296,
+      "ratio": "10:16",
+      "ratio_valeur": 0.639,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 169378,
+      "transparence": false,
+      "sujet": {
+        "x": 4.8,
+        "y": 18.8,
+        "l": 85.7,
+        "h": 81.3,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        46,
+        55
+      ],
+      "cadrage_css": "46% 55%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.06,
+          "ton": "sombre",
+          "recouvre_sujet": 0.62
+        },
+        {
+          "cote": "haut",
+          "score": 0.06,
+          "ton": "sombre",
+          "recouvre_sujet": 0.4
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.71
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.86
+        }
+      ],
+      "qualite": {
+        "nettete": 30.2,
+        "bruit": 0.58,
+        "compression": 1.02,
+        "faible": true,
+        "raisons": [
+          "828 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "009686717879f0d8",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "campagne-italienne-contre-violences-3.jpg",
+      "nom": "campagne-italienne-contre-violences-3",
+      "drapeau": "autre",
+      "largeur": 828,
+      "hauteur": 1206,
+      "ratio": "0.69",
+      "ratio_valeur": 0.687,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 173188,
+      "transparence": false,
+      "sujet": {
+        "x": 4.5,
+        "y": 12.5,
+        "l": 90.9,
+        "h": 87.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        50
+      ],
+      "cadrage_css": "49% 50%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.78
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.77
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.58
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.91
+        }
+      ],
+      "qualite": {
+        "nettete": 33.6,
+        "bruit": 0.68,
+        "compression": 1.05,
+        "faible": true,
+        "raisons": [
+          "828 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "b696e0717170e8f4",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "campagne-italienne-contre-violences-4.jpg",
+      "nom": "campagne-italienne-contre-violences-4",
+      "drapeau": "autre",
+      "largeur": 828,
+      "hauteur": 1192,
+      "ratio": "0.69",
+      "ratio_valeur": 0.695,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 176976,
+      "transparence": false,
+      "sujet": {
+        "x": 4.3,
+        "y": 6.3,
+        "l": 91.3,
+        "h": 87.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        49
+      ],
+      "cadrage_css": "48% 49%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.78
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.78
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.75
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.75
+        }
+      ],
+      "qualite": {
+        "nettete": 31.5,
+        "bruit": 0.7,
+        "compression": 1.01,
+        "faible": true,
+        "raisons": [
+          "828 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "96c670f8f8d2b2cc",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "grand-merci-tous-commentaires-2.jpg",
+      "nom": "grand-merci-tous-commentaires-2",
+      "drapeau": "lieu",
+      "largeur": 693,
+      "hauteur": 1500,
+      "ratio": "0.46",
+      "ratio_valeur": 0.462,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 118144,
+      "transparence": false,
+      "sujet": {
+        "x": 6.7,
+        "y": 15.6,
+        "l": 73.3,
+        "h": 84.4,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        37,
+        51
+      ],
+      "cadrage_css": "37% 51%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.58,
+          "ton": "clair",
+          "recouvre_sujet": 0.42
+        },
+        {
+          "cote": "haut",
+          "score": 0.43,
+          "ton": "clair",
+          "recouvre_sujet": 0.41
+        },
+        {
+          "cote": "bas",
+          "score": 0.25,
+          "ton": "clair",
+          "recouvre_sujet": 0.73
+        },
+        {
+          "cote": "gauche",
+          "score": 0.19,
+          "ton": "clair",
+          "recouvre_sujet": 0.7
+        }
+      ],
+      "qualite": {
+        "nettete": 75.9,
+        "bruit": 0.3,
+        "compression": 1.03,
+        "faible": true,
+        "raisons": [
+          "693 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "5156773f3c762f0f",
+      "drapeaux": [
+        "lieu",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "grand-merci-tous-commentaires-3.jpg",
+      "nom": "grand-merci-tous-commentaires-3",
+      "drapeau": "lieu",
+      "largeur": 693,
+      "hauteur": 1500,
+      "ratio": "0.46",
+      "ratio_valeur": 0.462,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 173952,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 21.9,
+        "l": 80,
+        "h": 78.1,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        37,
+        58
+      ],
+      "cadrage_css": "37% 58%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.34,
+          "ton": "clair",
+          "recouvre_sujet": 0.39
+        },
+        {
+          "cote": "haut",
+          "score": 0.29,
+          "ton": "clair",
+          "recouvre_sujet": 0.3
+        },
+        {
+          "cote": "bas",
+          "score": 0.03,
+          "ton": "clair",
+          "recouvre_sujet": 0.8
+        },
+        {
+          "cote": "gauche",
+          "score": 0.02,
+          "ton": "clair",
+          "recouvre_sujet": 0.78
+        }
+      ],
+      "qualite": {
+        "nettete": 78.3,
+        "bruit": 0.47,
+        "compression": 0.97,
+        "faible": true,
+        "raisons": [
+          "693 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "0de763655f6d3715",
+      "drapeaux": [
+        "lieu",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "grand-merci-tous-commentaires-4.jpg",
+      "nom": "grand-merci-tous-commentaires-4",
+      "drapeau": "lieu",
+      "largeur": 693,
+      "hauteur": 1500,
+      "ratio": "0.46",
+      "ratio_valeur": 0.462,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 213482,
+      "transparence": false,
+      "sujet": {
+        "x": 6.7,
+        "y": 25,
+        "l": 73.3,
+        "h": 75,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        40,
+        60
+      ],
+      "cadrage_css": "40% 60%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.26,
+          "ton": "clair",
+          "recouvre_sujet": 0.21
+        },
+        {
+          "cote": "droite",
+          "score": 0.21,
+          "ton": "clair",
+          "recouvre_sujet": 0.38
+        },
+        {
+          "cote": "gauche",
+          "score": 0.09,
+          "ton": "clair",
+          "recouvre_sujet": 0.62
+        },
+        {
+          "cote": "bas",
+          "score": 0.05,
+          "ton": "clair",
+          "recouvre_sujet": 0.73
+        }
+      ],
+      "qualite": {
+        "nettete": 108.3,
+        "bruit": 0.65,
+        "compression": 1.01,
+        "faible": true,
+        "raisons": [
+          "693 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "4b3635e9775b6785",
+      "drapeaux": [
+        "lieu",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "grand-merci-tous-commentaires-5.jpg",
+      "nom": "grand-merci-tous-commentaires-5",
+      "drapeau": "lieu",
+      "largeur": 693,
+      "hauteur": 1500,
+      "ratio": "0.46",
+      "ratio_valeur": 0.462,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 148792,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 6.3,
+        "l": 100,
+        "h": 93.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        84
+      ],
+      "cadrage_css": "48% 84%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.31,
+          "ton": "clair",
+          "recouvre_sujet": 0.94
+        },
+        {
+          "cote": "haut",
+          "score": 0.27,
+          "ton": "clair",
+          "recouvre_sujet": 0.82
+        },
+        {
+          "cote": "bas",
+          "score": 0.05,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.94
+        }
+      ],
+      "qualite": {
+        "nettete": 81.7,
+        "bruit": 0.41,
+        "compression": 1.01,
+        "faible": true,
+        "raisons": [
+          "693 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "4d6d7865777a6d97",
+      "drapeaux": [
+        "lieu",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "grand-merci-tous-commentaires-6.png",
+      "nom": "grand-merci-tous-commentaires-6",
+      "drapeau": "lieu",
+      "largeur": 693,
+      "hauteur": 1500,
+      "ratio": "0.46",
+      "ratio_valeur": 0.462,
+      "orientation": "portrait",
+      "format": "png",
+      "poids": 931840,
+      "transparence": true,
+      "sujet": {
+        "x": 13.3,
+        "y": 28.1,
+        "l": 80,
+        "h": 71.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        87
+      ],
+      "cadrage_css": "48% 87%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.57,
+          "ton": "clair",
+          "recouvre_sujet": 0.16
+        },
+        {
+          "cote": "droite",
+          "score": 0.5,
+          "ton": "clair",
+          "recouvre_sujet": 0.6
+        },
+        {
+          "cote": "gauche",
+          "score": 0.37,
+          "ton": "clair",
+          "recouvre_sujet": 0.48
+        },
+        {
+          "cote": "bas",
+          "score": 0.21,
+          "ton": "clair",
+          "recouvre_sujet": 0.8
+        }
+      ],
+      "qualite": {
+        "nettete": 62.9,
+        "bruit": 0.18,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "693 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "c5387a8e487a6a87",
+      "drapeaux": [
+        "lieu",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "sortir-dependance-affective-2.jpg",
+      "nom": "sortir-dependance-affective-2",
+      "drapeau": "autre",
+      "largeur": 1333,
+      "hauteur": 2000,
+      "ratio": "2:3",
+      "ratio_valeur": 0.667,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 843075,
+      "transparence": false,
+      "sujet": {
+        "x": 22.7,
+        "y": 25,
+        "l": 50,
+        "h": 62.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        53
+      ],
+      "cadrage_css": "47% 53%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.68,
+          "ton": "clair",
+          "recouvre_sujet": 0.2
+        },
+        {
+          "cote": "gauche",
+          "score": 0.63,
+          "ton": "clair",
+          "recouvre_sujet": 0.27
+        },
+        {
+          "cote": "haut",
+          "score": 0.59,
+          "ton": "clair",
+          "recouvre_sujet": 0.14
+        },
+        {
+          "cote": "bas",
+          "score": 0.52,
+          "ton": "clair",
+          "recouvre_sujet": 0.32
+        }
+      ],
+      "qualite": {
+        "nettete": 50.5,
+        "bruit": 2.63,
+        "compression": 0.93,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "d8962ab6ccc84c04",
+      "drapeaux": [
+        "autre",
+        "calme droite"
+      ]
+    },
+    {
+      "fichier": "aimer-la-vie-recadre.jpg",
+      "nom": "aimer-la-vie-recadre",
+      "drapeau": null,
+      "largeur": 350,
+      "hauteur": 280,
+      "ratio": "5:4",
+      "ratio_valeur": 1.25,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 29643,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 38.5,
+        "l": 90.6,
+        "h": 57.7,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        66
+      ],
+      "cadrage_css": "47% 66%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.85,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.39,
+          "ton": "clair",
+          "recouvre_sujet": 0.44
+        },
+        {
+          "cote": "gauche",
+          "score": 0.33,
+          "ton": "moyen",
+          "recouvre_sujet": 0.58
+        },
+        {
+          "cote": "bas",
+          "score": 0.29,
+          "ton": "moyen",
+          "recouvre_sujet": 0.81
+        }
+      ],
+      "qualite": {
+        "nettete": 29.6,
+        "bruit": 0.92,
+        "compression": 1.14,
+        "faible": true,
+        "raisons": [
+          "350 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "80c0988686e1bd0e",
+      "drapeaux": [
+        "petite",
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "cabinet-fauteuil.jpg",
+      "nom": "cabinet-fauteuil",
+      "drapeau": null,
+      "largeur": 720,
+      "hauteur": 880,
+      "ratio": "4:5",
+      "ratio_valeur": 0.818,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 119157,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 3.1,
+        "l": 96.3,
+        "h": 93.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        58,
+        49
+      ],
+      "cadrage_css": "58% 49%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.44,
+          "ton": "clair",
+          "recouvre_sujet": 0.88
+        },
+        {
+          "cote": "bas",
+          "score": 0.19,
+          "ton": "sombre",
+          "recouvre_sujet": 0.88
+        },
+        {
+          "cote": "droite",
+          "score": 0.17,
+          "ton": "moyen",
+          "recouvre_sujet": 0.85
+        },
+        {
+          "cote": "gauche",
+          "score": 0.07,
+          "ton": "moyen",
+          "recouvre_sujet": 0.94
+        }
+      ],
+      "qualite": {
+        "nettete": 18.7,
+        "bruit": 0.63,
+        "compression": 1.1,
+        "faible": true,
+        "raisons": [
+          "720 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "777771716cddc703",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "cabinet-recadre.jpg",
+      "nom": "cabinet-recadre",
+      "drapeau": null,
+      "largeur": 1110,
+      "hauteur": 1120,
+      "ratio": "1:1",
+      "ratio_valeur": 0.991,
+      "orientation": "carre",
+      "format": "jpeg",
+      "poids": 176643,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 96.9,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        55,
+        69
+      ],
+      "cadrage_css": "55% 69%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.35,
+          "ton": "clair",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "gauche",
+          "score": 0.25,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0.15,
+          "ton": "clair",
+          "recouvre_sujet": 0.92
+        },
+        {
+          "cote": "bas",
+          "score": 0.04,
+          "ton": "sombre",
+          "recouvre_sujet": 0.97
+        }
+      ],
+      "qualite": {
+        "nettete": 14.8,
+        "bruit": 0.52,
+        "compression": 0.95,
+        "faible": true,
+        "raisons": [
+          "1110 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "3b9ccdcfcdecb6f7",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "entree-boite.jpg",
+      "nom": "entree-boite",
+      "drapeau": null,
+      "largeur": 760,
+      "hauteur": 570,
+      "ratio": "4:3",
+      "ratio_valeur": 1.333,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 105216,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        43,
+        45
+      ],
+      "cadrage_css": "43% 45%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.36,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "gauche",
+          "score": 0.13,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0.08,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 25.7,
+        "bruit": 0.96,
+        "compression": 1.42,
+        "faible": true,
+        "raisons": [
+          "760 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "d89cc3cfc7fbfff9",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "entree-recadre.jpg",
+      "nom": "entree-recadre",
+      "drapeau": null,
+      "largeur": 920,
+      "hauteur": 1100,
+      "ratio": "0.84",
+      "ratio_valeur": 0.836,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 252524,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 3.1,
+        "l": 92.6,
+        "h": 96.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        41,
+        53
+      ],
+      "cadrage_css": "41% 53%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.25,
+          "ton": "clair",
+          "recouvre_sujet": 0.79
+        },
+        {
+          "cote": "bas",
+          "score": 0.1,
+          "ton": "clair",
+          "recouvre_sujet": 0.93
+        },
+        {
+          "cote": "haut",
+          "score": 0.06,
+          "ton": "clair",
+          "recouvre_sujet": 0.84
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        }
+      ],
+      "qualite": {
+        "nettete": 22.1,
+        "bruit": 0.93,
+        "compression": 1.07,
+        "faible": true,
+        "raisons": [
+          "920 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "18181c1c7e686367",
+      "drapeaux": [
+        "petite"
+      ]
+    }
+  ]
+}

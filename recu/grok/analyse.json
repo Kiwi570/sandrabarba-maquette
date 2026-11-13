@@ -1,0 +1,882 @@
+{
+  "dossier": "/home/claude/sandrabarba-maquette/recu/grok",
+  "date": "2026-11-13T12:24:52.829Z",
+  "detection": "mesures sharp seulement",
+  "planches": [
+    "planche.jpg"
+  ],
+  "legende_planche": "cadre jaune : sujet ; croix rouge : cadrage ; fond rose : à vérifier",
+  "doublons": [
+    {
+      "garder": "mur-de-nuit.jpg",
+      "ecarter": "rai-de-lumiere.jpg",
+      "type": "quasi-doublon",
+      "distance": 2,
+      "ressemblance": 0.88
+    },
+    {
+      "garder": "mur-de-nuit-mobile.jpg",
+      "ecarter": "rai-de-lumiere-mobile.jpg",
+      "type": "quasi-doublon",
+      "distance": 5,
+      "ressemblance": 0.87
+    }
+  ],
+  "images": [
+    {
+      "fichier": "cabinet-lumiere-mobile.jpg",
+      "nom": "cabinet-lumiere-mobile",
+      "drapeau": null,
+      "largeur": 941,
+      "hauteur": 1672,
+      "ratio": "9:16",
+      "ratio_valeur": 0.563,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 329280,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 43.8,
+        "l": 100,
+        "h": 53.1,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        42,
+        75
+      ],
+      "cadrage_css": "42% 75%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.86,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.35,
+          "ton": "moyen",
+          "recouvre_sujet": 0.53
+        },
+        {
+          "cote": "gauche",
+          "score": 0.27,
+          "ton": "moyen",
+          "recouvre_sujet": 0.53
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.91
+        }
+      ],
+      "qualite": {
+        "nettete": 29.2,
+        "bruit": 0.72,
+        "compression": 1.17,
+        "faible": true,
+        "raisons": [
+          "941 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "5ae0f01c8c7977c0",
+      "drapeaux": [
+        "petite",
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "cabinet-lumiere.jpg",
+      "nom": "cabinet-lumiere",
+      "drapeau": null,
+      "largeur": 1536,
+      "hauteur": 1024,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 356308,
+      "transparence": false,
+      "sujet": {
+        "x": 3.1,
+        "y": 18.2,
+        "l": 96.9,
+        "h": 72.7,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        59,
+        62
+      ],
+      "cadrage_css": "59% 62%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.48,
+          "ton": "moyen",
+          "recouvre_sujet": 0.47
+        },
+        {
+          "cote": "gauche",
+          "score": 0.43,
+          "ton": "moyen",
+          "recouvre_sujet": 0.67
+        },
+        {
+          "cote": "bas",
+          "score": 0.14,
+          "ton": "moyen",
+          "recouvre_sujet": 0.72
+        },
+        {
+          "cote": "droite",
+          "score": 0.09,
+          "ton": "moyen",
+          "recouvre_sujet": 0.73
+        }
+      ],
+      "qualite": {
+        "nettete": 29.6,
+        "bruit": 1.2,
+        "compression": 1.11,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "3c1c0f0e1a9e1870",
+      "drapeaux": []
+    },
+    {
+      "fichier": "deux-fauteuils.jpg",
+      "nom": "deux-fauteuils",
+      "drapeau": null,
+      "largeur": 1024,
+      "hauteur": 1536,
+      "ratio": "2:3",
+      "ratio_valeur": 0.667,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 451287,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 15.6,
+        "l": 95.5,
+        "h": 78.1,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        54,
+        54
+      ],
+      "cadrage_css": "54% 54%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.36,
+          "ton": "moyen",
+          "recouvre_sujet": 0.53
+        },
+        {
+          "cote": "gauche",
+          "score": 0.09,
+          "ton": "moyen",
+          "recouvre_sujet": 0.78
+        },
+        {
+          "cote": "bas",
+          "score": 0.08,
+          "ton": "moyen",
+          "recouvre_sujet": 0.78
+        },
+        {
+          "cote": "droite",
+          "score": 0.04,
+          "ton": "moyen",
+          "recouvre_sujet": 0.69
+        }
+      ],
+      "qualite": {
+        "nettete": 38.5,
+        "bruit": 1.58,
+        "compression": 1.02,
+        "faible": true,
+        "raisons": [
+          "1024 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "84c4ccec3071e0fb",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "divan-mobile.jpg",
+      "nom": "divan-mobile",
+      "drapeau": null,
+      "largeur": 900,
+      "hauteur": 1600,
+      "ratio": "9:16",
+      "ratio_valeur": 0.563,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 313576,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 31.3,
+        "l": 100,
+        "h": 68.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        41,
+        68
+      ],
+      "cadrage_css": "41% 68%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.81,
+          "ton": "clair",
+          "recouvre_sujet": 0.11
+        },
+        {
+          "cote": "gauche",
+          "score": 0.21,
+          "ton": "moyen",
+          "recouvre_sujet": 0.69
+        },
+        {
+          "cote": "droite",
+          "score": 0.21,
+          "ton": "moyen",
+          "recouvre_sujet": 0.69
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 21.6,
+        "bruit": 0.65,
+        "compression": 1.2,
+        "faible": true,
+        "raisons": [
+          "900 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "f46f0ecef8db82c4",
+      "drapeaux": [
+        "petite",
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "divan.jpg",
+      "nom": "divan",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 900,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 237197,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 11.1,
+        "l": 100,
+        "h": 88.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        46,
+        69
+      ],
+      "cadrage_css": "46% 69%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.51,
+          "ton": "moyen",
+          "recouvre_sujet": 0.68
+        },
+        {
+          "cote": "gauche",
+          "score": 0.33,
+          "ton": "moyen",
+          "recouvre_sujet": 0.89
+        },
+        {
+          "cote": "droite",
+          "score": 0.18,
+          "ton": "moyen",
+          "recouvre_sujet": 0.89
+        },
+        {
+          "cote": "bas",
+          "score": 0.09,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 14.8,
+        "bruit": 0.49,
+        "compression": 1.29,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "0707061e3e360515",
+      "drapeaux": []
+    },
+    {
+      "fichier": "galets.jpg",
+      "nom": "galets",
+      "drapeau": null,
+      "largeur": 1500,
+      "hauteur": 1000,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 264490,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 4.5,
+        "l": 100,
+        "h": 90.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        61
+      ],
+      "cadrage_css": "49% 61%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.31,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        },
+        {
+          "cote": "gauche",
+          "score": 0.08,
+          "ton": "moyen",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 10.3,
+        "bruit": 0.36,
+        "compression": 1.04,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "0d0c0e8b7b7933e4",
+      "drapeaux": []
+    },
+    {
+      "fichier": "mur-de-nuit-mobile.jpg",
+      "nom": "mur-de-nuit-mobile",
+      "drapeau": null,
+      "largeur": 941,
+      "hauteur": 1672,
+      "ratio": "9:16",
+      "ratio_valeur": 0.563,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 279073,
+      "transparence": false,
+      "sujet": {
+        "x": 5.6,
+        "y": 43.8,
+        "l": 94.4,
+        "h": 56.3,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        75,
+        73
+      ],
+      "cadrage_css": "75% 73%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.93,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.69,
+          "ton": "sombre",
+          "recouvre_sujet": 0.48
+        },
+        {
+          "cote": "droite",
+          "score": 0.54,
+          "ton": "sombre",
+          "recouvre_sujet": 0.56
+        },
+        {
+          "cote": "bas",
+          "score": 0.38,
+          "ton": "sombre",
+          "recouvre_sujet": 0.94
+        }
+      ],
+      "qualite": {
+        "nettete": 19.7,
+        "bruit": 1.26,
+        "compression": 1.14,
+        "faible": true,
+        "raisons": [
+          "941 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "f0f8fffffffffff8",
+      "drapeaux": [
+        "petite",
+        "calme haut/gauche"
+      ]
+    },
+    {
+      "fichier": "mur-de-nuit.jpg",
+      "nom": "mur-de-nuit",
+      "drapeau": null,
+      "largeur": 1672,
+      "hauteur": 941,
+      "ratio": "16:9",
+      "ratio_valeur": 1.777,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 362736,
+      "transparence": false,
+      "sujet": {
+        "x": 31.3,
+        "y": 16.7,
+        "l": 68.8,
+        "h": 83.3,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        83,
+        50
+      ],
+      "cadrage_css": "83% 50%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.8,
+          "ton": "sombre",
+          "recouvre_sujet": 0.18
+        },
+        {
+          "cote": "haut",
+          "score": 0.63,
+          "ton": "sombre",
+          "recouvre_sujet": 0.36
+        },
+        {
+          "cote": "bas",
+          "score": 0.45,
+          "ton": "sombre",
+          "recouvre_sujet": 0.69
+        },
+        {
+          "cote": "droite",
+          "score": 0.38,
+          "ton": "sombre",
+          "recouvre_sujet": 0.83
+        }
+      ],
+      "qualite": {
+        "nettete": 26.3,
+        "bruit": 1.69,
+        "compression": 0.97,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "fffffffffffefef8",
+      "drapeaux": [
+        "calme gauche"
+      ]
+    },
+    {
+      "fichier": "rai-de-lumiere-mobile.jpg",
+      "nom": "rai-de-lumiere-mobile",
+      "drapeau": null,
+      "largeur": 900,
+      "hauteur": 1600,
+      "ratio": "9:16",
+      "ratio_valeur": 0.563,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 206975,
+      "transparence": false,
+      "sujet": {
+        "x": 11.1,
+        "y": 34.4,
+        "l": 88.9,
+        "h": 65.6,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        74,
+        72
+      ],
+      "cadrage_css": "74% 72%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.9,
+          "ton": "sombre",
+          "recouvre_sujet": 0.02
+        },
+        {
+          "cote": "gauche",
+          "score": 0.68,
+          "ton": "sombre",
+          "recouvre_sujet": 0.47
+        },
+        {
+          "cote": "droite",
+          "score": 0.46,
+          "ton": "moyen",
+          "recouvre_sujet": 0.66
+        },
+        {
+          "cote": "bas",
+          "score": 0.36,
+          "ton": "moyen",
+          "recouvre_sujet": 0.89
+        }
+      ],
+      "qualite": {
+        "nettete": 13,
+        "bruit": 0.8,
+        "compression": 1.39,
+        "faible": true,
+        "raisons": [
+          "900 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "f8f9fffffffefcf8",
+      "doublon_de": {
+        "fichier": "mur-de-nuit-mobile.jpg",
+        "type": "quasi-doublon",
+        "distance": 5,
+        "ressemblance": 0.87
+      },
+      "drapeaux": [
+        "petite",
+        "quasi-doublon de mur-de-nuit-mobile.jpg",
+        "calme haut/gauche"
+      ]
+    },
+    {
+      "fichier": "rai-de-lumiere.jpg",
+      "nom": "rai-de-lumiere",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 900,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 257393,
+      "transparence": false,
+      "sujet": {
+        "x": 3.1,
+        "y": 5.6,
+        "l": 96.9,
+        "h": 94.4,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        58,
+        49
+      ],
+      "cadrage_css": "58% 49%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.55,
+          "ton": "sombre",
+          "recouvre_sujet": 0.87
+        },
+        {
+          "cote": "haut",
+          "score": 0.44,
+          "ton": "sombre",
+          "recouvre_sujet": 0.81
+        },
+        {
+          "cote": "droite",
+          "score": 0.4,
+          "ton": "moyen",
+          "recouvre_sujet": 0.94
+        },
+        {
+          "cote": "bas",
+          "score": 0.31,
+          "ton": "sombre",
+          "recouvre_sujet": 0.97
+        }
+      ],
+      "qualite": {
+        "nettete": 16,
+        "bruit": 1.11,
+        "compression": 1.3,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "fffffffffefefaf8",
+      "doublon_de": {
+        "fichier": "mur-de-nuit.jpg",
+        "type": "quasi-doublon",
+        "distance": 2,
+        "ressemblance": 0.88
+      },
+      "drapeaux": [
+        "quasi-doublon de mur-de-nuit.jpg"
+      ]
+    },
+    {
+      "fichier": "visio.jpg",
+      "nom": "visio",
+      "drapeau": null,
+      "largeur": 1024,
+      "hauteur": 1536,
+      "ratio": "2:3",
+      "ratio_valeur": 0.667,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 369785,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 3.1,
+        "l": 95.5,
+        "h": 96.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        51,
+        59
+      ],
+      "cadrage_css": "51% 59%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.23,
+          "ton": "clair",
+          "recouvre_sujet": 0.87
+        },
+        {
+          "cote": "droite",
+          "score": 0.09,
+          "ton": "clair",
+          "recouvre_sujet": 0.86
+        },
+        {
+          "cote": "gauche",
+          "score": 0.03,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "bas",
+          "score": 0.02,
+          "ton": "sombre",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 25.5,
+        "bruit": 1.01,
+        "compression": 1.13,
+        "faible": true,
+        "raisons": [
+          "1024 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "5eeeeeceb6b7e565",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "voilage-mobile.jpg",
+      "nom": "voilage-mobile",
+      "drapeau": null,
+      "largeur": 900,
+      "hauteur": 1600,
+      "ratio": "9:16",
+      "ratio_valeur": 0.563,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 295492,
+      "transparence": false,
+      "sujet": {
+        "x": 16.7,
+        "y": 3.1,
+        "l": 83.3,
+        "h": 96.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        67,
+        57
+      ],
+      "cadrage_css": "67% 57%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.56,
+          "ton": "moyen",
+          "recouvre_sujet": 0.56
+        },
+        {
+          "cote": "haut",
+          "score": 0.36,
+          "ton": "clair",
+          "recouvre_sujet": 0.76
+        },
+        {
+          "cote": "bas",
+          "score": 0.2,
+          "ton": "clair",
+          "recouvre_sujet": 0.83
+        },
+        {
+          "cote": "droite",
+          "score": 0.1,
+          "ton": "clair",
+          "recouvre_sujet": 0.97
+        }
+      ],
+      "qualite": {
+        "nettete": 15.9,
+        "bruit": 0.58,
+        "compression": 1.22,
+        "faible": true,
+        "raisons": [
+          "900 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "be3e3e787c7c74a6",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "voilage.jpg",
+      "nom": "voilage",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 900,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 300687,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        56,
+        56
+      ],
+      "cadrage_css": "56% 56%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.32,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0.23,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "gauche",
+          "score": 0.21,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0.18,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 19.2,
+        "bruit": 0.62,
+        "compression": 1.27,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "f6efeeceeeeecece",
+      "drapeaux": []
+    }
+  ]
+}

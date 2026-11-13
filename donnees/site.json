@@ -1,0 +1,16 @@
+{
+  "nom": "Sandra Barba",
+  "sousTitre": "Psychothérapie · Sophrologie",
+  "adresse": "https://sandrabarba-maquette.vercel.app",
+  "siteActuel": "sandrabarba.fr",
+  "version": 1,
+  "langues": ["fr"],
+  "navigation": ["accueil", "psychotherapie", "sophrologie", "violences", "rendez-vous"],
+  "actionEntete": { "page": "rendez-vous", "ancre": "demande" },
+  "couleurs": { "fond": "#161d36", "texte": "#ece3d4", "voile": "#161d36", "ouverture": "#161d36", "menu": "#161d36", "theme": "#161d36" },
+  "formeVoile": "iris",
+  "contact": { "telephone": "07 60 36 58 32", "telephoneLien": "+33760365832", "email": "info@sandrabarba.fr", "adresse": "89 rue du Portail-Neuf, 84810 Aubignan" },
+  "polices": ["/assets/fonts/instrument-serif.woff", "/assets/fonts/bricolage-tuiles.woff"],
+  "imagePartage": "sandra-rampe-784.webp",
+  "curseur": false
+}

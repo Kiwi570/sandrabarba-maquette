@@ -1,0 +1,123 @@
+{
+ "projet": "sandrabarba-maquette",
+ "client": "Cabinet Sandra Barba",
+ "siteActuel": "https://www.sandrabarba.fr",
+ "versions": [
+  {
+   "version": 1,
+   "skill": "v10.12",
+   "perimetre": [
+    "accueil",
+    "psychotherapie",
+    "sophrologie",
+    "violences",
+    "rendez-vous",
+    "404"
+   ],
+   "etapes": [
+    {
+     "etape": "analyse, bibliothèque, directions, esquisses et questions",
+     "budget": 35,
+     "debut": "2026-11-13T12:07:49+01:00",
+     "fin": "2026-11-13T12:28:00+01:00"
+    },
+    {
+     "etape": "plans et document Grok",
+     "budget": 15,
+     "debut": "2026-11-13T12:32:59+01:00",
+     "fin": "2026-11-13T12:35:28+01:00"
+    },
+    {
+     "etape": "construction : accueil",
+     "budget": 45,
+     "debut": "2026-11-13T12:36:00+01:00",
+     "fin": "2026-11-13T14:26:55+01:00"
+    },
+    {
+     "etape": "aperçu de l'accueil en films (attente de la réponse notée à part)",
+     "budget": 5,
+     "debut": "2026-11-13T13:33:00+01:00",
+     "fin": "2026-11-13T14:26:55+01:00"
+    },
+    {
+     "etape": "construction : pages d'onglet",
+     "budget": 25,
+     "debut": "2026-11-13T13:38:00+01:00",
+     "fin": "2026-11-13T13:55:00+01:00"
+    },
+    {
+     "etape": "construction : contact et page de catégorie",
+     "budget": 10,
+     "debut": "2026-11-13T13:50:00+01:00",
+     "fin": "2026-11-13T13:58:00+01:00"
+    },
+    {
+     "etape": "audit, regard neuf et corrections",
+     "budget": 35,
+     "debut": "2026-11-13T14:26:55+01:00",
+     "fin": "2026-11-13T15:53:00+01:00"
+    },
+    {
+     "etape": "livraison",
+     "budget": 5,
+     "debut": "2026-11-13T15:53:00+01:00",
+     "fin": "2026-11-13T15:58:00+01:00"
+    }
+   ],
+   "attentes": [
+    {
+     "pour": "zip des images du site",
+     "debut": "2026-11-13T12:16:00+01:00",
+     "fin": "2026-11-13T12:19:00+01:00"
+    },
+    {
+     "pour": "questions de périmètre (posées pendant l'attente du zip)",
+     "debut": "2026-11-13T12:16:30+01:00",
+     "fin": "2026-11-13T12:17:20+01:00"
+    },
+    {
+     "pour": "choix de la direction",
+     "debut": "2026-11-13T12:28:00+01:00",
+     "fin": "2026-11-13T12:32:59+01:00"
+    },
+    {
+     "pour": "images Grok",
+     "debut": "2026-11-13T12:35:28+01:00",
+     "fin": "2026-11-13T13:16:00+01:00"
+    },
+    {
+     "pour": "décision après le 2e REFAIRE du directeur artistique",
+     "debut": "2026-11-13T14:22:00+01:00",
+     "fin": "2026-11-13T14:24:00+01:00"
+    }
+   ],
+   "allersRetours": 4,
+   "modules": [
+    "formulaire-par-etapes (mécanique reprise, réécrite)"
+   ],
+   "audit": {
+    "niveau": "standard, puis passe des formats (complet sur mesures et écran)",
+    "echecsPremierPassage": 63,
+    "relances": 6,
+    "corrections": [
+     "plongée continue qui garde le mot (regard DA 3)",
+     "bureau en vrai pin avec ombres de contact (regard DA 3)",
+     "photo de l'entrée recadrée 4:3 (regard DA 3)",
+     "tuiles du bureau en boutons (liens profonds)",
+     "démonstration sans disparition",
+     "photos du site en vignette",
+     "titres et 404 compactés pour le premier écran",
+     "rails à plat sans JavaScript",
+     "plan d'accès sans recouvrement",
+     "préremplissage de la séance à deux",
+     "prix qui passent à la ligne (débordement à 320 px)",
+     "Quitter vite dans l'en-tête sur téléphone (vrai visiteur et regard neuf)",
+     "confirmation de la demande ramenée à l'écran (vrai visiteur)"
+    ]
+   },
+   "effetsRetires": [],
+   "grilleDispenses": {},
+   "notes": "Construction de l'accueil commencée pendant l'attente des images Grok (12 h 36 - 12 h 52), puis reprise à 13 h 16. Regard DA 1 : REFAIRE 3,3 ; regard 2 : REFAIRE 2,9 ; refonte « une seule scène plongée » choisie par l'utilisatrice (environ 35 min). Pages intérieures construites pendant les regards. Regard 3 : AJUSTER 3,6, les cinq points faits. Regard neuf : livrer après petites corrections, faites (_suivi/regard-neuf.md)."
+  }
+ ]
+}

@@ -1,0 +1,112 @@
+{
+ "mission": "contact",
+ "taille": "1440x900",
+ "depart": "/",
+ "erreurs": [],
+ "etapes": [
+  {
+   "k": 0,
+   "geste": "arrivée",
+   "resultat": "ok",
+   "gestes": 0,
+   "secondes": 3.4,
+   "adresse": "/",
+   "y": 0,
+   "hauteurPage": 8927,
+   "titres": [
+    "h1 La vie est un combat. Ne le vivez plus seul·e."
+   ],
+   "actions": [
+    "Sandra Barba PSYCHOTHÉRAPIE · SOPHROLOGIE",
+    "Psychothérapie",
+    "Sophrologie",
+    "Violences",
+    "Rendez-vous",
+    "Prendre rendez-vous",
+    "07 60 36 58 32",
+    "LE DEUIL",
+    "LA PEUR",
+    "LE COUPLE",
+    "LES VIOLENCES",
+    "LE SOMMEIL",
+    "L’ÉPUISEMENT",
+    "LES EXAMENS"
+   ],
+   "prixVus": [
+    "65 €"
+   ],
+   "telephonesVus": [
+    "07 60 36 58 32"
+   ],
+   "prixDansLaPage": [
+    "65 €"
+   ],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-0.png"
+  },
+  {
+   "k": 1,
+   "geste": "cliquer Rendez-vous",
+   "resultat": "ok",
+   "gestes": 1,
+   "secondes": 6.2,
+   "adresse": "/rendez-vous",
+   "y": 0,
+   "hauteurPage": 2852,
+   "titres": [
+    "h1 Un appel, un SMS, ou trois questions."
+   ],
+   "actions": [
+    "Sandra Barba PSYCHOTHÉRAPIE · SOPHROLOGIE",
+    "Psychothérapie",
+    "Sophrologie",
+    "Violences",
+    "Rendez-vous",
+    "Prendre rendez-vous",
+    "Votre demande",
+    "Envoyer un SMS",
+    "0 7 6 0 3 6 5 8 3 2"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "65 €"
+   ],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 2,
+   "geste": "defiler 2",
+   "resultat": "ok",
+   "gestes": 3,
+   "secondes": 7.7,
+   "adresse": "/rendez-vous",
+   "y": 1530,
+   "hauteurPage": 2852,
+   "titres": [
+    "h2 89 rue du Portail-Neuf, Aubignan."
+   ],
+   "actions": [
+    "Appeler le 07 60 36 58 32"
+   ],
+   "prixVus": [],
+   "telephonesVus": [
+    "07 60 36 58 32"
+   ],
+   "prixDansLaPage": [
+    "65 €"
+   ],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-2.png"
+  }
+ ]
+}

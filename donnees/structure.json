@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Psychothérapie et sophrologie Sandra Barba",
+  "url": "https://sandrabarba-maquette.vercel.app/",
+  "telephone": "+33760365832",
+  "email": "info@sandrabarba.fr",
+  "address": { "@type": "PostalAddress", "streetAddress": "89 rue du Portail-Neuf", "postalCode": "84810", "addressLocality": "Aubignan", "addressCountry": "FR" },
+  "description": { "fr": "Psychothérapie, sophrologie, coaching de couple et de famille à Aubignan (Vaucluse) et en visio, depuis 2005. Accompagnement des femmes victimes de violences." },
+  "priceRange": "65 €"
+}

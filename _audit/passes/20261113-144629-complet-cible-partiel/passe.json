@@ -1,0 +1,16 @@
+{
+ "id": "20261113-144629-complet-cible-partiel",
+ "date": "2026-11-13T14:47:38.752Z",
+ "niveau": "complet",
+ "pages": "/",
+ "etapes": [
+  "fichiers",
+  "mesures"
+ ],
+ "version": "1",
+ "echecs": 5,
+ "aRegarder": 1,
+ "nonLances": 0,
+ "manquants": 0,
+ "statut": "échecs"
+}

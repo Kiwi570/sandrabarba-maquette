@@ -1,0 +1,6 @@
+[
+  { "numero": "17", "lien": "17", "titre": "Police, gendarmerie", "texte": "En danger maintenant. Ou le 112, numéro d’urgence européen." },
+  { "numero": "114", "lien": "114", "titre": "Par SMS", "texte": "Si vous ne pouvez pas parler : un SMS au 114, 24 h/24." },
+  { "numero": "3919", "lien": "3919", "titre": "Violences Femmes Info", "texte": "Écoute, information et orientation. Gratuit et anonyme, 24 h/24 et 7 j/7. Ce n’est pas un numéro d’urgence." },
+  { "numero": "119", "lien": "119", "titre": "Enfance en danger", "texte": "Pour un enfant, ou si vous êtes témoin. Gratuit, 24 h/24." }
+]

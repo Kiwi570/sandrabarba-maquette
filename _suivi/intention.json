@@ -1,0 +1,98 @@
+{
+  "client": "Sandra Barba",
+  "site_actuel": "https://www.sandrabarba.fr",
+  "activite": "psychothérapie, sophrologie, couple et famille, femmes victimes de violences (Aubignan, Vaucluse, et en visio)",
+  "constat": "Le site actuel cache sa vraie force (une femme engagée, un vrai cabinet dans une maison de village, vingt ans d'accompagnement des violences) derrière des photos de banque d'images et un logo en capture d'écran. Le visiteur ne voit ni le lieu, ni comment se passe une première séance, ni par où commencer quand on n'arrive pas à dire ce qui ne va pas.",
+  "directions": [
+    {
+      "nom": "La boîte à mots",
+      "idee": "Sa méthode, c'est « mettre des mots ». Dans l'entrée du cabinet, une boîte lumineuse dit « AIMER LA VIE ». L'accueil en fait l'outil : une grande boîte lumineuse sur un mur de nuit demande « Quel mot vous amène ? », le visiteur y glisse sa tuile (le deuil, la peur, le couple, le silence…), la boîte compose la réponse et le rendez-vous se prépare avec ce mot.",
+      "plan": "outil-d-abord",
+      "palette": ["#161d36", "#ece3d4", "#e0457b", "#f19a6b", "#fffaf1"],
+      "polices": ["Instrument Serif", "Bricolage Grotesque", "Hanken Grotesk"],
+      "grille": {
+        "objet": "la boîte lumineuse et ses tuiles de lettres : on attrape son mot et on le glisse dans la boîte, qui s'allume et répond",
+        "fil": "votre mot : la tuile choisie reste au bord de l'écran, vous suit de page en page et remplit le rendez-vous",
+        "voile": "la lumière de la boîte s'ouvre en cercle sur la page suivante",
+        "forme_voile": "iris",
+        "familles": ["typo-geante", "lumiere-pointeur", "ambiance-qui-change"],
+        "signature": "typo-geante",
+        "modernes": ["mots géants composés en tuiles qui tombent dans la boîte", "halo de la boîte qui suit la main sur le mur", "mur de nuit qui s'éclaircit jusqu'à la pierre claire au fil de la lecture"]
+      },
+      "modules": ["formulaire-par-etapes"],
+      "sections": [
+        { "role": "ouverture", "reprend": "surffm-maquette/hero", "plus": "le titre géant n'est pas posé sur une image : il se compose lettre à lettre dans une vraie boîte lumineuse, et c'est le visiteur qui y met son mot" },
+        { "role": "méthode", "reprend": "iprof-maquette/jargon", "plus": "scène « Mettre des mots » : au défilement, les tuiles du silence se retournent une à une et composent ses phrases à elle" },
+        { "role": "tarifs", "reprend": "iprof-maquette/tarifs-prices", "plus": "les quatre séances réelles (cabinet, visio, couple, famille, 65 €) en tuiles de boîte lumineuse, le mot choisi déjà posé" },
+        { "role": "contact", "reprend": "myrtille-et-compagnie-maquette/demander-une-communication-formulaire", "plus": "à l'envoi, les tuiles du mot glissent dans la boîte qui affiche « DEMANDE REÇUE »" }
+      ],
+      "ancrage": [
+        { "element": "la boîte lumineuse « AIMER LA VIE » sur le bureau de l'entrée", "source": "photo:se-refaire-beaute.jpg" },
+        { "element": "sa méthode : « Mettre des mots, en parler, sortir de son silence »", "source": "site:/les-violences" },
+        { "element": "son accroche « La vie est un combat, ne le vivez plus seul·e »", "source": "site:/" },
+        { "element": "la liste des difficultés qu'elle accompagne (deuil, divorce, peurs, sommeil, examens, couple, mère et fille…)", "source": "releve:Activité" },
+        { "element": "les couleurs du logo (framboise, corail) et sa robe bleu nuit sur ses portraits", "source": "photo:logo.png" }
+      ],
+      "invente": ["le mur bleu nuit autour de la boîte", "la tuile qui suit le visiteur jusqu'au rendez-vous"]
+    },
+    {
+      "nom": "Le cabinet d'Aubignan",
+      "idee": "On a peur de la première séance parce qu'on ne sait pas où l'on va. L'écran se partage : à gauche les mots, à droite la vraie pièce du cabinet, poutres blanchies, divan de velours gris, lampe en bois flotté. On y entre en défilant, on promène la lumière de la lampe, et chaque section montre un coin de la pièce : le divan, le fauteuil, l'entrée, l'écran de la visio.",
+      "plan": "ecran-partage",
+      "palette": ["#ebe2d2", "#1e2540", "#c7355e", "#45474f", "#b8794a"],
+      "polices": ["Newsreader", "Hanken Grotesk"],
+      "grille": {
+        "objet": "la lampe en bois flotté : on promène sa lumière dans la pièce, qui se réchauffe sous la main",
+        "fil": "la pièce elle-même, à droite : elle change de coin à chaque section, et chaque page s'ouvre sur un autre coin",
+        "voile": "le voilage de l'entrée qui se ferme puis s'ouvre",
+        "forme_voile": "rideau",
+        "familles": ["video-pilotee", "lumiere-pointeur", "plongee", "ambiance-qui-change"],
+        "signature": "video-pilotee",
+        "modernes": ["film de la pièce mené par le défilement, de la porte jusqu'au fauteuil", "lumière de la lampe qui suit la main", "plongée dans la fenêtre jusqu'à la page suivante"]
+      },
+      "modules": ["formulaire-par-etapes"],
+      "sections": [
+        { "role": "ouverture", "reprend": "winsbike-maquette/top", "plus": "la lampe éclaire la vraie pièce du cabinet, et c'est la main du visiteur qui la promène" },
+        { "role": "étapes", "reprend": "hiroko-nakatani-maquette/plongee", "plus": "« Votre première séance » : on avance dans la pièce, de la porte au fauteuil, en trois temps (faire le point, choisir, avancer)" },
+        { "role": "tarifs", "reprend": "iprof-maquette/tarifs-prices", "plus": "quatre séances posées sur les quatre places de la pièce : divan, fauteuil, deux fauteuils, écran" },
+        { "role": "contact", "reprend": "lydiacourtois-maquette/contact-demande", "plus": "à l'envoi, la lampe s'allume dans la pièce : « Votre demande est arrivée »" }
+      ],
+      "ancrage": [
+        { "element": "la pièce du cabinet : poutres chaulées, divan de velours gris, fauteuil gris, lampe en bois flotté, tapis rond de laine", "source": "photo:cabinet-psychotherapie-sandra-barba.jpg" },
+        { "element": "l'entrée : étagère en bois flotté avec des galets, voilage, boîte lumineuse", "source": "photo:se-refaire-beaute.jpg" },
+        { "element": "89 rue du Portail-Neuf à Aubignan, parking gratuit à proximité", "source": "site:/psychotherapie-vaucluse-gard-13" },
+        { "element": "la consultation en visio « identique au cabinet »", "source": "site:/seances-therapie-en-ligne" }
+      ],
+      "invente": ["le film de la pièce (image générée de la même pièce, en lumière douce)", "la lumière de la lampe qui suit la main"]
+    },
+    {
+      "nom": "Le souffle",
+      "idee": "Son logo est un B cerclé d'où partent trois traits de pinceau corail, mauve et framboise. On le peint en grand, en vraie peinture sur papier, et il respire : on maintient pour inspirer, les traits se resserrent vers le cercle ; on relâche, ils s'étirent sur la page. C'est la sophrologie de Sandra (relaxation dynamique, respiration) rendue jouable, et la même forme reste à l'écran d'une section à l'autre.",
+      "plan": "objet-unique",
+      "palette": ["#f4efe7", "#232032", "#d93f73", "#a35a7d", "#ec8a5c"],
+      "polices": ["Imbue", "Instrument Sans"],
+      "grille": {
+        "objet": "le B du logo et ses trois traits peints : maintenir pour inspirer, relâcher pour expirer",
+        "fil": "la même forme reste à l'écran et change d'état à chaque section (serrée, puis ouverte, puis en vol)",
+        "voile": "une expiration : vague de couleur qui traverse l'écran",
+        "forme_voile": "vague",
+        "familles": ["3d", "curseur-vivant", "plongee"],
+        "signature": "3d",
+        "modernes": ["traits de peinture en relief qui pivotent sous la main", "curseur en pointe de pinceau", "plongée dans le cercle du B jusqu'à la section suivante"]
+      },
+      "modules": ["formulaire-par-etapes"],
+      "sections": [
+        { "role": "ouverture", "reprend": "beat-haechler-maquette/bons-cadeaux-hero", "plus": "l'objet n'est pas un produit : c'est son logo, peint en grand, qui respire avec le visiteur" },
+        { "role": "méthode", "reprend": "gwenanou-print-maquette/matieres", "plus": "trois respirations guidées au défilement, chacune ouvre une façon de consulter (cabinet, visio, couple)" },
+        { "role": "tarifs", "reprend": "iprof-maquette/tarifs-prices", "plus": "chaque séance est un trait du logo" },
+        { "role": "contact", "reprend": "myrtille-et-compagnie-maquette/demander-une-communication-formulaire", "plus": "à l'envoi, les trois traits s'envolent et se posent autour du cercle" }
+      ],
+      "ancrage": [
+        { "element": "le logo : B rose cerclé et trois traits de pinceau corail, mauve, framboise", "source": "photo:logo.png" },
+        { "element": "la sophrologie Caycedo, relaxation dynamique, travail sur la respiration", "source": "site:/sophrologie-vaucluse-gard-13-le-30" },
+        { "element": "sa phrase « Il n'y a pas de magie, retrouvez-vous »", "source": "site:/sophrologie-vaucluse-gard-13-le-30" }
+      ],
+      "invente": ["la peinture en relief des traits", "la respiration guidée au défilement"]
+    }
+  ]
+}

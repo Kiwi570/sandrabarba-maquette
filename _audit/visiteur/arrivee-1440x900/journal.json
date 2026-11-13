@@ -1,0 +1,51 @@
+{
+ "mission": "arrivee",
+ "taille": "1440x900",
+ "depart": "/",
+ "erreurs": [],
+ "etapes": [
+  {
+   "k": 0,
+   "geste": "arrivée",
+   "resultat": "ok",
+   "gestes": 0,
+   "secondes": 3.4,
+   "adresse": "/",
+   "y": 0,
+   "hauteurPage": 8927,
+   "titres": [
+    "h1 La vie est un combat. Ne le vivez plus seul·e."
+   ],
+   "actions": [
+    "Sandra Barba PSYCHOTHÉRAPIE · SOPHROLOGIE",
+    "Psychothérapie",
+    "Sophrologie",
+    "Violences",
+    "Rendez-vous",
+    "Prendre rendez-vous",
+    "07 60 36 58 32",
+    "LE DEUIL",
+    "LA PEUR",
+    "LE COUPLE",
+    "LES VIOLENCES",
+    "LE SOMMEIL",
+    "L’ÉPUISEMENT",
+    "LES EXAMENS"
+   ],
+   "prixVus": [
+    "65 €"
+   ],
+   "telephonesVus": [
+    "07 60 36 58 32"
+   ],
+   "prixDansLaPage": [
+    "65 €"
+   ],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-0.png"
+  }
+ ]
+}

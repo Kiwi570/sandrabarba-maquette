@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Violences dans l’enfance ou le couple : sortir du silence, avec Sandra Barba</title>
+<meta name="description" content="Depuis 2005, Sandra Barba accompagne les femmes victimes de violences physiques, psychologiques, sexuelles ou économiques. Numéros d’aide et rendez-vous.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://sandrabarba-maquette.vercel.app/violences">
+<style>:root{--fond:#161d36;--texte:#ece3d4;--voile-fond:#161d36;--ouverture-fond:#161d36;--menu-fond:#161d36}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/instrument-serif.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/fonts/bricolage-tuiles.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#161d36">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sandra Barba">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Violences dans l’enfance ou le couple : sortir du silence, avec Sandra Barba">
+<meta property="og:description" content="Depuis 2005, Sandra Barba accompagne les femmes victimes de violences physiques, psychologiques, sexuelles ou économiques. Numéros d’aide et rendez-vous.">
+<meta property="og:url" content="https://sandrabarba-maquette.vercel.app/violences">
+<meta property="og:image" content="https://sandrabarba-maquette.vercel.app/assets/partage/violences-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Un rai de lumière chaude qui s’élargit sur un mur sombre">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Psychothérapie et sophrologie Sandra Barba","url":"https://sandrabarba-maquette.vercel.app/","telephone":"+33760365832","email":"info@sandrabarba.fr","address":{"@type":"PostalAddress","streetAddress":"89 rue du Portail-Neuf","postalCode":"84810","addressLocality":"Aubignan","addressCountry":"FR"},"description":"Psychothérapie, sophrologie, coaching de couple et de famille à Aubignan (Vaucluse) et en visio, depuis 2005. Accompagnement des femmes victimes de violences.","priceRange":"65 €"}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="iris" aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="84" height="62"><span class="voile-tuiles" data-voile-libelle>Violences</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <img class="ouverture-logo" src="/assets/images/logo-clair.svg" alt="" width="132" height="97" data-ouverture-objet>
+  <p class="ouverture-tuiles"><span class="tuile">LA</span><span class="tuile">VIE</span><span class="tuile">EST</span><span class="tuile">UN</span><span class="tuile">COMBAT</span></p>
+  <p class="ouverture-nom">Sandra Barba</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil">
+      <img src="/assets/images/logo.svg" alt="" width="58" height="43"><span class="entete-nom"><b>Sandra Barba</b><small>Psychothérapie · Sophrologie</small></span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/psychotherapie" data-libelle="Psychothérapie">Psychothérapie</a></li><li><a href="/sophrologie" data-libelle="Sophrologie">Sophrologie</a></li><li><a href="/violences" data-libelle="Violences" aria-current="page">Violences</a></li><li><a href="/rendez-vous" data-libelle="Rendez-vous">Rendez-vous</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/rendez-vous#demande" data-libelle="Rendez-vous">Prendre rendez-vous</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/psychotherapie" class="menu-lien" data-libelle="Psychothérapie">Psychothérapie</a></li><li style="--i:2"><a href="/sophrologie" class="menu-lien" data-libelle="Sophrologie">Sophrologie</a></li><li style="--i:3"><a href="/violences" class="menu-lien" data-libelle="Violences" aria-current="page">Violences</a></li><li style="--i:4"><a href="/rendez-vous" class="menu-lien" data-libelle="Rendez-vous">Rendez-vous</a></li></ul>
+  <p><a class="bouton" href="tel:+33760365832">Appeler 07 60 36 58 32</a></p>
+  <p class="menu-adresse">89 rue du Portail-Neuf, 84810 Aubignan<br>Du lundi au samedi, sur rendez-vous · parking gratuit à proximité</p>
+</div>
+<main id="contenu" tabindex="-1">
+<button type="button" class="quitter" data-quitter aria-label="Quitter ce site tout de suite (ouvre une page météo)">Quitter vite ✕</button>
+<section class="page-ouverture po-viol ton-nuit" id="debut">
+  <figure class="media po-viol-media" data-grok style="--cadrage:72% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/rai-de-lumiere-mobile-640.webp 640w, /assets/images/grok/rai-de-lumiere-mobile-1080.webp 1080w" sizes="100vw">
+    <img src="/assets/images/grok/rai-de-lumiere-1280.webp" srcset="/assets/images/grok/rai-de-lumiere-640.webp 640w, /assets/images/grok/rai-de-lumiere-1280.webp 1280w, /assets/images/grok/rai-de-lumiere-1920.webp 1920w" sizes="100vw" alt="Un rai de lumière chaude qui s’élargit sur un mur sombre" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  <div class="conteneur po-viol-grille">
+    <p class="surtitre" data-anime="gsap">Violences dans l’enfance ou le couple</p>
+    <h1 class="page-titre po-viol-titre"><span class="ligne-masque"><span class="titre-ligne">Mettre des mots,</span></span><span class="ligne-masque"><span class="titre-ligne">en parler,</span></span><span class="titre-tuiles" data-grille="typo" data-effet="titre-tuiles" data-iris-centre><span class="titre-tuiles-ligne"><span class="tuile tuile--titre">SORTIR</span><span class="tuile tuile--titre">DU</span><span class="tuile tuile--titre">SILENCE</span></span></span></h1>
+    <p class="page-chapo" data-anime="gsap">Depuis 2005, Sandra Barba accompagne les femmes dont « le secret est bien caché au fond du placard ». Avec une professionnelle, on peut enfin le dire.</p>
+    <div class="page-actions" data-anime="gsap">
+      <p><a class="bouton" href="tel:+33760365832" data-action-principale>Appeler 07 60 36 58 32</a> <a href="/rendez-vous?mot=violences#demande" class="lien-fleche" data-libelle="Rendez-vous">Prendre rendez-vous</a></p>
+      <p class="info-cle" data-info-cle>3919 · Violences Femmes Info · gratuit et anonyme, 24 h/24</p>
+    </div>
+  </div>
+</section>
+<section class="aide ton-crepuscule" id="aide">
+  <div class="conteneur">
+    <p class="surtitre" data-anime>Avant tout</p>
+    <h2 class="titre-section" data-anime="lignes">Si vous êtes en danger, appelez.</h2>
+    <ul class="numeros" data-anime="cascade" data-visuel>
+      <li><a href="tel:17" class="numero"><span class="numero-tuiles"><span class="tuile">1</span><span class="tuile">7</span></span><strong>Police, gendarmerie</strong><span>En danger maintenant. Ou le 112, numéro d’urgence européen.</span></a></li><li><a href="tel:114" class="numero"><span class="numero-tuiles"><span class="tuile">1</span><span class="tuile">1</span><span class="tuile">4</span></span><strong>Par SMS</strong><span>Si vous ne pouvez pas parler : un SMS au 114, 24 h/24.</span></a></li><li><a href="tel:3919" class="numero"><span class="numero-tuiles"><span class="tuile">3</span><span class="tuile">9</span><span class="tuile">1</span><span class="tuile">9</span></span><strong>Violences Femmes Info</strong><span>Écoute, information et orientation. Gratuit et anonyme, 24 h/24 et 7 j/7. Ce n’est pas un numéro d’urgence.</span></a></li><li><a href="tel:119" class="numero"><span class="numero-tuiles"><span class="tuile">1</span><span class="tuile">1</span><span class="tuile">9</span></span><strong>Enfance en danger</strong><span>Pour un enfant, ou si vous êtes témoin. Gratuit, 24 h/24.</span></a></li>
+    </ul>
+    <p class="aide-note" data-anime>Numéros nationaux, gratuits, joignables même depuis un téléphone bloqué.</p>
+  </div>
+</section>
+<section class="invisibles ton-nuit" id="invisibles">
+  <div class="conteneur invisibles-tete">
+    <p class="surtitre" data-anime>Les violences invisibles</p>
+    <h2 class="titre-section" data-anime="lignes">Ce qui ne laisse pas de traces visibles est aussi de la violence.</h2>
+    <p class="invisibles-def" data-anime>« La violence est l’utilisation de force ou de pouvoir, physique ou psychique, pour contraindre, dominer. »</p>
+  </div>
+  <div class="mur-invisible" data-lampe="50,50" data-effet="lampe-violences" data-souris data-visuel data-audit-ignorer>
+    <figure class="media mur-fond" data-grok style="--cadrage:30% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/mur-de-nuit-mobile-640.webp 640w, /assets/images/grok/mur-de-nuit-mobile-1080.webp 1080w" sizes="100vw">
+    <img src="/assets/images/grok/mur-de-nuit-1280.webp" srcset="/assets/images/grok/mur-de-nuit-640.webp 640w, /assets/images/grok/mur-de-nuit-1280.webp 1280w, /assets/images/grok/mur-de-nuit-1920.webp 1920w" sizes="100vw" alt="" width="1280" height="720" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    <p class="mur-mots mur-mots--eteints" aria-hidden="true"><span style="--i:0">LES INSULTES</span><span style="--i:1">LES REPROCHES</span><span style="--i:2">LE CHANTAGE</span><span style="--i:3">LA MANIPULATION</span><span style="--i:4">LES MENACES</span><span style="--i:5">LA PEUR</span><span style="--i:6">LE SILENCE</span><span style="--i:7">L’ISOLEMENT</span><span style="--i:8">L’ARGENT CONFISQUÉ</span><span style="--i:9">LA HONTE</span></p>
+    <div class="lampe-lumiere lampe-cercle"><div class="lampe-dedans"><p class="mur-mots mur-mots--allumes" aria-hidden="true"><span style="--i:0">LES INSULTES</span><span style="--i:1">LES REPROCHES</span><span style="--i:2">LE CHANTAGE</span><span style="--i:3">LA MANIPULATION</span><span style="--i:4">LES MENACES</span><span style="--i:5">LA PEUR</span><span style="--i:6">LE SILENCE</span><span style="--i:7">L’ISOLEMENT</span><span style="--i:8">L’ARGENT CONFISQUÉ</span><span style="--i:9">LA HONTE</span></p></div></div>
+    <p class="lampe-indice"><i></i><span class="indice-souris">Promenez la lumière sur le mur</span><span class="indice-tactile">Faites glisser votre doigt sur le mur</span></p>
+  </div>
+  <div class="conteneur">
+    <ul class="types" data-anime="cascade">
+      <li><h3>Psychologiques</h3><p>Harcèlement moral, insultes, menaces, dans la vie privée ou au travail.</p></li><li><h3>Physiques</h3><p>Coups et blessures.</p></li><li><h3>Sexuelles</h3><p>Viol et attouchements, y compris dans le mariage ou le PACS.</p></li><li><h3>Économiques</h3><p>Privation de ressources, dépendance financière imposée.</p></li>
+    </ul>
+  </div>
+</section>
+<section class="approche ton-aube" id="approche">
+  <div class="conteneur approche-grille">
+    <div>
+      <p class="surtitre" data-anime>Comment elle accompagne</p>
+      <h2 class="titre-section" data-anime="lignes">La culpabilité n’est pas la vôtre.</h2>
+      <p data-anime>Les pervers sont forts pour détourner votre confiance et vous accabler. En séance, on remet la responsabilité à sa place, celle de l’agresseur, et on reconstruit pas à pas. « Une femme qui sort de ces tortures est forte de ce passé. »</p>
+      <ul class="points" data-anime="cascade"><li>Au cabinet ou en visio, au rythme que vous choisissez</li><li>Joignable par SMS et par e-mail entre les séances, 7 jours sur 7</li><li>Formée au stress post-traumatique et certifiée sur les violences sexuelles et l’inceste</li></ul>
+    </div>
+    <figure class="media diplome" data-anime="rideau" style="--cadrage:50% 50%;aspect-ratio:3 / 2">
+  <picture>
+    <img src="/assets/images/diplome-stress-800.webp" srcset="/assets/images/diplome-stress-480.webp 480w, /assets/images/diplome-stress-640.webp 640w, /assets/images/diplome-stress-800.webp 800w" sizes="(max-width: 760px) 100vw, 34vw" alt="Certificat de formation de spécialiste du stress post-traumatique" width="800" height="533" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  </div>
+</section>
+<section class="presse ton-pierre" id="presse">
+  <div class="conteneur presse-grille">
+    <figure class="media presse-media" data-fx="parallaxe" data-fx-force="6" style="--cadrage:50% 30%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/presse-800.webp" srcset="/assets/images/presse-480.webp 480w, /assets/images/presse-640.webp 640w, /assets/images/presse-800.webp 800w" sizes="(max-width: 760px) 100vw, 34vw" alt="Article de presse : « Éveiller les consciences sur les violences invisibles »" width="800" height="1001" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <div>
+      <p class="surtitre" data-anime>« La parole se délie »</p>
+      <h2 class="titre-section" data-anime="lignes">Éveiller les consciences sur les violences invisibles.</h2>
+      <p data-anime>Présidente de l’association Vivre Femmes, fondée en 2017, Sandra Barba donne des conférences, intervient jusque dans les lycées et porte le projet Transition’Elles, un hébergement de transition pour les femmes victimes.</p>
+    </div>
+  </div>
+</section>
+<section class="fin ton-nuit fin--sombre" id="fin">
+  <div class="conteneur fin-grille">
+    <div>
+      <h2 class="titre-section titre-grand" data-anime="lettres">Ne restez pas seule.</h2>
+      <p data-anime>Appelez, envoyez un SMS, ou demandez un rendez-vous : la demande reste entre vous et elle.</p>
+      <p class="fin-actions" data-anime><a class="bouton" href="tel:+33760365832">Appeler 07 60 36 58 32</a> <a href="/rendez-vous?mot=violences#demande" class="bouton bouton--clair" data-libelle="Rendez-vous">Prendre rendez-vous</a></p>
+    </div>
+    <figure class="media fin-media" data-fx="zoom" style="--cadrage:46% 40%;aspect-ratio:1 / 1">
+  <picture>
+    <img src="/assets/images/sandra-rampe-784.webp" srcset="/assets/images/sandra-rampe-480.webp 480w, /assets/images/sandra-rampe-640.webp 640w, /assets/images/sandra-rampe-784.webp 784w" sizes="(max-width: 760px) 100vw, 30vw" alt="Sandra Barba, souriante, accoudée à une rampe en fer forgé" width="784" height="980" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <img src="/assets/images/logo.svg" alt="" width="96" height="70" loading="lazy">
+      <p><strong>Sandra Barba</strong><br>Psychothérapie, sophrologie, couple et famille. Aubignan (Vaucluse) et en visio, depuis 2005.</p>
+      <p>89 rue du Portail-Neuf, 84810 Aubignan<br><a href="tel:+33760365832">07 60 36 58 32</a><br><span class="email">info@sandrabarba.fr</span></p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p><strong>Sommaire</strong></p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/psychotherapie" data-libelle="Psychothérapie">Psychothérapie</a></li><li><a href="/sophrologie" data-libelle="Sophrologie">Sophrologie</a></li><li><a href="/violences" data-libelle="Violences" aria-current="page">Violences</a></li><li><a href="/rendez-vous" data-libelle="Rendez-vous">Rendez-vous</a></li><li><a href="#haut" data-sans-transition>Retour en haut</a></li></ul>
+    </nav>
+    <div class="pied-aide">
+      <p><strong>En cas de violences</strong></p>
+      <p>En danger : <a href="tel:17">17</a> ou <a href="tel:112">112</a>. Par SMS : <a href="sms:114">114</a>.<br>Pour être écoutée : <a href="tel:3919">3919</a>, gratuit et anonyme, 24 h/24.</p>
+    </div>
+  </div>
+  <div class="conteneur pied-bas">
+    <p>Mentions légales · <span class="a-completer">à compléter</span></p>
+    <p>Politique de confidentialité · <span class="a-completer">à compléter</span></p>
+    <p>Pratique de psychothérapie hors du cadre réglementé et sophrologie · SIRET 514 610 393 00019 · APE 8690F</p>
+    <p>Maquette de présentation : les formulaires sont simulés, rien n’est envoyé.</p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33760365832">Appeler</a>
+  <a class="bouton barre-rdv" href="/rendez-vous#demande" data-libelle="Rendez-vous" data-fil-lien><span class="tuile tuile--mini" data-fil-mot hidden></span><span>Rendez-vous</span></a>
+</div>
+<div class="fil" data-grille="fil" data-effet="fil-mot" aria-hidden="true"><span class="fil-rail"></span><span class="fil-tuile tuile tuile--mini" data-fil-tuile>VOTRE MOT</span></div>
+</body>
+</html>

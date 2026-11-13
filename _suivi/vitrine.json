@@ -1,0 +1,223 @@
+{
+ "explication": "Vitrine du projet : des ouvertures de la bibliothèque à dépasser, jamais à imiter (ni leur idée, ni leur mise en page).",
+ "activite": [
+  "santé",
+  "bien-être"
+ ],
+ "metier": "psychothérapie sophrologie",
+ "besoin": [
+  "rendez-vous"
+ ],
+ "ton": [
+  "doux"
+ ],
+ "univers": [],
+ "ambiance": [],
+ "concept": [],
+ "depot": "sandrabarba-maquette",
+ "ecartees": [],
+ "ouvertures": [
+  {
+   "rang": 1,
+   "id": "alexandra-grandry-maquette/debut",
+   "maquette": "alexandra-grandry-maquette",
+   "client": "Gestalt-thérapeute et sophrologue à Chatou (adultes, couples, enfants, adolescents, familles, groupes)",
+   "metier": "gestalt-thérapeute, sophrologue",
+   "activite": [
+    "santé",
+    "bien-être"
+   ],
+   "pourquoi": [
+    "même activité",
+    "besoin rendez-vous",
+    "ambiance doux",
+    "clair et sombre alternés (33 % sombre)",
+    "masque"
+   ],
+   "lumiere": "mixte",
+   "part_sombre": 33,
+   "note_section": 5,
+   "note_maquette": 82,
+   "titre": "AlexandraGrandry",
+   "description": "Nom en grand, accroche « donner forme », deux profils d'encre (battants) dont la coupe laisse voir la photo ; épinglée, les profils s'écartent au défilement",
+   "familles": [
+    "masque"
+   ],
+   "plan": null,
+   "module": null,
+   "fiche": "sections/alexandra-grandry-maquette/debut.json",
+   "capture": "medias/alexandra-grandry-maquette/debut-p1440.jpg",
+   "video": "medias/alexandra-grandry-maquette/debut-p720.mp4",
+   "en_ligne": "https://alexandra-grandry-maquette.vercel.app"
+  },
+  {
+   "rang": 2,
+   "id": "oppenheimer-maquette/accueil",
+   "maquette": "oppenheimer-maquette",
+   "client": "psychothérapeute et psychanalyste en téléconsultation uniquement",
+   "metier": "psychothérapeute",
+   "activite": [
+    "santé"
+   ],
+   "pourquoi": [
+    "même activité",
+    "besoin rendez-vous",
+    "ambiance doux",
+    "clair et sombre alternés (23 % sombre)",
+    "lumiere-pointeur",
+    "webgl"
+   ],
+   "lumiere": "mixte",
+   "part_sombre": 23,
+   "note_section": 5,
+   "note_maquette": 89,
+   "titre": "Ouverture à l'encre",
+   "description": "La photo d'ouverture apparaît comme une goutte d'encre qui s'étale dans le papier (WebGL, OGL), puis respire lentement et s'écarte sous le curseur ; polaroïd du praticien scellé d'un cachet de cire, titre révélé ligne à ligne, ouverture orchestrée en moins de 3 s. Sans WebGL, masque de tache fixe.",
+   "familles": [
+    "lumiere-pointeur",
+    "webgl"
+   ],
+   "plan": null,
+   "module": "revelation-a-l-encre",
+   "fiche": "sections/oppenheimer-maquette/accueil.json",
+   "capture": "medias/oppenheimer-maquette/accueil-p1440.jpg",
+   "video": "medias/oppenheimer-maquette/accueil-p720.mp4",
+   "en_ligne": "https://oppenheimer-maquette.vercel.app"
+  },
+  {
+   "rang": 3,
+   "id": "beat-haechler-maquette/hero",
+   "maquette": "beat-haechler-maquette",
+   "client": "masseur indépendant entre deux villes au bord d'un lac",
+   "metier": "masseur",
+   "activite": [
+    "bien-être"
+   ],
+   "pourquoi": [
+    "même activité",
+    "besoin rendez-vous",
+    "ambiance doux",
+    "clair et sombre alternés (20 % sombre)",
+    "webgl"
+   ],
+   "lumiere": "mixte",
+   "part_sombre": 20,
+   "note_section": 5,
+   "note_maquette": 87,
+   "titre": "Image d'ouverture sur l'eau en WebGL",
+   "description": "Premier écran plein cadre : la photo est rendue dans un shader OGL qui ajoute une brume qui respire et des ondes concentriques là où passent la souris ou le doigt ; titre en lignes masquées, boutons et pastille du prochain jour de consultation.",
+   "familles": [
+    "webgl"
+   ],
+   "plan": null,
+   "module": null,
+   "fiche": "sections/beat-haechler-maquette/hero.json",
+   "capture": "medias/beat-haechler-maquette/hero-p1440.jpg",
+   "video": "medias/beat-haechler-maquette/hero-p720.mp4",
+   "en_ligne": "https://beat-haechler-maquette.vercel.app"
+  },
+  {
+   "rang": 4,
+   "id": "pausephoto65-maquette/ouverture",
+   "maquette": "pausephoto65-maquette",
+   "client": "photographe portraitiste et d'événements à Tarbes (Hautes-Pyrénées) : séances, saisons, mariages, baptêmes",
+   "metier": "photographe",
+   "activite": [
+    "culture",
+    "commerce"
+   ],
+   "pourquoi": [
+    "besoin rendez-vous",
+    "ambiance doux",
+    "style clair (10 % sombre)",
+    "objet-manipulable"
+   ],
+   "lumiere": "clair",
+   "part_sombre": 10,
+   "note_section": 5,
+   "note_maquette": 84,
+   "titre": "Faites unepause.",
+   "description": "« Faites une pause. » : pluie de tirages photo qui tombent autour du titre, à attraper",
+   "familles": [
+    "objet-manipulable"
+   ],
+   "plan": null,
+   "module": null,
+   "fiche": "sections/pausephoto65-maquette/ouverture.json",
+   "capture": "medias/pausephoto65-maquette/ouverture-p1440.jpg",
+   "video": "medias/pausephoto65-maquette/ouverture-p720.mp4",
+   "en_ligne": "https://pausephoto65-maquette.vercel.app"
+  },
+  {
+   "rang": 5,
+   "id": "nexio-maquette/haut",
+   "maquette": "nexio-maquette",
+   "client": "atelier de réparation de smartphones (toutes marques), estimation et rendez-vous en ligne",
+   "metier": "réparation de smartphones",
+   "activite": [
+    "services-b2b",
+    "commerce"
+   ],
+   "pourquoi": [
+    "besoin rendez-vous",
+    "style sombre (100 % sombre)",
+    "3d",
+    "webgl"
+   ],
+   "lumiere": "sombre",
+   "part_sombre": 100,
+   "note_section": 5,
+   "note_maquette": 85,
+   "titre": "Téléphone fissuré qui se ressoude",
+   "description": "Ouverture épinglée : un téléphone en 3D (three.js) à l'écran fissuré en toile d'araignée se ressoude là où passent le curseur ou le doigt, un compteur « écran réparé » monte de 0 à 100 %. Fissures générées par un code partagé avec la version SVG de repli (sans WebGL ou en mode calme).",
+   "familles": [
+    "3d",
+    "webgl"
+   ],
+   "plan": null,
+   "module": null,
+   "fiche": "sections/nexio-maquette/haut.json",
+   "capture": "medias/nexio-maquette/haut-p1440.jpg",
+   "video": "medias/nexio-maquette/haut-p720.mp4",
+   "en_ligne": "https://nexio-maquette.vercel.app"
+  },
+  {
+   "rang": 6,
+   "id": "francis-gerardin-maquette/hero",
+   "maquette": "francis-gerardin-maquette",
+   "client": "animateur d'événements, formateur par l'improvisation et coach personnel à Strasbourg",
+   "metier": "animateur et formateur",
+   "activite": [
+    "conseil",
+    "formation",
+    "spectacle"
+   ],
+   "pourquoi": [
+    "besoin rendez-vous",
+    "ambiance doux",
+    "style clair (14 % sombre)",
+    "lumiere-pointeur",
+    "webgl",
+    "masque"
+   ],
+   "lumiere": "clair",
+   "part_sombre": 14,
+   "note_section": 5,
+   "note_maquette": 87,
+   "titre": "Héros raturé et photo en trame",
+   "description": "Titre en lignes masquées, puis « Pour vous animer former coacher » rayés un à un au stylo rouge (DrawSVG) et remplacés par « accompagner » souligné à la main ; la photo naît d'une trame offset en WebGL (OGL) avec loupe sous le curseur et se dissout au défilement. Repli : l'image simple.",
+   "familles": [
+    "lumiere-pointeur",
+    "webgl",
+    "masque",
+    "trait-qui-se-dessine"
+   ],
+   "plan": null,
+   "module": "rature-au-stylo",
+   "fiche": "sections/francis-gerardin-maquette/hero.json",
+   "capture": "medias/francis-gerardin-maquette/hero-p1440.jpg",
+   "video": "medias/francis-gerardin-maquette/hero-p720.mp4",
+   "en_ligne": "https://francis-gerardin-maquette.vercel.app"
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Esquisse · Le cabinet d’Aubignan</title>
+<style>
+@font-face { font-family: 'Newsreader'; src: url('/_suivi/esquisses/polices/newsreader.ttf'); font-weight: 200 800; }
+@font-face { font-family: 'Newsreader'; src: url('/_suivi/esquisses/polices/newsreader-italique.ttf'); font-weight: 200 800; font-style: italic; }
+@font-face { font-family: 'Hanken'; src: url('/_suivi/esquisses/polices/hanken.ttf'); font-weight: 100 900; }
+:root { --pierre: #ebe2d2; --pierre2: #e1d5c1; --encre: #1e2540; --framboise: #c7355e; --velours: #45474f; --ocre: #b8794a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body { background: var(--pierre); color: var(--encre); font-family: 'Hanken', sans-serif; overflow: hidden; }
+.ecran { display: grid; grid-template-columns: 46fr 54fr; height: 100vh; }
+.gauche { position: relative; display: flex; flex-direction: column; padding: 0 56px 44px 56px;
+  background: radial-gradient(90% 60% at 0% 100%, #e3d6c0 0%, transparent 60%), var(--pierre); }
+.gauche::after { content: ''; position: absolute; inset: 0; pointer-events: none; opacity: .35; mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.6' numOctaves='4'/%3E%3CfeColorMatrix values='0 0 0 0 .55 0 0 0 0 .5 0 0 0 0 .42 0 0 0 .5 0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E"); }
+header { display: flex; align-items: center; gap: 12px; height: 92px; }
+.marque img { width: 58px; display: block; }
+.marque b { font-family: 'Newsreader'; font-weight: 500; font-size: 24px; display: block; line-height: 1; }
+.marque small { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: #6c6a72; }
+.marque { display: flex; align-items: center; gap: 12px; }
+.contenu { margin-top: auto; margin-bottom: auto; position: relative; z-index: 1; }
+.sur { font-size: 13px; letter-spacing: .16em; text-transform: uppercase; color: var(--ocre); margin-bottom: 24px; }
+h1 { font-family: 'Newsreader'; font-weight: 400; font-size: clamp(50px, 5.4vw, 84px); line-height: 1.0; letter-spacing: -.02em; }
+h1 em { font-style: italic; color: var(--framboise); }
+p.chapo { font-size: 18px; line-height: 1.6; max-width: 36ch; margin-top: 24px; color: #3b3f52; }
+.actions { display: flex; align-items: center; gap: 22px; margin-top: 32px; }
+.bouton { background: var(--encre); color: #fff; text-decoration: none; font-weight: 600; font-size: 16px; padding: 15px 24px; border-radius: 999px; }
+.tel { font-size: 18px; font-variant-numeric: tabular-nums; }
+.info { margin-top: 22px; font-size: 14px; color: #5d5b63; }
+.droite { position: relative; overflow: hidden; background: #2a2520; }
+.droite nav { position: absolute; z-index: 3; top: 0; right: 0; left: 0; display: flex; justify-content: flex-end; align-items: center; gap: 24px; height: 92px; padding: 0 40px; font-size: 15px; }
+.droite nav a { color: #fff; text-decoration: none; text-shadow: 0 1px 8px rgba(0,0,0,.5); }
+.droite nav .bouton { background: var(--framboise); text-shadow: none; }
+.droite::before { content: ''; position: absolute; inset: 0 0 auto 0; height: 200px; z-index: 2; background: linear-gradient(180deg, rgba(20,16,12,.55), transparent); }
+.photo { position: absolute; inset: 0; background: url('/_suivi/esquisses/img/cabinet.jpg') 60% 20% / cover; filter: saturate(.92) contrast(1.04) brightness(.78); }
+/* la lampe en bois flotté est allumée : la lumière suit la main */
+.lumiere { position: absolute; inset: 0; mix-blend-mode: soft-light;
+  background: radial-gradient(34% 30% at 63% 39%, rgba(255,214,150,1) 0%, rgba(255,190,120,.55) 35%, rgba(60,40,20,.0) 70%); }
+.lumiere2 { position: absolute; inset: 0; mix-blend-mode: screen;
+  background: radial-gradient(14% 11% at 63% 37%, rgba(255,226,170,.75), transparent 70%), radial-gradient(60% 50% at 40% 80%, rgba(255,200,140,.14), transparent 70%); }
+.ombre { position: absolute; inset: 0; background: radial-gradient(120% 90% at 63% 40%, transparent 40%, rgba(15,10,8,.55) 100%); }
+.etiquette { position: absolute; z-index: 3; left: 32px; bottom: 30px; color: #fff; font-size: 14px; letter-spacing: .04em; display: flex; gap: 14px; align-items: center; }
+.etiquette b { font-family: 'Newsreader'; font-style: italic; font-weight: 400; font-size: 22px; letter-spacing: 0; }
+.indice { position: absolute; z-index: 3; left: 28%; top: 30%; display: flex; align-items: center; gap: 12px; color: #fff; font-size: 15px; }
+.indice i { width: 54px; height: 54px; border-radius: 50%; border: 1.5px solid rgba(255,235,200,.9); box-shadow: 0 0 0 10px rgba(255,220,170,.15); }
+@media (max-width: 760px) {
+  body { overflow: hidden; }
+  .ecran { grid-template-columns: 1fr; grid-template-rows: 46vh auto; }
+  .droite { order: 1; } .gauche { order: 2; padding: 0 20px 20px; }
+  .droite nav { height: 64px; padding: 0 16px; } .droite nav a:not(.menu) { display: none; }
+  .droite nav .menu { display: inline-block; color: #fff; border: 1px solid rgba(255,255,255,.6); border-radius: 999px; padding: 8px 15px; }
+  .droite .logo-tel { position: absolute; z-index: 3; left: 16px; top: 12px; width: 44px; }
+  header { display: none; }
+  .contenu { margin: 22px 0 0; }
+  .sur { font-size: 12px; margin-bottom: 12px; }
+  h1 { font-size: 40px; }
+  p.chapo { font-size: 16px; margin-top: 14px; }
+  .actions { margin-top: 20px; gap: 16px; }
+  .info { font-size: 13px; margin-top: 12px; }
+  .indice { left: 44%; top: 50%; font-size: 13px; } .indice i { width: 40px; height: 40px; }
+  .etiquette { left: 16px; bottom: 14px; } .etiquette b { font-size: 18px; }
+}
+@media (min-width: 761px) { .menu, .logo-tel { display: none; } }
+</style>
+</head>
+<body>
+<div class="ecran">
+  <section class="gauche">
+    <header><a class="marque"><img src="/_suivi/esquisses/img/logo.png" alt=""><span><b>Sandra Barba</b><small>Psychothérapie · Sophrologie</small></span></a></header>
+    <div class="contenu">
+      <p class="sur">Aubignan, Vaucluse · et en visio · depuis 2005</p>
+      <h1>Entrez.<br>Ici, on peut <em>tout déposer.</em></h1>
+      <p class="chapo">Une pièce calme dans une maison de village, poutres blanchies, divan de velours. Ou la même séance en visio, où que vous soyez.</p>
+      <div class="actions"><a class="bouton">Prendre rendez-vous</a><span class="tel">07 60 36 58 32</span></div>
+      <p class="info">Séance d’1 h · 65 € · du lundi au samedi, sur rendez-vous</p>
+    </div>
+  </section>
+  <section class="droite">
+    <img class="logo-tel" src="/_suivi/esquisses/img/logo.png" alt="">
+    <nav><a>Psychothérapie</a><a>Sophrologie</a><a>Violences</a><a class="bouton">Prendre rendez-vous</a><a class="menu">Menu</a></nav>
+    <div class="photo"></div><div class="lumiere"></div><div class="lumiere2"></div><div class="ombre"></div>
+    <div class="indice"><i></i>Promenez la lumière de la lampe</div>
+    <div class="etiquette"><b>Le cabinet</b> 89 rue du Portail-Neuf, Aubignan</div>
+  </section>
+</div>
+</body>
+</html>

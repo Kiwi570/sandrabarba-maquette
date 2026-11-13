@@ -1,0 +1,1258 @@
+{
+  "logo": {
+    "nom": "logo",
+    "source": "recu/site/logo.png",
+    "role": "logo",
+    "alt": "Logo Sandra Barba : un B cerclé et trois traits de pinceau",
+    "grok": false,
+    "mention": null,
+    "beaute": null,
+    "empreinte": "41819a970546378a",
+    "ratio": null,
+    "largeurs": [
+      240,
+      480
+    ],
+    "mobile": null,
+    "cadrage": null,
+    "sujet": null,
+    "zones_calmes": null,
+    "zone_texte": null,
+    "recadrage": null,
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "logo-240.webp",
+      "logo-480.webp"
+    ],
+    "poids": {
+      "logo-240.webp": 10940,
+      "logo-480.webp": 27786
+    },
+    "media": "c.media({ nom: 'logo', alt: \"Logo Sandra Barba : un B cerclé et trois traits de pinceau\", sizes: '240px' })"
+  },
+  "grok/mur-de-nuit": {
+    "nom": "grok/mur-de-nuit",
+    "source": "recu/grok/mur-de-nuit.jpg",
+    "role": "ouverture",
+    "alt": "",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 5,
+    "empreinte": "2ed75182c59ba958",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "75% 73%"
+    },
+    "cadrage": "83% 50%",
+    "sujet": {
+      "x": 31.3,
+      "y": 16.7,
+      "l": 68.7,
+      "h": 83.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.8,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.63,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.45,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.38,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1672,
+      "height": 941,
+      "source": [
+        1672,
+        941
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,15 fois (source de 1672 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/mur-de-nuit-640.webp",
+      "grok/mur-de-nuit-1280.webp",
+      "grok/mur-de-nuit-1920.webp",
+      "grok/mur-de-nuit-mobile-640.webp",
+      "grok/mur-de-nuit-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/mur-de-nuit-640.webp": 7436,
+      "grok/mur-de-nuit-1280.webp": 49022,
+      "grok/mur-de-nuit-1920.webp": 109840,
+      "grok/mur-de-nuit-mobile-640.webp": 19222,
+      "grok/mur-de-nuit-mobile-1080.webp": 59828
+    },
+    "media": "c.media({ nom: 'grok/mur-de-nuit', alt: \"\", cadrage: '83% 50%', cadrageMobile: '75% 73%', sizes: '100vw', priorite: true })"
+  },
+  "grok/cabinet-lumiere": {
+    "nom": "grok/cabinet-lumiere",
+    "source": "recu/grok/cabinet-lumiere.jpg",
+    "role": "section-fond",
+    "alt": "La pièce du cabinet en lumière douce : poutres blanchies, divan de velours gris, fauteuil gris et lampe en bois flotté",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 5,
+    "empreinte": "272dd1f171cbdad3",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "42% 75%"
+    },
+    "cadrage": "55% 55%",
+    "sujet": {
+      "x": 3.1,
+      "y": 18.2,
+      "l": 96.9,
+      "h": 72.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.48,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.43,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.14,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.09,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1536,
+      "height": 1024,
+      "source": [
+        1536,
+        1024
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,25 fois (source de 1536 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/cabinet-lumiere-640.webp",
+      "grok/cabinet-lumiere-1280.webp",
+      "grok/cabinet-lumiere-1920.webp",
+      "grok/cabinet-lumiere-mobile-640.webp",
+      "grok/cabinet-lumiere-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/cabinet-lumiere-640.webp": 25714,
+      "grok/cabinet-lumiere-1280.webp": 80780,
+      "grok/cabinet-lumiere-1920.webp": 137676,
+      "grok/cabinet-lumiere-mobile-640.webp": 52582,
+      "grok/cabinet-lumiere-mobile-1080.webp": 108542
+    },
+    "media": "c.media({ nom: 'grok/cabinet-lumiere', alt: \"La pièce du cabinet en lumière douce : poutres blanchies, divan de velours gris, fauteuil gris et lampe en bois flotté\", cadrage: '55% 55%', cadrageMobile: '42% 75%', sizes: '100vw' })"
+  },
+  "grok/deux-fauteuils": {
+    "nom": "grok/deux-fauteuils",
+    "source": "recu/grok/deux-fauteuils.jpg",
+    "role": "carte-service",
+    "alt": "Deux fauteuils de velours gris tournés l'un vers l'autre, dans la lumière du soir",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 5,
+    "empreinte": "d7fa14230ed99125",
+    "ratio": "2:3",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "54% 54%",
+    "sujet": {
+      "x": 0,
+      "y": 15.6,
+      "l": 95.5,
+      "h": 78.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.36,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.09,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.08,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.04,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1024,
+      "height": 1536,
+      "source": [
+        1024,
+        1536
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1024 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/deux-fauteuils-480.webp",
+      "grok/deux-fauteuils-640.webp",
+      "grok/deux-fauteuils-784.webp"
+    ],
+    "poids": {
+      "grok/deux-fauteuils-480.webp": 46522,
+      "grok/deux-fauteuils-640.webp": 77406,
+      "grok/deux-fauteuils-784.webp": 109972
+    },
+    "media": "c.media({ nom: 'grok/deux-fauteuils', alt: \"Deux fauteuils de velours gris tournés l'un vers l'autre, dans la lumière du soir\", cadrage: '54% 54%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+  },
+  "grok/visio": {
+    "nom": "grok/visio",
+    "source": "recu/grok/visio.jpg",
+    "role": "carte-service",
+    "alt": "Un ordinateur portable fermé à demi sur un bureau en bois, à côté d'une tasse et d'un bocal de verre",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 5,
+    "empreinte": "f7f9877d89d057c8",
+    "ratio": "2:3",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "51% 59%",
+    "sujet": {
+      "x": 0,
+      "y": 3.1,
+      "l": 95.5,
+      "h": 96.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.23,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.09,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.03,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.02,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1024,
+      "height": 1536,
+      "source": [
+        1024,
+        1536
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1024 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/visio-480.webp",
+      "grok/visio-640.webp",
+      "grok/visio-784.webp"
+    ],
+    "poids": {
+      "grok/visio-480.webp": 31818,
+      "grok/visio-640.webp": 51254,
+      "grok/visio-784.webp": 71650
+    },
+    "media": "c.media({ nom: 'grok/visio', alt: \"Un ordinateur portable fermé à demi sur un bureau en bois, à côté d'une tasse et d'un bocal de verre\", cadrage: '51% 59%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+  },
+  "grok/divan": {
+    "nom": "grok/divan",
+    "source": "recu/grok/divan.jpg",
+    "role": "ouverture",
+    "alt": "Le divan de velours gris, un plaid plié et un coussin, dans la lumière d'une petite fenêtre",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "41c64801e781eebb",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "41% 68%"
+    },
+    "cadrage": "46% 69%",
+    "sujet": {
+      "x": 0,
+      "y": 11.1,
+      "l": 100,
+      "h": 88.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.51,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.33,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.18,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.09,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": "haut",
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1600,
+      "height": 900,
+      "source": [
+        1600,
+        900
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/divan-640.webp",
+      "grok/divan-1280.webp",
+      "grok/divan-1920.webp",
+      "grok/divan-mobile-640.webp",
+      "grok/divan-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/divan-640.webp": 12598,
+      "grok/divan-1280.webp": 35942,
+      "grok/divan-1920.webp": 62106,
+      "grok/divan-mobile-640.webp": 53756,
+      "grok/divan-mobile-1080.webp": 103836
+    },
+    "media": "c.media({ nom: 'grok/divan', alt: \"Le divan de velours gris, un plaid plié et un coussin, dans la lumière d'une petite fenêtre\", cadrage: '46% 69%', cadrageMobile: '41% 68%', sizes: '100vw', priorite: true })"
+  },
+  "grok/voilage": {
+    "nom": "grok/voilage",
+    "source": "recu/grok/voilage.jpg",
+    "role": "ouverture",
+    "alt": "Un voilage léger aux aigrettes de pissenlit soulevé par l'air devant une petite fenêtre",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 5,
+    "empreinte": "7d8f0c1f527511ab",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "67% 57%"
+    },
+    "cadrage": "56% 56%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.32,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.23,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.21,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.18,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1600,
+      "height": 900,
+      "source": [
+        1600,
+        900
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/voilage-640.webp",
+      "grok/voilage-1280.webp",
+      "grok/voilage-1920.webp",
+      "grok/voilage-mobile-640.webp",
+      "grok/voilage-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/voilage-640.webp": 18208,
+      "grok/voilage-1280.webp": 51358,
+      "grok/voilage-1920.webp": 90372,
+      "grok/voilage-mobile-640.webp": 43616,
+      "grok/voilage-mobile-1080.webp": 87482
+    },
+    "media": "c.media({ nom: 'grok/voilage', alt: \"Un voilage léger aux aigrettes de pissenlit soulevé par l'air devant une petite fenêtre\", cadrage: '56% 56%', cadrageMobile: '67% 57%', sizes: '100vw', priorite: true })"
+  },
+  "grok/rai-de-lumiere": {
+    "nom": "grok/rai-de-lumiere",
+    "source": "recu/grok/rai-de-lumiere.jpg",
+    "role": "ouverture",
+    "alt": "Un rai de lumière chaude qui s'élargit sur un mur sombre",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "dfce647b1aac3a0e",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "74% 72%"
+    },
+    "cadrage": "58% 49%",
+    "sujet": {
+      "x": 3.1,
+      "y": 5.6,
+      "l": 96.9,
+      "h": 94.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.55,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.44,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.4,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.31,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1600,
+      "height": 900,
+      "source": [
+        1600,
+        900
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/rai-de-lumiere-640.webp",
+      "grok/rai-de-lumiere-1280.webp",
+      "grok/rai-de-lumiere-1920.webp",
+      "grok/rai-de-lumiere-mobile-640.webp",
+      "grok/rai-de-lumiere-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/rai-de-lumiere-640.webp": 5348,
+      "grok/rai-de-lumiere-1280.webp": 27580,
+      "grok/rai-de-lumiere-1920.webp": 65054,
+      "grok/rai-de-lumiere-mobile-640.webp": 13820,
+      "grok/rai-de-lumiere-mobile-1080.webp": 41108
+    },
+    "media": "c.media({ nom: 'grok/rai-de-lumiere', alt: \"Un rai de lumière chaude qui s'élargit sur un mur sombre\", cadrage: '58% 49%', cadrageMobile: '74% 72%', sizes: '100vw', priorite: true })"
+  },
+  "sandra-rampe": {
+    "nom": "sandra-rampe",
+    "source": "recu/site/psychotherapie-sophrologie-sandra-barba.jpg",
+    "role": "portrait",
+    "alt": "Sandra Barba, souriante, accoudée à une rampe en fer forgé devant un mur de pierre",
+    "grok": false,
+    "mention": null,
+    "beaute": 5,
+    "empreinte": "580a38dd0f967814",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "50% 42%",
+    "sujet": {
+      "x": 16.6,
+      "y": 8.8,
+      "l": 70.5,
+      "h": 60.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.39,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.32,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.28,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.28,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 367,
+      "top": 0,
+      "width": 1066,
+      "height": 1333,
+      "source": [
+        2000,
+        1333
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "sandra-rampe-480.webp",
+      "sandra-rampe-640.webp",
+      "sandra-rampe-784.webp"
+    ],
+    "poids": {
+      "sandra-rampe-480.webp": 27180,
+      "sandra-rampe-640.webp": 40218,
+      "sandra-rampe-784.webp": 53980
+    },
+    "media": "c.media({ nom: 'sandra-rampe', alt: \"Sandra Barba, souriante, accoudée à une rampe en fer forgé devant un mur de pierre\", cadrage: '50% 42%', sizes: '(max-width: 760px) 100vw, 40vw', ratio: '4 / 5' })"
+  },
+  "sandra-laine": {
+    "nom": "sandra-laine",
+    "source": "recu/site/sandrabarba.jpg",
+    "role": "portrait",
+    "alt": "Sandra Barba souriante, emmitouflée dans un pull de laine blanc",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "277ea10a4ce98b11",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "50% 38%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.11,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.09,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.05,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.03,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 96,
+      "top": 0,
+      "width": 768,
+      "height": 960,
+      "source": [
+        960,
+        960
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "960 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "sandra-laine-480.webp",
+      "sandra-laine-640.webp",
+      "sandra-laine-784.webp"
+    ],
+    "poids": {
+      "sandra-laine-480.webp": 30700,
+      "sandra-laine-640.webp": 47322,
+      "sandra-laine-784.webp": 59702
+    },
+    "media": "c.media({ nom: 'sandra-laine', alt: \"Sandra Barba souriante, emmitouflée dans un pull de laine blanc\", cadrage: '50% 38%', sizes: '(max-width: 760px) 100vw, 40vw', ratio: '4 / 5' })"
+  },
+  "sandra-bibliotheque": {
+    "nom": "sandra-bibliotheque",
+    "source": "recu/site/sandra-barba-specialisee-femmes.jpg",
+    "role": "portrait",
+    "alt": "Sandra Barba en noir et blanc devant une bibliothèque",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "9a8ffa75a0d744c1",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "50% 38%",
+    "sujet": {
+      "x": 23.6,
+      "y": 7.7,
+      "l": 58.3,
+      "h": 61.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.21,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.17,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.12,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.08,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 78,
+      "width": 544,
+      "height": 680,
+      "source": [
+        544,
+        960
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "544 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,44 fois (source de 544 px après recadrage)"
+    ],
+    "fichiers": [
+      "sandra-bibliotheque-480.webp",
+      "sandra-bibliotheque-640.webp",
+      "sandra-bibliotheque-784.webp"
+    ],
+    "poids": {
+      "sandra-bibliotheque-480.webp": 17832,
+      "sandra-bibliotheque-640.webp": 23458,
+      "sandra-bibliotheque-784.webp": 30160
+    },
+    "media": "c.media({ nom: 'sandra-bibliotheque', alt: \"Sandra Barba en noir et blanc devant une bibliothèque\", cadrage: '50% 38%', sizes: '(max-width: 760px) 100vw, 40vw', ratio: '4 / 5' })"
+  },
+  "cabinet-photo": {
+    "nom": "cabinet-photo",
+    "source": "recu/site/cabinet-fauteuil.jpg",
+    "role": "vignette",
+    "alt": "Le vrai cabinet : la lampe en bois flotté et le fauteuil œuf",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "9c9b29c54bf4d9e8",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "51% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 3.1,
+      "l": 98.5,
+      "h": 93.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.44,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.19,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.17,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.07,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 704,
+      "height": 880,
+      "source": [
+        720,
+        880
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "720 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,14 fois (source de 704 px après recadrage)"
+    ],
+    "fichiers": [
+      "cabinet-photo-480.webp",
+      "cabinet-photo-640.webp",
+      "cabinet-photo-800.webp"
+    ],
+    "poids": {
+      "cabinet-photo-480.webp": 17450,
+      "cabinet-photo-640.webp": 25102,
+      "cabinet-photo-800.webp": 33114
+    },
+    "media": "c.media({ nom: 'cabinet-photo', alt: \"Le vrai cabinet : la lampe en bois flotté et le fauteuil œuf\", cadrage: '51% 50%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "aimer-la-vie": {
+    "nom": "aimer-la-vie",
+    "source": "recu/site/entree-boite.jpg",
+    "role": "vignette",
+    "alt": "La vraie boîte lumineuse « AIMER LA VIE » sur le bureau de l'entrée du cabinet, à côté d'un bocal de mousse",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "82d2768a2266cbfa",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "55% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.36,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.13,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.08,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 760,
+      "height": 570,
+      "source": [
+        760,
+        570
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "760 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,05 fois (source de 760 px après recadrage)"
+    ],
+    "fichiers": [
+      "aimer-la-vie-480.webp",
+      "aimer-la-vie-640.webp",
+      "aimer-la-vie-800.webp"
+    ],
+    "poids": {
+      "aimer-la-vie-480.webp": 16594,
+      "aimer-la-vie-640.webp": 26946,
+      "aimer-la-vie-800.webp": 36910
+    },
+    "media": "c.media({ nom: 'aimer-la-vie', alt: \"La vraie boîte lumineuse « AIMER LA VIE » sur le bureau de l'entrée du cabinet, à côté d'un bocal de mousse\", cadrage: '55% 50%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "presse": {
+    "nom": "presse",
+    "source": "recu/site/conference-prevention-violences.jpg",
+    "role": "vignette",
+    "alt": "Article de presse : « Éveiller les consciences sur les violences invisibles »",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "405bccc7c82bdf1c",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "50% 22%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 96.8,
+      "h": 81.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.16,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 36,
+      "top": 0,
+      "width": 770,
+      "height": 963,
+      "source": [
+        841,
+        963
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "841 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "presse-480.webp",
+      "presse-640.webp",
+      "presse-800.webp"
+    ],
+    "poids": {
+      "presse-480.webp": 73388,
+      "presse-640.webp": 111024,
+      "presse-800.webp": 139830
+    },
+    "media": "c.media({ nom: 'presse', alt: \"Article de presse : « Éveiller les consciences sur les violences invisibles »\", cadrage: '50% 22%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "diplome-efpp": {
+    "nom": "diplome-efpp",
+    "source": "recu/site/diplomes-certificats-5.jpg",
+    "role": "vignette",
+    "alt": "Attestation de l'EFPP d'Aix-en-Provence, praticien en psychothérapie",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "cc8d7dd36d9c6264",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "53% 50%",
+    "sujet": {
+      "x": 21.9,
+      "y": 8.9,
+      "l": 59.4,
+      "h": 82.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.39,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.29,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.27,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.25,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 39,
+      "width": 1230,
+      "height": 820,
+      "source": [
+        1230,
+        898
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1230 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "diplome-efpp-480.webp",
+      "diplome-efpp-640.webp",
+      "diplome-efpp-800.webp"
+    ],
+    "poids": {
+      "diplome-efpp-480.webp": 16424,
+      "diplome-efpp-640.webp": 26424,
+      "diplome-efpp-800.webp": 36472
+    },
+    "media": "c.media({ nom: 'diplome-efpp', alt: \"Attestation de l'EFPP d'Aix-en-Provence, praticien en psychothérapie\", cadrage: '53% 50%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+  },
+  "diplome-sophrologie": {
+    "nom": "diplome-sophrologie",
+    "source": "recu/site/diplomes-certificats-3.jpg",
+    "role": "vignette",
+    "alt": "Certificat de sophrologie en relaxation dynamique et relationnelle, École de Provence",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "1a54af13517dfc58",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "29% 30%",
+    "sujet": {
+      "x": 6.3,
+      "y": 9.3,
+      "l": 78.1,
+      "h": 55.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.55,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.38,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.37,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.13,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1592,
+      "height": 1061,
+      "source": [
+        1592,
+        1133
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "diplome-sophrologie-480.webp",
+      "diplome-sophrologie-640.webp",
+      "diplome-sophrologie-800.webp"
+    ],
+    "poids": {
+      "diplome-sophrologie-480.webp": 17524,
+      "diplome-sophrologie-640.webp": 28374,
+      "diplome-sophrologie-800.webp": 40276
+    },
+    "media": "c.media({ nom: 'diplome-sophrologie', alt: \"Certificat de sophrologie en relaxation dynamique et relationnelle, École de Provence\", cadrage: '29% 30%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+  },
+  "diplome-stress": {
+    "nom": "diplome-stress",
+    "source": "recu/site/diplome-sandra-barba-tcc.jpg",
+    "role": "vignette",
+    "alt": "Certificat de formation spécialiste du stress post-traumatique",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "293582eda0e802c3",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "49% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.09,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1684,
+      "height": 1123,
+      "source": [
+        1684,
+        1190
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "diplome-stress-480.webp",
+      "diplome-stress-640.webp",
+      "diplome-stress-800.webp"
+    ],
+    "poids": {
+      "diplome-stress-480.webp": 17210,
+      "diplome-stress-640.webp": 25608,
+      "diplome-stress-800.webp": 33214
+    },
+    "media": "c.media({ nom: 'diplome-stress', alt: \"Certificat de formation spécialiste du stress post-traumatique\", cadrage: '49% 50%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+  }
+}

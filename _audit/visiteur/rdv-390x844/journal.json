@@ -1,0 +1,337 @@
+{
+ "mission": "rdv",
+ "taille": "390x844",
+ "depart": "/",
+ "erreurs": [],
+ "etapes": [
+  {
+   "k": 0,
+   "geste": "arrivée",
+   "resultat": "ok",
+   "gestes": 0,
+   "secondes": 3.4,
+   "adresse": "/",
+   "y": 0,
+   "hauteurPage": 10860,
+   "titres": [
+    "h1 La vie est un combat. Ne le vivez plus seul·e."
+   ],
+   "actions": [
+    "Sandra Barba",
+    "Menu",
+    "Prendre rendez-vous",
+    "07 60 36 58 32",
+    "LE DEUIL",
+    "LA PEUR",
+    "LE COUPLE",
+    "LES VIOLENCES",
+    "LE SOMMEIL",
+    "L’ÉPUISEMENT",
+    "LES EXAMENS",
+    "MA FILLE",
+    "LA NAISSANCE",
+    "Appeler"
+   ],
+   "prixVus": [
+    "65 €"
+   ],
+   "telephonesVus": [
+    "07 60 36 58 32"
+   ],
+   "prixDansLaPage": [
+    "65 €"
+   ],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-0.png"
+  },
+  {
+   "k": 1,
+   "geste": "cliquer Prendre rendez-vous",
+   "resultat": "ok",
+   "gestes": 1,
+   "secondes": 6.4,
+   "adresse": "/rendez-vous#demande",
+   "y": 598,
+   "hauteurPage": 3959,
+   "titres": [
+    "h2 Trois questions, puis Sandra vous répond."
+   ],
+   "actions": [
+    "Sandra Barba",
+    "Menu",
+    "0 7 6 0 3 6 5 8 3 2"
+   ],
+   "prixVus": [
+    "65 €"
+   ],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "65 €"
+   ],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 2,
+   "geste": "cliquer Séance au cabinet",
+   "resultat": "ok",
+   "gestes": 2,
+   "secondes": 8.6,
+   "adresse": "/rendez-vous#demande",
+   "y": 598,
+   "hauteurPage": 3959,
+   "titres": [
+    "h2 Trois questions, puis Sandra vous répond."
+   ],
+   "actions": [
+    "Sandra Barba",
+    "Menu",
+    "0 7 6 0 3 6 5 8 3 2"
+   ],
+   "prixVus": [
+    "65 €"
+   ],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "65 €"
+   ],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 3,
+   "geste": "defiler",
+   "resultat": "ok",
+   "gestes": 3,
+   "secondes": 9.8,
+   "adresse": "/rendez-vous#demande",
+   "y": 1332,
+   "hauteurPage": 3959,
+   "titres": [
+    "h2 89 rue du Portail-Neuf, Aubignan."
+   ],
+   "actions": [
+    "Suivant"
+   ],
+   "prixVus": [
+    "65 €"
+   ],
+   "telephonesVus": [],
+   "prixDansLaPage": [
+    "65 €"
+   ],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 4,
+   "geste": "cliquer Suivant",
+   "resultat": "ok",
+   "gestes": 4,
+   "secondes": 11.9,
+   "adresse": "/rendez-vous#demande",
+   "y": 1332,
+   "hauteurPage": 4126,
+   "titres": [
+    "h2 89 rue du Portail-Neuf, Aubignan."
+   ],
+   "actions": [
+    "Retour",
+    "Suivant"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 5,
+   "geste": "cliquer Au cabinet, à Aubignan",
+   "resultat": "ok",
+   "gestes": 5,
+   "secondes": 14.1,
+   "adresse": "/rendez-vous#demande",
+   "y": 1256,
+   "hauteurPage": 4126,
+   "titres": [],
+   "actions": [
+    "Sandra Barba",
+    "Menu",
+    "Retour",
+    "Suivant"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 6,
+   "geste": "cliquer en fin de journée",
+   "resultat": "ok",
+   "gestes": 6,
+   "secondes": 16.2,
+   "adresse": "/rendez-vous#demande",
+   "y": 1256,
+   "hauteurPage": 4126,
+   "titres": [],
+   "actions": [
+    "Sandra Barba",
+    "Menu",
+    "Retour",
+    "Suivant"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 7,
+   "geste": "cliquer Suivant",
+   "resultat": "ok",
+   "gestes": 7,
+   "secondes": 18.4,
+   "adresse": "/rendez-vous#demande",
+   "y": 1256,
+   "hauteurPage": 4243,
+   "titres": [],
+   "actions": [
+    "Sandra Barba",
+    "Menu",
+    "Retour",
+    "Envoyer la demande"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 8,
+   "geste": "remplir prénom=Claire",
+   "resultat": "ok",
+   "gestes": 8,
+   "secondes": 18.4,
+   "adresse": "/rendez-vous#demande",
+   "y": 1256,
+   "hauteurPage": 4243,
+   "titres": [],
+   "actions": [
+    "Sandra Barba",
+    "Menu",
+    "Retour",
+    "Envoyer la demande"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 9,
+   "geste": "remplir téléphone=06 12 34 56 78",
+   "resultat": "ok",
+   "gestes": 9,
+   "secondes": 18.4,
+   "adresse": "/rendez-vous#demande",
+   "y": 1256,
+   "hauteurPage": 4243,
+   "titres": [],
+   "actions": [
+    "Sandra Barba",
+    "Menu",
+    "Retour",
+    "Envoyer la demande"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 10,
+   "geste": "cliquer Envoyer la demande",
+   "resultat": "ok",
+   "gestes": 10,
+   "secondes": 20.5,
+   "adresse": "/rendez-vous#demande",
+   "y": 1256,
+   "hauteurPage": 3492,
+   "titres": [
+    "h2 89 rue du Portail-Neuf, Aubignan."
+   ],
+   "actions": [
+    "Sandra Barba",
+    "Menu",
+    "Faire une autre demande",
+    "Appeler le 07 60 36 58 32"
+   ],
+   "prixVus": [],
+   "telephonesVus": [
+    "07 60 36 58 32"
+   ],
+   "prixDansLaPage": [],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 11,
+   "geste": "attendre 1500",
+   "resultat": "ok",
+   "gestes": 10,
+   "secondes": 22,
+   "adresse": "/rendez-vous#demande",
+   "y": 1256,
+   "hauteurPage": 3492,
+   "titres": [
+    "h2 89 rue du Portail-Neuf, Aubignan."
+   ],
+   "actions": [
+    "Sandra Barba",
+    "Menu",
+    "Faire une autre demande",
+    "Appeler le 07 60 36 58 32"
+   ],
+   "prixVus": [],
+   "telephonesVus": [
+    "07 60 36 58 32"
+   ],
+   "prixDansLaPage": [],
+   "telephones": [
+    "07 60 36 58 32"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-11.png"
+  }
+ ]
+}

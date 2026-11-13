@@ -1,0 +1,5 @@
+[
+  { "cle": "cabinet", "titre": "Au cabinet", "duree": "1 h", "prix": "65 €", "detail": "Psychothérapie, psychanalyse ou sophrologie, à Aubignan, du lundi au samedi. À domicile pour les personnes à mobilité réduite, sur demande.", "image": "cabinet-photo", "alt": "La vraie pièce du cabinet : divan gris, lampe en bois flotté et fauteuil" },
+  { "cle": "visio", "titre": "En visio", "duree": "1 h", "prix": "65 €", "detail": "« La séance se déroule de façon identique au cabinet », où que vous soyez.", "image": "visio", "alt": "Un ordinateur portable à demi ouvert sur un bureau en bois, à côté d'une tasse" },
+  { "cle": "deux", "titre": "À deux, en famille", "duree": "1 h à 1 h 15", "prix": "65 €", "detail": "Coaching couple (1 h 15) : se comprendre, communiquer, prendre une décision. Coaching famille (1 h), dont la relation mère et fille.", "image": "deux-fauteuils", "alt": "Deux fauteuils de velours gris tournés l'un vers l'autre" }
+]

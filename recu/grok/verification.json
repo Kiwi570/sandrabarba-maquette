@@ -1,0 +1,215 @@
+{
+  "date": "2026-11-13T12:16:17.210Z",
+  "plan": "/home/claude/sandrabarba-maquette/plan-images.json",
+  "attendus": 13,
+  "recus": 6,
+  "planches": [
+    "planche.jpg"
+  ],
+  "inconnus": [],
+  "manquants": [
+    "divan.jpg",
+    "divan-mobile.jpg",
+    "voilage.jpg",
+    "voilage-mobile.jpg",
+    "galets.jpg",
+    "rai-de-lumiere.jpg",
+    "rai-de-lumiere-mobile.jpg"
+  ],
+  "a_regenerer": [
+    {
+      "fichier": "mur-de-nuit.jpg",
+      "problemes": [
+        "ratio 1.78 au lieu de 1168×784"
+      ],
+      "consigne_corrigee": "A bare wall of old lime plaster painted deep navy blue, seen straight on at night, gently uneven hand-troweled texture with soft brush marks, a wide warm glow of lamp light spilling onto the right half of the wall from an unseen source, the left half falling into deep calm shadow, a thin pale limestone skirting at the very bottom, completely empty wall, no frame, no sign, no object, no furniture, no window. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, generous empty space on the left third of the frame for a title. Editorial health photography, calm minimal composition, warm, intimate and quietly hopeful mood, palette of deep navy blue, warm limestone beige, chalk white, charcoal grey velvet, with small touches of raspberry pink and soft coral, soft warm lamp light mixed with gentle late-afternoon daylight from a small deep window, tactile limewashed old wooden ceiling beams, lime-plastered white walls, charcoal grey velvet, pale driftwood and cream wool, set in the quiet consulting room of an old stone village house in southern France on a mild late-autumn afternoon, clean lines, generous negative space, subtle film grain, realistic, high detail. No patient, no medical procedure, no readable file or screen, no syringe, no blood, no anatomy chart, no stairs, no heights, no enclosed space, nothing frightening. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in landscape format, 1168×784 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "fichier": "mur-de-nuit-mobile.jpg",
+      "problemes": [
+        "ratio 0.56 au lieu de 784×1168"
+      ],
+      "consigne_corrigee": "A bare wall of old lime plaster painted deep navy blue, seen straight on at night, gently uneven hand-troweled texture with soft brush marks, a wide warm glow of lamp light spilling onto the right half of the wall from an unseen source, the left half falling into deep calm shadow, a thin pale limestone skirting at the very bottom, completely empty wall, no frame, no sign, no object, no furniture, no window. Vertical composition, aspect ratio 9:16, highest resolution available, at least 1080 pixels wide, main subject well inside the central area with generous margins on every side, so the image can be cropped, main subject in the lower half, quiet uncluttered area in the upper half for a title. Editorial health photography, calm minimal composition, warm, intimate and quietly hopeful mood, palette of deep navy blue, warm limestone beige, chalk white, charcoal grey velvet, with small touches of raspberry pink and soft coral, soft warm lamp light mixed with gentle late-afternoon daylight from a small deep window, tactile limewashed old wooden ceiling beams, lime-plastered white walls, charcoal grey velvet, pale driftwood and cream wool, set in the quiet consulting room of an old stone village house in southern France on a mild late-autumn afternoon, clean lines, generous negative space, subtle film grain, realistic, high detail. No patient, no medical procedure, no readable file or screen, no syringe, no blood, no anatomy chart, no stairs, no heights, no enclosed space, nothing frightening. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "fichier": "cabinet-lumiere-mobile.jpg",
+      "problemes": [
+        "ratio 0.56 au lieu de 784×1168"
+      ],
+      "consigne_corrigee": "Wide view of a small calm consulting room in an old village house: a low ceiling of old wooden beams limewashed white, lime-plastered off-white walls, a charcoal grey velvet chaise longue against the back wall with a few soft grey cushions and a neatly folded grey throw, a grey velvet egg-shaped armchair with a white wool cushion on the right, between them a tall floor lamp whose base is made of bleached driftwood branches with a simple taupe linen shade, switched on and glowing warmly, a round shaggy cream wool rug on a warm wood floor, a small square painting in orange tones on the wall, soft late-afternoon daylight from the left, empty room, no person. Vertical composition, aspect ratio 9:16, highest resolution available, at least 1080 pixels wide, main subject well inside the central area with generous margins on every side, so the image can be cropped, main subject in the lower half, quiet uncluttered area in the upper half for a title. Editorial health photography, calm minimal composition, warm, intimate and quietly hopeful mood, palette of deep navy blue, warm limestone beige, chalk white, charcoal grey velvet, with small touches of raspberry pink and soft coral, soft warm lamp light mixed with gentle late-afternoon daylight from a small deep window, tactile limewashed old wooden ceiling beams, lime-plastered white walls, charcoal grey velvet, pale driftwood and cream wool, set in the quiet consulting room of an old stone village house in southern France on a mild late-autumn afternoon, clean lines, generous negative space, subtle film grain, realistic, high detail. No patient, no medical procedure, no readable file or screen, no syringe, no blood, no anatomy chart, no stairs, no heights, no enclosed space, nothing frightening. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    }
+  ],
+  "images": [
+    {
+      "nom": "grok/mur-de-nuit",
+      "attendu": "mur-de-nuit.jpg",
+      "fichier": "mur-de-nuit.jpg",
+      "priorite": "Indispensable",
+      "problemes": [
+        "ratio 1.78 au lieu de 1168×784"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1672,
+      "hauteur": 941,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "A bare wall of old lime plaster painted deep navy blue, seen straight on at night, gently uneven hand-troweled texture with soft brush marks, a wide warm glow of lamp light spilling onto the right half of the wall from an unseen source, the left half falling into deep calm shadow, a thin pale limestone skirting at the very bottom, completely empty wall, no frame, no sign, no object, no furniture, no window. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, generous empty space on the left third of the frame for a title. Editorial health photography, calm minimal composition, warm, intimate and quietly hopeful mood, palette of deep navy blue, warm limestone beige, chalk white, charcoal grey velvet, with small touches of raspberry pink and soft coral, soft warm lamp light mixed with gentle late-afternoon daylight from a small deep window, tactile limewashed old wooden ceiling beams, lime-plastered white walls, charcoal grey velvet, pale driftwood and cream wool, set in the quiet consulting room of an old stone village house in southern France on a mild late-autumn afternoon, clean lines, generous negative space, subtle film grain, realistic, high detail. No patient, no medical procedure, no readable file or screen, no syringe, no blood, no anatomy chart, no stairs, no heights, no enclosed space, nothing frightening. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in landscape format, 1168×784 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "nom": "grok/mur-de-nuit",
+      "mobile": true,
+      "attendu": "mur-de-nuit-mobile.jpg",
+      "fichier": "mur-de-nuit-mobile.jpg",
+      "priorite": "Indispensable",
+      "problemes": [
+        "ratio 0.56 au lieu de 784×1168"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 941,
+      "hauteur": 1672,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "A bare wall of old lime plaster painted deep navy blue, seen straight on at night, gently uneven hand-troweled texture with soft brush marks, a wide warm glow of lamp light spilling onto the right half of the wall from an unseen source, the left half falling into deep calm shadow, a thin pale limestone skirting at the very bottom, completely empty wall, no frame, no sign, no object, no furniture, no window. Vertical composition, aspect ratio 9:16, highest resolution available, at least 1080 pixels wide, main subject well inside the central area with generous margins on every side, so the image can be cropped, main subject in the lower half, quiet uncluttered area in the upper half for a title. Editorial health photography, calm minimal composition, warm, intimate and quietly hopeful mood, palette of deep navy blue, warm limestone beige, chalk white, charcoal grey velvet, with small touches of raspberry pink and soft coral, soft warm lamp light mixed with gentle late-afternoon daylight from a small deep window, tactile limewashed old wooden ceiling beams, lime-plastered white walls, charcoal grey velvet, pale driftwood and cream wool, set in the quiet consulting room of an old stone village house in southern France on a mild late-autumn afternoon, clean lines, generous negative space, subtle film grain, realistic, high detail. No patient, no medical procedure, no readable file or screen, no syringe, no blood, no anatomy chart, no stairs, no heights, no enclosed space, nothing frightening. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "nom": "grok/cabinet-lumiere",
+      "attendu": "cabinet-lumiere.jpg",
+      "fichier": "cabinet-lumiere.jpg",
+      "priorite": "Indispensable",
+      "problemes": [],
+      "indications": [],
+      "largeur": 1536,
+      "hauteur": 1024,
+      "boites": []
+    },
+    {
+      "nom": "grok/cabinet-lumiere",
+      "mobile": true,
+      "attendu": "cabinet-lumiere-mobile.jpg",
+      "fichier": "cabinet-lumiere-mobile.jpg",
+      "priorite": "Indispensable",
+      "problemes": [
+        "ratio 0.56 au lieu de 784×1168"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 941,
+      "hauteur": 1672,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "Wide view of a small calm consulting room in an old village house: a low ceiling of old wooden beams limewashed white, lime-plastered off-white walls, a charcoal grey velvet chaise longue against the back wall with a few soft grey cushions and a neatly folded grey throw, a grey velvet egg-shaped armchair with a white wool cushion on the right, between them a tall floor lamp whose base is made of bleached driftwood branches with a simple taupe linen shade, switched on and glowing warmly, a round shaggy cream wool rug on a warm wood floor, a small square painting in orange tones on the wall, soft late-afternoon daylight from the left, empty room, no person. Vertical composition, aspect ratio 9:16, highest resolution available, at least 1080 pixels wide, main subject well inside the central area with generous margins on every side, so the image can be cropped, main subject in the lower half, quiet uncluttered area in the upper half for a title. Editorial health photography, calm minimal composition, warm, intimate and quietly hopeful mood, palette of deep navy blue, warm limestone beige, chalk white, charcoal grey velvet, with small touches of raspberry pink and soft coral, soft warm lamp light mixed with gentle late-afternoon daylight from a small deep window, tactile limewashed old wooden ceiling beams, lime-plastered white walls, charcoal grey velvet, pale driftwood and cream wool, set in the quiet consulting room of an old stone village house in southern France on a mild late-autumn afternoon, clean lines, generous negative space, subtle film grain, realistic, high detail. No patient, no medical procedure, no readable file or screen, no syringe, no blood, no anatomy chart, no stairs, no heights, no enclosed space, nothing frightening. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "nom": "grok/deux-fauteuils",
+      "attendu": "deux-fauteuils.jpg",
+      "fichier": "deux-fauteuils.jpg",
+      "priorite": "Indispensable",
+      "problemes": [],
+      "indications": [],
+      "largeur": 1024,
+      "hauteur": 1536,
+      "boites": []
+    },
+    {
+      "nom": "grok/visio",
+      "attendu": "visio.jpg",
+      "fichier": "visio.jpg",
+      "priorite": "Indispensable",
+      "problemes": [],
+      "indications": [],
+      "largeur": 1024,
+      "hauteur": 1536,
+      "boites": []
+    },
+    {
+      "nom": "grok/divan",
+      "attendu": "divan.jpg",
+      "fichier": null,
+      "priorite": "Indispensable",
+      "problemes": [
+        "manquant"
+      ],
+      "indications": []
+    },
+    {
+      "nom": "grok/divan",
+      "mobile": true,
+      "attendu": "divan-mobile.jpg",
+      "fichier": null,
+      "priorite": "Indispensable",
+      "problemes": [
+        "manquant"
+      ],
+      "indications": []
+    },
+    {
+      "nom": "grok/voilage",
+      "attendu": "voilage.jpg",
+      "fichier": null,
+      "priorite": "Indispensable",
+      "problemes": [
+        "manquant"
+      ],
+      "indications": []
+    },
+    {
+      "nom": "grok/voilage",
+      "mobile": true,
+      "attendu": "voilage-mobile.jpg",
+      "fichier": null,
+      "priorite": "Indispensable",
+      "problemes": [
+        "manquant"
+      ],
+      "indications": []
+    },
+    {
+      "nom": "grok/galets",
+      "attendu": "galets.jpg",
+      "fichier": null,
+      "priorite": "Conseillée",
+      "problemes": [
+        "manquant"
+      ],
+      "indications": []
+    },
+    {
+      "nom": "grok/rai-de-lumiere",
+      "attendu": "rai-de-lumiere.jpg",
+      "fichier": null,
+      "priorite": "Indispensable",
+      "problemes": [
+        "manquant"
+      ],
+      "indications": []
+    },
+    {
+      "nom": "grok/rai-de-lumiere",
+      "mobile": true,
+      "attendu": "rai-de-lumiere-mobile.jpg",
+      "fichier": null,
+      "priorite": "Indispensable",
+      "problemes": [
+        "manquant"
+      ],
+      "indications": []
+    }
+  ]
+}
