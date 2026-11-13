@@ -1,102 +1,114 @@
-/* Psychothérapie, couple et famille. Ouverture : fond pierre, très grand titre en tuiles « PARLER »,
-   bandeau du divan sous un voile sombre qui s'efface au défilement. Signature : les trois temps, de la nuit à la pierre. */
+/* Psychothérapie, couple et famille (v2).
+   Deux fonds seulement : la nuit pour l'ouverture et l'appel final, la pierre entre les deux.
+   Ouverture : la boîte « PARLER » posée sur le bureau. Signature : les trois temps en une seule scène épinglée. */
 import { html } from '../../outils/gabarit.mjs';
-import { titreTuiles } from '../gabarits/boite.mjs';
+import { sceneBureau, plateau } from '../gabarits/boite.mjs';
+import { vignettes, visionneuse } from '../gabarits/vignettes.mjs';
 
-export const page = { cle: 'psychotherapie', fichier: 'psychotherapie', imagePartage: 'grok/divan-1280.webp' };
+export const page = { cle: 'psychotherapie', fichier: 'psychotherapie', imagePartage: 'grok/cabinet-lumiere-1280.webp' };
 
 export default (c) => {
-  const temps = [1, 2, 3].map((i) => ({ titre: c.t(`psychotherapie.temps${i}Titre`), texte: c.t(`psychotherapie.temps${i}`) }));
-  const tons = ['ton-nuit', 'ton-crepuscule', 'ton-aube'];
+  const temps = [1, 2, 3].map((i) => ({ mot: c.t(`psychotherapie.temps${i}Mot`), titre: c.t(`psychotherapie.temps${i}Titre`), texte: c.t(`psychotherapie.temps${i}`) }));
+  const themes = c.s('psychotherapie.themes').split('|');
+  const moitie = Math.ceil(themes.length / 2);
+  const ligne = (mots) => html`${[0, 1].map(() => mots.map((m) => html`<span>${m}</span>`))}`;
   return html`
-<section class="page-ouverture po-psy ton-pierre" id="debut">
-  <div class="conteneur po-psy-tete">
-    <p class="surtitre" data-anime="gsap">${c.t('psychotherapie.sur')}</p>
-    <h1 class="page-titre">${titreTuiles(c.s('psychotherapie.tuiles'), 'data-iris-centre')}<span class="ligne-masque"><span class="titre-ligne">${c.t('psychotherapie.titre')}</span></span></h1>
-    <div class="po-psy-bas">
-      <p class="page-chapo" data-anime="gsap">${c.t('psychotherapie.texte')}</p>
-      <div class="page-actions" data-anime="gsap">
-        <p>${c.lien('rendez-vous', { ancre: 'demande', classe: 'bouton', texte: c.t('commun.actionEntete'), attrs: 'data-action-principale' })} <a class="tel tel--sombre" href="tel:${c.site.contact.telephoneLien}">${c.site.contact.telephone}</a></p>
-        <p class="info-cle" data-info-cle>${c.t('psychotherapie.info')}</p>
+<section class="pi-ouverture ton-nuit" id="debut">
+  <div class="conteneur pi-ouverture-grille">
+    <div class="pi-ouverture-texte">
+      <p class="surtitre" data-anime="gsap">${c.t('psychotherapie.sur')}</p>
+      <h1 data-superpose class="pi-titre"><span class="ligne-masque"><span class="titre-ligne" data-anime="gsap">${c.t('psychotherapie.titreLigne1')}</span></span><span class="ligne-masque"><span class="titre-ligne" data-anime="gsap">${c.t('psychotherapie.titreLigne2')} <em>${c.t('psychotherapie.titreMot')}</em></span></span></h1>
+      <p class="pi-chapo" data-anime="gsap">${c.t('psychotherapie.texte')}</p>
+      <p class="pi-actions" data-anime="gsap">${c.lien('rendez-vous', { ancre: 'demande', classe: 'bouton', texte: c.t('commun.actionEntete'), attrs: 'data-action-principale' })} <a class="tel" href="tel:${c.site.contact.telephoneLien}">${c.site.contact.telephone}</a></p>
+      <p class="info-cle" data-info-cle data-anime="gsap">${c.t('psychotherapie.info')}</p>
+    </div>
+    ${sceneBureau({ rangees: ['', c.s('psychotherapie.tuiles'), ''], label: c.s('psychotherapie.tuiles'), attrs: 'data-grille="typo" data-effet="boite-page" data-iris-centre' })}
+  </div>
+  ${plateau()}
+</section>
+
+<section class="pi-temps ton-pierre" id="temps" data-temps data-effet="trois-temps">
+  <div class="pi-temps-collant">
+    <div class="conteneur pi-temps-grille">
+      <div class="pi-temps-tete">
+        <p class="surtitre" data-anime>${c.t('psychotherapie.tempsSur')}</p>
+        <h2 class="titre-section" data-anime="lignes">${c.t('psychotherapie.tempsTitre')}</h2>
+        <ol class="pi-temps-fil" aria-hidden="true">${temps.map((t, i) => html`<li data-fil-temps="${i}"><span>0${i + 1}</span>${t.mot}</li>`)}</ol>
+      </div>
+      <div class="pi-temps-scene" data-visuel>
+        ${temps.map((t, i) => html`<article class="pi-temps-etat${i === 0 ? ' actif' : ''}" data-etat="${i}" data-geant="${String(i + 1)}">
+          <p class="pi-temps-num" aria-hidden="true">0${i + 1}</p>
+          <p class="pi-temps-mot">${t.mot}</p>
+          <div class="pi-temps-texte"><h3 class="visuellement-cache">${t.titre}</h3><p>${t.texte}</p></div>
+        </article>`)}
       </div>
     </div>
   </div>
-  <div class="po-psy-bandeau" data-effet="voile-divan">
-    ${c.media({ nom: 'grok/divan', alt: c.s('psychotherapie.imageAlt'), cadrage: '50% 55%', classe: 'po-psy-media', sizes: '100vw', priorite: true, attrs: 'data-fx="parallaxe" data-fx-force="8"' })}
-    <div class="po-psy-voile" aria-hidden="true"></div>
+</section>
+
+<section class="pi-mots ton-pierre" id="themes">
+  <div class="conteneur">
+    <p class="surtitre" data-anime>${c.t('psychotherapie.themesSur')}</p>
+    <h2 class="titre-section" data-anime="lignes">${c.t('psychotherapie.themesTitre')}</h2>
+  </div>
+  <div class="pi-ruban" data-ruban data-visuel aria-hidden="true">
+    <p class="pi-ruban-ligne" data-ruban-sens="-1">${ligne(themes.slice(0, moitie))}</p>
+    <p class="pi-ruban-ligne pi-ruban-ligne--2" data-ruban-sens="1">${ligne(themes.slice(moitie))}</p>
+  </div>
+  <ul class="visuellement-cache">${themes.map((m) => html`<li>${m}</li>`)}</ul>
+  <div class="conteneur">
+    <p class="pi-grande-citation" data-anime>${c.t('psychotherapie.methode')}</p>
   </div>
 </section>
 
-<section class="trois-temps" id="temps">
-  <span class="temps-ligne" data-effet="trois-temps" aria-hidden="true"></span>
-  ${temps.map((t, i) => html`<div class="temps ${tons[i]}">
-    <div class="conteneur temps-grille">
-      ${i === 0 ? html`<p class="surtitre temps-sur" data-anime>${c.t('psychotherapie.tempsSur')}</p>` : ''}
-      <p class="temps-num" data-anime data-visuel><span class="tuile">${String(i + 1)}</span></p>
-      <div>
-        ${i === 0 ? html`<h2 class="titre-section" data-anime="lignes">${c.t('psychotherapie.tempsTitre')}</h2>` : ''}
-        <h3 class="temps-titre" data-anime="lignes">${t.titre}</h3>
-        <p data-anime>${t.texte}</p>
-      </div>
-    </div>
-  </div>`)}
-</section>
-
-<section class="themes ton-pierre" id="themes">
-  <div class="conteneur themes-grille">
-    <div>
-      <p class="surtitre" data-anime>${c.t('psychotherapie.themesSur')}</p>
-      <h2 class="titre-section" data-anime="lignes">${c.t('psychotherapie.themesTitre')}</h2>
-      <ul class="nuage-tuiles" data-anime="cascade">${c.s('psychotherapie.themes').split('|').map((x) => html`<li><span class="tuile">${x.toUpperCase()}</span></li>`)}</ul>
-      <p class="themes-methode" data-anime>${c.t('psychotherapie.methode')}</p>
-    </div>
-    ${c.media({ nom: 'cabinet-photo', alt: 'Photo du cabinet : divan gris, lampe en bois flotté et fauteuil', cadrage: '55% 45%', classe: 'themes-media', sizes: '(max-width: 760px) 100vw, 34vw', legende: c.t('accueil.cabinetPhoto'), attrs: 'data-anime="rideau"' })}
-  </div>
-</section>
-
-<section class="couple ton-nuit" id="couple">
-  <div class="conteneur couple-grille">
-    ${c.media({ nom: 'grok/deux-fauteuils', alt: c.s('psychotherapie.coupleAlt'), cadrage: '50% 60%', classe: 'couple-media', ratio: '4 / 5', sizes: '(max-width: 760px) 100vw, 42vw', attrs: 'data-fx="parallaxe" data-fx-force="10"' })}
-    <div>
+<section class="pi-couple ton-pierre" id="couple">
+  <div class="conteneur pi-couple-grille">
+    ${c.media({ nom: 'grok/deux-fauteuils', alt: c.s('psychotherapie.coupleAlt'), cadrage: '50% 55%', classe: 'pi-couple-media', ratio: '2 / 3', sizes: '(max-width: 760px) 70vw, 34vw' })}
+    <div class="pi-couple-texte">
       <p class="surtitre" data-anime>${c.t('psychotherapie.coupleSur')}</p>
-      <h2 class="titre-section" data-anime="lignes">${c.t('psychotherapie.coupleTitre')}</h2>
-      <p data-anime>${c.t('psychotherapie.coupleTexte')}</p>
-      <p class="carte-prix" data-anime><span class="tuile tuile--mini">COACHING COUPLE · 1 H 15</span><span class="tuile tuile--mini tuile--rose" data-prix>65 €</span></p>
-      <p data-anime>${c.t('psychotherapie.familleTexte')}</p>
-      <p class="carte-prix" data-anime><span class="tuile tuile--mini">COACHING FAMILLE · 1 H</span><span class="tuile tuile--mini tuile--rose" data-prix>65 €</span></p>
+      <h2 class="titre-section titre-grand" data-anime="lignes">${c.t('psychotherapie.coupleTitre')}</h2>
+      <div class="pi-deux-colonnes">
+        <div data-anime>
+          <h3 class="pi-petit-titre">Coaching couple <span class="pi-prix" data-prix>1 h 15 · 65 €</span></h3>
+          <p>${c.t('psychotherapie.coupleTexte')}</p>
+        </div>
+        <div data-anime>
+          <h3 class="pi-petit-titre">Coaching famille <span class="pi-prix" data-prix>1 h · 65 €</span></h3>
+          <p>${c.t('psychotherapie.familleTexte')}</p>
+        </div>
+      </div>
       <p data-anime>${c.lien('rendez-vous', { ancre: 'demande', params: 'seance=couple', classe: 'lien-fleche', texte: c.t('accueil.seancesRdv') })}</p>
     </div>
   </div>
 </section>
 
-<section class="formations ton-crepuscule" id="formations">
-  <div class="conteneur formations-grille">
+<section class="pi-docs ton-pierre" id="formations">
+  <div class="conteneur pi-docs-grille">
     <div>
-      <p class="surtitre" data-anime>${c.t('psychotherapie.formationsSur')}</p>
-      <h2 class="titre-section" data-anime="lignes">${c.t('psychotherapie.formationsTitre')}</h2>
+      <p class="surtitre" data-anime>${c.t('psychotherapie.docsSur')}</p>
+      <h2 class="titre-section" data-anime="lignes">${c.t('psychotherapie.docsTitre')}</h2>
       <p data-anime>${c.t('psychotherapie.formationsTexte')}</p>
+      <p class="pi-note" data-anime>${c.t('psychotherapie.docsNote')}</p>
     </div>
-    <div class="diplomes" data-anime="cascade">
-      ${c.media({ nom: 'diplome-efpp', alt: 'Attestation de l’EFPP d’Aix-en-Provence, praticien en psychothérapie', classe: 'diplome', ratio: '3 / 2', sizes: '(max-width: 760px) 100vw, 26vw', attrs: 'data-fx="vitesse" data-fx-force="2"' })}
-      ${c.media({ nom: 'diplome-stress', alt: 'Certificat de formation de spécialiste du stress post-traumatique', classe: 'diplome', ratio: '3 / 2', sizes: '(max-width: 760px) 100vw, 26vw', attrs: 'data-fx="vitesse" data-fx-force="2"' })}
-    </div>
+    ${vignettes(c, ['diplome-efpp', 'diplome-stress', 'diplome-sophrologie', 'presse'])}
   </div>
 </section>
 
-<section class="fin ton-pierre" id="fin">
-  <div class="conteneur fin-grille">
+<section class="pi-fin ton-nuit" id="fin">
+  <div class="conteneur pi-fin-grille">
     <div>
       <h2 class="titre-section titre-grand" data-anime="lignes">${c.t('psychotherapie.finTitre')}</h2>
-      <p data-anime>${c.t('psychotherapie.finTexte')}</p>
-      <p class="fin-actions" data-anime>${c.lien('rendez-vous', { ancre: 'demande', classe: 'bouton', texte: c.t('commun.actionEntete') })}<a class="tel tel--sombre" href="tel:${c.site.contact.telephoneLien}">${c.site.contact.telephone}</a></p>
+      <p class="pi-chapo" data-anime>${c.t('psychotherapie.finTexte')}</p>
+      <p class="pi-actions" data-anime>${c.lien('rendez-vous', { ancre: 'demande', classe: 'bouton', texte: c.t('commun.actionEntete') })} <a class="tel" href="tel:${c.site.contact.telephoneLien}">${c.site.contact.telephone}</a></p>
     </div>
-    <div class="fin-cote">
-    ${c.media({ nom: 'grok/visio', alt: 'Un ordinateur portable à demi ouvert sur un bureau en bois, à côté d’une tasse', cadrage: '40% 60%', classe: 'fin-media', ratio: '3 / 2', sizes: '(max-width: 760px) 100vw, 34vw', attrs: 'data-fx="parallaxe" data-fx-force="8"' })}
-    <ul class="tarifs-tuiles" data-anime="cascade">
-      ${c.donnees.seances.map((s) => html`<li><span class="tarif-nom">${s.titre}</span><span class="tuile tuile--mini">${s.duree}</span><span class="tuile tuile--mini tuile--rose" data-prix>${s.prix}</span></li>`)}
-    </ul>
+    <div class="pi-fin-cote">
+      ${c.media({ nom: 'cabinet-photo', alt: 'Le vrai cabinet : le fauteuil œuf et la lampe en bois flotté', cadrage: '55% 45%', classe: 'pi-fin-media', ratio: '4 / 5', sizes: '(max-width: 760px) 40vw, 12vw' })}
+      <dl class="pi-tarifs" data-anime="cascade">
+        ${c.donnees.seances.map((s) => html`<div><dt>${s.titre}</dt><dd>${s.duree} · <strong data-prix>${s.prix}</strong></dd></div>`)}
+      </dl>
     </div>
   </div>
 </section>
+${visionneuse()}
 `;
 };

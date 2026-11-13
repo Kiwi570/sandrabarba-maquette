@@ -47,3 +47,27 @@
 5. Lettres en vol et légende — **fait** : la légende ne s'affiche qu'aux temps d'arrêt (fenêtres 22-40 %, 55-65 %, 83-100 % du défilement), posée sur un fond clair ; les lettres en vol passent pendant qu'elle est masquée. « Avis publiés… » et « Promenez la lumière de la lampe » en 14 px ; l'indice de la lampe a une pastille sombre (contraste ≥ 4,5:1).
 
 Aussi corrigé (audit et vrai visiteur) : tuiles devenues des boutons, démonstration sans disparition, confirmation de la demande ramenée à l'écran, chaque étape recentrée, spécialité visible au premier écran du téléphone, « Quitter vite » en haut sur téléphone, prix des cartes qui passent à la ligne, photos du site en vignette, 404 et sophrologie compactées, plan d'accès sans chevauchement, phrases à plat sans JS.
+
+## Regard n° 4 (accueil v2, 3,6 · AJUSTER) : corrections
+
+1. Garder le mot — **fait** : au début de la plongée, la boîte et le rail gardent le mot affiché (le mot choisi, sinon celui que la démonstration a posé) ; le bouton de la réponse reprend le mot choisi (« Prendre rendez-vous · la peur »).
+2. Ombre de contact et lumière sur le plateau — **fait** : ombre de contact plus nette sous la boîte, flaque de lumière chaude sur le plateau à l'aplomb de la boîte, fil du bois plus contrasté.
+3. Fenêtre de plongée sans double contour — **fait** : la boîte ne grandit plus avant l'ouverture de la fenêtre ; la fenêtre part exactement du panneau.
+4. Deuxième jeu (boîte finale où l'on glisse son mot) — **pas fait** dans cette version, faute de temps : proposé pour la suite.
+5. Finitions — **fait** : la photo ronde des avis remplacée par un grand guillemet (on ne confond plus qui parle), moins de vide avant les avis, consigne du téléphone remontée au-dessus du plateau. La réponse se pose sur le plateau sans faire bouger la boîte (vérifié : même position avant et après le choix d'un mot).
+
+## Regards des pages intérieures (v2) : corrections
+
+Verdicts : Psychothérapie REFAIRE 2,7 · Sophrologie REFAIRE 3,1 · Violences REFAIRE 3,2 · Rendez-vous REFAIRE 3,0. Chaque regard précisait que la direction suit le brief et que tout se corrige en CSS ou en texte.
+
+Communs aux quatre pages — **fait** : plus de tuiles hors de la boîte (l'intro « LA VIE EST UN COMBAT » n'apparaît plus que sur l'accueil, la languette « VOTRE MOT » ne s'affiche qu'avec un mot choisi et en texte) ; la boîte à trois rangées avec ses rails, qui mord sur le plateau avec une ombre de contact ; son halo respire seul et elle répond au survol ; tous les textes à 16 px au moins sur ordinateur et 15 px sur téléphone (surtitres compris) ; gris plus foncés ; sur téléphone, la boîte passe au-dessus du titre ; information clé et bouton dans le premier écran de 320 × 568 à 1920 × 1080.
+
+Psychothérapie — **fait** : trois temps resserrés (250 % d'écran au lieu de 300), grand chiffre au trait derrière le mot, le mot sortant part avant que le suivant arrive, texte à 20-24 px, sous-titre en double retiré ; vides ramenés ; citation et mots qui défilent plus grands ; les quatre vignettes sur une rangée ; dans l'appel final, la vraie photo du fauteuil œuf en petit à la place de l'image générée.
+
+Sophrologie — **fait** : « Respirez avec la boîte » en pleine hauteur, boîte jusqu'à 1 100 px et centrée ; au repos, elle respire seule (4 s pour inspirer, 6 s pour expirer), la lumière monte et descend, INSPIREZ et EXPIREZ s'enchaînent ; boîte d'ouverture plus grande, voile clair allégé ; sur téléphone, le voilage passe en fond de l'ouverture ; principes en trois rangées (chiffre d'environ 180 px, nom d'environ 60 px) ; « Comment ça se passe » en une phrase.
+
+Violences — **fait** : « Quitter vite » au-dessus du voile d'intro, l'en-tête reste affiché sur cette page ; ouverture sur la nuit et le halo de l'accueil (le mur ocre et sa mention « Illustration générée » retirés) ; numéros d'aide à environ 8 rem ; lampe plus grande, bord adouci, mots dans l'ombre un peu plus visibles ; final aligné sur la marge ; vignettes de presse plus grandes ; « ouvrez la vignette » au lieu de « touchez ».
+
+Rendez-vous — **fait** : la boîte « APPELEZ / 07 60 36 / 58 32 », plus grande, lettres qui tombent à l'arrivée, soulevée au survol, lien d'appel ; médaillon avec la légende « Sandra vous répond elle-même, du lundi au samedi. », affiché aussi sur téléphone ; séances une par ligne avec filets fins ; phrase « Trois étapes… » réservée aux lecteurs d'écran ; plan : point pour Vaison-la-Romaine, routes arrêtées sur les points, minutes sous chaque nom, temps de trajet aussi en texte sous le plan ; italiques des titres en pêche comme à l'accueil.
+
+Gardé, avec la raison : sur Sophrologie, la boîte apparaît deux fois (ouverture et exercice) parce que le brief demande les deux ; les portraits `sandra-laine` (960 px) et l'image des deux fauteuils (1024 px) restent sous un quart de l'écran pour rester nets.

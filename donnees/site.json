@@ -3,7 +3,7 @@
   "sousTitre": "Psychothérapie · Sophrologie",
   "adresse": "https://sandrabarba-maquette.vercel.app",
   "siteActuel": "sandrabarba.fr",
-  "version": 1,
+  "version": 2,
   "langues": ["fr"],
   "navigation": ["accueil", "psychotherapie", "sophrologie", "violences", "rendez-vous"],
   "actionEntete": { "page": "rendez-vous", "ancre": "demande" },

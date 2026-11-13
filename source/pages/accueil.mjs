@@ -12,7 +12,6 @@ export default (c) => {
 <section class="plongee ton-nuit" id="debut" data-scene data-grille="scene" data-effet="mettre-des-mots">
 <div class="plongee-collant" data-collant>
 <div class="ouverture">
-  ${c.media({ nom: 'grok/mur-de-nuit', alt: '', cadrage: '70% 40%', priorite: true, classe: 'ouverture-mur', sizes: '100vw' })}
   <div class="halo" data-effet="halo-boite" data-souris aria-hidden="true"></div>
   <div class="ouverture-grille conteneur">
     <div class="ouverture-texte">
@@ -148,7 +147,7 @@ export default (c) => {
   <div class="conteneur">
     <p class="surtitre" data-anime>${c.t('accueil.avisSur')}</p>
     <div class="avis-tete">
-      ${c.media({ nom: 'sandra-laine', alt: 'Sandra Barba souriante, emmitouflée dans un pull de laine blanc', cadrage: '50% 38%', classe: 'avis-portrait', ratio: '1 / 1', sizes: '160px', attrs: 'data-anime="rideau"' })}
+      <svg class="avis-guillemet" data-visuel viewBox="0 0 120 96" aria-hidden="true"><path d="M8 96V58C8 26 26 6 54 0l6 12C42 20 34 32 33 48h21v48H8zm58 0V58c0-32 18-52 46-58l6 12c-18 8-26 20-27 36h21v48H66z" fill="currentColor"/></svg>
       <h2 class="titre-section titre-grand" data-anime="lettres">${c.t('accueil.avisTitre')}</h2>
     </div>
     <ul class="avis-liste" data-anime="cascade">

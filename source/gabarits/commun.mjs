@@ -136,7 +136,7 @@ function voile(c) {
 
 export function page(c, contenu) {
   return html`<!doctype html>
-<html lang="${c.l}" data-v="${c.v}"${c.site.curseur ? brut(' data-curseur') : ''}>
+<html lang="${c.l}" data-v="${c.v}" data-page="${c.page.cle}"${c.site.curseur ? brut(' data-curseur') : ''}>
 ${tete(c)}
 <body id="haut">
 ${voile(c)}

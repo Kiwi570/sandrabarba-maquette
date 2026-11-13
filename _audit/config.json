@@ -1,6 +1,29 @@
 {
-  "siteActuel": "sandrabarba.fr",
-  "pagesTypes": ["/", "/psychotherapie", "/sophrologie", "/violences", "/rendez-vous"],
-  "effets": ["boite-a-mots", "halo-boite", "tuiles", "fil-mot", "titre-tuiles", "mettre-des-mots", "ambiance", "lampe-cabinet", "boite-fin", "trois-temps", "boite-respire", "lampe-violences", "boite-recue"],
-  "grille": { "dispenses": {} }
+ "siteActuel": "sandrabarba.fr",
+ "pagesTypes": [
+  "/",
+  "/psychotherapie",
+  "/sophrologie",
+  "/violences",
+  "/rendez-vous"
+ ],
+ "effets": [
+  "boite-a-mots",
+  "halo-boite",
+  "tuiles",
+  "fil-mot",
+  "titre-tuiles",
+  "mettre-des-mots",
+  "ambiance",
+  "lampe-cabinet",
+  "boite-fin",
+  "trois-temps",
+  "boite-respire",
+  "lampe-violences",
+  "boite-recue",
+  "boite-page"
+ ],
+ "grille": {
+  "dispenses": {}
+ }
 }

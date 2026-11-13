@@ -47,13 +47,13 @@
       "langue": "fr",
       "fichier": "assets/partage/psychotherapie-fr.jpg",
       "gabarit": "droite",
-      "image": "grok/divan-1280.webp",
-      "poids": 48792,
+      "image": "grok/cabinet-lumiere-1280.webp",
+      "poids": 69020,
       "sujet": {
         "x": 600,
-        "y": 70,
+        "y": 115,
         "l": 600,
-        "h": 560
+        "h": 458
       },
       "textes": [
         {

@@ -102,7 +102,7 @@
     "sceneIndice": "Faites défiler, et balayez les lettres avec la souris",
     "sceneIndiceTactile": "Faites défiler, et balayez les lettres du doigt",
     "sceneLabel": "Boîte lumineuse : mettre des mots, en parler, sortir du silence",
-    "scene1Tuiles": "METTRE|DES MOTS",
+    "scene1Tuiles": "METTONS-Y|DES MOTS.",
     "scene1": "Un secret peut rester longtemps « au fond du placard ». Puis un jour, le placard ne reste plus fermé, et les difficultés font surface.",
     "scene2Tuiles": "EN|PARLER",
     "scene2": "« Nous cherchons ensemble à répondre à vos propres questions, trouver vos propres solutions. »",
@@ -162,7 +162,17 @@
     "formationsTitre": "Diplômes et certificats",
     "formationsTexte": "Psychanalyse et pratique de la psychothérapie à l’EFPP d’Aix-en-Provence, thérapies cognitives et comportementales, stress post-traumatique, coaching conjugal, sophrologie.",
     "finTitre": "Et si vous commenciez par en parler ?",
-    "finTexte": "Une première séance pour faire le point, au cabinet ou en visio."
+    "finTexte": "Une première séance pour faire le point, au cabinet ou en visio.",
+    "titreLigne1": "Parler,",
+    "titreLigne2": "pour comprendre ce qui se",
+    "titreMot": "répète.",
+    "temps1Mot": "Affronter",
+    "temps2Mot": "Se reconstruire",
+    "temps3Mot": "Vivre",
+    "docsSur": "Formations et presse",
+    "docsTitre": "Diplômes, certificats, et ce qu’en dit la presse.",
+    "docsNote": "Ouvrez une vignette pour la voir en grand.",
+    "tarifsLigne": "Chaque séance : 65 €."
   },
   "sophrologie": {
     "sur": "Sophrologie · méthode Caycedo",
@@ -199,7 +209,14 @@
     "avecTexte": "Diplômée de l’École de Provence en sophrologie et communication (relaxation dynamique et relationnelle), elle pratique depuis 2005, en cabinet et en entreprise. Valeurs : empathie, écoute, bienveillance.",
     "avecAlt": "Sandra Barba en noir et blanc devant une bibliothèque",
     "finTitre": "Prête, prêt à respirer autrement ?",
-    "finTexte": "Une séance d’1 h, 65 €, au cabinet d’Aubignan ou en visio."
+    "finTexte": "Une séance d’1 h, 65 €, au cabinet d’Aubignan ou en visio.",
+    "titreLigne1": "Il n’y a pas de magie :",
+    "titreMot": "retrouvez-vous.",
+    "principesSur": "Trois principes",
+    "deroulerSur": "Comment ça se passe",
+    "respireLumiere": "La lumière monte quand vous inspirez, descend quand vous expirez.",
+    "portraitAlt": "Sandra Barba, souriante, accoudée à une rampe en fer forgé",
+    "docNote": "Son certificat, en grand au clic."
   },
   "violences": {
     "quitter": "Quitter vite",
@@ -238,7 +255,11 @@
     "diplomeAlt": "Certificat de formation de spécialiste du stress post-traumatique",
     "finTitre": "Ne restez pas seule.",
     "finTexte": "Appelez, envoyez un SMS, ou demandez un rendez-vous : la demande reste entre vous et elle.",
-    "finAppeler": "Appeler 07 60 36 58 32"
+    "finAppeler": "Appeler 07 60 36 58 32",
+    "typesSur": "Quatre formes",
+    "typesTitre": "La violence ne laisse pas toujours de traces.",
+    "portraitAlt": "Sandra Barba, souriante, accoudée à une rampe en fer forgé",
+    "presseLien": "Ouvrir l’article en grand"
   },
   "rendez-vous": {
     "sur": "Prendre rendez-vous",
@@ -285,7 +306,11 @@
     "seanceCabinet": "Séance au cabinet",
     "seanceVisio": "Consultation en visio",
     "seanceCouple": "Coaching couple",
-    "seanceFamille": "Coaching famille"
+    "seanceFamille": "Coaching famille",
+    "titreLigne1": "Un appel, un SMS,",
+    "titreMot": "ou trois questions.",
+    "parking": "Parking gratuit à proximité",
+    "adresseCourte": "89 rue du Portail‑Neuf"
   },
   "404": {
     "tuiles": "PAGE|INTROUVABLE",

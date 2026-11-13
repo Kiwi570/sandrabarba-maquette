@@ -19,14 +19,13 @@
     "robots.txt": 1,
     "numéro de version": 1,
     "langues": 1,
-    "mesures": 39,
-    "balayage": 1
+    "mesures": 22,
+    "balayage": 2
   },
   "infos": [
-    "Numéro de version des fichiers : ?v=1",
-    "Journal v1 : 6 étape(s) notée(s), 213 min de travail pour 135 min de budget, 51 min d’attente de l’utilisateur.",
-    "Journal : « construction : accueil » 111 min pour 45 prévues.",
-    "Journal : « aperçu de l'accueil en films (attente de la réponse notée à part) » 54 min pour 5 prévues.",
+    "Numéro de version des fichiers : ?v=2",
+    "Journal v2 : 2 étape(s) notée(s), 29 min de travail pour 105 min de budget, 0 min d’attente de l’utilisateur.",
+    "Audit standard : étapes lourdes sur /, /psychotherapie.",
     "Accessibilité : axe-core 4.12.1 en plus des contrôles intégrés."
   ],
   "grille": []

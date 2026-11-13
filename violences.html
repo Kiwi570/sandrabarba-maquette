@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2" data-page="violences">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/instrument-serif.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="/assets/fonts/bricolage-tuiles.woff" as="font" type="font/woff" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#161d36">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -106,39 +106,47 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </div>
 <main id="contenu" tabindex="-1">
 <button type="button" class="quitter" data-quitter aria-label="Quitter ce site tout de suite (ouvre une page météo)">Quitter vite ✕</button>
-<section class="page-ouverture po-viol ton-nuit" id="debut">
-  <figure class="media po-viol-media" data-grok style="--cadrage:72% 50%">
-  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/rai-de-lumiere-mobile-640.webp 640w, /assets/images/grok/rai-de-lumiere-mobile-1080.webp 1080w" sizes="100vw">
-    <img src="/assets/images/grok/rai-de-lumiere-1280.webp" srcset="/assets/images/grok/rai-de-lumiere-640.webp 640w, /assets/images/grok/rai-de-lumiere-1280.webp 1280w, /assets/images/grok/rai-de-lumiere-1920.webp 1920w" sizes="100vw" alt="Un rai de lumière chaude qui s’élargit sur un mur sombre" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
-  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
-</figure>
-  <div class="conteneur po-viol-grille">
-    <p class="surtitre" data-anime="gsap">Violences dans l’enfance ou le couple</p>
-    <h1 class="page-titre po-viol-titre"><span class="ligne-masque"><span class="titre-ligne">Mettre des mots,</span></span><span class="ligne-masque"><span class="titre-ligne">en parler,</span></span><span class="titre-tuiles" data-grille="typo" data-effet="titre-tuiles" data-iris-centre><span class="titre-tuiles-ligne"><span class="tuile tuile--titre">SORTIR</span><span class="tuile tuile--titre">DU</span><span class="tuile tuile--titre">SILENCE</span></span></span></h1>
-    <p class="page-chapo" data-anime="gsap">Depuis 2005, Sandra Barba accompagne les femmes dont « le secret est bien caché au fond du placard ». Avec une professionnelle, on peut enfin le dire.</p>
-    <div class="page-actions" data-anime="gsap">
-      <p><a class="bouton" href="tel:+33760365832" data-action-principale>Appeler 07 60 36 58 32</a> <a href="/rendez-vous?mot=violences#demande" class="lien-fleche" data-libelle="Rendez-vous">Prendre rendez-vous</a></p>
-      <p class="info-cle" data-info-cle>3919 · Violences Femmes Info · gratuit et anonyme, 24 h/24</p>
+<section class="pi-ouverture pi-ouverture--viol ton-nuit" id="debut">
+  <div class="conteneur pi-ouverture-grille">
+    <div class="pi-ouverture-texte">
+      <p class="surtitre" data-anime="gsap">Violences dans l’enfance ou le couple</p>
+      <h1 data-superpose class="pi-titre"><span class="ligne-masque"><span class="titre-ligne" data-anime="gsap">Mettre des mots, en parler,</span></span><span class="ligne-masque"><span class="titre-ligne" data-anime="gsap"><em>sortir du silence.</em></span></span></h1>
+      <p class="pi-chapo" data-anime="gsap">Depuis 2005, Sandra Barba accompagne les femmes dont « le secret est bien caché au fond du placard ». Avec une professionnelle, on peut enfin le dire.</p>
+      <div class="page-actions" data-anime="gsap">
+        <p class="pi-actions"><a class="bouton" href="tel:+33760365832" data-action-principale>Appeler 07 60 36 58 32</a> <a href="/rendez-vous?mot=violences#demande" class="lien-fleche" data-libelle="Rendez-vous">Prendre rendez-vous</a></p>
+        <p class="info-cle" data-info-cle>3919 · Violences Femmes Info · gratuit et anonyme, 24 h/24</p>
+      </div>
     </div>
+    <div class="scene-objet">
+  <div class="boite boite--page allumee " data-visuel data-grille="typo" data-effet="boite-page" data-iris-centre role="img" aria-label="SORTIR DU SILENCE">
+  <div class="boite-cadre"><div class="boite-panneau">
+    <p class="boite-rangee" data-rangee="0" aria-hidden="true"><span class="l">S</span><span class="l">O</span><span class="l">R</span><span class="l">T</span><span class="l">I</span><span class="l">R</span><span class="e"> </span><span class="l">D</span><span class="l">U</span></p>
+    <p class="boite-rangee" data-rangee="1" aria-hidden="true"><span class="l">S</span><span class="l">I</span><span class="l">L</span><span class="l">E</span><span class="l">N</span><span class="l">C</span><span class="l">E</span></p>
+    <p class="boite-rangee" data-rangee="2" aria-hidden="true"></p>
+  </div></div>
+</div>
+  <span class="boite-ombre" aria-hidden="true"></span>
+</div>
   </div>
+  <div class="pi-plateau" aria-hidden="true"></div>
 </section>
-<section class="aide ton-crepuscule" id="aide">
+<section class="pi-aide ton-nuit" id="aide">
   <div class="conteneur">
     <p class="surtitre" data-anime>Avant tout</p>
-    <h2 class="titre-section" data-anime="lignes">Si vous êtes en danger, appelez.</h2>
-    <ul class="numeros" data-anime="cascade" data-visuel>
-      <li><a href="tel:17" class="numero"><span class="numero-tuiles"><span class="tuile">1</span><span class="tuile">7</span></span><strong>Police, gendarmerie</strong><span>En danger maintenant. Ou le 112, numéro d’urgence européen.</span></a></li><li><a href="tel:114" class="numero"><span class="numero-tuiles"><span class="tuile">1</span><span class="tuile">1</span><span class="tuile">4</span></span><strong>Par SMS</strong><span>Si vous ne pouvez pas parler : un SMS au 114, 24 h/24.</span></a></li><li><a href="tel:3919" class="numero"><span class="numero-tuiles"><span class="tuile">3</span><span class="tuile">9</span><span class="tuile">1</span><span class="tuile">9</span></span><strong>Violences Femmes Info</strong><span>Écoute, information et orientation. Gratuit et anonyme, 24 h/24 et 7 j/7. Ce n’est pas un numéro d’urgence.</span></a></li><li><a href="tel:119" class="numero"><span class="numero-tuiles"><span class="tuile">1</span><span class="tuile">1</span><span class="tuile">9</span></span><strong>Enfance en danger</strong><span>Pour un enfant, ou si vous êtes témoin. Gratuit, 24 h/24.</span></a></li>
+    <h2 class="titre-section titre-grand" data-anime="lignes">Si vous êtes en danger, appelez.</h2>
+    <ul class="pi-numeros" data-anime="cascade" data-visuel>
+      <li><a href="tel:17" class="pi-numero"><span class="pi-numero-chiffres">17</span><strong>Police, gendarmerie</strong><span class="pi-numero-texte">En danger maintenant. Ou le 112, numéro d’urgence européen.</span></a></li><li><a href="tel:114" class="pi-numero"><span class="pi-numero-chiffres">114</span><strong>Par SMS</strong><span class="pi-numero-texte">Si vous ne pouvez pas parler : un SMS au 114, 24 h/24.</span></a></li><li><a href="tel:3919" class="pi-numero"><span class="pi-numero-chiffres">3919</span><strong>Violences Femmes Info</strong><span class="pi-numero-texte">Écoute, information et orientation. Gratuit et anonyme, 24 h/24 et 7 j/7. Ce n’est pas un numéro d’urgence.</span></a></li><li><a href="tel:119" class="pi-numero"><span class="pi-numero-chiffres">119</span><strong>Enfance en danger</strong><span class="pi-numero-texte">Pour un enfant, ou si vous êtes témoin. Gratuit, 24 h/24.</span></a></li>
     </ul>
-    <p class="aide-note" data-anime>Numéros nationaux, gratuits, joignables même depuis un téléphone bloqué.</p>
+    <p class="pi-note pi-note--clair" data-anime>Numéros nationaux, gratuits, joignables même depuis un téléphone bloqué.</p>
   </div>
 </section>
-<section class="invisibles ton-nuit" id="invisibles">
-  <div class="conteneur invisibles-tete">
+<section class="pi-invisibles ton-nuit" id="invisibles">
+  <div class="conteneur pi-invisibles-tete">
     <p class="surtitre" data-anime>Les violences invisibles</p>
     <h2 class="titre-section" data-anime="lignes">Ce qui ne laisse pas de traces visibles est aussi de la violence.</h2>
-    <p class="invisibles-def" data-anime>« La violence est l’utilisation de force ou de pouvoir, physique ou psychique, pour contraindre, dominer. »</p>
+    <p class="pi-grande-citation pi-grande-citation--clair" data-anime>« La violence est l’utilisation de force ou de pouvoir, physique ou psychique, pour contraindre, dominer. »</p>
   </div>
-  <div class="mur-invisible" data-lampe="50,50" data-effet="lampe-violences" data-souris data-visuel data-audit-ignorer>
+  <div class="mur-invisible pi-mur" data-lampe="50,50" data-effet="lampe-violences" data-souris data-visuel data-audit-ignorer>
     <figure class="media mur-fond" data-grok style="--cadrage:30% 50%">
   <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/mur-de-nuit-mobile-640.webp 640w, /assets/images/grok/mur-de-nuit-mobile-1080.webp 1080w" sizes="100vw">
     <img src="/assets/images/grok/mur-de-nuit-1280.webp" srcset="/assets/images/grok/mur-de-nuit-640.webp 640w, /assets/images/grok/mur-de-nuit-1280.webp 1280w, /assets/images/grok/mur-de-nuit-1920.webp 1920w" sizes="100vw" alt="" width="1280" height="720" loading="lazy" decoding="async">
@@ -148,55 +156,70 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <div class="lampe-lumiere lampe-cercle"><div class="lampe-dedans"><p class="mur-mots mur-mots--allumes" aria-hidden="true"><span style="--i:0">LES INSULTES</span><span style="--i:1">LES REPROCHES</span><span style="--i:2">LE CHANTAGE</span><span style="--i:3">LA MANIPULATION</span><span style="--i:4">LES MENACES</span><span style="--i:5">LA PEUR</span><span style="--i:6">LE SILENCE</span><span style="--i:7">L’ISOLEMENT</span><span style="--i:8">L’ARGENT CONFISQUÉ</span><span style="--i:9">LA HONTE</span></p></div></div>
     <p class="lampe-indice"><i></i><span class="indice-souris">Promenez la lumière sur le mur</span><span class="indice-tactile">Faites glisser votre doigt sur le mur</span></p>
   </div>
+</section>
+<section class="pi-formes ton-pierre" id="formes">
   <div class="conteneur">
-    <ul class="types" data-anime="cascade">
-      <li><h3>Psychologiques</h3><p>Harcèlement moral, insultes, menaces, dans la vie privée ou au travail.</p></li><li><h3>Physiques</h3><p>Coups et blessures.</p></li><li><h3>Sexuelles</h3><p>Viol et attouchements, y compris dans le mariage ou le PACS.</p></li><li><h3>Économiques</h3><p>Privation de ressources, dépendance financière imposée.</p></li>
+    <p class="surtitre" data-anime>Quatre formes</p>
+    <h2 class="titre-section" data-anime="lignes">La violence ne laisse pas toujours de traces.</h2>
+    <ul class="pi-formes-liste" data-anime="cascade" data-visuel>
+      <li><span class="pi-forme-num" aria-hidden="true">1</span><h3>Psychologiques</h3><p>Harcèlement moral, insultes, menaces, dans la vie privée ou au travail.</p></li><li><span class="pi-forme-num" aria-hidden="true">2</span><h3>Physiques</h3><p>Coups et blessures.</p></li><li><span class="pi-forme-num" aria-hidden="true">3</span><h3>Sexuelles</h3><p>Viol et attouchements, y compris dans le mariage ou le PACS.</p></li><li><span class="pi-forme-num" aria-hidden="true">4</span><h3>Économiques</h3><p>Privation de ressources, dépendance financière imposée.</p></li>
     </ul>
   </div>
 </section>
-<section class="approche ton-aube" id="approche">
-  <div class="conteneur approche-grille">
-    <div>
-      <p class="surtitre" data-anime>Comment elle accompagne</p>
-      <h2 class="titre-section" data-anime="lignes">La culpabilité n’est pas la vôtre.</h2>
-      <p data-anime>Les pervers sont forts pour détourner votre confiance et vous accabler. En séance, on remet la responsabilité à sa place, celle de l’agresseur, et on reconstruit pas à pas. « Une femme qui sort de ces tortures est forte de ce passé. »</p>
-      <ul class="points" data-anime="cascade"><li>Au cabinet ou en visio, au rythme que vous choisissez</li><li>Joignable par SMS et par e-mail entre les séances, 7 jours sur 7</li><li>Formée au stress post-traumatique et certifiée sur les violences sexuelles et l’inceste</li></ul>
-    </div>
-    <figure class="media diplome" data-anime="rideau" style="--cadrage:50% 50%;aspect-ratio:3 / 2">
+<section class="pi-avec ton-pierre" id="approche">
+  <div class="conteneur pi-avec-grille">
+    <figure class="media pi-portrait" data-fx="parallaxe" data-fx-force="5" style="--cadrage:46% 38%;aspect-ratio:4 / 5">
   <picture>
-    <img src="/assets/images/diplome-stress-800.webp" srcset="/assets/images/diplome-stress-480.webp 480w, /assets/images/diplome-stress-640.webp 640w, /assets/images/diplome-stress-800.webp 800w" sizes="(max-width: 760px) 100vw, 34vw" alt="Certificat de formation de spécialiste du stress post-traumatique" width="800" height="533" loading="lazy" decoding="async">
+    <img src="/assets/images/sandra-rampe-784.webp" srcset="/assets/images/sandra-rampe-480.webp 480w, /assets/images/sandra-rampe-640.webp 640w, /assets/images/sandra-rampe-784.webp 784w" sizes="(max-width: 760px) 100vw, 44vw" alt="Sandra Barba, souriante, accoudée à une rampe en fer forgé" width="784" height="980" loading="lazy" decoding="async">
   </picture>
 </figure>
+    <div class="pi-avec-texte">
+      <p class="surtitre" data-anime>Comment elle accompagne</p>
+      <h2 class="titre-section titre-grand" data-anime="lignes">La culpabilité n’est pas la vôtre.</h2>
+      <p class="pi-chapo" data-anime>Les pervers sont forts pour détourner votre confiance et vous accabler. En séance, on remet la responsabilité à sa place, celle de l’agresseur, et on reconstruit pas à pas. « Une femme qui sort de ces tortures est forte de ce passé. »</p>
+      <ul class="pi-points" data-anime="cascade"><li>Au cabinet ou en visio, au rythme que vous choisissez</li><li>Joignable par SMS et par e-mail entre les séances, 7 jours sur 7</li><li>Formée au stress post-traumatique et certifiée sur les violences sexuelles et l’inceste</li></ul>
+    </div>
   </div>
 </section>
-<section class="presse ton-pierre" id="presse">
-  <div class="conteneur presse-grille">
-    <figure class="media presse-media" data-fx="parallaxe" data-fx-force="6" style="--cadrage:50% 30%;aspect-ratio:4 / 5">
-  <picture>
-    <img src="/assets/images/presse-800.webp" srcset="/assets/images/presse-480.webp 480w, /assets/images/presse-640.webp 640w, /assets/images/presse-800.webp 800w" sizes="(max-width: 760px) 100vw, 34vw" alt="Article de presse : « Éveiller les consciences sur les violences invisibles »" width="800" height="1001" loading="lazy" decoding="async">
-  </picture>
-</figure>
+<section class="pi-docs ton-pierre" id="presse">
+  <div class="conteneur pi-docs-grille">
     <div>
       <p class="surtitre" data-anime>« La parole se délie »</p>
       <h2 class="titre-section" data-anime="lignes">Éveiller les consciences sur les violences invisibles.</h2>
       <p data-anime>Présidente de l’association Vivre Femmes, fondée en 2017, Sandra Barba donne des conférences, intervient jusque dans les lycées et porte le projet Transition’Elles, un hébergement de transition pour les femmes victimes.</p>
+      <p class="pi-note" data-anime>Ouvrir l’article en grand : ouvrez la vignette.</p>
     </div>
+    <div class="pi-vignettes-grandes"><ul class="vignettes" data-anime="cascade"><li>
+  <button type="button" class="vignette" data-vignette="/assets/images/presse-800.webp" data-vignette-alt="Article de presse : « Éveiller les consciences sur les violences invisibles »" aria-label="Agrandir : Article de presse : « Éveiller les consciences sur les violences invisibles »">
+    <img src="/assets/images/presse-480.webp" alt="" width="480" height="600" loading="lazy" decoding="async">
+  </button>
+  <p class="vignette-legende">La presse, sur Vivre Femmes</p>
+</li><li>
+  <button type="button" class="vignette" data-vignette="/assets/images/diplome-stress-800.webp" data-vignette-alt="Certificat de spécialiste du stress post-traumatique" aria-label="Agrandir : Certificat de spécialiste du stress post-traumatique">
+    <img src="/assets/images/diplome-stress-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+  </button>
+  <p class="vignette-legende">Stress post-traumatique</p>
+</li></ul></div>
   </div>
 </section>
-<section class="fin ton-nuit fin--sombre" id="fin">
-  <div class="conteneur fin-grille">
+<section class="pi-fin ton-nuit" id="fin">
+  <div class="conteneur pi-fin-grille">
     <div>
-      <h2 class="titre-section titre-grand" data-anime="lettres">Ne restez pas seule.</h2>
-      <p data-anime>Appelez, envoyez un SMS, ou demandez un rendez-vous : la demande reste entre vous et elle.</p>
-      <p class="fin-actions" data-anime><a class="bouton" href="tel:+33760365832">Appeler 07 60 36 58 32</a> <a href="/rendez-vous?mot=violences#demande" class="bouton bouton--clair" data-libelle="Rendez-vous">Prendre rendez-vous</a></p>
+      <h2 class="titre-section titre-grand" data-anime="lignes">Ne restez pas seule.</h2>
+      <p class="pi-chapo" data-anime>Appelez, envoyez un SMS, ou demandez un rendez-vous : la demande reste entre vous et elle.</p>
+      <p class="pi-actions" data-anime><a class="bouton" href="tel:+33760365832">Appeler 07 60 36 58 32</a> <a href="/rendez-vous?mot=violences#demande" class="bouton bouton--clair" data-libelle="Rendez-vous">Prendre rendez-vous</a></p>
     </div>
-    <figure class="media fin-media" data-fx="zoom" style="--cadrage:46% 40%;aspect-ratio:1 / 1">
+    <figure class="media pi-fin-photo pi-fin-photo--ronde" style="--cadrage:50% 36%;aspect-ratio:1 / 1">
   <picture>
-    <img src="/assets/images/sandra-rampe-784.webp" srcset="/assets/images/sandra-rampe-480.webp 480w, /assets/images/sandra-rampe-640.webp 640w, /assets/images/sandra-rampe-784.webp 784w" sizes="(max-width: 760px) 100vw, 30vw" alt="Sandra Barba, souriante, accoudée à une rampe en fer forgé" width="784" height="980" loading="lazy" decoding="async">
+    <img src="/assets/images/sandra-laine-784.webp" srcset="/assets/images/sandra-laine-480.webp 480w, /assets/images/sandra-laine-640.webp 640w, /assets/images/sandra-laine-784.webp 784w" sizes="(max-width: 760px) 50vw, 18vw" alt="Sandra Barba souriante, emmitouflée dans un pull de laine blanc" width="784" height="980" loading="lazy" decoding="async">
   </picture>
 </figure>
   </div>
 </section>
+<dialog class="visionneuse" data-visionneuse aria-label="Document en grand">
+  <form method="dialog"><button class="visionneuse-fermer" aria-label="Fermer">✕</button></form>
+  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" width="1" height="1" data-visionneuse-img>
+</dialog>
 </main>
 <footer class="pied" id="pied">
   <div class="conteneur pied-grille">

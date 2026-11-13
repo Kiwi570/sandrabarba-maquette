@@ -3,9 +3,14 @@
 Maquette de présentation, direction « La boîte à mots ». Site statique (HTML, CSS, JavaScript), généré à partir de `donnees/` par `node outils/generer.mjs`, prêt pour Vercel.
 Adresse prévue : https://sandrabarba-maquette.vercel.app
 
-## Pages (v1)
-- Accueil : la boîte lumineuse « Quel mot vous amène ? », Sandra, « Mettre des mots », trois façons de venir, le cabinet, avis, violences, appel.
-- Psychothérapie (avec couple et famille) · Sophrologie · Violences, sortir du silence · Rendez-vous et accès · 404.
+## Pages (v2)
+- Accueil : la boîte lumineuse « Quel mot vous amène ? » sur le bureau, la plongée dans la boîte (« Mettons-y des mots », « En parler », « Sortir du silence »), Sandra, violences, trois façons de venir, le cabinet, avis, appel.
+- Pages intérieures refaites en v2, sur deux fonds seulement (pierre et nuit), avec la boîte une fois, en grand, posée sur le bureau dans l'ouverture :
+  - Psychothérapie : boîte « PARLER », les trois temps en une scène épinglée (Affronter, Se reconstruire, Vivre), les mots qui amènent au cabinet en grande typographie qui défile, couple et famille, formations et presse en vignettes.
+  - Sophrologie : plein cadre sur le voilage avec la boîte « INSPIREZ », « Respirez avec la boîte » en pleine largeur (la lumière suit le souffle), les trois principes, pour qui, portrait.
+  - Violences : boîte « SORTIR DU SILENCE », numéros d'aide en grands chiffres, la lampe sur le mur, les quatre formes, « La culpabilité n'est pas la vôtre » avec le portrait, la presse en vignette, « Ne restez pas seule ».
+  - Rendez-vous : la boîte qui affiche le numéro, la demande en trois étapes, le plan d'accès redessiné.
+- 404.
 - Pages du site actuel non reprises (v2 possible) : À propos complet, Diplômes, Blog (4 articles), Coaching couple en page propre.
 
 ## À fournir par la cliente (à compléter)
@@ -24,6 +29,9 @@ Adresse prévue : https://sandrabarba-maquette.vercel.app
 ## À la mise en ligne définitive
 - Retirer : `noindex` (balise robots dans `source/gabarits/commun.mjs` et en-tête X-Robots-Tag dans `vercel.json`), formulaire de demande simulé (le brancher sur un vrai envoi), mentions « à compléter » du pied de page.
 - Garder : la mention « Illustration générée » sur les images créées par IA.
+
+## Images à remplacer pour aller plus grand
+- `sandra-laine` (960 px) et les images générées `deux-fauteuils` et `visio` (1024 px de large) restent sous un quart de l'écran : au-delà, elles deviennent floues sur un écran Retina. Une version plus grande permettrait de les passer en grand.
 
 ## Travailler sur la maquette
 - Textes : `donnees/textes/fr.json` ; données : `donnees/*.json` ; pages : `source/pages/` ; style : `assets/css/site.css` ; effets : `assets/js/site.js`.

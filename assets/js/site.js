@@ -1,6 +1,6 @@
 /* Sandra Barba — « La boîte à mots ». Effets propres au projet (le reste vient du socle).
    Chaque effet porte data-effet="nom-du-plan" dans les pages. */
-import { demarrer, boucle, etat, versObjet, quand } from './socle/index.js?v=1';
+import { demarrer, boucle, etat, versObjet, quand } from './socle/index.js?v=2';
 
 const gsap = window.gsap;
 const $ = (s, r = document) => r.querySelector(s);
@@ -33,6 +33,7 @@ function majFil() {
   const tuile = $('[data-fil-tuile]'), chip = $('[data-fil-mot]');
   const m = lireMot();
   if (tuile) tuile.textContent = m ? m.tuile : 'VOTRE MOT';
+  document.documentElement.classList.toggle('a-un-mot', !!m);
   if (chip) { chip.textContent = m ? m.tuile : ''; chip.hidden = !m; }
   $$('[data-fil-lien]').forEach((a) => { const u = new URL(a.href, location.href); if (m) u.searchParams.set('mot', m.cle); else u.searchParams.delete('mot'); a.href = u.pathname + u.search + u.hash; });
 }
@@ -231,41 +232,51 @@ function initPlongee() {
   if (!sec || !gsap || !window.ScrollTrigger) return;
   majRailMot();
   const cadre = $('[data-collant]', sec), boiteEl = $('.boite--accueil', sec), dedans = $('[data-panneau]', sec), bac = $('.bac', sec);
-  const texte = $('.ouverture-texte', sec), bureau = $('.bureau', sec), mur = $('.ouverture-mur', sec), halo = $('.halo', sec);
+  const texte = $('.ouverture-texte', sec), bureau = $('.bureau', sec), halo = $('.halo', sec);
+  const panneau = $('.boite-panneau', boiteEl) || boiteEl, rails = $('.rails', dedans), sur = $('.scene-sur', dedans);
   const etapes = [0, 1, 2].map((i) => $$(`.phrase-mot[data-etape="${i}"] .l`, sec));
+  const suivantes = $$('.phrase-mot[data-etape="1"], .phrase-mot[data-etape="2"]', sec);
   const toutes = etapes.flat(), legendes = $$('.legende', sec);
   const alea = (i, k) => { const x = Math.sin(i * 12.9898 + k * 78.233) * 43758.5453; return x - Math.floor(x); };
   const tirage = toutes.map((l, i) => ({ fx: alea(i, 1), fy: alea(i, 2), r: (alea(i, 3) - 0.5) * 80 }));
   let bases = [], dansBac = [], tl = null, st = null;
   const construire = () => {
     if (st) st.kill(); if (tl) tl.kill();
-    gsap.set(boiteEl, { clearProps: 'transform' });
-    gsap.set(toutes, { x: 0, y: 0, rotation: 0 });
-    const fr = cadre.getBoundingClientRect(), br = boiteEl.getBoundingClientRect(), dr = dedans.getBoundingClientRect(), kr = bac.getBoundingClientRect();
-    /* plongée : la boîte grandit jusqu'à ce que son cadre devienne le bord de l'écran */
-    const vw = fr.width, vh = fr.height;
-    const sc = Math.max(vw / br.width, vh / br.height) * 1.08;
-    const dx = vw / 2 - (br.left - fr.left + br.width / 2), dy = vh / 2 - (br.top - fr.top + br.height / 2);
+    gsap.set([boiteEl, ...$$('.rail', rails), dedans, texte, bureau, halo, sur, ...suivantes], { clearProps: 'transform,opacity,clipPath,visibility' });
+    gsap.set(toutes, { x: 0, y: 0, rotation: 0, scale: 1 });
+    const fr = cadre.getBoundingClientRect(), pr = panneau.getBoundingClientRect(), dr = dedans.getBoundingClientRect(), kr = bac.getBoundingClientRect();
     bases = toutes.map((l) => { const r = l.getBoundingClientRect(); return { x: r.left - dr.left + r.width / 2, y: r.top - dr.top + r.height / 2 }; });
-    /* le bac : lettres couchées au bas du cadre, jamais derrière le mot ni sur la légende */
     const bx = kr.left - dr.left, by = kr.top - dr.top, bw = kr.width, bh = kr.height;
     dansBac = toutes.map((l, i) => ({ x: bx + bw * (0.04 + tirage[i].fx * 0.92) - bases[i].x, y: by + bh * (0.3 + tirage[i].fy * 0.45) - bases[i].y, rotation: tirage[i].r, scale: 0.42 }));
-    toutes.forEach((l, i) => gsap.set(l, dansBac[i]));
+    etapes.forEach((ls, e) => { if (e > 0) ls.forEach((l) => gsap.set(l, dansBac[toutes.indexOf(l)])); });
+    /* On entre dans la boîte : l'intérieur s'ouvre par une fenêtre qui part exactement du panneau de la boîte
+       (même crème, mêmes mots), puis s'agrandit jusqu'aux bords de l'écran pendant que les mots grandissent.
+       Rien de lourd ne change de taille : une découpe (clip-path) et le seul bloc de texte. */
+    const ins = [pr.top - fr.top, fr.right - pr.right, fr.bottom - pr.bottom, pr.left - fr.left].map((v) => Math.max(0, v).toFixed(1) + 'px');
+    /* chaque rangée de mots part exactement de la rangée de la boîte (même place, même taille de lettre) */
+    const rangsBoite = $$('.boite-rangee', boiteEl), lignes = $$('.rail', rails);
+    const departs = lignes.map((ln, i) => {
+      const a = ln.getBoundingClientRect(), b = (rangsBoite[i] || panneau).getBoundingClientRect();
+      const fa = parseFloat(getComputedStyle(ln).fontSize) || 1, fb = parseFloat(getComputedStyle(rangsBoite[i] || panneau).fontSize) || fa;
+      return { x: b.left + b.width / 2 - (a.left + a.width / 2), y: b.top + b.height / 2 - (a.top + a.height / 2), scale: fb / fa };
+    });
     tl = gsap.timeline({ paused: true, defaults: { ease: 'none' } });
     /* zone morte au tout début : un reste de défilement ne fait jamais bouger l'ouverture */
-    tl.to(boiteEl, { x: dx, y: dy, scale: sc, duration: 0.17, ease: 'power2.in' }, 0.03)
-      .to(texte, { opacity: 0, x: -80, duration: 0.1 }, 0.03)
-      .to(bureau, { yPercent: 70, opacity: 0, duration: 0.12 }, 0.04)
-      .to([mur, halo], { opacity: 0.25, duration: 0.14 }, 0.04)
-      .set(dedans, { visibility: 'visible' }, 0.16)
-      .to(dedans, { opacity: 1, duration: 0.05 }, 0.16)
-      .to(boiteEl, { opacity: 0, duration: 0.03 }, 0.21)
-      .set([mur, halo], { visibility: 'hidden' }, 0.215);
+    gsap.set(dedans, { visibility: 'hidden', opacity: 1, clipPath: `inset(${ins.join(' ')})` });
+    tl.fromTo(lignes, { x: (i) => departs[i].x, y: (i) => departs[i].y, scale: (i) => departs[i].scale }, { x: 0, y: 0, scale: 1, duration: 0.17, ease: 'power2.inOut' }, 0.04)
+      .set(dedans, { visibility: 'visible' }, 0.04)
+      .fromTo(dedans, { opacity: 0 }, { opacity: 1, duration: 0.02 }, 0.04)
+      .to(dedans, { clipPath: 'inset(0px 0px 0px 0px)', duration: 0.17, ease: 'power2.inOut' }, 0.04)
+      .to(texte, { opacity: 0, x: -48, duration: 0.08 }, 0.03)
+      .to(bureau, { yPercent: 55, opacity: 0, duration: 0.1 }, 0.03)
+      .to(halo, { opacity: 0, duration: 0.1 }, 0.04)
+      .set(boiteEl, { visibility: 'hidden' }, 0.22)
+      .fromTo(suivantes, { opacity: 0 }, { opacity: 1, duration: 0.04 }, 0.19)
+      .fromTo(sur, { opacity: 0 }, { opacity: 1, duration: 0.04 }, 0.19);
     const plan = [[null, 0.4], [0.44, 0.66], [0.7, null]];
     etapes.forEach((ls, e) => {
       const idx = ls.map((l) => toutes.indexOf(l));
-      if (e === 0) gsap.set(ls, { x: 0, y: 0, rotation: 0, scale: 1 });
-      else tl.to(ls, { x: 0, y: 0, rotation: 0, scale: 1, duration: 0.1, ease: 'power3.out', stagger: { each: 0.002, from: 'random' } }, plan[e][0]);
+      if (e > 0) tl.to(ls, { x: 0, y: 0, rotation: 0, scale: 1, duration: 0.1, ease: 'power3.out', stagger: { each: 0.002, from: 'random' } }, plan[e][0]);
       if (plan[e][1] != null) tl.to(ls, { x: (j) => dansBac[idx[j]].x, y: (j) => dansBac[idx[j]].y, rotation: (j) => dansBac[idx[j]].rotation, scale: 0.42, duration: 0.04, ease: 'power2.in', stagger: { each: 0.001, from: 'random' } }, plan[e][1]);
     });
     tl.to({}, { duration: 0.04 }, 0.96);
@@ -275,14 +286,18 @@ function initPlongee() {
       if (oui === plonge) return; plonge = oui;
       if (oui) { const m = lireMot(); boiteEl.dataset.avant = rangs.map((r) => r.textContent.replace(/\s+/g, ' ').trim()).join('|');
         const ph = etapes[0].length ? [$$('.rail .phrase-mot[data-etape="0"]', sec)[0], $$('.rail .phrase-mot[data-etape="0"]', sec)[1]].map((x) => (x ? x.textContent.replace(/\s+/g, ' ').trim() : '')) : ['', ''];
-        rangs[0].innerHTML = lettresHtml(m ? m.tuile : ($('[data-rail-mot]').dataset.defaut || 'ENSEMBLE')); rangs[1].innerHTML = lettresHtml(ph[0]); rangs[2].innerHTML = lettresHtml(ph[1]);
+        /* le mot affiché reste le même dedans : le mot choisi, sinon celui que la démonstration a posé */
+        const vu = rangs[0].textContent.replace(/\s+/g, ' ').trim(), railMot = $('[data-rail-mot]');
+        const motVu = m ? m.tuile : (vu && !/\?|QUEL/.test(vu) ? vu : ((railMot && railMot.dataset.defaut) || 'ENSEMBLE'));
+        rangs[0].innerHTML = lettresHtml(motVu); rangs[1].innerHTML = lettresHtml(ph[0]); rangs[2].innerHTML = lettresHtml(ph[1]);
+        if (railMot && !m) railMot.innerHTML = lettresHtml(motVu);
         boiteEl.classList.add('allumee');
       } else if (boiteEl.dataset.avant) { const v = boiteEl.dataset.avant.split('|'); rangs.forEach((r, k) => { r.innerHTML = lettresHtml(v[k] || ''); }); if (!lireMot()) boiteEl.classList.remove('allumee'); }
     };
     st = window.ScrollTrigger.create({
-      trigger: sec, start: 'top top', end: 'bottom bottom', scrub: 0.35, animation: tl, invalidateOnRefresh: false,
+      trigger: sec, start: 'top top', end: 'bottom bottom', scrub: 0.5, animation: tl, invalidateOnRefresh: false,
       onUpdate: (x) => {
-        const p = x.progress; versDedans(p > 0.03);
+        const p = x.progress; versDedans(p > 0.03); sec.classList.toggle('zoom-fini', p > 0.215); document.documentElement.classList.toggle('fil-au-repos', p < 0.2 && x.isActive !== false && scrollY < sec.offsetTop + sec.offsetHeight * 0.2);
         const fen = [[0.22, 0.4], [0.55, 0.65], [0.83, 1.01]];
         legendes.forEach((l, n) => l.classList.toggle('actif', p >= fen[n][0] && p < fen[n][1]));
       },
@@ -290,8 +305,12 @@ function initPlongee() {
   };
   /* attendre que les polices et la mise en page soient posées */
   construire();
+  if (scrollY < sec.offsetTop + 10) document.documentElement.classList.add('fil-au-repos');
   let attente = null;
   quand('rafraichi', () => { if (scrollY > sec.offsetTop + 10) return; clearTimeout(attente); attente = setTimeout(construire, 150); });
+  /* la boîte n'est à sa vraie place qu'une fois l'ouverture jouée, ou quand la réponse s'affiche : on remesure la fenêtre de départ */
+  if (window.ResizeObserver) { const ro = new ResizeObserver(() => { if (scrollY > sec.offsetTop + 10) return; clearTimeout(attente); attente = setTimeout(construire, 120); }); ro.observe(boiteEl); ro.observe(bureau); }
+  quand('pret', () => { clearTimeout(attente); attente = setTimeout(() => { if (scrollY < sec.offsetTop + 10) construire(); }, 900); });
   /* Balayer les lettres du bac ou des rails : elles s'écartent sous la main, puis reviennent. */
   const ecart = toutes.map(() => ({ x: 0, y: 0 }));
   let px = -9999, py = -9999, actif = 0;
@@ -365,13 +384,22 @@ function initSouffle() {
   const T = { in: z.dataset.inspirez || 'INSPIREZ', out: z.dataset.expirez || 'EXPIREZ', fin: z.dataset.fin || 'MERCI' };
   let n = 0, enCours = false, anim = null;
   /* Au repos, la boîte respire seule, lentement. */
-  const repos = gsap.to(boiteEl, { scale: 1.035, '--lueur': 0.36, duration: 3.2, ease: 'sine.inOut', yoyo: true, repeat: -1, paused: true });
+  const lum = $('[data-respire-lumiere]', z);
+  /* Au repos, la boîte respire seule : 4 s pour inspirer, 6 s pour expirer, la lumière suit, le mot change. */
+  const repos = gsap.timeline({ paused: true, repeat: -1 })
+    .call(() => { if (!enCours) poserRangee(rang[1], T.in, { pas: 0.02 }); }, null, 0)
+    .to(boiteEl, { scale: 1.04, '--lueur': 0.5, duration: 4, ease: 'sine.inOut' }, 0)
+    .call(() => { if (!enCours) poserRangee(rang[1], T.out, { pas: 0.02 }); }, null, 4)
+    .to(boiteEl, { scale: 1, '--lueur': 0.2, duration: 6, ease: 'sine.inOut' }, 4);
+  if (lum) repos.fromTo(lum, { opacity: 0.3, scale: 0.85 }, { opacity: 0.95, scale: 1.15, duration: 4, ease: 'sine.inOut' }, 0).to(lum, { opacity: 0.3, scale: 0.85, duration: 6, ease: 'sine.inOut' }, 4);
+  let animLum = null;
   const io = new IntersectionObserver(([e]) => (e.isIntersecting ? repos.play() : repos.pause())); io.observe(z);
   const inspirer = (e) => {
     e.preventDefault(); if (enCours) return; enCours = true; repos.pause();
     poserRangee(rang[1], T.in, { pas: 0.02 });
     anim && anim.kill();
-    anim = gsap.to(boiteEl, { scale: 1.12, '--lueur': 0.6, duration: 4, ease: 'sine.out' });
+    anim = gsap.to(boiteEl, { scale: 1.1, '--lueur': 0.6, duration: 4, ease: 'sine.out' });
+    if (lum) { animLum && animLum.kill(); animLum = gsap.to(lum, { opacity: 1, scale: 1.25, duration: 4, ease: 'sine.out' }); }
   };
   const expirer = () => {
     if (!enCours) return; enCours = false; n += 1;
@@ -379,6 +407,7 @@ function initSouffle() {
     poserRangee(rang[1], n >= 3 ? T.fin : T.out, { pas: 0.02 });
     anim && anim.kill();
     anim = gsap.to(boiteEl, { scale: 1, '--lueur': 0.2, duration: 5, ease: 'sine.inOut', onComplete: () => { if (n >= 3) { n = 0; } repos.play(); } });
+    if (lum) { animLum && animLum.kill(); animLum = gsap.to(lum, { opacity: 0.35, scale: 0.9, duration: 5, ease: 'sine.inOut' }); }
   };
   bouton.addEventListener('pointerdown', inspirer);
   ['pointerup', 'pointerleave', 'pointercancel'].forEach((ev) => bouton.addEventListener(ev, expirer));
@@ -434,7 +463,7 @@ function initDemande() {
     const r = $('[data-recap]', f); if (!r) return;
     const v = (n) => { const c = $(`[name="${n}"]:checked`, f); return c ? c.dataset.libelle || c.value : ''; };
     const moments = $$('[name="moment"]:checked', f).map((c) => c.dataset.libelle).join(', ');
-    r.innerHTML = [v('seance'), v('lieu'), moments, champMot && champMot.value ? `« ${ech(champMot.options[champMot.selectedIndex].text)} »` : ''].filter(Boolean).map((x) => `<span class="tuile tuile--mini">${ech(x)}</span>`).join('');
+    r.innerHTML = [v('seance'), v('lieu'), moments, champMot && champMot.value ? `« ${ech(champMot.options[champMot.selectedIndex].text)} »` : ''].filter(Boolean).map((x) => `<span class="recap-item">${ech(x)}</span>`).join('');
   };
   f.addEventListener('change', recap);
   $$('[data-suivant]', f).forEach((b) => b.addEventListener('click', () => { if (valide(i)) montrer(i + 1); }));
@@ -443,31 +472,29 @@ function initDemande() {
     e.preventDefault();
     if (!valide(i)) return;
     const envoi = $('[type="submit"]', f); envoi.disabled = true;
-    const boiteEl = $('[data-boite-recue]'), rang = $$('.boite-rangee', boiteEl);
-    const tuilesVol = $$('[data-recap] .tuile', f);
+    const recue = $('[data-demande-recue]'), liste = $('[data-recue-liste]');
+    const tuilesVol = $$('[data-recap] .recap-item', f);
     const fin = () => {
+      if (liste) liste.innerHTML = tuilesVol.map((t) => `<li>${ech(t.textContent)}</li>`).join('');
       $('[data-demande-corps]', f).hidden = true;
-      $('[data-demande-recue]').hidden = false;
-      boiteEl.classList.add('allumee');
-      const lignes = (boiteEl.dataset.recu || 'DEMANDE|REÇUE').split('|');
-      poserRangee(rang[0], lignes[0]); poserRangee(rang[1], lignes[1], { delai: 0.2 });
+      recue.hidden = false;
+      if (gsap) { gsap.fromTo(recue, { y: -26, opacity: 0, rotation: -0.6 }, { y: 0, opacity: 1, rotation: 0, duration: 0.6, ease: 'back.out(1.6)' }); gsap.fromTo($$('li', liste), { y: -30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, stagger: 0.08, ease: 'back.out(2)', delay: 0.15 }); }
       const msg = $('[data-message-envoi]'); if (msg) msg.focus({ preventScroll: true });
       const cible = $('#demande'); if (cible) window.scrollTo({ top: cible.getBoundingClientRect().top + scrollY - (parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--entete-h')) || 72) - 12 });
     };
     if (!gsap || !tuilesVol.length) return fin();
-    const rb = boiteEl.getBoundingClientRect();
+    const rb = f.getBoundingClientRect();
     tuilesVol.forEach((t, k) => {
       const r = t.getBoundingClientRect();
       const c = t.cloneNode(true); c.classList.add('tuile-vol'); c.setAttribute('aria-hidden', 'true');
       Object.assign(c.style, { position: 'fixed', left: `${r.left}px`, top: `${r.top}px`, margin: 0, zIndex: 900 });
       document.body.appendChild(c);
-      gsap.to(c, { x: rb.left + rb.width / 2 - r.left - r.width / 2, y: rb.top + rb.height / 2 - r.top - r.height / 2, rotation: (k % 2 ? 12 : -10), scale: 0.5, opacity: 0, duration: 0.7, delay: k * 0.08, ease: 'power2.in', onComplete: () => c.remove() });
+      gsap.to(c, { x: rb.left + 40 - r.left, y: Math.max(80, rb.top + 120) - r.top + k * 6, rotation: (k % 2 ? 6 : -5), scale: 0.9, opacity: 0, duration: 0.7, delay: k * 0.08, ease: 'power2.in', onComplete: () => c.remove() });
     });
     gsap.delayedCall(0.7 + tuilesVol.length * 0.08, fin);
   });
   $('[data-recommencer]') && $('[data-recommencer]').addEventListener('click', () => {
     f.reset(); $('[data-demande-corps]', f).hidden = false; $('[data-demande-recue]').hidden = true; $('[type="submit"]', f).disabled = false;
-    const boiteEl = $('[data-boite-recue]'); boiteEl.classList.remove('allumee'); $$('.boite-rangee', boiteEl).forEach((r) => { r.innerHTML = ''; });
     montrer(0);
   });
   montrer(0, false);
@@ -480,6 +507,40 @@ function initPsy() {
   if (v) gsap.fromTo(v, { opacity: 1 }, { opacity: 0.08, ease: 'none', scrollTrigger: { trigger: '.po-psy-bandeau', start: 'top 85%', end: 'bottom 30%', scrub: true } });
   const l = $('.temps-ligne');
   if (l) gsap.fromTo(l, { scaleY: 0 }, { scaleY: 1, ease: 'none', scrollTrigger: { trigger: '.trois-temps', start: 'top 70%', end: 'bottom 60%', scrub: true } });
+}
+
+/* ---------- Trois temps (psychothérapie) : une scène épinglée, le grand mot change au défilement ---------- */
+function initTemps() {
+  const sec = $('[data-temps]');
+  if (!sec || !window.ScrollTrigger) return;
+  const etats = $$('.pi-temps-etat', sec), fil = $$('[data-fil-temps]', sec);
+  let courant = -1;
+  const poser = (i) => { if (i === courant) return; courant = i; etats.forEach((e, k) => e.classList.toggle('actif', k === i)); fil.forEach((e, k) => e.classList.toggle('actif', k <= i)); };
+  poser(0);
+  window.ScrollTrigger.create({ trigger: sec, start: 'top top', end: 'bottom bottom', onUpdate: (x) => poser(Math.min(etats.length - 1, Math.floor(x.progress * etats.length * 0.999))) });
+}
+
+/* ---------- Les mots qui amènent au cabinet : deux lignes de grande typographie qui défilent en sens contraire ---------- */
+function initRuban() {
+  if (!gsap || !window.ScrollTrigger) return;
+  $$('[data-ruban]').forEach((r) => {
+    $$('[data-ruban-sens]', r).forEach((l) => {
+      const sens = Number(l.dataset.rubanSens) || 1;
+      gsap.fromTo(l, { xPercent: sens > 0 ? -30 : 0 }, { xPercent: sens > 0 ? 0 : -30, ease: 'none', scrollTrigger: { trigger: r, start: 'top bottom', end: 'bottom top', scrub: 0.4 } });
+    });
+  });
+}
+
+/* ---------- Vignettes (diplômes, presse) : s'ouvrent en grand ---------- */
+function initVisionneuse() {
+  const d = $('[data-visionneuse]');
+  if (!d || typeof d.showModal !== 'function') return;
+  const img = $('[data-visionneuse-img]', d);
+  $$('[data-vignette]').forEach((b) => b.addEventListener('click', () => {
+    img.src = b.dataset.vignette; img.alt = b.dataset.vignetteAlt || '';
+    d.showModal();
+  }));
+  d.addEventListener('click', (e) => { if (e.target === d) d.close(); });
 }
 
 /* ---------- Démarrage ---------- */
@@ -496,6 +557,9 @@ demarrer({
     initQuitter();
     initDemande();
     initPsy();
+    initTemps();
+    initRuban();
+    initVisionneuse();
   },
   /* Intro : les tuiles « LA VIE EST UN COMBAT » tombent, le B glisse jusqu'à la boîte, la page s'ouvre depuis elle. */
   jouer() {
@@ -526,8 +590,9 @@ demarrer({
 function arriveePage(tl, t0) {
   const deja = boite && boite.appliquerDeja();
   tl.fromTo('.titre-ligne', { yPercent: 145, opacity: 1 }, { yPercent: 0, opacity: 1, duration: 0.8, stagger: 0.12, ease: 'power3.out' }, t0)
-    .fromTo('.surtitre[data-anime="gsap"], .ouverture-chapo, .ouverture-actions, .info-cle, .indice, .page-chapo, .page-actions', { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, stagger: 0.07 }, t0 + 0.15);
+    .fromTo('.surtitre[data-anime="gsap"], .ouverture-chapo, .ouverture-actions, .info-cle, .indice, .page-chapo, .page-actions, .pi-chapo[data-anime="gsap"], .pi-actions[data-anime="gsap"]', { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, stagger: 0.07 }, t0 + 0.15);
   if (!deja) tl.call(() => montrerLettres($('.boite--accueil')), null, t0 + 0.1);
+  if ($('.boite--page')) tl.call(() => montrerLettres($('.boite--page')), null, t0 + 0.2);
   tl.call(() => poserTitre(0), null, t0 + 0.05);
   if ($('.tuiles') && !deja) tl.call(() => $('.tuiles').classList.add('vues'), null, t0 + 0.34).fromTo('.tuiles .tuile--mot', { y: 24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, stagger: 0.04, ease: 'back.out(1.8)' }, t0 + 0.35);
   if (boite && !deja) tl.call(() => boite.demo(), null, t0 + 0.2);

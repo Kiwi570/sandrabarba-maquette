@@ -909,3 +909,568 @@ html:not(.js) .rail .phrase-mot, html.secours .rail .phrase-mot { white-space: n
   .plongee .ouverture-texte { background: rgba(16,21,40,.84); border-radius: 10px; padding: 10px 14px 12px; margin-inline: -8px; }
 }
 @media (max-width: 760px) and (max-height: 700px) { .plongee .surtitre { display: none; } .plongee .ouverture-texte { padding: 8px 12px 10px; } }
+
+/* ================= v2 : ouverture épurée et plongée fluide ================= */
+/* fond : la nuit, une seule flaque de lumière chaude qui tombe sur la boîte et le bureau */
+.plongee .ouverture { background-color: #131a33; isolation: isolate; }
+.plongee .ouverture::before { content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(38% 52% at 71% 50%, rgba(255,214,164,.30), rgba(255,214,164,.10) 45%, rgba(255,214,164,0) 72%),
+    radial-gradient(70% 60% at 72% 100%, rgba(255,196,140,.16), rgba(255,196,140,0) 70%),
+    radial-gradient(120% 100% at 20% 0%, #1c2546 0%, #141b35 55%, #0e1328 100%); }
+.plongee .halo { width: 52vw; height: 52vw; margin: -26vw 0 0 -26vw; background: radial-gradient(circle, rgba(255,220,170,.16) 0%, rgba(255,220,170,.05) 35%, rgba(255,220,170,0) 62%); }
+/* la boîte : allumée dès l'arrivée, ombres légères (rien de flou et géant à repeindre) */
+.boite--accueil, .boite--accueil:not(.allumee) { --eteinte: .05; }
+.boite--accueil.allumee { --eteinte: 0; }
+.boite--accueil .boite-cadre { box-shadow: inset 0 2px 0 rgba(255,255,255,.9), inset 0 -3px 0 rgba(0,0,0,.08), 0 0 0 1px rgba(0,0,0,.22), 0 1.4cqw 2.2cqw -1cqw rgba(0,0,0,.6); }
+.boite--accueil { will-change: auto; }
+.boite--accueil .boite-panneau { background: linear-gradient(180deg, #fffaf0 0%, #fbf2dc 60%, #f3e6c8 100%); }
+.plongee .objet { position: relative; }
+.plongee .objet::before { content: ''; position: absolute; z-index: -1; left: -18%; right: -18%; top: -22%; bottom: -10%; pointer-events: none; background: radial-gradient(closest-side, rgba(255,226,182,.22), rgba(255,226,182,0)); }
+/* le bureau : un plateau plus fin, les tuiles posées en une rangée devant la boîte */
+@media (min-width: 761px) {
+  .plongee .ouverture { --bureau-h: clamp(104px, 14svh, 136px); }
+  .plongee .bureau { padding: 18px 0 16px; }
+  .plongee .bureau .objet-bas { width: min(100% - 2 * var(--gouttiere), var(--largeur)); justify-items: stretch; }
+  .plongee .bureau .indice { justify-self: start; align-self: start; transform: none; margin: 0; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; font-weight: 600; color: #fbe9d0; text-shadow: 0 1px 2px rgba(0,0,0,.55); }
+  .plongee .bureau .tuiles { margin: 28px 0 0; max-width: none; justify-content: center; flex-wrap: nowrap; gap: 10px; }
+  .plongee .tuile--mot { font-size: 15px; min-width: 0; min-height: 44px; padding: .62em .9em .5em; letter-spacing: .07em; }
+  .plongee .tuiles li:nth-child(3n+1) .tuile--mot { rotate: -1.2deg; }
+  .plongee .tuiles li:nth-child(3n+2) .tuile--mot { rotate: .8deg; translate: 0 2px; }
+  .plongee .tuiles li:nth-child(4n) .tuile--mot { rotate: 1.6deg; }
+}
+@media (min-width: 761px) and (max-width: 1179px) {
+  .plongee .ouverture { --bureau-h: clamp(140px, 20svh, 176px); }
+  .plongee .bureau .tuiles { flex-wrap: wrap; gap: 8px 10px; max-width: 760px; margin-inline: auto; }
+}
+/* le fil reste discret sur le premier écran de l'accueil : il apparaît quand on descend */
+.fil { transition: opacity .4s; }
+html.fil-au-repos .fil { opacity: 0; }
+/* dans la boîte : pas d'ombre portée sur les lettres en mouvement, pas de couche par lettre */
+.rail .l { will-change: auto; text-shadow: none; }
+.rails .rail { transform-origin: 50% 50%; }
+.dedans { will-change: clip-path; }
+.plongee .halo { background: radial-gradient(circle, rgba(255,220,170,.11) 0%, rgba(255,220,170,.04) 35%, rgba(255,220,170,0) 62%); }
+@media (min-width: 1180px) {
+  .plongee .bureau .indice { transform: translateY(-40px); }
+  .plongee .bureau .tuiles { margin-top: 30px; }
+}
+@media (max-width: 760px) {
+  .plongee .ouverture-texte { background: none; padding: 0; margin-inline: 0; border-radius: 0; }
+  .plongee .bureau { padding-top: 14px; }
+  .plongee .bureau .indice { font-size: 13px; letter-spacing: .02em; color: #fbe9d0; }
+}
+@media (min-width: 761px) { .plongee .bureau .tuiles { align-self: center; margin-top: 0; } }
+/* couches préparées pour la plongée : la boîte et le bloc de mots glissent sans être repeints à chaque image */
+.boite--accueil { will-change: transform; }
+html.js:not(.secours) .rails .rail { will-change: transform; }
+html.js:not(.secours) .plongee.zoom-fini .rails .rail { will-change: auto; }
+html.js:not(.secours) .plongee .bureau, html.js:not(.secours) .plongee .ouverture-texte { will-change: transform, opacity; }
+.boite--accueil.allumee .boite-rangee[data-rangee="0"] { color: #a52352; }
+.boite--accueil.allumee .boite-rangee[data-rangee="0"] .l { color: #a52352; }
+/* la réponse tient sur le plateau, sans pousser la boîte */
+@media (min-width: 761px) {
+  .plongee .bureau .reponse { align-self: center; width: min(100%, 980px); justify-self: center; padding: 14px 22px; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 28px; background: rgba(13,17,34,.88); }
+  .plongee .reponse-approche { margin-bottom: .2rem; font-size: 12px; }
+  .plongee .reponse-texte { font-size: 1.15rem; line-height: 1.3; margin: 0; }
+  .plongee .reponse-actions { flex-direction: row; flex-wrap: wrap; align-items: center; gap: 6px 18px; }
+}
+
+/* v2 : sophrologie, la pièce entière en fond (voilage et fenêtre à droite), le texte posé sur le mur clair */
+.po-sophro { position: relative; padding: 0; min-height: 100vh; min-height: 100svh; display: flex; align-items: center; overflow: hidden; isolation: isolate; }
+.po-sophro .po-sophro-media { position: absolute; inset: 0; z-index: -2; border-radius: 0; min-height: 0; height: auto; }
+.po-sophro .po-sophro-media picture, .po-sophro .po-sophro-media img { width: 100%; height: 100%; }
+.po-sophro::before { content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: linear-gradient(90deg, rgba(241,231,214,.93) 0%, rgba(241,231,214,.84) 30%, rgba(241,231,214,.3) 49%, rgba(241,231,214,0) 60%); }
+.po-sophro-grille { display: block; min-height: 0; }
+.po-sophro-texte { padding: calc(var(--entete-h) + 28px) 0 44px; max-width: 540px; align-self: auto; }
+.po-sophro .mention-ia { right: 16px; bottom: 16px; }
+@media (max-height: 620px) and (min-width: 761px) { .po-sophro-texte { padding: calc(var(--entete-h) + 10px) 0 10px; } }
+@media (max-width: 760px) {
+  .po-sophro { display: flex; flex-direction: column-reverse; align-items: stretch; min-height: 0; }
+  .po-sophro .po-sophro-media { position: relative; inset: auto; z-index: 0; height: 52svh; }
+  .po-sophro::before { display: none; }
+  .po-sophro-texte { padding: calc(var(--entete-h) + 18px) 0 22px; max-width: none; }
+}
+
+/* la pièce respire : un très lent va-et-vient de l'image, au rythme d'une respiration calme */
+@keyframes sophro-souffle { from { transform: scale(1); } to { transform: scale(1.035); } }
+html.js .po-sophro .po-sophro-media picture { transform-origin: 72% 50%; animation: sophro-souffle 5.5s ease-in-out infinite alternate; }
+@media (prefers-reduced-motion: reduce) { html.js .po-sophro .po-sophro-media picture { animation: none; } }
+
+/* ===================================================================================
+   v2 : pages intérieures (Psychothérapie, Sophrologie, Violences, Rendez-vous)
+   Deux fonds seulement (pierre, nuit). L'objet signature une fois, en ouverture, posé sur le bureau.
+   =================================================================================== */
+.pi-titre { font-family: var(--police-titres); font-weight: 400; font-size: clamp(2.6rem, 1.5rem + 3.6vw, 5.2rem); line-height: 1.04; margin: 0 0 .35em; color: var(--pierre); }
+.pi-titre em { font-style: italic; color: #f07fa3; }
+.pi-titre--encre { color: var(--encre); }
+.pi-titre--encre em, .ton-pierre .pi-titre em { color: var(--framboise-fonce); }
+.pi-chapo { font-size: clamp(1.05rem, .98rem + .3vw, 1.25rem); line-height: 1.55; max-width: 46ch; }
+.ton-nuit .pi-chapo { color: #ded6c8; }
+.pi-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 26px; margin: 1.4rem 0 .6rem; }
+.pi-note { font-size: 15px; color: #4c5165; }
+.pi-note--clair { color: #c9c2b6; }
+
+
+/* ---------- Ouverture : la nuit, une flaque de lumière, la boîte sur le bureau de pin ---------- */
+.pi-ouverture { position: relative; isolation: isolate; overflow: hidden; min-height: 100vh; min-height: 100svh; display: grid; grid-template-rows: minmax(0, 1fr) var(--plateau-h);
+  padding-top: var(--entete-h); background-color: var(--nuit); --plateau-h: clamp(92px, 13svh, 128px); }
+.pi-ouverture::before { content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(34% 50% at 72% 56%, rgba(255,214,164,.30), rgba(255,214,164,.10) 45%, rgba(255,214,164,0) 72%),
+    radial-gradient(60% 50% at 72% 100%, rgba(255,196,140,.18), rgba(255,196,140,0) 70%),
+    radial-gradient(120% 100% at 20% 0%, #1c2546 0%, #141b35 55%, #0e1328 100%); }
+.pi-ouverture-grille { position: relative; z-index: 2; display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: clamp(24px, 4vw, 72px); align-items: center; padding-block: 28px 0; }
+.pi-ouverture-texte { align-self: center; padding-bottom: 28px; }
+.scene-objet { position: relative; align-self: end; justify-self: center; width: min(100%, 700px, calc((100svh - var(--entete-h) - var(--plateau-h) - 60px) * 16 / 9)); margin-bottom: -16px; z-index: 3; }
+.scene-objet::before { content: ''; position: absolute; z-index: -1; left: -22%; right: -22%; top: -26%; bottom: -8%; pointer-events: none; background: radial-gradient(closest-side, rgba(255,226,182,.24), rgba(255,226,182,0)); }
+.boite--page { aspect-ratio: 16 / 9; will-change: transform; }
+.boite--page .boite-panneau { grid-template-rows: repeat(var(--rangs, 1), minmax(0, 1fr)); background: linear-gradient(180deg, #fffaf0 0%, #fbf2dc 60%, #f3e6c8 100%); }
+.boite--page .boite-panneau::after { display: none; }
+.boite--page .boite-rangee { font-size: 15cqw; }
+.boite--page:has(.boite-rangee + .boite-rangee) { --rangs: 2; }
+.boite--page:has(.boite-rangee + .boite-rangee) .boite-rangee { font-size: 11.5cqw; }
+.boite--page:has(.boite-rangee + .boite-rangee) .boite-panneau::after { display: block; background: linear-gradient(180deg, transparent calc(50% - 1px), rgba(0,0,0,.09) calc(50% - 1px), rgba(0,0,0,.09) 50%, transparent 50%); }
+.boite--page .boite-cadre { box-shadow: inset 0 2px 0 rgba(255,255,255,.9), inset 0 -3px 0 rgba(0,0,0,.08), 0 0 0 1px rgba(0,0,0,.22), 0 1.4cqw 2.2cqw -1cqw rgba(0,0,0,.6); }
+.scene-objet .boite-ombre { display: block; width: 94%; height: 26px; margin: -14px auto 0; position: relative; z-index: -1; border-radius: 50%;
+  background: radial-gradient(50% 32% at 50% 45%, rgba(0,0,0,.8), rgba(0,0,0,0) 100%), radial-gradient(closest-side, rgba(0,0,0,.45), rgba(0,0,0,0)); }
+.pi-plateau { position: relative; z-index: 1; grid-row: 2; perspective: 900px; }
+.pi-plateau::before { content: ''; position: absolute; left: -14%; right: -14%; top: -2px; bottom: 0; transform: rotateX(22deg); transform-origin: 50% 100%;
+  background:
+    radial-gradient(30% 120% at 72% 0%, rgba(255,226,180,.5), rgba(255,226,180,0) 70%),
+    linear-gradient(180deg, rgba(255,232,196,.55) 0, rgba(255,232,196,0) 3px, rgba(0,0,0,0) 30%, rgba(8,5,3,.5) 100%),
+    url("../images/bureau-pin.webp") center / 100% 100%, #7a5333;
+  filter: contrast(1.12) saturate(1.05); }
+.pi-plateau::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 10px; background: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,.35)); }
+.pi-ouverture .info-cle { font-size: 15px; color: #d8d0c4; }
+/* Violences : le rai de lumière en fond, assombri pour que la boîte y prenne la lumière */
+.pi-ouverture--viol .pi-ouverture-fond { position: absolute; inset: 0; z-index: -2; border-radius: 0; }
+.pi-ouverture--viol .pi-ouverture-fond picture, .pi-ouverture--viol .pi-ouverture-fond img { width: 100%; height: 100%; }
+.pi-ouverture--viol::before { background: linear-gradient(90deg, rgba(14,19,40,.92) 0%, rgba(14,19,40,.78) 40%, rgba(14,19,40,.25) 70%, rgba(14,19,40,.35) 100%); }
+.pi-ouverture--viol .mention-ia { left: 16px; right: auto; bottom: calc(var(--plateau-h) + 12px); top: auto; }
+/* Rendez-vous : la boîte au numéro, le portrait en médaillon sous le texte */
+.pi-rdv-boite { display: contents; color: inherit; text-decoration: none; }
+.pi-rdv-portrait { width: clamp(120px, 15vw, 210px); border-radius: 50%; overflow: hidden; margin-top: 18px; }
+.pi-rdv-portrait picture { aspect-ratio: 1 / 1; }
+
+/* ---------- Psychothérapie : les trois temps, une scène épinglée sur la pierre ---------- */
+html.js:not(.secours) .pi-temps { height: 300vh; height: 300svh; }
+html.js:not(.secours) .pi-temps-collant { position: sticky; top: 0; height: 100vh; height: 100svh; display: flex; align-items: center; overflow: hidden; }
+.pi-temps-collant { padding-block: calc(var(--entete-h) + 16px) 32px; }
+.pi-temps-grille { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 2.2fr); gap: clamp(28px, 5vw, 80px); align-items: center; }
+.pi-temps-fil { list-style: none; margin: 2rem 0 0; padding: 0; display: grid; gap: 10px; }
+.pi-temps-fil li { display: flex; gap: 14px; align-items: baseline; font-size: 16px; color: #7b7f8f; transition: color .4s; }
+.pi-temps-fil li span { font-family: var(--police-titres); font-size: 1.5rem; }
+.pi-temps-fil li.actif { color: var(--encre); }
+.pi-temps-fil li.actif span { color: var(--framboise-fonce); }
+.pi-temps-scene { display: grid; }
+.pi-temps-etat { grid-area: 1 / 1; }
+html.js:not(.secours) .pi-temps-etat { opacity: 0; transform: translateY(28px); transition: opacity .55s ease, transform .7s cubic-bezier(.2,.7,.2,1); pointer-events: none; }
+html.js:not(.secours) .pi-temps-etat.actif { opacity: 1; transform: none; pointer-events: auto; }
+html:not(.js) .pi-temps-etat, html.secours .pi-temps-etat { grid-area: auto; margin-bottom: 48px; }
+.pi-temps-num { font-family: var(--police-titres); font-size: clamp(1.6rem, 1.2rem + 1vw, 2.4rem); color: var(--framboise-fonce); margin: 0; }
+.pi-temps-mot { font-family: var(--police-titres); font-size: clamp(3.4rem, 1.6rem + 7.4vw, 9.6rem); line-height: .95; margin: 0 0 .25em; color: var(--encre); letter-spacing: -.01em; }
+.pi-temps-texte { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 28px; align-items: start; max-width: 860px; }
+.pi-temps-texte h3 { font-family: var(--police-titres); font-weight: 400; font-size: clamp(1.5rem, 1.2rem + .8vw, 2rem); line-height: 1.15; margin: 0; }
+.pi-temps-texte p { margin: 0; font-size: 18px; line-height: 1.6; }
+
+/* ---------- Les mots qui amènent au cabinet : deux lignes qui défilent ---------- */
+.pi-mots { padding-block: clamp(64px, 8vw, 120px); overflow: hidden; }
+.pi-ruban { margin: clamp(24px, 3vw, 44px) 0; display: grid; gap: .1em; font-family: var(--police-titres); font-size: clamp(2.6rem, 1.4rem + 4.4vw, 6.4rem); line-height: 1.08; }
+.pi-ruban-ligne { display: flex; gap: .5em; margin: 0; white-space: nowrap; width: max-content; will-change: transform; color: var(--encre); }
+.pi-ruban-ligne span::after { content: '·'; margin-left: .5em; color: var(--corail); }
+.pi-ruban-ligne--2 { font-style: italic; color: #6c5462; }
+html:not(.js) .pi-ruban-ligne { white-space: normal; width: auto; flex-wrap: wrap; }
+.pi-grande-citation { font-family: var(--police-titres); font-size: clamp(1.5rem, 1.1rem + 1.3vw, 2.3rem); line-height: 1.3; max-width: 34ch; margin: 0; color: var(--encre); }
+.pi-grande-citation--clair { color: #efe7da; max-width: 40ch; }
+
+/* ---------- Couple et famille : la grande image et deux colonnes ---------- */
+.pi-couple { padding-block: clamp(56px, 7vw, 110px); }
+.pi-couple-grille { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: clamp(32px, 5vw, 88px); align-items: center; }
+.pi-couple-media { height: min(74vh, 640px); aspect-ratio: 2 / 3; border-radius: 6px; }
+.pi-couple-media picture { height: 100%; aspect-ratio: auto; }
+.pi-deux-colonnes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 40px; margin: 1.2rem 0; }
+.pi-petit-titre { font-family: var(--police-titres); font-weight: 400; font-size: 1.6rem; line-height: 1.15; margin: 0 0 .5rem; }
+.pi-prix { display: block; font-family: var(--police-texte); font-size: 15px; letter-spacing: .04em; color: var(--framboise-fonce); margin-top: .3rem; font-weight: 600; }
+
+/* ---------- Formations et presse : vignettes qui s'ouvrent en grand ---------- */
+.pi-docs { padding-block: clamp(56px, 7vw, 100px); border-top: 1px solid rgba(27,34,64,.12); }
+.pi-docs-grille { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(28px, 5vw, 72px); align-items: center; }
+.vignettes { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 18px; }
+.vignette { display: block; padding: 0; border: 0; background: #fff; border-radius: 4px; cursor: zoom-in; box-shadow: 0 1px 0 rgba(0,0,0,.06), 0 12px 24px -14px rgba(0,0,0,.45); transition: transform .3s, box-shadow .3s; }
+.vignette:hover, .vignette:focus-visible { transform: translateY(-3px) rotate(-.6deg); box-shadow: 0 1px 0 rgba(0,0,0,.06), 0 20px 30px -14px rgba(0,0,0,.5); }
+.vignette img { display: block; width: 150px; height: 108px; object-fit: cover; object-position: 50% 30%; border-radius: 4px; }
+.vignette-legende { font-size: 14px; color: #4c5165; margin: 8px 0 0; max-width: 150px; }
+.visionneuse { border: 0; padding: 0; background: transparent; max-width: min(92vw, 900px); max-height: 92vh; overflow: visible; }
+.visionneuse::backdrop { background: rgba(10,13,26,.82); }
+.visionneuse img { display: block; max-width: min(92vw, 900px); max-height: 86vh; width: auto; height: auto; border-radius: 4px; box-shadow: 0 30px 60px -20px rgba(0,0,0,.7); }
+.visionneuse-fermer { position: absolute; right: -6px; top: -54px; width: 44px; height: 44px; border-radius: 50%; border: 0; background: var(--pierre); color: var(--encre); font-size: 18px; cursor: pointer; }
+
+/* ---------- Appel final (nuit, rejoint le pied de page) ---------- */
+.pi-fin { padding-block: clamp(72px, 9vw, 140px) clamp(48px, 6vw, 88px); }
+.pi-fin-grille { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, .7fr); gap: clamp(28px, 5vw, 80px); align-items: end; }
+.pi-fin-grille--seule { grid-template-columns: minmax(0, 1fr); max-width: 900px; }
+.pi-fin-cote { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 22px; align-items: end; }
+.pi-fin-media { border-radius: 6px; }
+.pi-tarifs { margin: 0; display: grid; gap: 12px; }
+.pi-tarifs div { border-top: 1px solid rgba(236,227,212,.2); padding-top: 10px; }
+.pi-tarifs dt { font-family: var(--police-titres); font-size: 1.35rem; }
+.pi-tarifs dd { margin: 2px 0 0; font-size: 16px; color: #d6cfc3; }
+
+/* ---------- Sophrologie ---------- */
+.pi-sophro-ouverture { display: grid; grid-template-rows: minmax(0, 1fr) var(--plateau-h); padding-top: var(--entete-h); --plateau-h: clamp(92px, 13svh, 128px); }
+.pi-sophro-grille { display: grid !important; grid-template-columns: minmax(0, 1fr) minmax(0, .9fr); gap: clamp(24px, 4vw, 72px); align-items: center; }
+.pi-sophro-ouverture .po-sophro-texte { padding: 28px 0; }
+.pi-sophro-ouverture .scene-objet { width: min(100%, 460px); justify-self: end; margin-right: 4%; }
+.pi-sophro-ouverture .pi-plateau::before { background:
+    radial-gradient(30% 120% at 72% 0%, rgba(255,240,214,.55), rgba(255,240,214,0) 70%),
+    linear-gradient(180deg, rgba(255,240,214,.6) 0, rgba(255,240,214,0) 3px, rgba(0,0,0,0) 30%, rgba(40,24,10,.35) 100%),
+    url("../images/bureau-pin.webp") center / 100% 100%, #8a6340; }
+.pi-respire { position: relative; isolation: isolate; overflow: hidden; padding-block: clamp(72px, 9vw, 140px); text-align: center; }
+.pi-respire-lumiere { position: absolute; z-index: -1; left: 50%; top: 52%; width: 120vmax; height: 120vmax; margin: -60vmax 0 0 -60vmax; border-radius: 50%; pointer-events: none; opacity: .4;
+  background: radial-gradient(closest-side, rgba(255,214,164,.55), rgba(255,214,164,.16) 40%, rgba(255,214,164,0) 70%); will-change: transform, opacity; }
+.pi-respire-grille { display: grid; justify-items: center; }
+.pi-respire-tete { max-width: 760px; }
+.pi-respire-tete .pi-chapo { margin-inline: auto; max-width: 52ch; }
+.pi-respire-objet { width: min(100%, 760px); margin: clamp(24px, 4vw, 56px) 0 8px; }
+.pi-respire-objet .boite { aspect-ratio: 16 / 9; }
+.pi-respire-objet .boite-rangee { font-size: 13cqw; }
+.pi-respire-objet .boite-ombre { display: block; width: 90%; height: 26px; margin: -12px auto 0; border-radius: 50%; background: radial-gradient(closest-side, rgba(0,0,0,.6), rgba(0,0,0,0)); }
+.pi-respire-actions { display: flex; justify-content: center; align-items: center; gap: 22px; margin: 1.6rem 0 .6rem; }
+.pi-principes { padding-block: clamp(64px, 8vw, 120px); }
+.pi-principes-tete { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 12px clamp(28px, 5vw, 80px); align-items: end; }
+.pi-principes-tete .surtitre, .pi-principes-tete .titre-section { grid-column: 1; }
+.pi-principes-tete .pi-chapo { grid-column: 2; grid-row: 1 / span 2; max-width: 52ch; }
+.pi-etapes { list-style: none; margin: clamp(36px, 5vw, 72px) 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid rgba(27,34,64,.18); }
+.pi-etapes li { padding: 22px 24px 0 0; display: grid; gap: 6px; }
+.pi-etapes li + li { border-left: 1px solid rgba(27,34,64,.18); padding-left: 24px; }
+.pi-etape-num { font-family: var(--police-titres); font-size: clamp(4.4rem, 3rem + 4vw, 8rem); line-height: .9; color: var(--framboise-fonce); }
+.pi-etape-nom { font-family: var(--police-titres); font-size: clamp(1.6rem, 1.2rem + 1.2vw, 2.5rem); line-height: 1.1; }
+.pi-deroule { margin-top: clamp(40px, 5vw, 72px); }
+.pi-deroule-liste { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px 40px; counter-reset: d; }
+.pi-deroule-liste li { counter-increment: d; font-size: 17px; line-height: 1.55; }
+.pi-deroule-liste li::before { content: counter(d) '.'; font-family: var(--police-titres); font-size: 1.6rem; color: var(--framboise-fonce); display: block; }
+.pi-avec { padding-block: clamp(56px, 7vw, 110px); }
+.pi-avec-grille { display: grid; grid-template-columns: minmax(0, 44%) minmax(0, 1fr); gap: clamp(32px, 5vw, 88px); align-items: center; }
+.pi-portrait { border-radius: 6px; }
+.pi-portrait picture { aspect-ratio: 4 / 5; }
+.pi-colonnes { list-style: none; margin: 1rem 0 1.6rem; padding: 0; columns: 2; column-gap: 32px; }
+.pi-colonnes li { font-family: var(--police-titres); font-size: 1.45rem; line-height: 1.35; break-inside: avoid; padding: 4px 0; border-bottom: 1px solid rgba(27,34,64,.12); }
+.pi-avec .vignettes { margin-top: 18px; }
+
+/* ---------- Violences ---------- */
+.pi-aide { padding-block: clamp(56px, 7vw, 110px) clamp(40px, 5vw, 72px); }
+.pi-numeros { list-style: none; margin: clamp(24px, 3vw, 44px) 0 1.4rem; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid rgba(236,227,212,.2); }
+.pi-numeros li + li { border-left: 1px solid rgba(236,227,212,.2); }
+.pi-numero { display: grid; gap: 6px; padding: 22px 22px 8px; color: var(--pierre); text-decoration: none; min-height: 44px; }
+.pi-numero:hover .pi-numero-chiffres, .pi-numero:focus-visible .pi-numero-chiffres { color: #ffb4cb; }
+.pi-numero-chiffres { font-family: var(--police-titres); font-size: clamp(3.6rem, 2.4rem + 3.6vw, 7rem); line-height: .9; color: #f07fa3; font-variant-numeric: lining-nums; transition: color .3s; }
+.pi-numero strong { font-size: 18px; }
+.pi-numero-texte { font-size: 16px; color: #cfc8bc; line-height: 1.5; }
+.pi-invisibles { padding-block: clamp(48px, 6vw, 96px) 0; }
+.pi-invisibles-tete { padding-bottom: clamp(28px, 4vw, 56px); }
+.pi-mur { min-height: min(86vh, 760px); }
+.pi-mur .lampe-cercle { width: 46vmax; height: 46vmax; margin: -23vmax 0 0 -23vmax; }
+.pi-mur .lampe-lumiere { background: radial-gradient(circle, rgba(255,226,180,.38) 0, rgba(255,214,160,.16) 30%, rgba(255,214,160,0) 62%); }
+.pi-formes { padding-block: clamp(64px, 8vw, 120px); }
+.pi-formes-liste { list-style: none; margin: clamp(28px, 4vw, 56px) 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid rgba(27,34,64,.18); }
+.pi-formes-liste li { padding: 20px 22px 0 0; }
+.pi-formes-liste li + li { border-left: 1px solid rgba(27,34,64,.18); padding-left: 22px; }
+.pi-forme-num { font-family: var(--police-titres); font-size: 2.6rem; color: var(--framboise-fonce); line-height: 1; }
+.pi-formes-liste h3 { font-family: var(--police-titres); font-weight: 400; font-size: 1.9rem; margin: .3rem 0 .4rem; }
+.pi-formes-liste p { font-size: 17px; line-height: 1.55; margin: 0; }
+.pi-points { margin: 1.2rem 0 0; padding-left: 1.2em; display: grid; gap: 8px; }
+.pi-points li { font-size: 17px; }
+
+/* ---------- Rendez-vous : demande sur la pierre, plan redessiné ---------- */
+.pi-etapes-rdv { list-style: none; margin: 1.4rem 0; padding: 0; display: grid; gap: 10px; }
+.pi-etapes-rdv li { display: flex; align-items: baseline; gap: 14px; font-size: 17px; color: #4c5165; }
+.pi-etapes-rdv .pi-etape-num { font-size: 2rem; line-height: 1; }
+.pi-etapes-rdv li.actif { color: var(--encre); font-weight: 600; }
+.pi-demande-media { border-radius: 6px; max-width: 420px; margin-top: 18px; }
+.choix-detail { display: block; font-size: 15px; color: #4c5165; margin-top: 4px; }
+.choix-detail [data-prix] { color: var(--framboise-fonce); font-weight: 600; }
+.recap { display: flex; flex-wrap: wrap; gap: 8px; }
+.recap-item { display: inline-block; font-size: 15px; padding: 6px 12px; border-radius: 999px; border: 1px solid rgba(27,34,64,.25); background: #fff; }
+.demande-recue { padding: clamp(24px, 3vw, 40px); border-radius: 10px; background: #fff; box-shadow: 0 20px 40px -24px rgba(0,0,0,.35); }
+.demande-recue-titre { font-family: var(--police-titres); font-size: clamp(2.2rem, 1.6rem + 2vw, 3.4rem); line-height: 1; margin: 0 0 .5em; color: var(--encre); }
+.demande-recue-liste { list-style: none; margin: 0 0 1.2rem; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.demande-recue-liste li { font-size: 15px; padding: 6px 12px; border-radius: 999px; background: #f4ecdf; }
+.pi-acces { padding-block: clamp(56px, 7vw, 110px); }
+.pi-plan svg { display: block; width: 100%; height: auto; border-radius: 10px; }
+
+/* ---------- Téléphone ---------- */
+@media (max-width: 760px) {
+  .pi-ouverture { --plateau-h: 72px; }
+  .pi-ouverture-grille { grid-template-columns: minmax(0, 1fr); gap: 18px; padding-top: 14px; }
+  .pi-ouverture-texte { padding-bottom: 6px; }
+  .scene-objet { width: 86%; }
+  .pi-titre { font-size: clamp(2.1rem, 9.4vw, 2.8rem); }
+  .pi-chapo { font-size: 15.5px; }
+  .pi-ouverture .pi-chapo { display: none; }
+  .pi-rdv-portrait { display: none; }
+  .pi-temps-grille { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .pi-temps-fil { display: none; }
+  .pi-temps-texte { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .pi-temps-texte p { font-size: 16px; }
+  .pi-temps-mot { font-size: clamp(2.8rem, 13vw, 4rem); }
+  .pi-couple-grille, .pi-docs-grille, .pi-fin-grille, .pi-avec-grille, .pi-principes-tete { grid-template-columns: minmax(0, 1fr); }
+  .pi-principes-tete .pi-chapo { grid-column: auto; grid-row: auto; }
+  .pi-couple-media { height: auto; width: 62%; }
+  .pi-deux-colonnes, .pi-deroule-liste, .pi-etapes { grid-template-columns: minmax(0, 1fr); }
+  .pi-etapes li + li { border-left: 0; padding-left: 0; border-top: 1px solid rgba(27,34,64,.18); }
+  .pi-etape-num { font-size: 3.6rem; }
+  .pi-numeros, .pi-formes-liste { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pi-numeros li:nth-child(3) { border-left: 0; }
+  .pi-numero { padding: 16px 12px 8px; }
+  .pi-numero-chiffres { font-size: 3.2rem; }
+  .pi-numero-texte { font-size: 15px; }
+  .pi-formes-liste li:nth-child(3) { border-left: 0; padding-left: 0; }
+  .pi-formes-liste li { padding-bottom: 18px; }
+  .pi-colonnes { columns: 1; }
+  .pi-fin-cote { grid-template-columns: 110px minmax(0, 1fr); }
+  .pi-sophro-grille { grid-template-columns: minmax(0, 1fr); }
+  .pi-sophro-ouverture { display: flex; flex-direction: column; }
+  .pi-sophro-ouverture .scene-objet { justify-self: center; margin: 0 auto -10px; width: 80%; }
+  .pi-portrait { width: 100%; }
+  .pi-mur { min-height: 70vh; }
+}
+@media (max-height: 620px) and (min-width: 761px) {
+  .pi-ouverture { --plateau-h: 72px; }
+  .pi-titre { font-size: clamp(2rem, 8vh, 3.2rem); }
+  .pi-ouverture .pi-chapo { display: none; }
+  .scene-objet { width: min(100%, 440px); }
+  .pi-rdv-portrait { display: none; }
+}
+
+/* ---------- Accueil, regard n° 4 ---------- */
+.plongee .bureau::before { background:
+    radial-gradient(26% 130% at 70% 0%, rgba(255,226,180,.55), rgba(255,226,180,0) 70%),
+    radial-gradient(48% 120% at 50% 0%, rgba(255,226,180,.28), rgba(255,226,180,0) 70%),
+    linear-gradient(180deg, rgba(255,232,196,.5) 0, rgba(255,232,196,0) 3px, rgba(0,0,0,0) 30%, rgba(8,5,3,.5) 100%),
+    url("../images/bureau-pin.webp") center / 100% 100%, #7a5333;
+  filter: contrast(1.14) saturate(1.05); }
+.plongee .boite-ombre { height: 30px; margin-top: -16px; background:
+  radial-gradient(50% 26% at 50% 42%, rgba(0,0,0,.85), rgba(0,0,0,0) 100%),
+  radial-gradient(closest-side, rgba(0,0,0,.5), rgba(0,0,0,0)); }
+.avis-guillemet { width: clamp(64px, 7vw, 104px); height: auto; flex: none; color: var(--framboise-fonce); opacity: .9; }
+.avis { padding-top: clamp(40px, 4vw, 64px); }
+.cabinet { padding-bottom: clamp(32px, 4vw, 64px); }
+@media (max-width: 760px) { .plongee .bureau .indice { transform: translateY(-30px); } .plongee .bureau { padding-top: 22px; } }
+/* Sophrologie : la boîte posée sur le bureau, au bas de l'ouverture */
+.pi-sophro-ouverture { align-items: stretch; }
+.pi-sophro-grille { align-self: stretch; align-items: stretch !important; }
+.pi-sophro-ouverture .po-sophro-texte { align-self: center; }
+.pi-sophro-ouverture .scene-objet { align-self: end; }
+.pi-sophro-ouverture .pi-plateau { min-height: var(--plateau-h); }
+@media (max-width: 760px) {
+  .pi-sophro-ouverture .po-sophro-grille { order: 1; }
+  .pi-sophro-ouverture .pi-plateau { order: 2; }
+  .pi-sophro-ouverture .po-sophro-media { order: 3; height: 38svh; }
+  .pi-sophro-ouverture .po-sophro-texte { padding: calc(var(--entete-h) + 14px) 0 8px; }
+}
+/* textes : 16 px au moins sur ordinateur, 15 px sur téléphone (pages intérieures) */
+:is(.pi-ouverture, .pi-sophro-ouverture) .info-cle, .pi-prix, .pi-note, .vignette-legende, .choix-detail, .demande-etapes, .pi-acces .media-legende, .demande .mention-donnees, .pi-avec .petit-titre, .pi-mur .lampe-indice, .recap-item, .demande-recue-liste li, .demande .choix span { font-size: 16px; }
+.pi-avec .petit-titre { letter-spacing: .12em; text-transform: uppercase; font-weight: 600; color: var(--framboise-fonce); }
+@media (max-width: 760px) {
+  :is(.pi-ouverture, .pi-sophro-ouverture) .info-cle, .pi-prix, .pi-note, .vignette-legende, .choix-detail, .demande-etapes, .pi-acces .media-legende, .demande .mention-donnees, .pi-avec .petit-titre, .pi-mur .lampe-indice, .recap-item, .demande-recue-liste li, .demande .choix span, .quitter { font-size: 15px; }
+}
+
+/* ---------- Regards des pages intérieures : corrections ---------- */
+/* plus de tuiles hors de la boîte : l'intro et la languette du fil en texte sur les pages intérieures */
+html:not([data-page="accueil"]) .ouverture-tuiles { display: none; }
+html:not([data-page="accueil"]) .fil-tuile { background: none; box-shadow: none; padding: 0; color: var(--corail); font-family: var(--police-texte); font-weight: 600; font-stretch: normal; letter-spacing: .16em; font-size: 12px; }
+/* la boîte : trois rangées et leurs rails, le mot au milieu ; elle mord sur le plateau ; son halo respire ; elle répond au survol */
+.boite--page { aspect-ratio: 3 / 2; --rangs: 3; }
+.boite--page .boite-panneau { grid-template-rows: repeat(3, minmax(0, 1fr)); }
+.boite--page .boite-panneau::after { display: block !important; background: repeating-linear-gradient(180deg, transparent 0, transparent calc(33.333% - 2px), rgba(0,0,0,.09) calc(33.333% - 2px), rgba(0,0,0,.09) 33.333%) !important; }
+.boite--page .boite-rangee, .boite--page:has(.boite-rangee + .boite-rangee) .boite-rangee { font-size: 11cqw; }
+.scene-objet { margin-bottom: -26px; width: min(100%, 640px, calc((100svh - var(--entete-h) - var(--plateau-h) - 70px) * 3 / 2)); transition: translate .5s cubic-bezier(.2,.7,.2,1); }
+@keyframes halo-respire { from { opacity: .7; } to { opacity: 1; } }
+.scene-objet::before { animation: halo-respire 4.5s ease-in-out infinite alternate; }
+.scene-objet:hover { translate: 0 -3px; }
+.scene-objet:hover::before { animation-play-state: paused; opacity: 1; }
+.scene-objet:hover .boite-cadre { box-shadow: inset 0 2px 0 rgba(255,255,255,.9), inset 0 -3px 0 rgba(0,0,0,.08), 0 0 0 1px rgba(0,0,0,.22), 0 1.6cqw 2.6cqw -1cqw rgba(0,0,0,.6), 0 0 14cqw 2cqw rgba(255,226,186,.35); }
+@media (prefers-reduced-motion: reduce) { .scene-objet::before { animation: none; } }
+/* le plateau : un fil de bois plus net */
+.pi-plateau::before { background:
+    repeating-linear-gradient(178.6deg, rgba(60,34,14,0) 0 5px, rgba(60,34,14,.10) 5px 6px, rgba(60,34,14,0) 6px 11px),
+    radial-gradient(30% 120% at 72% 0%, rgba(255,226,180,.55), rgba(255,226,180,0) 70%),
+    linear-gradient(180deg, rgba(255,232,196,.55) 0, rgba(255,232,196,0) 3px, rgba(0,0,0,0) 30%, rgba(8,5,3,.5) 100%),
+    url("../images/bureau-pin.webp") center / 100% 100%, #7a5333; }
+.scene-objet .boite-ombre { height: 30px; margin-top: -16px; }
+/* trois temps : plus dense, un grand chiffre au trait, un mot qui part avant que l'autre arrive */
+html.js:not(.secours) .pi-temps { height: 250vh; height: 250svh; }
+.pi-temps-tete .titre-section { font-size: clamp(2.4rem, 1.6rem + 2.6vw, 4.2rem); }
+.pi-temps-etat { position: relative; }
+.pi-temps-geant { position: absolute; right: 0; top: 50%; translate: 0 -50%; margin: 0; z-index: -1; font-family: var(--police-titres); font-size: clamp(14rem, 8rem + 18vw, 30rem); line-height: .8; color: transparent; -webkit-text-stroke: 1.5px rgba(165,35,82,.28); pointer-events: none; }
+.pi-temps-scene { position: relative; isolation: isolate; min-height: 56vh; align-content: center; }
+html.js:not(.secours) .pi-temps-etat { transition: opacity .35s ease, transform .5s cubic-bezier(.2,.7,.2,1); }
+html.js:not(.secours) .pi-temps-etat.actif { transition: opacity .5s ease .3s, transform .7s cubic-bezier(.2,.7,.2,1) .3s; }
+.pi-temps-texte { grid-template-columns: minmax(0, 1fr); max-width: 40ch; }
+.pi-temps-texte p { font-size: clamp(1.25rem, 1.05rem + .5vw, 1.5rem); line-height: 1.5; color: #2b3150; }
+html:not(.js) .pi-temps-geant, html.secours .pi-temps-geant { display: none; }
+/* la pierre resserrée */
+.pi-mots { padding-block: clamp(56px, 6vw, 96px) clamp(40px, 4vw, 64px); }
+.pi-ruban { font-size: clamp(3rem, 1.6rem + 5.4vw, 7.6rem); }
+.pi-grande-citation { font-size: clamp(1.7rem, 1.2rem + 1.6vw, 2.8rem); max-width: 30ch; }
+.pi-couple { padding-block: clamp(40px, 4vw, 72px); }
+.pi-docs { padding-block: clamp(48px, 5vw, 80px); }
+.pi-docs .vignettes { flex-wrap: nowrap; gap: 14px; }
+.pi-docs .vignette img { width: 132px; height: 96px; }
+.pi-docs .vignette-legende { max-width: 132px; }
+.pi-note, .vignette-legende, .choix-detail, .pi-etapes-rdv li { color: #3d4255; }
+@media (max-width: 760px) {
+  .pi-ouverture-grille .scene-objet { order: -1; width: 100%; margin: 0 0 4px; }
+  .pi-ouverture { grid-template-rows: auto auto; }
+  .pi-ouverture .pi-plateau { display: none; }
+  .pi-ouverture .scene-objet .boite-ombre { display: none; }
+  .pi-docs .vignettes { flex-wrap: wrap; }
+  .pi-temps-geant { font-size: 12rem; opacity: .6; }
+  html.js:not(.secours) .pi-temps { height: 260svh; }
+}
+/* accueil : la réponse se pose sur le plateau sans le faire grandir */
+@media (min-width: 761px) {
+  .plongee .bureau .objet-bas { position: relative; }
+  .plongee .bureau .reponse { position: absolute; left: 50%; top: 50%; translate: -50% -50%; width: min(100%, 980px); z-index: 4; }
+}
+/* Sophrologie, regard : la respiration en pleine hauteur, la boîte en très grand ; ouverture plus large ; principes en trois rangées */
+.pi-respire { min-height: 100vh; min-height: 100svh; display: flex; align-items: center; padding-block: clamp(40px, 5vw, 72px); }
+.pi-respire-grille { width: min(100% - 2 * var(--gouttiere), 1240px); }
+.pi-respire-tete .titre-section { margin-bottom: .2em; }
+.pi-respire-objet { width: min(80vw, 1100px, calc((100svh - 330px) * 16 / 9)); margin: clamp(16px, 2.4vw, 32px) auto 4px; }
+.pi-respire-objet .boite { max-width: none; width: 100%; margin-inline: auto; }
+.pi-respire .souffle-compte { font-size: 18px; }
+.pi-sophro-ouverture .scene-objet { width: min(100%, 640px, calc((100svh - var(--entete-h) - var(--plateau-h) - 70px) * 3 / 2)); margin-right: 0; }
+.pi-sophro-grille { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); }
+.pi-sophro-ouverture.po-sophro::before { background: linear-gradient(90deg, rgba(241,231,214,.86) 0%, rgba(241,231,214,.7) 28%, rgba(241,231,214,.18) 46%, rgba(241,231,214,0) 56%); }
+.pi-sophro-ouverture .scene-objet::before { animation-duration: 5s; }
+.pi-principes { padding-block: clamp(56px, 6vw, 104px); }
+.pi-etapes { grid-template-columns: minmax(0, 1fr); border-top: 0; margin-top: clamp(24px, 3vw, 48px); }
+.pi-etapes li, .pi-etapes li + li { display: grid; grid-template-columns: clamp(110px, 12vw, 190px) minmax(0, 1fr); align-items: center; gap: 0 clamp(16px, 3vw, 48px); padding: 10px 0; border-left: 0; border-top: 1px solid rgba(27,34,64,.16); }
+.pi-etapes li:last-child { border-bottom: 1px solid rgba(27,34,64,.16); }
+.pi-etape-num { font-size: clamp(6rem, 3rem + 7vw, 11.5rem); line-height: .85; }
+.pi-etape-nom { font-size: clamp(2.2rem, 1.2rem + 2.6vw, 4rem); line-height: 1.05; }
+.pi-deroule-phrase { margin: clamp(28px, 3vw, 48px) 0 0; font-family: var(--police-titres); font-size: clamp(1.5rem, 1.1rem + 1vw, 2.1rem); line-height: 1.35; max-width: 44ch; }
+.pi-deroule-phrase .surtitre { display: block; font-family: var(--police-texte); margin-bottom: .6rem; }
+.pi-avec { padding-block: clamp(48px, 5vw, 96px); }
+@media (max-width: 760px) {
+  .pi-sophro-ouverture { display: grid; grid-template-rows: auto auto; }
+  .pi-sophro-ouverture .po-sophro-media { position: absolute; inset: 0; z-index: -2; height: auto; order: 0; }
+  .pi-sophro-ouverture.po-sophro::before { display: block; background: linear-gradient(180deg, rgba(241,231,214,.92) 0%, rgba(241,231,214,.82) 55%, rgba(241,231,214,.35) 100%); }
+  .pi-sophro-ouverture .scene-objet { order: 2; width: 92%; margin: 8px auto 0; }
+  .pi-sophro-ouverture .pi-plateau { display: none; }
+  .pi-respire-objet { width: 100%; }
+  .pi-etapes li, .pi-etapes li + li { grid-template-columns: 84px minmax(0, 1fr); }
+  .pi-etape-num { font-size: 5rem; }
+  .pi-etape-nom { font-size: 1.9rem; }
+}
+/* Violences, regard : la nuit et le halo comme sur l'accueil, « Quitter vite » toujours visible, très grands numéros, lampe plus douce */
+.quitter { z-index: 2100; }
+html[data-page="violences"].entete-cache [data-entete] { transform: none; }
+.pi-numero-chiffres { font-size: clamp(4.6rem, 2.6rem + 5vw, 8.4rem); }
+.pi-aide .titre-section { font-size: clamp(2.2rem, 1.5rem + 2.2vw, 3.6rem); }
+.pi-mur .lampe-cercle { width: 70vmax; height: 70vmax; margin: -35vmax 0 0 -35vmax; }
+.pi-mur .lampe-lumiere { background: radial-gradient(circle, rgba(255,228,184,.34) 0, rgba(255,214,160,.16) 30%, rgba(255,214,160,.05) 48%, rgba(255,214,160,0) 64%); }
+.pi-mur .lampe-dedans { -webkit-mask-image: radial-gradient(circle, #000 0, #000 34%, transparent 64%); mask-image: radial-gradient(circle, #000 0, #000 34%, transparent 64%); }
+.pi-mur .mur-mots--eteints { color: rgba(236,227,212,.16); }
+.pi-mur .mur-mots { align-content: center; }
+.pi-fin-grille--seule { max-width: none; }
+.pi-fin-grille--seule > div { max-width: 900px; }
+.pi-vignettes-grandes .vignettes { flex-wrap: wrap; }
+.pi-vignettes-grandes .vignette img { width: 220px; height: 160px; }
+.pi-vignettes-grandes .vignette[data-vignette*="presse"] img { height: 275px; }
+.pi-vignettes-grandes .vignette-legende { max-width: 220px; }
+/* surtitres des pages intérieures à 16 px */
+html:not([data-page="accueil"]) main .surtitre { font-size: 16px; letter-spacing: .14em; }
+/* le fil sans mot choisi ne montre pas d'étiquette sur les pages intérieures */
+html:not([data-page="accueil"]):not(.a-un-mot) .fil-tuile { visibility: hidden; }
+/* premier écran court : l'information clé reste visible */
+@media (max-width: 760px) {
+  html:not([data-page="accueil"]) main .surtitre { font-size: 15px; }
+  .pi-ouverture-grille .scene-objet { width: 78%; justify-self: center; }
+  .pi-sophro-ouverture .pi-chapo { display: none; }
+}
+@media (max-width: 760px) and (max-height: 700px) {
+  .pi-ouverture-grille .scene-objet { width: 56%; }
+  .pi-ouverture .surtitre, .pi-sophro-ouverture .surtitre { display: none; }
+  .pi-titre { font-size: 1.9rem; }
+  .pi-actions { margin: .8rem 0 .3rem; }
+  .pi-sophro-ouverture .scene-objet { width: 60%; }
+}
+@media (max-height: 500px) and (min-width: 761px) {
+  .pi-ouverture .surtitre, .pi-sophro-ouverture .surtitre { display: none; }
+  .pi-titre { font-size: clamp(1.6rem, 7vh, 2.2rem); }
+  .pi-actions { margin: .5rem 0 .2rem; }
+  .pi-actions .bouton { min-height: 44px; padding-block: .6em; }
+  .scene-objet { width: min(100%, 360px); }
+  .pi-ouverture-grille { padding-top: 8px; }
+}
+@media (max-height: 620px) and (min-width: 761px) { .pi-titre { font-size: clamp(1.8rem, 7vh, 2.8rem); } }
+@media (max-width: 760px) and (max-height: 700px) { .pi-sophro-ouverture .po-sophro-texte { padding-bottom: 2px; } .pi-sophro-ouverture .page-actions .info-cle { margin-top: 2px; } .pi-sophro-ouverture .page-actions p:first-child { margin-bottom: 4px; } }
+@media (max-width: 760px) and (max-height: 700px) { .pi-sophro-ouverture .pi-titre { font-size: 1.75rem; margin-bottom: .2em; } .pi-sophro-ouverture .po-sophro-texte { padding-top: calc(var(--entete-h) + 8px); } }
+/* Rendez-vous, regard */
+.pi-titre em { color: var(--corail); }
+.ton-pierre .pi-titre em, .pi-titre--encre em { color: var(--framboise-fonce); }
+.pi-ouverture--rdv .boite--page .boite-rangee[data-rangee="0"], .pi-ouverture--rdv .boite--page .boite-rangee[data-rangee="0"] .l { color: #a52352; }
+.pi-ouverture--rdv .boite--page .boite-rangee { font-size: 12cqw; }
+.pi-rdv-portrait figcaption, .pi-rdv-portrait .media-legende { font-size: 16px; color: #d8d0c4; margin-top: 8px; }
+.pi-rdv-portrait { border-radius: 0; overflow: visible; display: flex; align-items: center; gap: 16px; width: auto; }
+.pi-rdv-portrait picture { width: clamp(110px, 12vw, 170px); border-radius: 50%; overflow: hidden; flex: none; }
+.demande .choix-grille { display: grid; grid-template-columns: minmax(0, 1fr) !important; gap: 0; }
+.demande .choix--carte { border: 0 !important; background: none !important; box-shadow: none !important; border-radius: 0 !important; border-top: 1px solid rgba(27,34,64,.15) !important; padding: 14px 4px !important; }
+.demande .choix--carte:last-child { border-bottom: 1px solid rgba(27,34,64,.15) !important; }
+.demande .choix--carte strong { font-family: var(--police-titres); font-weight: 400; font-size: 1.4rem; }
+.demande-form { background: none !important; box-shadow: none !important; padding: 0 !important; }
+.demande { padding-bottom: clamp(32px, 4vw, 64px); }
+.pi-acces { padding-top: clamp(32px, 4vw, 64px); }
+@media (max-width: 760px) {
+  .pi-rdv-portrait { display: flex !important; margin-top: 12px; }
+  .pi-rdv-portrait picture { width: 88px; }
+}
+@media (max-width: 760px) and (max-height: 700px) { .pi-rdv-portrait { display: none !important; } }
+.pi-rdv-portrait { aspect-ratio: auto !important; height: auto; background: none; }
+.pi-rdv-portrait picture { aspect-ratio: 1 / 1; height: auto; position: relative; }
+.pi-rdv-portrait img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: var(--cadrage); }
+.pi-rdv-portrait .media-legende { max-width: 22ch; margin: 0; }
+.pi-rdv-portrait picture, .pi-rdv-portrait img { border-radius: 50% !important; overflow: hidden; }
+/* audit v2 */
+.pi-temps-etat::before { content: attr(data-geant); position: absolute; right: 0; top: 50%; translate: 0 -50%; z-index: -1; font-family: var(--police-titres); font-size: clamp(14rem, 8rem + 18vw, 30rem); line-height: .8; color: transparent; -webkit-text-stroke: 1.5px rgba(165,35,82,.28); pointer-events: none; }
+html:not(.js) .pi-temps-etat::before, html.secours .pi-temps-etat::before { display: none; }
+.pi-temps-fil li { color: #555a6d; }
+.pi-note.pi-note--clair { color: #cfc8bc; }
+.pi-etape-num { line-height: 1; }
+.pi-etapes li, .pi-etapes li + li { padding: 14px 0; }
+.pi-forme-num { display: block; line-height: 1.1; margin-bottom: 6px; }
+.pi-numero-chiffres { line-height: 1.08; }
+.pi-couple-media { height: min(72vh, 620px, 60vw); }
+.avis-guillemet { width: clamp(84px, 8vw, 110px); }
+.pi-fin-photo { border-radius: 6px; max-width: 360px; justify-self: end; }
+.pi-fin-photo--ronde { max-width: 240px; border-radius: 50%; overflow: hidden; }
+@media (max-width: 760px) {
+  .plongee .bureau .indice { transform: none; margin-top: 8px; }
+  .plongee .bureau { padding-top: 8px; }
+  .boite--page .boite-rangee[data-rangee="1"] { font-size: 13cqw; }
+  .pi-fin-photo { justify-self: start; max-width: 260px; }
+  .pi-sophro-ouverture.po-sophro::before { background: linear-gradient(180deg, rgba(241,231,214,.94) 0%, rgba(241,231,214,.9) 70%, rgba(241,231,214,.5) 100%); }
+}
+@media (max-width: 760px) and (max-height: 700px) {
+  .pi-ouverture .pi-actions .tel, .pi-ouverture .pi-actions .lien-fleche { display: none; }
+  .pi-ouverture-grille { gap: 10px; }
+  .pi-ouverture-grille .scene-objet { width: 64%; }
+  .pi-sophro-ouverture .scene-objet { width: 66%; }
+}
+@media (max-height: 500px) and (min-width: 761px) {
+  .pi-temps-fil { display: none; }
+  .pi-sophro-ouverture .pi-chapo { display: none; }
+  .pi-sophro-ouverture .po-sophro-texte { padding-block: 6px; }
+}
+@media (max-width: 760px) { .pi-sophro-ouverture .scene-objet { width: min(72vw, 320px) !important; justify-self: center !important; } }
+@media (max-width: 760px) and (max-height: 700px) { .pi-sophro-ouverture .scene-objet { width: min(60vw, 260px) !important; } }
+.pi-temps-num { margin-bottom: .3em; line-height: 1.2; }
+.pi-temps-mot { line-height: 1.08; }
+.pi-etape-num { font-size: clamp(5rem, 2.5rem + 5vw, 8.5rem); line-height: 1.3; }
+.pi-etapes li, .pi-etapes li + li { padding: 4px 0; }
+.pi-couple-media { height: min(64vh, 560px, 54vw); }
+.pi-temps-num { margin-bottom: .75em; }

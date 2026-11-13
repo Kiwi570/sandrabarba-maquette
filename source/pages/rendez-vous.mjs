@@ -1,7 +1,8 @@
-/* Rendez-vous et contact. Ouverture compacte : le numéro en tuiles dans la boîte lumineuse.
-   Demande en trois étapes ; à l'envoi, les tuiles tombent dans la boîte « DEMANDE REÇUE » (grille wouahou, point 7). Accès. */
+/* Rendez-vous et contact (v2). Nuit : la boîte qui affiche le numéro, posée sur le bureau, et le portrait de Sandra.
+   Pierre : la demande en trois étapes (à l'envoi, le récapitulatif tombe dans la confirmation : grille wouahou, point 7),
+   puis le plan d'accès redessiné. Nuit : le pied de page. */
 import { html, brut } from '../../outils/gabarit.mjs';
-import { boite } from '../gabarits/boite.mjs';
+import { sceneBureau, plateau } from '../gabarits/boite.mjs';
 
 export const page = { cle: 'rendez-vous', fichier: 'rendez-vous', imagePartage: 'grok/cabinet-lumiere-1280.webp' };
 
@@ -16,20 +17,20 @@ export default (c) => {
   const T = (k) => c.t(`rendez-vous.${k}`), S = (k) => c.s(`rendez-vous.${k}`);
   const radio = (nom, v, lib, extra = '') => html`<label class="choix"><input type="radio" name="${nom}" value="${v}" data-libelle="${lib}"${brut(extra)}><span>${lib}</span></label>`;
   return html`
-<section class="page-ouverture po-rdv ton-nuit" id="debut">
-  <div class="conteneur po-rdv-grille">
-    <div>
+<section class="pi-ouverture pi-ouverture--rdv ton-nuit" id="debut">
+  <div class="conteneur pi-ouverture-grille pi-rdv-grille">
+    <div class="pi-ouverture-texte">
       <p class="surtitre" data-anime="gsap">${T('sur')}</p>
-      <h1 class="page-titre po-rdv-titre"><span class="ligne-masque"><span class="titre-ligne">${T('titre')}</span></span></h1>
-      <div class="page-actions" data-anime="gsap">
-        <p><a class="bouton" href="#demande" data-action-principale data-sans-transition>${T('demandeSur')}</a> <a class="lien-fleche" href="sms:${c.site.contact.telephoneLien}">${T('sms')}</a></p>
-        <p class="info-cle" data-info-cle>${T('info')}</p>
-      </div>
+      <h1 data-superpose class="pi-titre"><span class="ligne-masque"><span class="titre-ligne" data-anime="gsap">${T('titreLigne1')}</span></span><span class="ligne-masque"><span class="titre-ligne" data-anime="gsap"><em>${T('titreMot')}</em></span></span></h1>
+      <p class="pi-actions" data-anime="gsap"><a class="bouton" href="#demande" data-action-principale data-sans-transition>${T('demandeSur')}</a> <a class="lien-fleche" href="sms:${c.site.contact.telephoneLien}">${T('sms')}</a></p>
+      <p class="info-cle" data-info-cle data-anime="gsap">${T('info')}</p>
+      ${c.media({ nom: 'sandra-laine', alt: S('portraitAlt'), cadrage: '50% 36%', classe: 'pi-rdv-portrait', ratio: '1 / 1', sizes: '(max-width: 760px) 40vw, 15vw', legende: 'Sandra vous répond elle-même, du lundi au samedi.' })}
     </div>
-    <a class="po-rdv-boite" data-visuel data-fx="parallaxe" data-fx-force="6" href="tel:${c.site.contact.telephoneLien}" aria-label="${S('telLabel')}">
-      ${boite({ rangees: ['07 60 36', '58 32'], classe: 'boite--tel allumee', attrs: 'data-effet="telephone-tuiles" data-grille="typo" data-iris-centre' })}
+    <a class="pi-rdv-boite" href="tel:${c.site.contact.telephoneLien}" aria-label="${S('telLabel')}">
+      ${sceneBureau({ rangees: ['APPELEZ', '07 60 36', '58 32'], label: S('telLabel'), attrs: 'data-grille="typo" data-effet="boite-page" data-iris-centre' })}
     </a>
   </div>
+  ${plateau()}
 </section>
 
 <section class="demande ton-pierre" id="demande">
@@ -37,17 +38,16 @@ export default (c) => {
     <div class="demande-cote">
       <p class="surtitre" data-anime>${T('demandeSur')}</p>
       <h2 class="titre-section" data-anime="lignes">${T('demandeTitre')}</h2>
-      ${c.media({ nom: 'sandra-laine', alt: S('portraitAlt'), cadrage: '50% 38%', classe: 'demande-portrait', ratio: '1 / 1', sizes: '(max-width: 760px) 60vw, 22vw', attrs: 'data-anime="rideau"' })}
-      ${boite({ rangees: ['VOTRE', 'DEMANDE'], label: 'Boîte de confirmation', classe: 'boite--recue', attrs: `data-boite-recue data-recu="${S('recuTuiles')}" data-effet="boite-recue" data-grille="retour"` })}
+      <ol class="pi-etapes-rdv" aria-hidden="true">${['e1', 'e2', 'e3'].map((k, i) => html`<li data-point><span class="pi-etape-num">${String(i + 1)}</span>${T(k)}</li>`)}</ol>
+      ${c.media({ nom: 'grok/cabinet-lumiere', alt: 'Le cabinet d’Aubignan dans la lumière d’une lampe', cadrage: '60% 50%', classe: 'pi-demande-media', ratio: '3 / 2', sizes: '(max-width: 760px) 90vw, 30vw' })}
     </div>
     <form class="demande-form" data-demande novalidate data-grille="retour" aria-describedby="demande-etapes">
       <div data-demande-corps>
-        <p id="demande-etapes" class="demande-etapes">${T('etapes')}</p>
-        <ol class="points-etapes" aria-hidden="true">${['e1', 'e2', 'e3'].map((k, i) => html`<li data-point><span class="tuile tuile--mini">${String(i + 1)}</span>${T(k)}</li>`)}</ol>
+        <p id="demande-etapes" class="demande-etapes visuellement-cache">${T('etapes')}</p>
         <div data-etapes-conteneur class="etapes-conteneur">
           <fieldset data-etape-form>
             <legend>${T('e1')}</legend>
-            <div class="choix-grille">${SEANCES.map((s, i) => html`<label class="choix choix--carte"><input type="radio" name="seance" value="${s.v}" data-libelle="${S(s.cle)}"${brut(i === 0 ? ' required id="seance"' : '')}><span><strong>${S(s.cle)}</strong><span class="tuile tuile--mini">${s.d}</span><span class="tuile tuile--mini tuile--rose" data-prix>65 €</span></span></label>`)}</div>
+            <div class="choix-grille">${SEANCES.map((s, i) => html`<label class="choix choix--carte"><input type="radio" name="seance" value="${s.v}" data-libelle="${S(s.cle)}"${brut(i === 0 ? ' required id="seance"' : '')}><span><strong>${S(s.cle)}</strong><span class="choix-detail">${s.d} · <span data-prix>65 €</span></span></span></label>`)}</div>
             <p class="champ-erreur" id="seance-erreur" role="alert" hidden>Choisissez une séance.</p>
             <p class="etape-nav"><button type="button" class="bouton" data-suivant>${T('suivant')}</button></p>
           </fieldset>
@@ -76,7 +76,9 @@ export default (c) => {
           </fieldset>
         </div>
       </div>
-      <div class="demande-recue" data-demande-recue hidden>
+      <div class="demande-recue" data-demande-recue data-boite-recue data-effet="boite-recue" hidden>
+        <p class="demande-recue-titre">Demande reçue.</p>
+        <ul class="demande-recue-liste" data-recue-liste></ul>
         <p data-message-envoi tabindex="-1">${T('recu')}</p>
         <p><button type="button" class="lien-discret" data-recommencer>${T('recommencer')}</button></p>
       </div>
@@ -86,7 +88,7 @@ export default (c) => {
 
 <script type="application/json" id="donnees-mots">${brut(JSON.stringify(c.donnees.mots.map((m) => ({ cle: m.cle, tuile: m.tuile }))).replace(/</g, '\\u003c'))}</script>
 
-<section class="acces ton-aube" id="acces">
+<section class="acces pi-acces ton-pierre" id="acces">
   <div class="conteneur acces-grille">
     <div>
       <p class="surtitre" data-anime>${T('accesSur')}</p>
@@ -95,25 +97,29 @@ export default (c) => {
       <p data-anime>${T('zones')}</p>
       <p class="acces-liens" data-anime><a class="bouton" href="tel:${c.site.contact.telephoneLien}">${S('telLabel')}</a> <span class="email">${T('ecrire')}</span></p>
     </div>
-    <figure class="plan" data-visuel>
-      <svg viewBox="0 0 600 460" role="img" aria-label="${S('carteLabel')}" data-fx="trace">
-                <path d="M-10 330 C 120 300 210 340 300 300 S 470 230 610 250" fill="none" stroke="#c9b9a2" stroke-width="16" stroke-linecap="round" data-fx-trait/>
-        <path d="M300 -10 C 290 90 320 170 300 300 S 260 420 250 470" fill="none" stroke="#d6c7b0" stroke-width="12" stroke-linecap="round" data-fx-trait/>
-        <path d="M80 120 C 160 160 240 200 300 300" fill="none" stroke="#d6c7b0" stroke-width="8" stroke-linecap="round" stroke-dasharray="2 14" data-fx-trait/>
-        <path d="M520 90 C 470 160 420 220 300 300" fill="none" stroke="#b4295a" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 10" data-fx-trait/>
-        <g data-repere><circle cx="300" cy="300" r="15" fill="#b4295a"/><circle cx="300" cy="300" r="34" fill="rgba(180,41,90,.1)" stroke="#b4295a" stroke-width="2" opacity=".45"/></g>
-        <g font-family="Hanken Grotesk, sans-serif" font-size="17" fill="#1b2240">
-          <text x="344" y="276" font-weight="700">Cabinet, 89 rue du Portail‑Neuf</text>
-          <text x="344" y="298">Aubignan</text>
-          <text x="388" y="70">Vers Vaison-la-Romaine</text>
-          <text x="30" y="104">Vers Orange</text>
-          <text x="420" y="246">Carpentras</text>
-          <text x="40" y="358">Sarrians</text>
-          <text x="210" y="440">Vers Avignon</text>
+    <figure class="plan pi-plan" data-visuel>
+      <svg viewBox="0 0 640 480" role="img" aria-label="${S('carteLabel')}">
+        <rect x="0" y="0" width="640" height="480" rx="10" fill="#f4ecdf"/>
+        <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M318 214 C 300 170 300 120 330 74 S 370 44 384 40" stroke="#d8c8ae" stroke-width="10"/>
+          <path d="M318 214 C 260 200 190 176 120 150 S 64 130 44 127" stroke="#d8c8ae" stroke-width="10"/>
+          <path d="M318 214 C 336 262 352 300 372 336" stroke="#cdbb9d" stroke-width="12"/>
+          <path d="M372 336 C 300 360 220 388 150 410 S 90 430 70 437" stroke="#d8c8ae" stroke-width="10"/>
         </g>
-        <g data-repere><rect x="352" y="356" width="22" height="22" rx="4" fill="#1b2240"/><text x="363" y="372" text-anchor="middle" font-family="Hanken Grotesk, sans-serif" font-weight="700" font-size="15" fill="#fff">P</text><text x="384" y="372" font-family="Hanken Grotesk, sans-serif" font-size="16" fill="#1b2240">Parking gratuit à proximité</text></g>
+        <g font-family="Hanken Grotesk, sans-serif" fill="#1b2240">
+          <g><circle cx="384" cy="40" r="7" fill="#1b2240"/><text x="398" y="40" font-size="17">Vaison-la-Romaine</text><text x="398" y="60" font-size="15" fill="#4c5165">25 min</text></g>
+          <g><circle cx="44" cy="127" r="7" fill="#1b2240"/><text x="30" y="98" font-size="17">Orange</text><text x="30" y="160" font-size="15" fill="#4c5165">25 min</text></g>
+          <g><circle cx="372" cy="336" r="8" fill="#1b2240"/><text x="390" y="342" font-size="17">Carpentras</text><text x="390" y="362" font-size="15" fill="#4c5165">10 min</text></g>
+          <g><circle cx="70" cy="437" r="7" fill="#1b2240"/><text x="86" y="440" font-size="17">Avignon</text><text x="86" y="460" font-size="15" fill="#4c5165">35 min</text></g>
+        </g>
+        <g data-repere><circle cx="318" cy="214" r="30" fill="rgba(180,41,90,.14)"/><circle cx="318" cy="214" r="11" fill="#b4295a"/></g>
+        <g font-family="Hanken Grotesk, sans-serif" fill="#1b2240">
+          <text x="358" y="204" font-size="19" font-weight="700">Aubignan</text>
+          <text x="358" y="226" font-size="15">${T('adresseCourte')}</text>
+        </g>
+        <g data-repere><rect x="356" y="238" width="250" height="38" rx="6" fill="#f4ecdf"/><rect x="362" y="244" width="26" height="26" rx="5" fill="#1b2240"/><text x="375" y="263" text-anchor="middle" font-family="Hanken Grotesk, sans-serif" font-weight="700" font-size="16" fill="#fff">P</text><text x="398" y="263" font-family="Hanken Grotesk, sans-serif" font-size="15" fill="#1b2240">${T('parking')}</text></g>
       </svg>
-      <figcaption class="media-legende">${T('carteNote')}</figcaption>
+      <figcaption class="media-legende">${T('carteNote')} · Carpentras 10 min · Orange 25 min · Vaison-la-Romaine 25 min · Avignon 35 min</figcaption>
     </figure>
   </div>
 </section>

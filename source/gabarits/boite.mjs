@@ -19,3 +19,11 @@ export function boite({ rangees = [], label = '', classe = '', attrs = '' } = {}
 
 /* Titre en tuiles posées une à une (grille wouahou, point 5 : typographie fabriquée par le métier). */
 export const titreTuiles = (texte, attrs = '') => html`<span class="titre-tuiles" data-grille="typo" data-effet="titre-tuiles"${brut(attrs ? ' ' + attrs : '')}>${String(texte).split('|').map((ligne) => html`<span class="titre-tuiles-ligne">${ligne.split(' ').map((m) => html`<span class="tuile tuile--titre">${m}</span>`)}</span>`)}</span>`;
+
+/* Scène d'ouverture des pages intérieures : la boîte posée sur le vrai bureau de pin, lumière chaude, ombre de contact.
+   Une seule fois par page, avec le mot de la page. */
+export const sceneBureau = ({ rangees, label, classe = '', attrs = '' }) => html`<div class="scene-objet">
+  ${boite({ rangees, label, classe: `boite--page allumee ${classe}`, attrs: `data-visuel ${attrs}` })}
+  <span class="boite-ombre" aria-hidden="true"></span>
+</div>`;
+export const plateau = () => html`<div class="pi-plateau" aria-hidden="true"></div>`;

@@ -1,0 +1,245 @@
+{
+  "echecs": [],
+  "aRegarder": [
+    {
+      "niveau": "regarder",
+      "controle": "« à compléter » visible",
+      "detail": "1 fois hors du pied de page : remplacer par une phrase vraie qui oriente le visiteur (« Tarifs selon la saison, donnés à la réservation ») ou retirer l'élément, et le noter dans la fiche du README (sauf sens propre : « dossier à compléter »)",
+      "etape": "fichiers",
+      "page": "rendez-vous.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "journal du projet",
+      "detail": "aucune entrée pour la version 2 de donnees/site.json",
+      "etape": "fichiers",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "grille : objet d’ouverture hors du premier écran",
+      "detail": "358 × 54 px visibles : l’intro et le voile s’ouvrent depuis le centre de l’écran à cette taille",
+      "etape": "grille",
+      "page": "/violences",
+      "taille": "390×844",
+      "lieux": [
+        "390×844"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "retour avant : changement brusque",
+      "detail": "à 28 ms (différence 43 %) (films/retour-avant-1366.png)",
+      "etape": "films",
+      "page": "/psychotherapie",
+      "taille": "1366×768",
+      "mode": "retour avant",
+      "lieux": [
+        "1366×768 retour avant"
+      ]
+    }
+  ],
+  "nonLances": [
+    {
+      "controle": "film de l'ouverture /psychotherapie 390×844",
+      "raison": "browser.newContext: Target page, context or browser has been closed (3 tentatives)",
+      "etape": "films"
+    },
+    {
+      "controle": "film de l'ouverture /rendez-vous 390×844",
+      "raison": "browser.newContext: Target page, context or browser has been closed (3 tentatives)",
+      "etape": "films"
+    },
+    {
+      "controle": "film de l'ouverture /sophrologie 390×844",
+      "raison": "browser.newContext: Target page, context or browser has been closed (3 tentatives)",
+      "etape": "films"
+    },
+    {
+      "controle": "film de l'ouverture /violences 390×844",
+      "raison": "browser.newContext: Target page, context or browser has been closed (3 tentatives)",
+      "etape": "films"
+    },
+    {
+      "controle": "film de la transition depuis / 390×844",
+      "raison": "browser.newContext: Target page, context or browser has been closed (3 tentatives)",
+      "etape": "films"
+    },
+    {
+      "controle": "film de la transition depuis /psychotherapie 390×844",
+      "raison": "browser.newContext: Target page, context or browser has been closed (3 tentatives)",
+      "etape": "films"
+    },
+    {
+      "controle": "film de la transition depuis /rendez-vous 390×844",
+      "raison": "browser.newContext: Target page, context or browser has been closed (3 tentatives)",
+      "etape": "films"
+    },
+    {
+      "controle": "film de la transition depuis /sophrologie 390×844",
+      "raison": "browser.newContext: Target page, context or browser has been closed (3 tentatives)",
+      "etape": "films"
+    },
+    {
+      "controle": "film de la transition depuis /violences 390×844",
+      "raison": "browser.newContext: Target page, context or browser has been closed (3 tentatives)",
+      "etape": "films"
+    },
+    {
+      "controle": "bords de l’écran / 1366×768",
+      "raison": "page.evaluate: Target page, context or browser has been closed (3 tentatives)",
+      "etape": "bords"
+    },
+    {
+      "controle": "bords de l’écran /psychotherapie 1366×768",
+      "raison": "page.evaluate: Target page, context or browser has been closed (3 tentatives)",
+      "etape": "bords"
+    },
+    {
+      "controle": "bords de l’écran /rendez-vous 1366×768",
+      "raison": "page.evaluate: Target page, context or browser has been closed (3 tentatives)",
+      "etape": "bords"
+    },
+    {
+      "controle": "bords de l’écran /sophrologie 1366×768",
+      "raison": "page.evaluate: Target page, context or browser has been closed (3 tentatives)",
+      "etape": "bords"
+    },
+    {
+      "controle": "bords de l’écran /violences 1366×768",
+      "raison": "page.evaluate: Target page, context or browser has been closed (3 tentatives)",
+      "etape": "bords"
+    },
+    {
+      "controle": "bords de l’écran / 1920×1080",
+      "raison": "cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page (3 tentatives)",
+      "etape": "bords"
+    },
+    {
+      "controle": "parcours:intro",
+      "raison": "browser.newContext: Target page, context or browser has been closed",
+      "etape": "parcours"
+    },
+    {
+      "controle": "parcours:menu",
+      "raison": "browser.newContext: Target page, context or browser has been closed",
+      "etape": "parcours"
+    },
+    {
+      "controle": "parcours:liens",
+      "raison": "browser.newContext: Target page, context or browser has been closed",
+      "etape": "parcours"
+    },
+    {
+      "controle": "parcours:hauteur",
+      "raison": "browser.newContext: Target page, context or browser has been closed",
+      "etape": "parcours"
+    },
+    {
+      "controle": "ecran",
+      "raison": "browser.newContext: Target page, context or browser has been closed",
+      "etape": "ecran"
+    },
+    {
+      "controle": "fluidite",
+      "raison": "browser.newContext: Target page, context or browser has been closed",
+      "etape": "fluidite"
+    },
+    {
+      "controle": "mouvement",
+      "raison": "browser.newContext: Target page, context or browser has been closed",
+      "etape": "mouvement"
+    },
+    {
+      "controle": "vitesse",
+      "raison": "browser.newContext: Target page, context or browser has been closed",
+      "etape": "vitesse"
+    },
+    {
+      "controle": "captures",
+      "raison": "browser.newContext: Target page, context or browser has been closed",
+      "etape": "captures"
+    },
+    {
+      "controle": "Safari (WebKit)",
+      "raison": "WebKit ne peut pas s’installer ici : vérification à faire dans Safari sur le Mac (liste dans le rapport)",
+      "etape": "safari"
+    }
+  ],
+  "oks": {
+    "vercel.json": 1,
+    ".vercelignore": 1,
+    "robots.txt": 1,
+    "numéro de version": 1,
+    "langues": 1,
+    "grille wouahou": 7,
+    "mesures": 66,
+    "balayage": 5,
+    "films d’ouverture": 6,
+    "films de transition": 5
+  },
+  "infos": [
+    "Numéro de version des fichiers : ?v=2",
+    "Audit standard : étapes lourdes sur /, /psychotherapie, /rendez-vous, /sophrologie, /violences.",
+    "Accessibilité : axe-core 4.12.1 en plus des contrôles intégrés.",
+    "Ouverture / (1366×768) : 2783 ms depuis le premier octet",
+    "Ouverture /psychotherapie (1366×768) : 2680 ms depuis le premier octet",
+    "Ouverture /rendez-vous (1366×768) : 2510 ms depuis le premier octet",
+    "film de l'ouverture /rendez-vous 1366×768 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
+    "Ouverture /sophrologie (1366×768) : 2646 ms depuis le premier octet",
+    "Ouverture /violences (1366×768) : 2629 ms depuis le premier octet",
+    "Ouverture / (390×844) : 2794 ms depuis le premier octet",
+    "film de l'ouverture / 390×844 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
+    "Bords de l’écran : 0 images d’intro, 0 de voile et 0 de menu jugées (panneau immobile couvrant tout l’écran), barre de défilement classique de 15 px.",
+    "Aucun parcours propre au projet (_audit/parcours.mjs) : filtres, calculateurs, panier, réservation, fenêtres testés seulement par les contrôles généraux."
+  ],
+  "grille": [
+    {
+      "cle": "manipuler",
+      "nom": "1. L’effet signature se manipule",
+      "statut": "présent",
+      "detail": "accueil et 1 autre(s) page(s)"
+    },
+    {
+      "cle": "intro",
+      "nom": "2. L’intro devient la page",
+      "statut": "présent",
+      "detail": "objet d’ouverture sur 5 page(s), versObjet dans l’intro"
+    },
+    {
+      "cle": "voile",
+      "nom": "3. La transition reprend le motif",
+      "statut": "présent",
+      "detail": "voile en iris"
+    },
+    {
+      "cle": "fil",
+      "nom": "4. Quelque chose relie les sections et les pages",
+      "statut": "présent",
+      "detail": "sur les 5 page(s)"
+    },
+    {
+      "cle": "typo",
+      "nom": "5. Un titre fait l’événement sur chaque page",
+      "statut": "présent",
+      "detail": "sur les 5 page(s)"
+    },
+    {
+      "cle": "scene",
+      "nom": "6. La scène est un geste du métier",
+      "statut": "présent",
+      "detail": "geste du métier sur /"
+    },
+    {
+      "cle": "retour",
+      "nom": "7. L’action principale a un retour physique",
+      "statut": "présent",
+      "detail": "sur /rendez-vous"
+    }
+  ]
+}

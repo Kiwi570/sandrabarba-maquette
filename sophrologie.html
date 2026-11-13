@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2" data-page="sophrologie">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/instrument-serif.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="/assets/fonts/bricolage-tuiles.woff" as="font" type="font/woff" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#161d36">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -105,91 +105,109 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <p class="menu-adresse">89 rue du Portail-Neuf, 84810 Aubignan<br>Du lundi au samedi, sur rendez-vous · parking gratuit à proximité</p>
 </div>
 <main id="contenu" tabindex="-1">
-<section class="page-ouverture po-sophro ton-aube" id="debut">
-  <div class="po-sophro-grille">
+<section class="page-ouverture po-sophro pi-sophro-ouverture ton-pierre" id="debut">
+  <figure class="media po-sophro-media" data-grok style="--cadrage:100% 50%;--cadrage-mobile:50% 64%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/voilage-mobile-640.webp 640w, /assets/images/grok/voilage-mobile-1080.webp 1080w" sizes="100vw">
+    <img src="/assets/images/grok/voilage-1280.webp" srcset="/assets/images/grok/voilage-640.webp 640w, /assets/images/grok/voilage-1280.webp 1280w, /assets/images/grok/voilage-1920.webp 1920w" sizes="100vw" alt="Un voilage léger aux aigrettes de pissenlit soulevé par l’air devant une petite fenêtre" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  <div class="po-sophro-grille conteneur pi-sophro-grille">
     <div class="po-sophro-texte">
       <p class="surtitre" data-anime="gsap">Sophrologie · méthode Caycedo</p>
-      <h1 class="page-titre"><span class="titre-tuiles" data-grille="typo" data-effet="titre-tuiles" data-iris-centre><span class="titre-tuiles-ligne"><span class="tuile tuile--titre">INSPIREZ</span></span></span><span class="ligne-masque"><span class="titre-ligne">Il n’y a pas de magie : retrouvez-vous.</span></span></h1>
-      <p class="page-chapo" data-anime="gsap">Une technique de relaxation associée à des mouvements simples et réalisables par tous, pour les particuliers comme pour les entreprises, depuis 2005.</p>
+      <h1 data-superpose class="pi-titre pi-titre--encre"><span class="ligne-masque"><span class="titre-ligne" data-anime="gsap">Il n’y a pas de magie :</span></span><span class="ligne-masque"><span class="titre-ligne" data-anime="gsap"><em>retrouvez-vous.</em></span></span></h1>
+      <p class="pi-chapo" data-anime="gsap">Une technique de relaxation associée à des mouvements simples et réalisables par tous, pour les particuliers comme pour les entreprises, depuis 2005.</p>
       <div class="page-actions" data-anime="gsap">
         <p><a href="/rendez-vous?seance=cabinet#demande" class="bouton" data-libelle="Rendez-vous" data-action-principale>Prendre rendez-vous</a> <a class="tel tel--sombre" href="tel:+33760365832">07 60 36 58 32</a></p>
         <p class="info-cle" data-info-cle>Séance d’1 h · 65 € · au cabinet ou en visio</p>
       </div>
     </div>
-    <figure class="media po-sophro-media" data-grok data-fx="zoom" data-fx-force="10" style="--cadrage:62% 50%">
-  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/voilage-mobile-640.webp 640w, /assets/images/grok/voilage-mobile-1080.webp 1080w" sizes="(max-width: 760px) 100vw, 52vw">
-    <img src="/assets/images/grok/voilage-1280.webp" srcset="/assets/images/grok/voilage-640.webp 640w, /assets/images/grok/voilage-1280.webp 1280w, /assets/images/grok/voilage-1920.webp 1920w" sizes="(max-width: 760px) 100vw, 52vw" alt="Un voilage léger aux aigrettes de pissenlit soulevé par l’air devant une petite fenêtre" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
-  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
-</figure>
-  </div>
-</section>
-<section class="souffle ton-nuit" id="souffle" data-souffle data-inspirez="INSPIREZ" data-expirez="EXPIREZ" data-fin="MERCI">
-  <div class="conteneur souffle-grille">
-    <div>
-      <p class="surtitre" data-anime>Essayez</p>
-      <h2 class="titre-section" data-anime="lignes">Respirez avec la boîte.</h2>
-      <p data-anime>Maintenez le bouton pour inspirer, relâchez pour expirer. Trois respirations, à votre rythme.</p>
-      <p class="souffle-actions" data-anime><button type="button" class="bouton souffle-bouton" data-souffle-bouton>Maintenir pour inspirer</button><span class="souffle-compte" data-souffle-compte aria-live="polite">0 / 3</span></p>
-      <p class="souffle-note" data-anime>Un exercice de découverte, qui ne remplace pas une séance.</p>
-    </div>
-    <div class="souffle-objet" data-visuel data-grille="manipuler">
-      <div class="boite boite--souffle" data-effet="boite-respire" role="img" aria-label="Respirez avec la boîte.">
+    <div class="scene-objet">
+  <div class="boite boite--page allumee " data-visuel data-grille="typo" data-effet="boite-page" data-iris-centre role="img" aria-label="INSPIREZ">
   <div class="boite-cadre"><div class="boite-panneau">
     <p class="boite-rangee" data-rangee="0" aria-hidden="true"></p>
     <p class="boite-rangee" data-rangee="1" aria-hidden="true"><span class="l">I</span><span class="l">N</span><span class="l">S</span><span class="l">P</span><span class="l">I</span><span class="l">R</span><span class="l">E</span><span class="l">Z</span></p>
     <p class="boite-rangee" data-rangee="2" aria-hidden="true"></p>
   </div></div>
 </div>
+  <span class="boite-ombre" aria-hidden="true"></span>
+</div>
+  </div>
+  <div class="pi-plateau" aria-hidden="true"></div>
+</section>
+<section class="pi-respire ton-nuit" id="souffle" data-souffle data-inspirez="INSPIREZ" data-expirez="EXPIREZ" data-fin="MERCI">
+  <div class="pi-respire-lumiere" data-respire-lumiere aria-hidden="true"></div>
+  <div class="conteneur pi-respire-grille">
+    <div class="pi-respire-tete">
+      <p class="surtitre" data-anime>Essayez</p>
+      <h2 class="titre-section titre-grand" data-anime="lignes">Respirez avec la boîte.</h2>
+      <p class="pi-chapo" data-anime>Maintenez le bouton pour inspirer, relâchez pour expirer. Trois respirations, à votre rythme. La lumière monte quand vous inspirez, descend quand vous expirez.</p>
     </div>
+    <div class="pi-respire-objet" data-visuel data-grille="manipuler">
+      <div class="boite boite--souffle allumee" data-effet="boite-respire" role="img" aria-label="Respirez avec la boîte.">
+  <div class="boite-cadre"><div class="boite-panneau">
+    <p class="boite-rangee" data-rangee="0" aria-hidden="true"></p>
+    <p class="boite-rangee" data-rangee="1" aria-hidden="true"><span class="l">I</span><span class="l">N</span><span class="l">S</span><span class="l">P</span><span class="l">I</span><span class="l">R</span><span class="l">E</span><span class="l">Z</span></p>
+    <p class="boite-rangee" data-rangee="2" aria-hidden="true"></p>
+  </div></div>
+</div>
+      <span class="boite-ombre" aria-hidden="true"></span>
+    </div>
+    <p class="pi-respire-actions" data-anime><button type="button" class="bouton souffle-bouton" data-souffle-bouton>Maintenir pour inspirer</button><span class="souffle-compte" data-souffle-compte aria-live="polite">0 / 3</span></p>
+    <p class="pi-note pi-note--clair" data-anime>Un exercice de découverte, qui ne remplace pas une séance.</p>
   </div>
 </section>
-<section class="pour-qui ton-pierre" id="pour-qui">
-  <div class="conteneur pour-qui-grille">
-    <div>
-      <p class="surtitre" data-anime>Pour qui, pour quoi</p>
-      <h2 class="titre-section" data-anime="lignes">Tous les âges, toutes les conditions physiques.</h2>
-      <ul class="nuage-tuiles" data-anime="cascade"><li><span class="tuile">LE STRESS</span></li><li><span class="tuile">LE SOMMEIL</span></li><li><span class="tuile">LES EXAMENS</span></li><li><span class="tuile">LA CONCENTRATION</span></li><li><span class="tuile">LA CONFIANCE EN SOI</span></li><li><span class="tuile">LES PEURS</span></li><li><span class="tuile">LA MATERNITÉ</span></li><li><span class="tuile">L’ACCOUCHEMENT</span></li><li><span class="tuile">LES TICS</span></li><li><span class="tuile">LES TOC</span></li><li><span class="tuile">LES ACOUPHÈNES</span></li><li><span class="tuile">L’ARRÊT DU TABAC</span></li><li><span class="tuile">LE SPORT</span></li><li><span class="tuile">LE DÉPASSEMENT DE SOI</span></li><li><span class="tuile">DIRE NON</span></li><li><span class="tuile">LA PEUR DU DENTISTE</span></li></ul>
-    </div>
-    <figure class="avec">
-      <figure class="media avec-media" data-anime="rideau" style="--cadrage:50% 30%;aspect-ratio:4 / 5">
-  <picture>
-    <img src="/assets/images/sandra-bibliotheque-784.webp" srcset="/assets/images/sandra-bibliotheque-480.webp 480w, /assets/images/sandra-bibliotheque-640.webp 640w, /assets/images/sandra-bibliotheque-784.webp 784w" sizes="(max-width: 760px) 100vw, 30vw" alt="Sandra Barba en noir et blanc devant une bibliothèque" width="784" height="980" loading="lazy" decoding="async">
-  </picture>
-</figure>
-      <figcaption class="avec-texte"><span class="petit-titre">Avec Sandra Barba</span>Diplômée de l’École de Provence en sophrologie et communication (relaxation dynamique et relationnelle), elle pratique depuis 2005, en cabinet et en entreprise. Valeurs : empathie, écoute, bienveillance.</figcaption>
-    </figure>
-  </div>
-</section>
-<section class="methode ton-aube" id="methode">
-  <div class="conteneur methode-grille">
-    <figure class="media methode-media" data-fx="parallaxe" data-fx-force="8" style="--cadrage:55% 50%">
-  <picture>
-    <img src="/assets/images/cabinet-photo-800.webp" srcset="/assets/images/cabinet-photo-480.webp 480w, /assets/images/cabinet-photo-640.webp 640w, /assets/images/cabinet-photo-800.webp 800w" sizes="(max-width: 760px) 100vw, 34vw" alt="Photo du cabinet : divan gris, lampe en bois flotté et fauteuil" width="800" height="1000" loading="lazy" decoding="async">
-  </picture><figcaption class="media-legende">Le cabinet, à Aubignan</figcaption>
-</figure>
-    <div>
+<section class="pi-principes ton-pierre" id="methode">
+  <div class="conteneur">
+    <div class="pi-principes-tete">
       <p class="surtitre" data-anime>La méthode</p>
       <h2 class="titre-section" data-anime="lignes">La relaxation dynamique de Caycedo.</h2>
-      <p data-anime>Créée par le Dr Alfonso Caycedo, psychiatre, la sophrologie s’inspire du yoga et de la méditation. Sa relaxation dynamique compte 12 degrés, mis en place entre 1967 et 2000, autour de trois principes :</p>
-      <ul class="principes" data-anime="cascade"><li><span class="tuile">1</span>Le schéma corporel</li><li><span class="tuile">2</span>La pensée positive</li><li><span class="tuile">3</span>La réalité objective</li></ul>
-      <ol class="deroule" data-anime="cascade"><li><strong>Faire le point</strong> Une première séance pour comprendre vos besoins.</li><li><strong>Choisir un programme</strong> Un programme adapté, qui peut évoluer en chemin.</li><li><strong>Décider</strong> Vous restez décisionnaire de vos séances.</li></ol>
+      <p class="pi-chapo" data-anime>Créée par le Dr Alfonso Caycedo, psychiatre, la sophrologie s’inspire du yoga et de la méditation. Sa relaxation dynamique compte 12 degrés, mis en place entre 1967 et 2000, autour de trois principes :</p>
+    </div>
+    <ol class="pi-etapes" data-anime="cascade" data-visuel><li><span class="pi-etape-num" aria-hidden="true">1</span><span class="pi-etape-nom">Le schéma corporel</span></li><li><span class="pi-etape-num" aria-hidden="true">2</span><span class="pi-etape-nom">La pensée positive</span></li><li><span class="pi-etape-num" aria-hidden="true">3</span><span class="pi-etape-nom">La réalité objective</span></li></ol>
+    <p class="pi-deroule-phrase" data-anime><span class="surtitre">Comment ça se passe</span>Une première séance pour comprendre vos besoins. Un programme adapté, qui peut évoluer en chemin. Vous restez décisionnaire de vos séances.</p>
     </div>
   </div>
 </section>
-<section class="fin ton-pierre" id="fin">
-  <div class="conteneur fin-grille">
+<section class="pi-avec ton-pierre" id="pour-qui">
+  <div class="conteneur pi-avec-grille">
+    <figure class="media pi-portrait" data-fx="parallaxe" data-fx-force="5" style="--cadrage:46% 38%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/sandra-rampe-784.webp" srcset="/assets/images/sandra-rampe-480.webp 480w, /assets/images/sandra-rampe-640.webp 640w, /assets/images/sandra-rampe-784.webp 784w" sizes="(max-width: 760px) 100vw, 44vw" alt="Sandra Barba, souriante, accoudée à une rampe en fer forgé" width="784" height="980" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <div class="pi-avec-texte">
+      <p class="surtitre" data-anime>Pour qui, pour quoi</p>
+      <h2 class="titre-section" data-anime="lignes">Tous les âges, toutes les conditions physiques.</h2>
+      <ul class="pi-colonnes" data-anime="cascade"><li>Le stress</li><li>Le sommeil</li><li>Les examens</li><li>La concentration</li><li>La confiance en soi</li><li>Les peurs</li><li>La maternité</li><li>L’accouchement</li><li>Les tics</li><li>Les TOC</li><li>Les acouphènes</li><li>L’arrêt du tabac</li><li>Le sport</li><li>Le dépassement de soi</li><li>Dire non</li><li>La peur du dentiste</li></ul>
+      <p class="petit-titre" data-anime>Avec Sandra Barba</p>
+      <p data-anime>Diplômée de l’École de Provence en sophrologie et communication (relaxation dynamique et relationnelle), elle pratique depuis 2005, en cabinet et en entreprise. Valeurs : empathie, écoute, bienveillance.</p>
+      <ul class="vignettes" data-anime="cascade"><li>
+  <button type="button" class="vignette" data-vignette="/assets/images/diplome-sophrologie-800.webp" data-vignette-alt="Certificat de sophrologie, relaxation dynamique et relationnelle, École de Provence" aria-label="Agrandir : Certificat de sophrologie, relaxation dynamique et relationnelle, École de Provence">
+    <img src="/assets/images/diplome-sophrologie-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+  </button>
+  <p class="vignette-legende">Sophrologie, École de Provence</p>
+</li></ul>
+    </div>
+  </div>
+</section>
+<section class="pi-fin ton-nuit" id="fin">
+  <div class="conteneur pi-fin-grille">
     <div>
       <h2 class="titre-section titre-grand" data-anime="lignes">Prête, prêt à respirer autrement ?</h2>
-      <p data-anime>Une séance d’1 h, 65 €, au cabinet d’Aubignan ou en visio.</p>
-      <p class="fin-actions" data-anime><a href="/rendez-vous?seance=cabinet#demande" class="bouton" data-libelle="Rendez-vous">Prendre rendez-vous</a><a class="tel tel--sombre" href="tel:+33760365832">07 60 36 58 32</a></p>
+      <p class="pi-chapo" data-anime>Une séance d’1 h, 65 €, au cabinet d’Aubignan ou en visio.</p>
+      <p class="pi-actions" data-anime><a href="/rendez-vous?seance=cabinet#demande" class="bouton" data-libelle="Rendez-vous">Prendre rendez-vous</a> <a class="tel" href="tel:+33760365832">07 60 36 58 32</a></p>
     </div>
-    <figure class="media diplome" data-fx="vitesse" data-fx-force="2" style="--cadrage:50% 50%;aspect-ratio:3 / 2">
-  <picture>
-    <img src="/assets/images/diplome-sophrologie-800.webp" srcset="/assets/images/diplome-sophrologie-480.webp 480w, /assets/images/diplome-sophrologie-640.webp 640w, /assets/images/diplome-sophrologie-800.webp 800w" sizes="(max-width: 760px) 100vw, 30vw" alt="Certificat de sophrologie en relaxation dynamique et relationnelle, École de Provence" width="800" height="533" loading="lazy" decoding="async">
-  </picture>
+    <figure class="media pi-fin-photo" data-grok style="--cadrage:60% 50%;aspect-ratio:3 / 2">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/cabinet-lumiere-mobile-640.webp 640w, /assets/images/grok/cabinet-lumiere-mobile-1080.webp 1080w" sizes="(max-width: 760px) 80vw, 26vw">
+    <img src="/assets/images/grok/cabinet-lumiere-1280.webp" srcset="/assets/images/grok/cabinet-lumiere-640.webp 640w, /assets/images/grok/cabinet-lumiere-1280.webp 1280w, /assets/images/grok/cabinet-lumiere-1920.webp 1920w" sizes="(max-width: 760px) 80vw, 26vw" alt="Le cabinet d’Aubignan dans la lumière d’une lampe" width="1280" height="853" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
 </figure>
   </div>
 </section>
+<dialog class="visionneuse" data-visionneuse aria-label="Document en grand">
+  <form method="dialog"><button class="visionneuse-fermer" aria-label="Fermer">✕</button></form>
+  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" width="1" height="1" data-visionneuse-img>
+</dialog>
 </main>
 <footer class="pied" id="pied">
   <div class="conteneur pied-grille">

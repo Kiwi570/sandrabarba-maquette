@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2" data-page="psychotherapie">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/instrument-serif.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="/assets/fonts/bricolage-tuiles.woff" as="font" type="font/woff" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#161d36">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -105,130 +105,146 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <p class="menu-adresse">89 rue du Portail-Neuf, 84810 Aubignan<br>Du lundi au samedi, sur rendez-vous · parking gratuit à proximité</p>
 </div>
 <main id="contenu" tabindex="-1">
-<section class="page-ouverture po-psy ton-pierre" id="debut">
-  <div class="conteneur po-psy-tete">
-    <p class="surtitre" data-anime="gsap">Psychothérapie · couple · famille</p>
-    <h1 class="page-titre"><span class="titre-tuiles" data-grille="typo" data-effet="titre-tuiles" data-iris-centre><span class="titre-tuiles-ligne"><span class="tuile tuile--titre">PARLER</span></span></span><span class="ligne-masque"><span class="titre-ligne">pour comprendre ce qui se répète.</span></span></h1>
-    <div class="po-psy-bas">
-      <p class="page-chapo" data-anime="gsap">Une approche psychanalytique humaine, résolument contemporaine : un travail de parole et de (re)construction, enrichi par la sophrologie selon les étapes du suivi.</p>
-      <div class="page-actions" data-anime="gsap">
-        <p><a href="/rendez-vous#demande" class="bouton" data-libelle="Rendez-vous" data-action-principale>Prendre rendez-vous</a> <a class="tel tel--sombre" href="tel:+33760365832">07 60 36 58 32</a></p>
-        <p class="info-cle" data-info-cle>Séance d’1 h · 65 € · au cabinet ou en visio</p>
-      </div>
+<section class="pi-ouverture ton-nuit" id="debut">
+  <div class="conteneur pi-ouverture-grille">
+    <div class="pi-ouverture-texte">
+      <p class="surtitre" data-anime="gsap">Psychothérapie · couple · famille</p>
+      <h1 data-superpose class="pi-titre"><span class="ligne-masque"><span class="titre-ligne" data-anime="gsap">Parler,</span></span><span class="ligne-masque"><span class="titre-ligne" data-anime="gsap">pour comprendre ce qui se <em>répète.</em></span></span></h1>
+      <p class="pi-chapo" data-anime="gsap">Une approche psychanalytique humaine, résolument contemporaine : un travail de parole et de (re)construction, enrichi par la sophrologie selon les étapes du suivi.</p>
+      <p class="pi-actions" data-anime="gsap"><a href="/rendez-vous#demande" class="bouton" data-libelle="Rendez-vous" data-action-principale>Prendre rendez-vous</a> <a class="tel" href="tel:+33760365832">07 60 36 58 32</a></p>
+      <p class="info-cle" data-info-cle data-anime="gsap">Séance d’1 h · 65 € · au cabinet ou en visio</p>
     </div>
+    <div class="scene-objet">
+  <div class="boite boite--page allumee " data-visuel data-grille="typo" data-effet="boite-page" data-iris-centre role="img" aria-label="PARLER">
+  <div class="boite-cadre"><div class="boite-panneau">
+    <p class="boite-rangee" data-rangee="0" aria-hidden="true"></p>
+    <p class="boite-rangee" data-rangee="1" aria-hidden="true"><span class="l">P</span><span class="l">A</span><span class="l">R</span><span class="l">L</span><span class="l">E</span><span class="l">R</span></p>
+    <p class="boite-rangee" data-rangee="2" aria-hidden="true"></p>
+  </div></div>
+</div>
+  <span class="boite-ombre" aria-hidden="true"></span>
+</div>
   </div>
-  <div class="po-psy-bandeau" data-effet="voile-divan">
-    <figure class="media po-psy-media" data-grok data-fx="parallaxe" data-fx-force="8" style="--cadrage:50% 55%">
-  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/divan-mobile-640.webp 640w, /assets/images/grok/divan-mobile-1080.webp 1080w" sizes="100vw">
-    <img src="/assets/images/grok/divan-1280.webp" srcset="/assets/images/grok/divan-640.webp 640w, /assets/images/grok/divan-1280.webp 1280w, /assets/images/grok/divan-1920.webp 1920w" sizes="100vw" alt="Le divan de velours gris, un plaid plié et un coussin, dans la lumière d’une petite fenêtre" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
-  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
-</figure>
-    <div class="po-psy-voile" aria-hidden="true"></div>
-  </div>
+  <div class="pi-plateau" aria-hidden="true"></div>
 </section>
-<section class="trois-temps" id="temps">
-  <span class="temps-ligne" data-effet="trois-temps" aria-hidden="true"></span>
-  <div class="temps ton-nuit">
-    <div class="conteneur temps-grille">
-      <p class="surtitre temps-sur" data-anime>Trois temps</p>
-      <p class="temps-num" data-anime data-visuel><span class="tuile">1</span></p>
-      <div>
+<section class="pi-temps ton-pierre" id="temps" data-temps data-effet="trois-temps">
+  <div class="pi-temps-collant">
+    <div class="conteneur pi-temps-grille">
+      <div class="pi-temps-tete">
+        <p class="surtitre" data-anime>Trois temps</p>
         <h2 class="titre-section" data-anime="lignes">On avance, à votre rythme.</h2>
-        <h3 class="temps-titre" data-anime="lignes">Affronter un moment difficile</h3>
-        <p data-anime>Un deuil, une maladie, un divorce, un licenciement, un burn-out : on ne traverse pas seul·e une étape difficile.</p>
+        <ol class="pi-temps-fil" aria-hidden="true"><li data-fil-temps="0"><span>01</span>Affronter</li><li data-fil-temps="1"><span>02</span>Se reconstruire</li><li data-fil-temps="2"><span>03</span>Vivre</li></ol>
       </div>
-    </div>
-  </div><div class="temps ton-crepuscule">
-    <div class="conteneur temps-grille">
-      <p class="temps-num" data-anime data-visuel><span class="tuile">2</span></p>
-      <div>
-        <h3 class="temps-titre" data-anime="lignes">Se reconstruire</h3>
-        <p data-anime>Sentiments d’échec, angoisses, lassitude : comprendre d’où ils viennent et faire évoluer les schémas qui se répètent.</p>
-      </div>
-    </div>
-  </div><div class="temps ton-aube">
-    <div class="conteneur temps-grille">
-      <p class="temps-num" data-anime data-visuel><span class="tuile">3</span></p>
-      <div>
-        <h3 class="temps-titre" data-anime="lignes">Retrouver le sourire, vivre</h3>
-        <p data-anime>Connaître ses forces, gagner en confiance, prendre ses décisions, gérer ses émotions.</p>
+      <div class="pi-temps-scene" data-visuel>
+        <article class="pi-temps-etat actif" data-etat="0" data-geant="1">
+          <p class="pi-temps-num" aria-hidden="true">01</p>
+          <p class="pi-temps-mot">Affronter</p>
+          <div class="pi-temps-texte"><h3 class="visuellement-cache">Affronter un moment difficile</h3><p>Un deuil, une maladie, un divorce, un licenciement, un burn-out : on ne traverse pas seul·e une étape difficile.</p></div>
+        </article><article class="pi-temps-etat" data-etat="1" data-geant="2">
+          <p class="pi-temps-num" aria-hidden="true">02</p>
+          <p class="pi-temps-mot">Se reconstruire</p>
+          <div class="pi-temps-texte"><h3 class="visuellement-cache">Se reconstruire</h3><p>Sentiments d’échec, angoisses, lassitude : comprendre d’où ils viennent et faire évoluer les schémas qui se répètent.</p></div>
+        </article><article class="pi-temps-etat" data-etat="2" data-geant="3">
+          <p class="pi-temps-num" aria-hidden="true">03</p>
+          <p class="pi-temps-mot">Vivre</p>
+          <div class="pi-temps-texte"><h3 class="visuellement-cache">Retrouver le sourire, vivre</h3><p>Connaître ses forces, gagner en confiance, prendre ses décisions, gérer ses émotions.</p></div>
+        </article>
       </div>
     </div>
   </div>
 </section>
-<section class="themes ton-pierre" id="themes">
-  <div class="conteneur themes-grille">
-    <div>
-      <p class="surtitre" data-anime>Ce qu’on peut y déposer</p>
-      <h2 class="titre-section" data-anime="lignes">Les mots qui amènent au cabinet.</h2>
-      <ul class="nuage-tuiles" data-anime="cascade"><li><span class="tuile">LE DEUIL</span></li><li><span class="tuile">LE DIVORCE</span></li><li><span class="tuile">LA MALADIE</span></li><li><span class="tuile">LE LICENCIEMENT</span></li><li><span class="tuile">LE BURN-OUT</span></li><li><span class="tuile">L’ANGOISSE</span></li><li><span class="tuile">L’ANXIÉTÉ</span></li><li><span class="tuile">LA DÉPRIME</span></li><li><span class="tuile">LE SENTIMENT D’ÉCHEC</span></li><li><span class="tuile">LA PERTE D’APPÉTIT</span></li><li><span class="tuile">LE POIDS</span></li><li><span class="tuile">LE MANQUE DE DÉSIR</span></li><li><span class="tuile">LES OBSESSIONS</span></li><li><span class="tuile">LA CONFIANCE</span></li><li><span class="tuile">LES DÉCISIONS</span></li><li><span class="tuile">LES ÉMOTIONS</span></li></ul>
-      <p class="themes-methode" data-anime>« La référence à l’inconscient est à la base de cette approche. » Le travail se fait par la parole : vous cherchez vos propres réponses, accompagné·e.</p>
-    </div>
-    <figure class="media themes-media" data-anime="rideau" style="--cadrage:55% 45%">
-  <picture>
-    <img src="/assets/images/cabinet-photo-800.webp" srcset="/assets/images/cabinet-photo-480.webp 480w, /assets/images/cabinet-photo-640.webp 640w, /assets/images/cabinet-photo-800.webp 800w" sizes="(max-width: 760px) 100vw, 34vw" alt="Photo du cabinet : divan gris, lampe en bois flotté et fauteuil" width="800" height="1000" loading="lazy" decoding="async">
-  </picture><figcaption class="media-legende">La vraie pièce</figcaption>
-</figure>
+<section class="pi-mots ton-pierre" id="themes">
+  <div class="conteneur">
+    <p class="surtitre" data-anime>Ce qu’on peut y déposer</p>
+    <h2 class="titre-section" data-anime="lignes">Les mots qui amènent au cabinet.</h2>
+  </div>
+  <div class="pi-ruban" data-ruban data-visuel aria-hidden="true">
+    <p class="pi-ruban-ligne" data-ruban-sens="-1"><span>Le deuil</span><span>Le divorce</span><span>La maladie</span><span>Le licenciement</span><span>Le burn-out</span><span>L’angoisse</span><span>L’anxiété</span><span>La déprime</span><span>Le deuil</span><span>Le divorce</span><span>La maladie</span><span>Le licenciement</span><span>Le burn-out</span><span>L’angoisse</span><span>L’anxiété</span><span>La déprime</span></p>
+    <p class="pi-ruban-ligne pi-ruban-ligne--2" data-ruban-sens="1"><span>Le sentiment d’échec</span><span>La perte d’appétit</span><span>Le poids</span><span>Le manque de désir</span><span>Les obsessions</span><span>La confiance</span><span>Les décisions</span><span>Les émotions</span><span>Le sentiment d’échec</span><span>La perte d’appétit</span><span>Le poids</span><span>Le manque de désir</span><span>Les obsessions</span><span>La confiance</span><span>Les décisions</span><span>Les émotions</span></p>
+  </div>
+  <ul class="visuellement-cache"><li>Le deuil</li><li>Le divorce</li><li>La maladie</li><li>Le licenciement</li><li>Le burn-out</li><li>L’angoisse</li><li>L’anxiété</li><li>La déprime</li><li>Le sentiment d’échec</li><li>La perte d’appétit</li><li>Le poids</li><li>Le manque de désir</li><li>Les obsessions</li><li>La confiance</li><li>Les décisions</li><li>Les émotions</li></ul>
+  <div class="conteneur">
+    <p class="pi-grande-citation" data-anime>« La référence à l’inconscient est à la base de cette approche. » Le travail se fait par la parole : vous cherchez vos propres réponses, accompagné·e.</p>
   </div>
 </section>
-<section class="couple ton-nuit" id="couple">
-  <div class="conteneur couple-grille">
-    <figure class="media couple-media" data-grok data-fx="parallaxe" data-fx-force="10" style="--cadrage:50% 60%;aspect-ratio:4 / 5">
+<section class="pi-couple ton-pierre" id="couple">
+  <div class="conteneur pi-couple-grille">
+    <figure class="media pi-couple-media" data-grok style="--cadrage:50% 55%;aspect-ratio:2 / 3">
   <picture>
-    <img src="/assets/images/grok/deux-fauteuils-784.webp" srcset="/assets/images/grok/deux-fauteuils-480.webp 480w, /assets/images/grok/deux-fauteuils-640.webp 640w, /assets/images/grok/deux-fauteuils-784.webp 784w" sizes="(max-width: 760px) 100vw, 42vw" alt="Deux fauteuils de velours gris tournés l’un vers l’autre" width="784" height="1176" loading="lazy" decoding="async">
+    <img src="/assets/images/grok/deux-fauteuils-784.webp" srcset="/assets/images/grok/deux-fauteuils-480.webp 480w, /assets/images/grok/deux-fauteuils-640.webp 640w, /assets/images/grok/deux-fauteuils-784.webp 784w" sizes="(max-width: 760px) 70vw, 34vw" alt="Deux fauteuils de velours gris tournés l’un vers l’autre" width="784" height="1176" loading="lazy" decoding="async">
   </picture><figcaption class="mention-ia">Illustration générée</figcaption>
 </figure>
-    <div>
+    <div class="pi-couple-texte">
       <p class="surtitre" data-anime>Couple et famille</p>
-      <h2 class="titre-section" data-anime="lignes">Vous n’arrivez plus à vous parler ?</h2>
-      <p data-anime>Argent, jalousie, infidélité, belle-famille, enfants : « Vivre en couple n’est pas toujours un long fleuve tranquille. » Le coaching couple aide à rétablir l’écoute et la communication, puis à prendre une décision, sans que la séparation soit automatique.</p>
-      <p class="carte-prix" data-anime><span class="tuile tuile--mini">COACHING COUPLE · 1 H 15</span><span class="tuile tuile--mini tuile--rose" data-prix>65 €</span></p>
-      <p data-anime>Entre une mère et sa fille résident les tensions du « je t’aime » et du « je te déteste ». Le coaching famille aide chacune à retrouver son rôle et sa place.</p>
-      <p class="carte-prix" data-anime><span class="tuile tuile--mini">COACHING FAMILLE · 1 H</span><span class="tuile tuile--mini tuile--rose" data-prix>65 €</span></p>
+      <h2 class="titre-section titre-grand" data-anime="lignes">Vous n’arrivez plus à vous parler ?</h2>
+      <div class="pi-deux-colonnes">
+        <div data-anime>
+          <h3 class="pi-petit-titre">Coaching couple <span class="pi-prix" data-prix>1 h 15 · 65 €</span></h3>
+          <p>Argent, jalousie, infidélité, belle-famille, enfants : « Vivre en couple n’est pas toujours un long fleuve tranquille. » Le coaching couple aide à rétablir l’écoute et la communication, puis à prendre une décision, sans que la séparation soit automatique.</p>
+        </div>
+        <div data-anime>
+          <h3 class="pi-petit-titre">Coaching famille <span class="pi-prix" data-prix>1 h · 65 €</span></h3>
+          <p>Entre une mère et sa fille résident les tensions du « je t’aime » et du « je te déteste ». Le coaching famille aide chacune à retrouver son rôle et sa place.</p>
+        </div>
+      </div>
       <p data-anime><a href="/rendez-vous?seance=couple#demande" class="lien-fleche" data-libelle="Rendez-vous">Réserver cette séance</a></p>
     </div>
   </div>
 </section>
-<section class="formations ton-crepuscule" id="formations">
-  <div class="conteneur formations-grille">
+<section class="pi-docs ton-pierre" id="formations">
+  <div class="conteneur pi-docs-grille">
     <div>
-      <p class="surtitre" data-anime>Ses formations</p>
-      <h2 class="titre-section" data-anime="lignes">Diplômes et certificats</h2>
+      <p class="surtitre" data-anime>Formations et presse</p>
+      <h2 class="titre-section" data-anime="lignes">Diplômes, certificats, et ce qu’en dit la presse.</h2>
       <p data-anime>Psychanalyse et pratique de la psychothérapie à l’EFPP d’Aix-en-Provence, thérapies cognitives et comportementales, stress post-traumatique, coaching conjugal, sophrologie.</p>
+      <p class="pi-note" data-anime>Ouvrez une vignette pour la voir en grand.</p>
     </div>
-    <div class="diplomes" data-anime="cascade">
-      <figure class="media diplome" data-fx="vitesse" data-fx-force="2" style="--cadrage:50% 50%;aspect-ratio:3 / 2">
-  <picture>
-    <img src="/assets/images/diplome-efpp-800.webp" srcset="/assets/images/diplome-efpp-480.webp 480w, /assets/images/diplome-efpp-640.webp 640w, /assets/images/diplome-efpp-800.webp 800w" sizes="(max-width: 760px) 100vw, 26vw" alt="Attestation de l’EFPP d’Aix-en-Provence, praticien en psychothérapie" width="800" height="533" loading="lazy" decoding="async">
-  </picture>
-</figure>
-      <figure class="media diplome" data-fx="vitesse" data-fx-force="2" style="--cadrage:50% 50%;aspect-ratio:3 / 2">
-  <picture>
-    <img src="/assets/images/diplome-stress-800.webp" srcset="/assets/images/diplome-stress-480.webp 480w, /assets/images/diplome-stress-640.webp 640w, /assets/images/diplome-stress-800.webp 800w" sizes="(max-width: 760px) 100vw, 26vw" alt="Certificat de formation de spécialiste du stress post-traumatique" width="800" height="533" loading="lazy" decoding="async">
-  </picture>
-</figure>
-    </div>
+    <ul class="vignettes" data-anime="cascade"><li>
+  <button type="button" class="vignette" data-vignette="/assets/images/diplome-efpp-800.webp" data-vignette-alt="Attestation de l’EFPP d’Aix-en-Provence, praticien en psychothérapie" aria-label="Agrandir : Attestation de l’EFPP d’Aix-en-Provence, praticien en psychothérapie">
+    <img src="/assets/images/diplome-efpp-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+  </button>
+  <p class="vignette-legende">EFPP, Aix-en-Provence</p>
+</li><li>
+  <button type="button" class="vignette" data-vignette="/assets/images/diplome-stress-800.webp" data-vignette-alt="Certificat de spécialiste du stress post-traumatique" aria-label="Agrandir : Certificat de spécialiste du stress post-traumatique">
+    <img src="/assets/images/diplome-stress-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+  </button>
+  <p class="vignette-legende">Stress post-traumatique</p>
+</li><li>
+  <button type="button" class="vignette" data-vignette="/assets/images/diplome-sophrologie-800.webp" data-vignette-alt="Certificat de sophrologie, relaxation dynamique et relationnelle, École de Provence" aria-label="Agrandir : Certificat de sophrologie, relaxation dynamique et relationnelle, École de Provence">
+    <img src="/assets/images/diplome-sophrologie-480.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+  </button>
+  <p class="vignette-legende">Sophrologie, École de Provence</p>
+</li><li>
+  <button type="button" class="vignette" data-vignette="/assets/images/presse-800.webp" data-vignette-alt="Article de presse : « Éveiller les consciences sur les violences invisibles »" aria-label="Agrandir : Article de presse : « Éveiller les consciences sur les violences invisibles »">
+    <img src="/assets/images/presse-480.webp" alt="" width="480" height="600" loading="lazy" decoding="async">
+  </button>
+  <p class="vignette-legende">La presse, sur Vivre Femmes</p>
+</li></ul>
   </div>
 </section>
-<section class="fin ton-pierre" id="fin">
-  <div class="conteneur fin-grille">
+<section class="pi-fin ton-nuit" id="fin">
+  <div class="conteneur pi-fin-grille">
     <div>
       <h2 class="titre-section titre-grand" data-anime="lignes">Et si vous commenciez par en parler ?</h2>
-      <p data-anime>Une première séance pour faire le point, au cabinet ou en visio.</p>
-      <p class="fin-actions" data-anime><a href="/rendez-vous#demande" class="bouton" data-libelle="Rendez-vous">Prendre rendez-vous</a><a class="tel tel--sombre" href="tel:+33760365832">07 60 36 58 32</a></p>
+      <p class="pi-chapo" data-anime>Une première séance pour faire le point, au cabinet ou en visio.</p>
+      <p class="pi-actions" data-anime><a href="/rendez-vous#demande" class="bouton" data-libelle="Rendez-vous">Prendre rendez-vous</a> <a class="tel" href="tel:+33760365832">07 60 36 58 32</a></p>
     </div>
-    <div class="fin-cote">
-    <figure class="media fin-media" data-grok data-fx="parallaxe" data-fx-force="8" style="--cadrage:40% 60%;aspect-ratio:3 / 2">
+    <div class="pi-fin-cote">
+      <figure class="media pi-fin-media" style="--cadrage:55% 45%;aspect-ratio:4 / 5">
   <picture>
-    <img src="/assets/images/grok/visio-784.webp" srcset="/assets/images/grok/visio-480.webp 480w, /assets/images/grok/visio-640.webp 640w, /assets/images/grok/visio-784.webp 784w" sizes="(max-width: 760px) 100vw, 34vw" alt="Un ordinateur portable à demi ouvert sur un bureau en bois, à côté d’une tasse" width="784" height="1176" loading="lazy" decoding="async">
-  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+    <img src="/assets/images/cabinet-photo-800.webp" srcset="/assets/images/cabinet-photo-480.webp 480w, /assets/images/cabinet-photo-640.webp 640w, /assets/images/cabinet-photo-800.webp 800w" sizes="(max-width: 760px) 40vw, 12vw" alt="Le vrai cabinet : le fauteuil œuf et la lampe en bois flotté" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
 </figure>
-    <ul class="tarifs-tuiles" data-anime="cascade">
-      <li><span class="tarif-nom">Au cabinet</span><span class="tuile tuile--mini">1 h</span><span class="tuile tuile--mini tuile--rose" data-prix>65 €</span></li><li><span class="tarif-nom">En visio</span><span class="tuile tuile--mini">1 h</span><span class="tuile tuile--mini tuile--rose" data-prix>65 €</span></li><li><span class="tarif-nom">À deux, en famille</span><span class="tuile tuile--mini">1 h à 1 h 15</span><span class="tuile tuile--mini tuile--rose" data-prix>65 €</span></li>
-    </ul>
+      <dl class="pi-tarifs" data-anime="cascade">
+        <div><dt>Au cabinet</dt><dd>1 h · <strong data-prix>65 €</strong></dd></div><div><dt>En visio</dt><dd>1 h · <strong data-prix>65 €</strong></dd></div><div><dt>À deux, en famille</dt><dd>1 h à 1 h 15 · <strong data-prix>65 €</strong></dd></div>
+      </dl>
     </div>
   </div>
 </section>
+<dialog class="visionneuse" data-visionneuse aria-label="Document en grand">
+  <form method="dialog"><button class="visionneuse-fermer" aria-label="Fermer">✕</button></form>
+  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" width="1" height="1" data-visionneuse-img>
+</dialog>
 </main>
 <footer class="pied" id="pied">
   <div class="conteneur pied-grille">
