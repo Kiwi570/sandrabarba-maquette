@@ -112,3 +112,106 @@ La direction est pourtant juste : le voilage, la boîte, le portrait et les deux
 3. **Les deux fonds, pierre et nuit, et le final sur nuit (L3 I4).** Le final « Prête, prêt à respirer autrement ? » donne le prix et le téléphone, et la barre Appeler / Rendez-vous est présente sur téléphone.
 
 VERDICT : REFAIRE · moyenne 3,1 / 5
+
+---
+
+# Second regard
+
+VERDICT : REFAIRE (au sens strict de la grille : un critère à 2 et une moyenne de 3,3) · la page est nettement meilleure, et ce qui manque se corrige en CSS
+
+Regardée le 13 novembre 2026, sans lire le code.
+
+**Sources.**
+- Mosaïques de `/tmp/apercus2/sophrologie/` :
+  - `images-ordinateur.jpg` compte 19 images, 4 par ligne (« L1 I3 ») ;
+  - `images-telephone.jpg` compte 19 images, 8 par ligne (« tél. L1 I3 »).
+- Mesures :
+  - 5,8 écrans sur ordinateur, sans écran presque vide ;
+  - 6,8 écrans sur téléphone, avec **un écran vide à 80 %** (à 61 % de la page) ;
+  - premier écran : **toujours 0 % bouge seul** sur ordinateur comme sur téléphone, et 10 % réagit à la souris.
+- Films de 29 s : deux images par seconde, tirées dans un dossier temporaire hors du projet, supprimé ensuite. Les tailles en px d'écran sont approchées (film 1280 × 800 pour 1440 × 900, × 1,125).
+- Non jugé : L5 I1–I3 et tél. L3 I1–I3 (menu, voile vers l'accueil, accueil).
+
+## La liste du premier regard, vérifiée sur les images
+
+1. **L'exercice devient le grand moment : fait.**
+   - La boîte fait environ 1 020 px de large (71 % de la largeur, environ 45 % de l'écran). Elle est centrée sur l'axe du titre et du bouton (L2 I2 à L3 I1).
+   - Sans qu'on appuie, elle respire : EXPIREZ puis INSPIREZ, avec des lettres qui tombent. Le halo autour monte et descend (sa luminosité passe d'environ 47 à 80 sur 255 entre deux images du film).
+   - Le compteur « 0 / 3 » fait environ 18 px, en pêche plutôt qu'en crème, ce qui est acceptable. La section tient un écran.
+2. **L'ouverture : à moitié fait.**
+   - Fait sur ordinateur :
+     - la boîte fait environ 640 × 425 px (21 % de l'écran, contre 9 %) ;
+     - elle est posée sur le plateau, avec une ombre de contact ;
+     - le voilage occupe toute la moitié droite, et le voile beige s'est allégé à gauche (L1 I3).
+   - Pas fait : **la boîte d'ouverture ne respire pas.** D'une image à l'autre du film, elle ne change pas (écart moyen de 0,03 sur 255), et le premier écran mesure toujours 0 %.
+   - Sur téléphone (tél. L1 I3–I4) :
+     - le voilage est bien passé en fond, mais le voile beige le rend presque invisible : on devine surtout une tasse ;
+     - la boîte est coupée par le bord droit de l'écran et n'est posée sur aucun plateau ;
+     - le titre et le prix tiennent dans une colonne étroite (« Séance d'1 h · 65 € » sur trois lignes) ;
+     - la boîte n'est pas au-dessus du titre, alors que `regard-da-corrections.md` l'annonce pour les quatre pages.
+3. **Les trois principes en trois vraies étapes : fait, mais à une échelle plus petite que demandé.**
+   - On a bien trois rangées pleine largeur, séparées par des filets.
+   - Les titres font environ 56 px, mais les chiffres n'en font qu'environ 115, contre les 180 annoncés. La moitié droite de chaque rangée reste vide (L3 I3).
+   - « Comment ça se passe » est maintenant une phrase en serif d'environ 22 px (L3 I4).
+4. **Plus aucune tuile hors de la boîte : fait.**
+   - L'intro « LA VIE EST UN COMBAT » a disparu : on a le logo, puis le cercle sur la boîte (L1 I1–I2).
+   - Plus de « VOTRE MOT » sur la règle de gauche.
+5. **Seize pixels et trois creux fermés : à moitié fait.**
+   - Les seize pixels sont tenus : les surtitres, « Séance d'1 h · 65 € », « Un exercice de découverte… » et la légende du certificat font tous 16 px environ.
+   - Deux creux sont fermés :
+     - environ 100 px sous la légende de l'exercice ;
+     - environ 150 px sous le portrait et 75 px sous le certificat.
+   - Un creux reste : **environ 250 px vides entre « Comment ça se passe » et le portrait** (L3 I4), contre 225 avant.
+
+**Nouveau.** Sur téléphone, la liste « Pour qui » apparaît entrée par entrée. La mesure tombe sur une liste à moitié affichée, dont le bas est vide (planche, 61 %, et tél. L1 I8 – L2 I1).
+
+Ce que coûtent ces points :
+- le point 2 coûte un point à la composition, à cause du téléphone. Sa respiration absente laisse l'effet signature plafonné ;
+- le point 5 coûte un point au rythme.
+
+## Les neuf critères
+
+| # | Critère | Note | Pourquoi |
+|---|---|---|---|
+| 1 | Fidélité au vrai lieu et au métier | 4 | Le voilage à aigrettes, la boîte, le portrait à la rampe, le certificat de l'École de Provence, les 12 degrés, les trois principes et la séance à 65 € viennent tous du relevé. La fausse note de l'intro a disparu. Il manque une vraie photo du cabinet : le final montre une pièce générée (L4 I3). |
+| 2 | Effet signature, dans les cinq premières secondes | 2 | L'exercice est enfin un grand moment (L2 I3 à L3 I1). Mais il arrive au deuxième écran. Le premier écran ne bouge pas seul (0 %), et la boîte d'ouverture (21 %) ne se manipule pas : la règle donne 2 au plus. |
+| 3 | Images | 4 | Le portrait est superbe et en grand (L4 I1). Le voilage est chaud sur ordinateur (L1 I3). Sur téléphone, il est délavé au point de disparaître (tél. L1 I3). |
+| 4 | Composition et finition | 3 | Sur ordinateur, le travail est propre : deux fonds, un exercice centré, des rangées à filets, un portrait en vis-à-vis des colonnes. Sur téléphone, l'ouverture coupe la boîte au bord de l'écran, sans plateau (tél. L1 I3). Base 4, moins 1 pour le point 2. |
+| 5 | Rythme, sans vides | 3 | 5,8 écrans sans écran vide sur ordinateur. Restent le creux de 250 px (L3 I4) et le vide mesuré sur téléphone, dû à la liste qui apparaît entrée par entrée. Base 4, moins 1 pour le point 5. |
+| 6 | Typographie et lisibilité | 4 | Le minimum de 16 px est tenu. Les titres en serif étroit, l'italique framboise et les principes à environ 56 px tiennent. Sur téléphone, « retrouvez-/vous. » est coupé au trait d'union et le prix est serré en colonne étroite. |
+| 7 | Niveau par rapport à la vitrine | 3 | L'exercice atteint le niveau de l'accueil, où la boîte devient l'écran entier. Le premier écran reste en dessous : la boîte de l'accueil fait 24 % et bouge seule, celle-ci est immobile. |
+| 8 | Envie d'agir | 4 | Le bouton est dans l'en-tête et au premier écran, avec le prix et le téléphone. On retrouve le final « Prête, prêt à respirer autrement ? » et la barre Appeler / Rendez-vous sur téléphone. |
+| 9 | Jeu | 3 | Il y a une seule vraie manipulation, « Maintenir pour inspirer » sur trois cycles. Elle est désormais en grand et la boîte invite à jouer. Dans le film, personne n'appuie : la réponse n'est pas vérifiée. |
+
+**Moyenne : 30 / 9 = 3,3.**
+
+C'est le deuxième regard sous 3,5, alors je le dis : le problème n'est plus dans les détails, il est dans le premier écran, qui reste immobile.
+- **L'autre idée** serait la scène qui réunit l'ouverture et l'exercice : la boîte posée sur le bureau respire, puis grandit au défilement jusqu'à devenir la boîte de l'exercice, comme sur l'accueil. Elle ne se fait pas en quelques minutes.
+- **En CSS**, le minimum est le point 1 ci-dessous. Avec lui et le point 2, la page passerait vers 3,6, donc AJUSTER.
+
+## Ce qui doit changer
+
+1. **La boîte d'ouverture respire seule, comme celle de l'exercice.**
+   - Lui appliquer la même animation que l'exercice : le halo et le fond crème vont de 0,35 à 1 en 4 s, puis redescendent en 6 s. INSPIREZ et EXPIREZ s'y enchaînent en fondu, sans le compteur.
+   - L'agrandir d'environ 640 à 760 px de large, pour passer le quart de l'écran.
+   - Le but : qu'au moins 15 à 20 % du premier écran bouge seul (0 % aujourd'hui).
+2. **L'ouverture sur téléphone.**
+   - La boîte passe au-dessus du titre, sur toute la largeur moins les marges (`width: 100%`, sans débordement), comme sur l'accueil. Elle est posée sur une bande de plateau en bois.
+   - Le voile beige ne couvre plus que le haut, sous le texte, pour que le voilage se voie (tél. L1 I3).
+   - Le titre, le bouton et « Séance d'1 h · 65 € » reprennent toute la largeur.
+3. **Fermer le dernier creux.** Ramener l'espace entre « Comment ça se passe » et « Pour qui, pour quoi » d'environ 250 à 96–120 px (L3 I4).
+4. **La liste « Pour qui » s'affiche d'un bloc.**
+   - Retirer l'apparition entrée par entrée et laisser au plus un seul fondu sur la liste entière.
+   - Sur téléphone, garder deux colonnes : les entrées sont courtes (« Les TOC », « Le sport »).
+   - Le vide mesuré à 61 % disparaît, et la liste perd environ 200 px.
+5. **Les principes à l'échelle annoncée.**
+   - Les chiffres passent d'environ 115 à environ 180 px.
+   - Le titre se rapproche du chiffre : environ 48 px d'écart, contre environ 170 aujourd'hui (L3 I3).
+
+## Ce qui est réussi (à garder)
+
+1. **« Respirez avec la boîte » (L2 I2 – L3 I1).** La boîte fait 1 020 px, elle est centrée sur la nuit, et elle respire seule, avec ses lettres qui tombent et son halo qui monte. C'est maintenant le grand moment de la page.
+2. **L'ouverture sur ordinateur (L1 I3).** La boîte plus grande est posée sur le plateau, devant le voilage à aigrettes, avec le titre « Il n'y a pas de magie : retrouvez-vous. »
+3. **Le portrait en grand, en vis-à-vis de « Pour qui » en deux colonnes à filets, avec le certificat en vignette (L4 I1–I2).** Le tout est sobre, juste et sans cartes. Le final sur nuit est bien posé.
+
+VERDICT : REFAIRE · moyenne 3,3 / 5

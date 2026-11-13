@@ -107,17 +107,17 @@ export default (c) => {
           <path d="M372 336 C 300 360 220 388 150 410 S 90 430 70 437" stroke="#d8c8ae" stroke-width="10"/>
         </g>
         <g font-family="Hanken Grotesk, sans-serif" fill="#1b2240">
-          <g><circle cx="384" cy="40" r="7" fill="#1b2240"/><text x="398" y="40" font-size="17">Vaison-la-Romaine</text><text x="398" y="60" font-size="15" fill="#4c5165">25 min</text></g>
-          <g><circle cx="44" cy="127" r="7" fill="#1b2240"/><text x="30" y="98" font-size="17">Orange</text><text x="30" y="160" font-size="15" fill="#4c5165">25 min</text></g>
-          <g><circle cx="372" cy="336" r="8" fill="#1b2240"/><text x="390" y="342" font-size="17">Carpentras</text><text x="390" y="362" font-size="15" fill="#4c5165">10 min</text></g>
-          <g><circle cx="70" cy="437" r="7" fill="#1b2240"/><text x="86" y="440" font-size="17">Avignon</text><text x="86" y="460" font-size="15" fill="#4c5165">35 min</text></g>
+          <g><circle cx="384" cy="40" r="7" fill="#1b2240"/><text x="398" y="42" font-size="21">Vaison-la-Romaine</text><text class="plan-min" x="398" y="68" font-size="19" fill="#3d4255">25 min</text></g>
+          <g><circle cx="44" cy="127" r="7" fill="#1b2240"/><text x="30" y="80" font-size="21">Orange</text><text class="plan-min" x="30" y="106" font-size="19" fill="#3d4255">25 min</text></g>
+          <g><circle cx="372" cy="336" r="8" fill="#1b2240"/><text x="390" y="344" font-size="21">Carpentras</text><text class="plan-min" x="390" y="372" font-size="19" fill="#3d4255">10 min</text></g>
+          <g><circle cx="70" cy="437" r="7" fill="#1b2240"/><text x="86" y="438" font-size="21">Avignon</text><text class="plan-min" x="86" y="466" font-size="19" fill="#3d4255">35 min</text></g>
         </g>
         <g data-repere><circle cx="318" cy="214" r="30" fill="rgba(180,41,90,.14)"/><circle cx="318" cy="214" r="11" fill="#b4295a"/></g>
         <g font-family="Hanken Grotesk, sans-serif" fill="#1b2240">
-          <text x="358" y="204" font-size="19" font-weight="700">Aubignan</text>
-          <text x="358" y="226" font-size="15">${T('adresseCourte')}</text>
+          <text x="358" y="200" font-size="22" font-weight="700">Aubignan</text>
+          <text class="plan-min" x="358" y="228" font-size="19">${T('adresseCourte')}</text>
         </g>
-        <g data-repere><rect x="356" y="238" width="250" height="38" rx="6" fill="#f4ecdf"/><rect x="362" y="244" width="26" height="26" rx="5" fill="#1b2240"/><text x="375" y="263" text-anchor="middle" font-family="Hanken Grotesk, sans-serif" font-weight="700" font-size="16" fill="#fff">P</text><text x="398" y="263" font-family="Hanken Grotesk, sans-serif" font-size="15" fill="#1b2240">${T('parking')}</text></g>
+        <g data-repere><rect x="356" y="238" width="282" height="40" rx="6" fill="#f4ecdf"/><rect x="362" y="244" width="26" height="26" rx="5" fill="#1b2240"/><text x="375" y="263" text-anchor="middle" font-family="Hanken Grotesk, sans-serif" font-weight="700" font-size="16" fill="#fff">P</text><text x="398" y="263" font-family="Hanken Grotesk, sans-serif" font-size="19" fill="#1b2240" class="plan-min">${T('parking')}</text></g>
       </svg>
       <figcaption class="media-legende">${T('carteNote')} · Carpentras 10 min · Orange 25 min · Vaison-la-Romaine 25 min · Avignon 35 min</figcaption>
     </figure>

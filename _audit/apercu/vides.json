@@ -1,13 +1,13 @@
 [
  {
   "nom": "ordinateur",
-  "ecrans": 3.4,
+  "ecrans": 3.3,
   "echantillons": 5,
   "vides": []
  },
  {
   "nom": "telephone",
-  "ecrans": 4.8,
+  "ecrans": 4.6,
   "echantillons": 6,
   "vides": []
  }

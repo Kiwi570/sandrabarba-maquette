@@ -71,3 +71,19 @@ Violences — **fait** : « Quitter vite » au-dessus du voile d'intro, l'en-tê
 Rendez-vous — **fait** : la boîte « APPELEZ / 07 60 36 / 58 32 », plus grande, lettres qui tombent à l'arrivée, soulevée au survol, lien d'appel ; médaillon avec la légende « Sandra vous répond elle-même, du lundi au samedi. », affiché aussi sur téléphone ; séances une par ligne avec filets fins ; phrase « Trois étapes… » réservée aux lecteurs d'écran ; plan : point pour Vaison-la-Romaine, routes arrêtées sur les points, minutes sous chaque nom, temps de trajet aussi en texte sous le plan ; italiques des titres en pêche comme à l'accueil.
 
 Gardé, avec la raison : sur Sophrologie, la boîte apparaît deux fois (ouverture et exercice) parce que le brief demande les deux ; les portraits `sandra-laine` (960 px) et l'image des deux fauteuils (1024 px) restent sous un quart de l'écran pour rester nets.
+
+## Seconds regards des pages intérieures : corrections
+
+Verdicts : Psychothérapie 3,0 · Sophrologie 3,3 · Violences 3,3 · Rendez-vous 3,3 (REFAIRE par la grille ; chaque regard estimait que les derniers points font passer la page vers 3,6 à 3,8, soit AJUSTER). Les films de ce second regard ont été tournés avant que la respiration des boîtes ne soit ajoutée.
+
+Communs — **fait** : toutes les boîtes d'ouverture respirent seules (va-et-vient lent toutes les 10 s) sous un grand halo qui monte et descend (opacité 0,35 à 1, échelle 0,9 à 1,15, 6 s) ; chaque lettre se soulève au survol ; sur téléphone, une bande de bois avec l'ombre de contact sous la boîte ; mentions du pied de page à 16 px ; « 17 ou 112 · par SMS : 114 » sans espace avant les points.
+
+Psychothérapie — **autre idée, faite** (deuxième regard sous 3,5) : les trois temps passent dans une boîte lumineuse sur la pierre ; sa rangée du milieu s'écrit AFFRONTER, puis SE RECONSTRUIRE, puis VIVRE au défilement, lettre par lettre, et le texte suit à côté en Instrument Serif 24 px. La scène dure 230 % d'écran ; la citation passe à 40 px sur deux tiers de la largeur, décalée à droite ; les mots qui défilent passent en framboise au survol.
+
+Sophrologie — **fait** : boîte d'ouverture jusqu'à 760 px ; sur téléphone, boîte au-dessus du titre sur toute la largeur, posée sur le bois, voile allégé pour laisser voir le voilage, mention « Illustration générée » en haut ; principes avec chiffres d'environ 150 px et nom collé au chiffre ; creux après « Comment ça se passe » réduit ; liste « Pour qui » affichée d'un bloc, en deux colonnes aussi sur téléphone.
+
+Violences — **fait** : la couche éclairée de la lampe était décalée (taille du cercle changée sans recaler la couche) : elle est maintenant posée exactement sous le cercle, avec un bord adouci, un mur plus court et la tache claire de droite éteinte par un dégradé ; boîte « SORTIR / DU / SILENCE » sur trois rangées, à environ 50 % de la largeur ; « Illustration générée » de la lampe passée à gauche pour que « Quitter vite » ne la couvre plus ; portrait rond du final recadré sur le visage et réchauffé.
+
+Rendez-vous — **fait** : boîte « APPELEZ / 07 60 36 / 58 32 » plus grande et plus haute (environ 54 % de la largeur) ; plan : noms à 21 et minutes à 19 unités (16 px et plus à l'écran), « Orange » et « 25 min » ensemble, seulement les villes sur téléphone ; image du cabinet réduite sous la liste des étapes.
+
+Pas fait : la bande sombre de 15 px au bord droit des films est la barre de défilement du navigateur de test, pas la page.

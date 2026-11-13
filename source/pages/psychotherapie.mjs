@@ -2,13 +2,13 @@
    Deux fonds seulement : la nuit pour l'ouverture et l'appel final, la pierre entre les deux.
    Ouverture : la boîte « PARLER » posée sur le bureau. Signature : les trois temps en une seule scène épinglée. */
 import { html } from '../../outils/gabarit.mjs';
-import { sceneBureau, plateau } from '../gabarits/boite.mjs';
+import { boite, sceneBureau, plateau } from '../gabarits/boite.mjs';
 import { vignettes, visionneuse } from '../gabarits/vignettes.mjs';
 
 export const page = { cle: 'psychotherapie', fichier: 'psychotherapie', imagePartage: 'grok/cabinet-lumiere-1280.webp' };
 
 export default (c) => {
-  const temps = [1, 2, 3].map((i) => ({ mot: c.t(`psychotherapie.temps${i}Mot`), titre: c.t(`psychotherapie.temps${i}Titre`), texte: c.t(`psychotherapie.temps${i}`) }));
+  const temps = [1, 2, 3].map((i) => ({ mot: c.t(`psychotherapie.temps${i}Mot`), motS: c.s(`psychotherapie.temps${i}Mot`), titre: c.t(`psychotherapie.temps${i}Titre`), texte: c.t(`psychotherapie.temps${i}`) }));
   const themes = c.s('psychotherapie.themes').split('|');
   const moitie = Math.ceil(themes.length / 2);
   const ligne = (mots) => html`${[0, 1].map(() => mots.map((m) => html`<span>${m}</span>`))}`;
@@ -35,11 +35,15 @@ export default (c) => {
         <h2 class="titre-section" data-anime="lignes">${c.t('psychotherapie.tempsTitre')}</h2>
         <ol class="pi-temps-fil" aria-hidden="true">${temps.map((t, i) => html`<li data-fil-temps="${i}"><span>0${i + 1}</span>${t.mot}</li>`)}</ol>
       </div>
-      <div class="pi-temps-scene" data-visuel>
-        ${temps.map((t, i) => html`<article class="pi-temps-etat${i === 0 ? ' actif' : ''}" data-etat="${i}" data-geant="${String(i + 1)}">
-          <p class="pi-temps-num" aria-hidden="true">0${i + 1}</p>
-          <p class="pi-temps-mot">${t.mot}</p>
-          <div class="pi-temps-texte"><h3 class="visuellement-cache">${t.titre}</h3><p>${t.texte}</p></div>
+      <div class="pi-temps-boite" data-visuel>
+        ${boite({ rangees: ['', temps[0].motS.toUpperCase(), ''], label: temps.map((t) => t.motS).join(', '), classe: 'boite--temps allumee', attrs: 'data-boite-temps data-mots="' + temps.map((t) => t.motS.toUpperCase()).join('|') + '"' })}
+        <span class="boite-ombre" aria-hidden="true"></span>
+      </div>
+      <div class="pi-temps-scene">
+        ${temps.map((t, i) => html`<article class="pi-temps-etat${i === 0 ? ' actif' : ''}" data-etat="${i}">
+          <p class="pi-temps-num" aria-hidden="true">0${i + 1} / 03</p>
+          <h3 class="pi-temps-titre">${t.titre}</h3>
+          <p class="pi-temps-p">${t.texte}</p>
         </article>`)}
       </div>
     </div>

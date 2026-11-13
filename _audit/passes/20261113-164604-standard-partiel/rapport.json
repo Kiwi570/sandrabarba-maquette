@@ -1,0 +1,38 @@
+{
+  "echecs": [],
+  "aRegarder": [
+    {
+      "niveau": "regarder",
+      "controle": "« à compléter » visible",
+      "detail": "1 fois hors du pied de page : remplacer par une phrase vraie qui oriente le visiteur (« Tarifs selon la saison, donnés à la réservation ») ou retirer l'élément, et le noter dans la fiche du README (sauf sens propre : « dossier à compléter »)",
+      "etape": "fichiers",
+      "page": "rendez-vous.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "journal du projet",
+      "detail": "aucune entrée pour la version 3 de donnees/site.json",
+      "etape": "fichiers",
+      "lieux": [
+        ""
+      ]
+    }
+  ],
+  "nonLances": [],
+  "oks": {
+    "vercel.json": 1,
+    ".vercelignore": 1,
+    "robots.txt": 1,
+    "numéro de version": 1,
+    "langues": 1
+  },
+  "infos": [
+    "Numéro de version des fichiers : ?v=3",
+    "Audit standard : étapes lourdes sur /, /psychotherapie, /rendez-vous, /sophrologie, /violences.",
+    "Accessibilité : axe-core 4.12.1 en plus des contrôles intégrés."
+  ],
+  "grille": []
+}

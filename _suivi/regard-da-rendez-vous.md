@@ -65,3 +65,82 @@ Consigne `_audit/regard-da.md` appliquée à `rendez-vous.html`, pas à l'accuei
 - La boîte affiche le numéro en grand, sur le bureau et sous la lumière de l'accueil. Avec le titre « Un appel, un SMS, ou trois questions. », on sait quoi faire en une seconde.
 - La page n'a que deux fonds : nuit, pierre, puis nuit. Elle est calme et courte (3,4 écrans).
 - Le portrait en médaillon est net, et le cabinet est signalé comme une illustration : tout est vrai et présenté honnêtement.
+
+---
+
+# Second regard
+
+VERDICT : REFAIRE
+
+Regard du 13 novembre 2026 sur `rendez-vous.html`, avec la consigne `_audit/regard-da.md`. Sources : `/tmp/apercus2/rendez-vous/` (mosaïque ordinateur en 3 lignes de 4 images, mosaïque téléphone en 2 lignes de 8, planche, `premier-ecran.json`, `vides.json` et les deux films). Le film ordinateur fait 1280 × 800, pour un écran de 1440 × 900 : les tailles ci-dessous sont ramenées en px CSS. La vitrine est l'accueil (`/tmp/v2-mix.jpg`, `/tmp/zoom-planche.jpg`). Je n'ai pas lu `regard-da-corrections.md` comme une preuve : chaque point est vérifié sur les images.
+
+**Lecture du verdict.** REFAIRE tombe encore par la règle : le critère 9 vaut 2 et la moyenne est de 3,3, contre 3,0 au premier regard. La page a nettement progressé : il n'y a plus de tuiles, le plan est propre et les textes sont presque tous lisibles. C'est le deuxième regard sous 3,5. La consigne demande alors de le dire : l'écart ne vient plus des détails, il vient de l'échelle de la boîte. Elle occupe toujours environ 21 % de l'écran et commence sous le titre. À l'accueil, elle en occupe environ 24 % et commence à hauteur du surtitre. Après l'intro, rien ne bouge seul. Le changement d'échelle proposé au point 1 se fait en CSS. Les points 1 à 3 feraient passer la page à environ 3,8, donc AJUSTER.
+
+## La liste du premier regard, point par point
+
+1. **La boîte (troisième ligne, chute des chiffres, survol, position) : à moitié fait.**
+   - Fait : « APPELEZ / 07 60 36 / 58 32 » est en place, et les chiffres retombent à l'arrivée (ordinateur, ligne 1, image 2). La boîte réagit à la souris, sur 24 % du premier écran (`premier-ecran.json`), et pose sur le bois avec une ombre de contact.
+   - Pas fait : la boîte n'a pas remonté. Son haut est à 327 px du film, juste sous la fin du titre, et il reste environ 300 px CSS de nuit au-dessus (ligne 1, image 3).
+   - « Le halo respire seul » ne se voit pas : 0 % du premier écran bouge seul, et l'écart entre deux images du halo n'est que de 0,03 sur 1,2 s.
+   - Le lien `tel:` ne se vérifie pas sur les images.
+2. **Le téléphone : à moitié fait.**
+   - Fait : le médaillon (environ 88 px) est revenu, avec sa légende « Sandra vous répond elle-même, du lundi au samedi. ». La boîte passe au-dessus du titre (téléphone, ligne 1, image 3).
+   - Pas fait : la traînée de lumière floue et verticale est toujours là, de la boîte jusqu'à la barre, à droite du médaillon.
+   - Le bureau a disparu sur téléphone : la boîte flotte dans la nuit, alors que le brief la veut « posée sur le bureau ».
+3. **Le formulaire sans tuiles : fait.** Il y a une séance par ligne, séparée par des filets fins, sur la pierre, sans bordure, sans fond blanc et sans ombre. La phrase « Trois étapes… » a disparu. Le vide à droite sous « Suivant » est passé d'environ 465 px à environ 250 px (ordinateur, ligne 2, images 1 et 2).
+4. **Les textes à 16 px : à moitié fait.**
+   - Sur ordinateur, les surtitres, les prix, la légende du médaillon, les villes et « Plan schématique… » font maintenant environ 16 px.
+   - Dans le plan, les minutes, « 89 rue du Portail-Neuf » et « Parking gratuit à proximité » restent à environ 14 px.
+   - Sur téléphone, les étiquettes du plan font environ 7 à 10 px (téléphone, ligne 2, image 1). Les temps de trajet sont bien écrits sous le plan.
+5. **Le plan et les finitions : fait.**
+   - Vaison-la-Romaine a son point noir, et toutes les routes s'arrêtent net sur leur point. Pour Avignon, les minutes sont sous le nom (ordinateur, ligne 2, image 3).
+   - Les italiques sont pêche, et l'onglet « VOTRE MOT » n'apparaît plus.
+   - Petit reste : « Orange » est au-dessus de son point et « 25 min » en dessous, si bien que le point sépare le nom de ses minutes.
+
+## Le brief
+
+| Demande | État |
+|---|---|
+| Deux fonds, trois changements au plus | **Fait** : nuit, pierre, puis nuit, soit 2 changements. |
+| Boîte au numéro en grand, posée sur le bureau, avec le portrait en médaillon net | **Fait sur ordinateur, à moitié sur téléphone** : la boîte n'a pas de bureau et la traînée floue reste. Le médaillon est net sur les deux formats. |
+| Demande en trois étapes, sur fond clair, sans tuiles | **Fait.** |
+| Plan propre (cinq villes), avec l'adresse et le parking | **Fait.** Les petites étiquettes sont à agrandir. |
+| Textes à 16 px au moins | **Presque** : il reste les étiquettes secondaires du plan (environ 14 px) et les mentions du pied de page (environ 13 px). |
+
+## Notes
+
+| # | Critère | Note | Pourquoi |
+|---|---|---|---|
+| 1 | Fidélité | 4 | Tout reste vrai : 65 €, le coaching couple en 1 h 15, le 89 rue du Portail-Neuf, le parking gratuit, les villes. Le portrait est le vrai, et le cabinet est signalé « Illustration générée ». Les temps de trajet restent approximatifs. |
+| 2 | Effet signature | 3 | La boîte a trois rangées, ses chiffres tombent (ligne 1, image 2) et elle réagit à la souris (24 %). Mais elle n'occupe qu'environ 21 % de l'écran (569 × 379 px sur 1280 × 800), et rien ne bouge seul après l'intro (0 %). |
+| 3 | Images | 3 | Le médaillon est net et l'illustration est honnête. La traînée floue verticale reste sur le téléphone (ligne 1, image 3) : point 2 à moitié fait. |
+| 4 | Composition | 3 | Sans tuiles, sans onglet et avec les italiques pêche, la page parle un seul langage. Deux points restent à moitié faits : environ 300 px de nuit au-dessus de la boîte, et sur téléphone une boîte qui flotte sans bureau. |
+| 5 | Rythme | 4 | La page tient en 3,3 écrans sur ordinateur et 4,6 sur téléphone, sans écran vide (`vides.json`). Restent la nuit au-dessus de la boîte et environ 250 px vides sous « Suivant ». |
+| 6 | Typographie | 4 | Les textes principaux font maintenant environ 16 px et les titres tiennent. Les étiquettes secondaires du plan font environ 14 px sur ordinateur et 7 à 10 px sur téléphone : point 4 à moitié fait. |
+| 7 | Niveau / vitrine | 3 | C'est le même monde que l'accueil, un cran en dessous : la boîte est plus petite et plus basse, le bureau est nu, et le téléphone n'a pas de bureau. |
+| 8 | Envie d'agir | 4 | Le numéro se lit vers 2,5 s, et la boîte est un lien d'appel. « Votre demande », « Envoyer un SMS » et la barre « Appeler / Rendez-vous » sont là dès le premier écran. |
+| 9 | Jeu | 2 | La boîte se soulève au survol, mais rien ne s'attrape et rien ne se joue. |
+
+**Moyenne : 30 / 9 = 3,3.**
+
+## Ce qui doit changer (tout se fait en CSS ou en texte, en quelques minutes)
+
+1. **Changer l'échelle de la boîte, pas la retoucher** (critères 2, 4 et 7).
+   - Sur ordinateur, monter son haut au niveau du surtitre « PRENDRE RENDEZ-VOUS » et la porter à environ 52 % de la largeur, soit environ 30 % de l'écran. La nuit vide au-dessus disparaît.
+   - Rendre visible la respiration du halo : opacité de 0,55 à 1 et échelle de 0,92 à 1,08, en boucle de 4 s. Elle doit dépasser 8 % de l'écran qui bouge seul.
+2. **Donner aux chiffres une petite prise** (critère 9). Au survol, chaque chiffre se soulève et penche séparément (`transform` sur chaque chiffre, transition de 0,2 s). Au clic ou au toucher, il rejoue sa chute d'arrivée.
+3. **Sur téléphone, poser la boîte et effacer la traînée** (critères 3 et 4).
+   - Sous la boîte, ajouter une bande du même bois (environ 40 px) avec l'ombre de contact.
+   - Remplacer la traînée verticale floue par le halo rond de l'ordinateur.
+4. **Agrandir les petits textes qui restent** (critère 6).
+   - Sur ordinateur, passer à 16 px les minutes, « 89 rue du Portail-Neuf » et « Parking gratuit à proximité » dans le plan.
+   - Sur téléphone, ne garder sur le plan que les noms de villes, à 15 px au moins : les temps sont déjà écrits dessous.
+   - Mettre « Orange » et « 25 min » ensemble, à droite du point.
+   - Passer les mentions du pied de page à 15 px.
+5. **Réduire le vide sous « Suivant »** (critère 5). Ramener l'illustration du cabinet à la hauteur de la liste 1-2-3, ou réduire l'espace avant « Venir au cabinet », pour que les deux colonnes finissent ensemble.
+
+## Ce qui est réussi (à garder)
+
+- La demande en lignes à filets sur la pierre : elle est calme, lisible et suit le brief à la lettre.
+- Le plan est enfin propre : les cinq villes, les routes arrêtées sur les points, le repère du parking, et les temps aussi écrits en texte.
+- L'ouverture : la boîte à trois rangées dont les chiffres tombent, posée avec une ombre de contact, et le médaillon accompagné de « Sandra vous répond elle-même, du lundi au samedi. ».

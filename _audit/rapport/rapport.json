@@ -10,6 +10,15 @@
       "lieux": [
         ""
       ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "journal du projet",
+      "detail": "aucune entrée pour la version 3 de donnees/site.json",
+      "etape": "fichiers",
+      "lieux": [
+        ""
+      ]
     }
   ],
   "nonLances": [],
@@ -18,14 +27,11 @@
     ".vercelignore": 1,
     "robots.txt": 1,
     "numéro de version": 1,
-    "langues": 1,
-    "mesures": 22,
-    "balayage": 2
+    "langues": 1
   },
   "infos": [
-    "Numéro de version des fichiers : ?v=2",
-    "Journal v2 : 2 étape(s) notée(s), 29 min de travail pour 105 min de budget, 0 min d’attente de l’utilisateur.",
-    "Audit standard : étapes lourdes sur /, /psychotherapie.",
+    "Numéro de version des fichiers : ?v=3",
+    "Audit standard : étapes lourdes sur /, /psychotherapie, /rendez-vous, /sophrologie, /violences.",
     "Accessibilité : axe-core 4.12.1 en plus des contrôles intégrés."
   ],
   "grille": []

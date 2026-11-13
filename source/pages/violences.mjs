@@ -26,7 +26,7 @@ export default (c) => {
         <p class="info-cle" data-info-cle>3919 · Violences Femmes Info · gratuit et anonyme, 24 h/24</p>
       </div>
     </div>
-    ${sceneBureau({ rangees: [tuiles.slice(0, 2).join(' '), tuiles.slice(2).join(' '), ''], label: c.s('violences.tuiles'), attrs: 'data-grille="typo" data-effet="boite-page" data-iris-centre' })}
+    ${sceneBureau({ rangees: tuiles, label: c.s('violences.tuiles'), attrs: 'data-grille="typo" data-effet="boite-page" data-iris-centre' })}
   </div>
   ${plateau()}
 </section>

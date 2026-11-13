@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="2" data-page="psychotherapie">
+<html lang="fr" data-v="3" data-page="psychotherapie">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/instrument-serif.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="/assets/fonts/bricolage-tuiles.woff" as="font" type="font/woff" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=2">
-<link rel="stylesheet" href="/assets/css/site.css?v=2">
-<link rel="modulepreload" href="/assets/js/site.js?v=2">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
+<link rel="stylesheet" href="/assets/css/socle.css?v=3">
+<link rel="stylesheet" href="/assets/css/site.css?v=3">
+<link rel="modulepreload" href="/assets/js/site.js?v=3">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=3">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=2"></script>
+<script type="module" src="/assets/js/site.js?v=3"></script>
 <meta name="theme-color" content="#161d36">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -135,19 +135,29 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <h2 class="titre-section" data-anime="lignes">On avance, à votre rythme.</h2>
         <ol class="pi-temps-fil" aria-hidden="true"><li data-fil-temps="0"><span>01</span>Affronter</li><li data-fil-temps="1"><span>02</span>Se reconstruire</li><li data-fil-temps="2"><span>03</span>Vivre</li></ol>
       </div>
-      <div class="pi-temps-scene" data-visuel>
-        <article class="pi-temps-etat actif" data-etat="0" data-geant="1">
-          <p class="pi-temps-num" aria-hidden="true">01</p>
-          <p class="pi-temps-mot">Affronter</p>
-          <div class="pi-temps-texte"><h3 class="visuellement-cache">Affronter un moment difficile</h3><p>Un deuil, une maladie, un divorce, un licenciement, un burn-out : on ne traverse pas seul·e une étape difficile.</p></div>
-        </article><article class="pi-temps-etat" data-etat="1" data-geant="2">
-          <p class="pi-temps-num" aria-hidden="true">02</p>
-          <p class="pi-temps-mot">Se reconstruire</p>
-          <div class="pi-temps-texte"><h3 class="visuellement-cache">Se reconstruire</h3><p>Sentiments d’échec, angoisses, lassitude : comprendre d’où ils viennent et faire évoluer les schémas qui se répètent.</p></div>
-        </article><article class="pi-temps-etat" data-etat="2" data-geant="3">
-          <p class="pi-temps-num" aria-hidden="true">03</p>
-          <p class="pi-temps-mot">Vivre</p>
-          <div class="pi-temps-texte"><h3 class="visuellement-cache">Retrouver le sourire, vivre</h3><p>Connaître ses forces, gagner en confiance, prendre ses décisions, gérer ses émotions.</p></div>
+      <div class="pi-temps-boite" data-visuel>
+        <div class="boite boite--temps allumee" data-boite-temps data-mots="AFFRONTER|SE RECONSTRUIRE|VIVRE" role="img" aria-label="Affronter, Se reconstruire, Vivre">
+  <div class="boite-cadre"><div class="boite-panneau">
+    <p class="boite-rangee" data-rangee="0" aria-hidden="true"></p>
+    <p class="boite-rangee" data-rangee="1" aria-hidden="true"><span class="l">A</span><span class="l">F</span><span class="l">F</span><span class="l">R</span><span class="l">O</span><span class="l">N</span><span class="l">T</span><span class="l">E</span><span class="l">R</span></p>
+    <p class="boite-rangee" data-rangee="2" aria-hidden="true"></p>
+  </div></div>
+</div>
+        <span class="boite-ombre" aria-hidden="true"></span>
+      </div>
+      <div class="pi-temps-scene">
+        <article class="pi-temps-etat actif" data-etat="0">
+          <p class="pi-temps-num" aria-hidden="true">01 / 03</p>
+          <h3 class="pi-temps-titre">Affronter un moment difficile</h3>
+          <p class="pi-temps-p">Un deuil, une maladie, un divorce, un licenciement, un burn-out : on ne traverse pas seul·e une étape difficile.</p>
+        </article><article class="pi-temps-etat" data-etat="1">
+          <p class="pi-temps-num" aria-hidden="true">02 / 03</p>
+          <h3 class="pi-temps-titre">Se reconstruire</h3>
+          <p class="pi-temps-p">Sentiments d’échec, angoisses, lassitude : comprendre d’où ils viennent et faire évoluer les schémas qui se répètent.</p>
+        </article><article class="pi-temps-etat" data-etat="2">
+          <p class="pi-temps-num" aria-hidden="true">03 / 03</p>
+          <h3 class="pi-temps-titre">Retrouver le sourire, vivre</h3>
+          <p class="pi-temps-p">Connaître ses forces, gagner en confiance, prendre ses décisions, gérer ses émotions.</p>
         </article>
       </div>
     </div>
@@ -259,7 +269,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     </nav>
     <div class="pied-aide">
       <p><strong>En cas de violences</strong></p>
-      <p>En danger : <a href="tel:17">17</a> ou <a href="tel:112">112</a>. Par SMS : <a href="sms:114">114</a>.<br>Pour être écoutée : <a href="tel:3919">3919</a>, gratuit et anonyme, 24 h/24.</p>
+      <p>En danger : <a href="tel:17">17</a> ou <a href="tel:112">112</a> · par SMS : <a href="sms:114">114</a><br>Pour être écoutée : <a href="tel:3919">3919</a>, gratuit et anonyme, 24 h/24</p>
     </div>
   </div>
   <div class="conteneur pied-bas">

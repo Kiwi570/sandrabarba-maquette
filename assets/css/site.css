@@ -1474,3 +1474,109 @@ html:not(.js) .pi-temps-etat::before, html.secours .pi-temps-etat::before { disp
 .pi-etapes li, .pi-etapes li + li { padding: 4px 0; }
 .pi-couple-media { height: min(64vh, 560px, 54vw); }
 .pi-temps-num { margin-bottom: .75em; }
+
+/* ---------- Second regard : Psychothérapie ---------- */
+/* les trois temps dans la boîte : la rangée du milieu passe d'AFFRONTER à SE RECONSTRUIRE puis VIVRE */
+.pi-temps-etat::before { content: none; }
+html.js:not(.secours) .pi-temps { height: 230vh; height: 230svh; }
+.pi-temps-grille { grid-template-columns: minmax(0, .7fr) minmax(0, 1.25fr) minmax(0, .95fr); gap: clamp(24px, 3.4vw, 56px); }
+.pi-temps-tete .titre-section { font-size: clamp(2.2rem, 1.4rem + 2.2vw, 3.6rem); }
+.pi-temps-boite { position: relative; }
+.pi-temps-boite::before { content: ''; position: absolute; z-index: -1; inset: -18% -16% -10%; background: radial-gradient(closest-side, rgba(255,214,150,.45), rgba(255,214,150,0)); animation: halo-respire 4s ease-in-out infinite alternate; }
+.boite--temps { aspect-ratio: 3 / 2; }
+.boite--temps .boite-rangee { font-size: 9.6cqw; }
+.boite--temps .boite-rangee[data-rangee="1"], .boite--temps .boite-rangee[data-rangee="1"] .l { color: #a52352; }
+.boite--temps .boite-cadre { box-shadow: inset 0 2px 0 rgba(255,255,255,.9), inset 0 -3px 0 rgba(0,0,0,.08), 0 0 0 1px rgba(0,0,0,.18), 0 2cqw 3cqw -1.4cqw rgba(60,40,20,.5); }
+.pi-temps-boite .boite-ombre { display: block; width: 90%; height: 22px; margin: -10px auto 0; border-radius: 50%; background: radial-gradient(closest-side, rgba(60,40,20,.45), rgba(60,40,20,0)); }
+.pi-temps-num { font-family: var(--police-texte); font-size: 15px; letter-spacing: .14em; color: var(--framboise-fonce); margin: 0 0 .8em; line-height: 1.2; }
+.pi-temps-titre { font-family: var(--police-titres); font-weight: 400; font-size: clamp(1.9rem, 1.3rem + 1.4vw, 2.8rem); line-height: 1.1; margin: 0 0 .5em; }
+.pi-temps-p { font-family: var(--police-titres); font-size: 24px; line-height: 1.4; color: #2b3150; margin: 0; }
+/* la boîte de l'ouverture : le halo respire nettement */
+@keyframes halo-respire-fort { from { opacity: .35; transform: scale(.92); } to { opacity: 1; transform: scale(1.06); } }
+.scene-objet::before { animation: halo-respire-fort 4s ease-in-out infinite alternate; }
+.pi-plateau::after { top: 0; bottom: auto; height: 2px; background: linear-gradient(90deg, rgba(255,236,206,0), rgba(255,236,206,.7) 50%, rgba(255,236,206,0)); }
+/* la citation : grande, sur deux tiers, décalée à droite */
+.pi-mots .pi-grande-citation { font-size: clamp(1.8rem, 1.2rem + 1.6vw, 2.5rem); max-width: none; width: min(100%, 66%); margin-left: auto; }
+.pi-ruban-ligne span { transition: color .3s; }
+.pi-ruban-ligne span:hover { color: var(--framboise-fonce); }
+@media (max-width: 760px) {
+  .pi-temps-grille { grid-template-columns: minmax(0, 1fr); }
+  .pi-temps-boite { width: 86%; justify-self: center; }
+  .pi-temps-p { font-size: 19px; }
+  .pi-temps-titre { font-size: 1.7rem; }
+  .pi-mots .pi-grande-citation { width: 100%; }
+  .pi-ouverture { min-height: 0; padding-bottom: 24px; }
+  .pi-ouverture-grille .scene-objet { width: min(86vw, 340px); }
+  .pi-ouverture-grille .scene-objet::after { content: ''; display: block; height: 40px; margin: -6px -8vw 0; background: linear-gradient(180deg, rgba(255,232,196,.5) 0, rgba(255,232,196,0) 3px, rgba(0,0,0,0) 30%, rgba(8,5,3,.45) 100%), url("../images/bureau-pin.webp") center / cover; border-radius: 2px; }
+  .pi-ouverture .scene-objet .boite-ombre { display: block; position: relative; z-index: 2; margin-top: -14px; margin-bottom: -26px; }
+}
+@media (max-width: 760px) and (max-height: 700px) { .pi-ouverture-grille .scene-objet { width: 64%; } .pi-ouverture-grille .scene-objet::after { height: 22px; } }
+@media (max-height: 500px) and (min-width: 761px) { .pi-temps-grille { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } .pi-temps-tete { display: none; } .pi-temps-p { font-size: 18px; } }
+@media (min-width: 761px) { .pi-temps-grille { grid-template-columns: minmax(0, .55fr) minmax(0, 1.55fr) minmax(0, .9fr); } .pi-temps-boite { width: min(100%, calc((100svh - var(--entete-h) - 120px) * 3 / 2)); justify-self: center; } }
+
+/* ---------- Second regard : Sophrologie (et la respiration de toutes les boîtes d'ouverture) ---------- */
+@keyframes boite-souffle { 0% { transform: scale(1); } 40% { transform: scale(1.028); } 100% { transform: scale(1); } }
+html.js .scene-objet .boite--page { animation: boite-souffle 10s ease-in-out 3s infinite; transform-origin: 50% 100%; }
+@media (prefers-reduced-motion: reduce) { html.js .scene-objet .boite--page { animation: none; } }
+.pi-sophro-ouverture .scene-objet { width: min(100%, 760px, calc((100svh - var(--entete-h) - var(--plateau-h) - 60px) * 3 / 2)); }
+.pi-sophro-grille { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); }
+.pi-principes { padding-bottom: clamp(40px, 4vw, 64px); }
+.pi-avec { padding-top: clamp(40px, 4vw, 72px); }
+.pi-etape-num { font-size: clamp(6rem, 2.6rem + 7vw, 11.25rem); line-height: 1.25; }
+.pi-etapes li, .pi-etapes li + li { grid-template-columns: auto minmax(0, 1fr); gap: 0 clamp(18px, 2.4vw, 40px); padding: 0; }
+@media (max-width: 760px) {
+  .pi-sophro-ouverture .scene-objet { order: -1 !important; width: 100% !important; margin: 4px 0 6px; }
+  .pi-sophro-grille .scene-objet::after { content: ''; display: block; height: 36px; margin: -6px -6vw 0; background: linear-gradient(180deg, rgba(255,240,214,.6) 0, rgba(255,240,214,0) 3px, rgba(0,0,0,0) 30%, rgba(40,24,10,.35) 100%), url("../images/bureau-pin.webp") center / cover; }
+  .pi-sophro-ouverture .scene-objet .boite-ombre { display: block; position: relative; z-index: 2; margin-top: -14px; margin-bottom: -22px; }
+  .pi-sophro-ouverture.po-sophro::before { background: linear-gradient(180deg, rgba(241,231,214,.55) 0%, rgba(241,231,214,.78) 40%, rgba(241,231,214,.9) 75%, rgba(241,231,214,.7) 100%); }
+  .pi-sophro-ouverture .po-sophro-texte { max-width: none; padding-top: 6px; }
+  .pi-sophro-ouverture .po-sophro-grille { padding-top: calc(var(--entete-h) + 10px); }
+  .pi-colonnes { columns: 2; column-gap: 18px; }
+  .pi-colonnes li { font-size: 1.2rem; }
+}
+@media (max-width: 760px) and (max-height: 700px) { .pi-sophro-ouverture .scene-objet { width: 70% !important; justify-self: center !important; } .pi-sophro-grille .scene-objet::after { height: 18px; } }
+@media (max-width: 760px) { .pi-sophro-grille { grid-template-columns: minmax(0, 1fr) !important; } }
+@media (max-width: 760px) { .pi-sophro-ouverture .mention-ia { top: calc(var(--entete-h) + 8px); bottom: auto; right: 8px; } }
+@media (max-width: 760px) and (max-height: 700px) { .pi-sophro-ouverture .page-actions .tel { display: none; } }
+
+/* ---------- Seconds regards : Violences, Rendez-vous, et toutes les ouvertures ---------- */
+/* le halo de l'ouverture : grand et vivant */
+.scene-objet::before { left: -45%; right: -45%; top: -55%; bottom: -25%; background: radial-gradient(closest-side, rgba(255,222,176,.34), rgba(255,222,176,.12) 55%, rgba(255,222,176,0)); animation: halo-vivant 6s ease-in-out infinite alternate; }
+@keyframes halo-vivant { from { opacity: .35; transform: scale(.9); } to { opacity: 1; transform: scale(1.15); } }
+@media (prefers-reduced-motion: reduce) { .scene-objet::before { animation: none; } }
+/* les lettres de la boîte se soulèvent une à une au survol */
+.boite--page .l { display: inline-block; transition: translate .25s cubic-bezier(.2,.7,.2,1), rotate .25s; }
+.boite--page .l:hover { translate: 0 -12%; rotate: -5deg; }
+/* boîtes plus grandes et plus hautes : Violences et Rendez-vous */
+@media (min-width: 761px) {
+  .pi-ouverture--viol .pi-ouverture-grille, .pi-ouverture--rdv .pi-ouverture-grille { grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr); }
+  .pi-ouverture--viol .scene-objet, .pi-ouverture--rdv .scene-objet { width: min(100%, 780px, calc((100svh - var(--entete-h) - var(--plateau-h) - 40px) * 3 / 2)); }
+}
+.pi-ouverture--viol .boite--page .boite-rangee { font-size: 12cqw; }
+/* la lampe : la couche éclairée posée exactement sous le cercle, bord adouci, mur plus court */
+.pi-mur .lampe-cercle { width: 60vmax; height: 60vmax; margin: -30vmax 0 0 -30vmax; -webkit-mask-image: radial-gradient(circle, #000 0, #000 38%, transparent 70%); mask-image: radial-gradient(circle, #000 0, #000 38%, transparent 70%); }
+.pi-mur .lampe-dedans { left: 50%; top: 50%; -webkit-mask-image: none; mask-image: none; }
+.pi-mur { min-height: min(70vh, 640px); }
+.pi-mur::after { content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(90deg, rgba(14,19,40,0) 55%, rgba(14,19,40,.65) 100%); }
+.pi-mur .mention-ia { left: 16px; right: auto; z-index: 3; }
+/* final : portrait rond mieux cadré */
+.pi-fin-photo--ronde img { object-position: 50% 15%; filter: saturate(1.08) sepia(.08) brightness(.98); }
+/* plan : minutes lisibles ; au téléphone, seulement les villes */
+@media (max-width: 760px) { .pi-plan .plan-min { display: none; } .pi-plan text { font-size: 26px; } }
+/* demande : moins de vide sous le formulaire */
+.pi-demande-media { max-width: 320px; }
+/* pied de page : mentions à 16 px */
+.pied :is(p, a, li, span) { font-size: max(16px, 1em); }
+@media (max-width: 760px) { .pied :is(p, a, li, span) { font-size: max(15px, 1em); } }
+.pi-etape-num { font-size: clamp(5.5rem, 2.4rem + 5.6vw, 9.5rem); line-height: 1.45; }
+@media (max-height: 500px) and (min-width: 761px) { .pi-sophro-ouverture .po-sophro-texte { padding-top: calc(var(--entete-h) + 10px); } .pi-sophro-ouverture { padding-top: 0; } }
+@media (max-width: 760px) { .pi-sophro-ouverture .info-cle { color: #23283d; } }
+@media (max-width: 760px) and (max-height: 700px) {
+  .pi-temps .surtitre { display: none; }
+  .pi-temps-tete .titre-section { font-size: 1.8rem; margin-bottom: .2em; }
+  .pi-temps-boite { width: 64%; }
+  .pi-temps-titre { font-size: 1.35rem; margin-bottom: .3em; }
+  .pi-temps-p { font-size: 16px; line-height: 1.4; }
+  .pi-temps-collant { padding-block: calc(var(--entete-h) + 6px) 8px; }
+  .pi-temps-grille { gap: 8px; }
+}

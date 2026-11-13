@@ -113,3 +113,126 @@ Les cinq points ci-dessous se font en CSS ou en texte. Ils visent les critères 
 3. **Le défilé des mots et l'appel final.** Les deux rangs de mots, l'un droit, l'autre en italique (L3 I1–I2), et l'appel final sur la nuit avec les trois formules (L4 I1–I2) sont les deux sections les plus abouties.
 
 VERDICT : REFAIRE · moyenne 2,7 / 5
+
+---
+
+# Second regard
+
+VERDICT : REFAIRE
+
+Je l'ai regardée le 13 novembre 2026, d'après `/tmp/apercus2/psychotherapie/`, sans lire le code. La vitrine reste l'accueil (`/tmp/v2-mix.jpg`, `/tmp/zoom-planche.jpg`).
+
+**Sources.**
+- Mosaïques : `images-ordinateur.jpg` compte 4 images par ligne (« L2 I3 ») ; `images-telephone.jpg` en compte 8 (« tél. L1 I3 »).
+- Mesures :
+  - `vides.json` : 6,9 écrans sur ordinateur, dont 3 presque vides sur 12 (72 à 75 %, à 17, 25 et 42 % de la page). 8,4 écrans sur téléphone, dont 3 presque vides sur 13.
+  - `premier-ecran.json` : 0 % bouge seul sur les deux ; 21 % réagit à la souris sur ordinateur.
+- Films : j'ai tiré deux images par seconde (25,8 s et 32,8 s) dans un dossier temporaire hors du projet, supprimé ensuite. Les tailles sont ramenées en px d'écran (× 1,125), donc approchées.
+  - Sur l'ouverture, la luminosité de la boîte et du halo est la même de la première à la dernière image (236 et 38,5 sur 255).
+- Non jugé :
+  - L4 I3–I4, L5 I1, tél. L3 I4–I6 : le retour en haut, le voile, puis l'accueil.
+  - Les bandes vert pâle de quelques images (L3 I1) : artefacts du film, absents de la planche.
+
+## La liste du premier regard, vérifiée sur les images
+
+1. **Scène des trois temps qui remplit l'écran, sans titres superposés : à moitié fait.**
+   - Fait :
+     - plus de superposition (L2 I2 : « Se reconstruire » apparaît seul, « Affronter » est parti ; tél. L1 I5–I8 aussi) ;
+     - le sous-titre en double est retiré ;
+     - la liste 01 / 02 / 03 fait environ 16 px.
+   - À moitié :
+     - le grand chiffre au trait existe, mais il fait environ 285 px de haut (420 demandés) et il est beige très pâle, pas framboise : on le devine à peine (L2 I1–I3) ;
+     - le texte fait environ 20 px, mais en linéale sur une colonne de 400 px, pas en Instrument Serif à 22-24 px.
+   - Pas fait :
+     - le titre fait toujours environ 135 px, pas `clamp(140px, 12vw, 180px)` ;
+     - sur téléphone, le titre fait environ 44 px (56 demandés), et le « 2 » au trait passe sur le texte (« viennent »).
+   - Résultat : la scène tient toujours dans le tiers du milieu, et les trois écrans presque vides de `vides.json` sont tous là.
+2. **La boîte posée, allumée, qui répond : à moitié fait.**
+   - Fait :
+     - trois rangées avec leurs rails, PARLER sur celle du milieu ;
+     - la base mord sur le plateau, avec une ombre de contact (L1 I3) ;
+     - elle réagit au survol (21 %) ;
+     - sur téléphone, elle passe au-dessus du titre (tél. L1 I3).
+   - Pas fait :
+     - pas d'allumage à l'arrivée ;
+     - le halo ne respire pas visiblement : 0 % bouge seul ;
+     - pas de flaque chaude ni d'arête claire sur le plateau, qui reste une bande brune floue d'environ 110 px ;
+     - sur téléphone, la boîte fait environ 280 px (330 demandés) et flotte dans la nuit, sans bureau dessous ;
+     - sur téléphone encore, environ 120 px de nuit vide entre le tarif et la barre (tél. L1 I3).
+3. **Resserrer la pierre : à moitié fait.**
+   - Fait :
+     - de la citation au couple : environ 135 px ;
+     - du couple aux formations : environ 160 px ;
+     - les mots qui défilent font environ 110 px (L3 I1) ;
+     - les quatre vignettes sont sur une rangée (L3 I3).
+   - À moitié : la citation est passée à environ 36 px, mais elle reste seule à gauche, sur 40 % de la largeur, avec la moitié droite vide (L3 I1–I2).
+   - Pas fait :
+     - de « Vivre » à « Ce qu'on peut y déposer », il reste environ 360 px (120 demandés, L1 I4 et L2 I4) ;
+     - la colonne famille finit toujours environ 55 px plus haut que la colonne couple.
+4. **Textes à 16 px au moins : fait.**
+   - Le tarif, les prix, les légendes et « Ouvrez une vignette… » font 15,5 à 17 px.
+   - Les gris sont plus foncés.
+5. **Dernières tuiles et photo du final : fait.**
+   - Plus de languette ni d'intro en tuiles : l'intro est le logo, puis un rond PARLER sur téléphone.
+   - La vraie photo du fauteuil est dans le final, sans pastille (L4 I1). Elle fait environ 150 × 187 px, un peu moins que les 200 × 250 demandés.
+
+## Les neuf critères
+
+| # | Critère | Note | Pourquoi |
+|---|---|---|---|
+| 1 | Fidélité au vrai lieu et au métier | 4 | Ce sont ses mots et ses tarifs, avec ses diplômes et la presse (L3 I3). La vraie photo du fauteuil est maintenant dans le final (L4 I1). L'image des deux fauteuils reste générée. |
+| 2 | Effet signature, dans les cinq premières secondes | 2 | La boîte est le sujet de l'écran : environ 640 × 428 px, soit 21 % de l'écran. Elle est posée, avec ses rails et son ombre (L1 I3). Mais elle est figée : 0 % bouge seul, ni allumage ni halo visible, et le survol seul n'est pas une manipulation. Règle : 2 au plus. Le point 2 est à moitié fait. |
+| 3 | Images | 3 | La vraie photo du final remplace l'image générée. Le couple est net et chaud (L3 I2). Mais le bureau, seule image pleine largeur, reste une bande floue sans veinage ni lumière (L1 I3). |
+| 4 | Composition et finition | 3 | Un seul langage, sans superposition, et les vignettes sont alignées. Mais la scène des trois temps occupe le tiers du milieu, avec du vide au-dessus et en dessous (L2 I1–I3). La citation est seule à gauche (L3 I1). Il reste 360 px vides après « Vivre ». Le point 3 est à moitié fait. |
+| 5 | Rythme, sans vides | 2 | La page est courte (6,9 écrans), mais `vides.json` relève encore 3 écrans presque vides sur 12, tous dans la scène des trois temps, et 3 sur 13 sur téléphone. Le point 1 est à moitié fait. |
+| 6 | Typographie et lisibilité | 4 | Tout est à 16 px ou plus, et les titres ne se chevauchent plus. Le défilé des mots, à environ 110 px, tient bien (L3 I1). Il reste le titre des temps, qui n'a pas grandi, et le chiffre au trait qui passe sur le texte sur téléphone. |
+| 7 | Niveau par rapport à la vitrine | 3 | La boîte est enfin le même objet que celui de l'accueil : posée, à rangées, ombrée. Mais à l'accueil, les lettres tombent et des tuiles l'entourent, alors qu'ici rien ne vit. La suite est propre, sans plus. Le niveau est juste à celui de la vitrine pour la finition, en dessous pour la vie. |
+| 8 | Envie d'agir | 4 | Le bouton et le tarif sont au premier écran, « Réserver cette séance » suit le couple, et l'appel final sur la nuit montre une vraie photo et les trois formules. La barre reste sur téléphone. |
+| 9 | Jeu | 2 | Seul le survol de la boîte répond. Les mots qui défilent ne montrent pas de réponse dans le film. Rien ne s'attrape ni ne se tire. |
+
+**Moyenne : 27 / 9 = 3,0.** Trois critères valent 2 (2, 5, 9), d'où REFAIRE. C'est le second regard sous 3,5.
+
+Le problème n'est plus dans les détails : la page a une belle boîte immobile, puis une scène vide. **Idée pour plus tard** : une scène qui réunit l'ouverture et les trois temps. La boîte PARLER reste épinglée sur son bureau, et ses trois rangées affichent AFFRONTER, puis SE RECONSTRUIRE, puis VIVRE au défilement, lettres qui tombent. Elle remplit les écrans vides et devient le jeu de la page. Cela dépasse quelques minutes de CSS.
+
+Les cinq points ci-dessous, eux, se font en CSS ou en texte.
+
+## Ce qui doit changer
+
+1. **Que la boîte bouge seule au premier écran** (critères 2, 7, 9).
+   - À l'arrivée, les lettres de PARLER tombent une à une dans la rangée du milieu, comme à l'accueil et sur Rendez-vous (`transition-delay` par lettre, environ 60 ms).
+   - Le halo respire franchement : opacité de 0,35 à 1 et échelle de 0,92 à 1,06, en 4 s, en boucle. Aujourd'hui, la respiration ne se voit pas (0 % mesuré).
+   - Au survol, PARLER se soulève lettre par lettre.
+2. **La scène des trois temps remplit l'écran** (critères 4, 5, 6).
+   - Titre du temps à `clamp(140px, 12vw, 180px)`.
+   - Chiffre au trait à environ 60vh de haut, en framboise à 35 % (`-webkit-text-stroke: 2px` dans la couleur framboise, `opacity: .35`), calé à droite. Aujourd'hui, il fait environ 285 px et il est beige pâle.
+   - Texte en Instrument Serif à 24 px, sur environ 560 px de large.
+   - Sur téléphone :
+     - titre à 56 px ;
+     - chiffre en haut à droite, au-dessus du titre et plus derrière le texte ;
+     - surtitre et « On avance… » remontés.
+3. **Le bureau sur téléphone et sur ordinateur** (critères 2, 3).
+   - Sur téléphone, poser la boîte sur 40 px de bureau (même dégradé bois que sur ordinateur), à environ 330 px de large.
+   - Sur téléphone, supprimer les 120 px de nuit vide sous le tarif.
+   - Sur ordinateur :
+     - une flaque chaude devant la boîte (`radial-gradient` crème vers corail #f19a6b, environ 0,25 d'opacité), large d'une fois et demie la boîte ;
+     - une arête avant claire de 2 px au plateau.
+4. **Resserrer encore la pierre** (critères 4, 5).
+   - De la fin de la scène épinglée à « Ce qu'on peut y déposer » : de 360 à 120 px.
+   - La citation passe sur deux tiers de la largeur (environ 880 px), à 40 px, décalée vers la droite (`margin-left: auto`). Elle ne laisse plus la moitié droite vide.
+   - Aligner la fin des colonnes couple et famille.
+5. **Le défilé des mots comme petit jeu** (critère 9).
+   - Si ce n'est pas déjà le cas, au survol le défilé s'arrête (`animation-play-state: paused`) et le mot survolé passe en framboise.
+   - Ajouter sous le titre, en 16 px : « Passez sur un mot. »
+
+## Ce qui est réussi (à garder)
+
+1. **La boîte est enfin posée** : trois rangées, rails, base qui mord sur le plateau, ombre de contact (L1 I3). C'est le même objet que celui de l'accueil, une seule fois, comme le veut le brief.
+2. **Les finitions demandées sont faites** :
+   - plus de titres superposés ;
+   - les quatre vignettes sur une rangée ;
+   - tous les textes à 16 px ;
+   - plus aucune tuile hors de la boîte ;
+   - une vraie photo dans l'appel final.
+3. **Le défilé des mots à environ 110 px et l'appel final sur la nuit** restent les deux sections les plus abouties (L3 I1, L4 I1).
+
+VERDICT : REFAIRE · moyenne 3,0 / 5

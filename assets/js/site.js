@@ -1,6 +1,6 @@
 /* Sandra Barba — « La boîte à mots ». Effets propres au projet (le reste vient du socle).
    Chaque effet porte data-effet="nom-du-plan" dans les pages. */
-import { demarrer, boucle, etat, versObjet, quand } from './socle/index.js?v=2';
+import { demarrer, boucle, etat, versObjet, quand } from './socle/index.js?v=3';
 
 const gsap = window.gsap;
 const $ = (s, r = document) => r.querySelector(s);
@@ -515,7 +515,12 @@ function initTemps() {
   if (!sec || !window.ScrollTrigger) return;
   const etats = $$('.pi-temps-etat', sec), fil = $$('[data-fil-temps]', sec);
   let courant = -1;
-  const poser = (i) => { if (i === courant) return; courant = i; etats.forEach((e, k) => e.classList.toggle('actif', k === i)); fil.forEach((e, k) => e.classList.toggle('actif', k <= i)); };
+  const bt = $('[data-boite-temps]', sec), rangT = bt ? $$('.boite-rangee', bt) : [], motsT = bt ? (bt.dataset.mots || '').split('|') : [];
+  const poser = (i) => {
+    if (i === courant) return; const premier = courant < 0; courant = i;
+    etats.forEach((e, k) => e.classList.toggle('actif', k === i)); fil.forEach((e, k) => e.classList.toggle('actif', k <= i));
+    if (rangT[1] && motsT[i] && !premier) poserRangee(rangT[1], motsT[i], { pas: 0.03 });
+  };
   poser(0);
   window.ScrollTrigger.create({ trigger: sec, start: 'top top', end: 'bottom bottom', onUpdate: (x) => poser(Math.min(etats.length - 1, Math.floor(x.progress * etats.length * 0.999))) });
 }

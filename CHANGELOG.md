@@ -1,5 +1,14 @@
 # Journal des versions
 
+## v3 — 13 novembre 2026
+Second regard du directeur artistique sur les quatre pages intérieures, corrections faites.
+- Toutes les boîtes d'ouverture respirent seules sous un grand halo qui monte et descend ; chaque lettre se soulève au survol ; sur téléphone, la boîte est posée sur une bande de bois avec son ombre.
+- Psychothérapie : les trois temps passent dans une boîte lumineuse dont la rangée du milieu s'écrit AFFRONTER, puis SE RECONSTRUIRE, puis VIVRE au défilement, avec le texte à côté ; citation plus grande, mots qui passent en framboise au survol.
+- Sophrologie : boîte d'ouverture plus grande ; sur téléphone, boîte au-dessus du titre et voilage visible ; principes en très grands chiffres ; « Pour qui » d'un bloc, en deux colonnes.
+- Violences : lampe corrigée (la couche éclairée est maintenant posée sous le cercle, bord adouci), boîte « SORTIR / DU / SILENCE » plus grande, portrait du final recadré.
+- Rendez-vous : boîte « APPELEZ / 07 60 36 / 58 32 » plus grande, plan plus lisible (seulement les villes sur téléphone).
+- Pied de page : mentions à 16 px. Fichiers JavaScript en version 3.
+
 ## v2 — 13 novembre 2026
 Accueil épuré et plongée fluide, puis refonte des quatre pages intérieures au niveau de l'accueil.
 

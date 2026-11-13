@@ -61,7 +61,7 @@ export default (c) => html`
     <div class="pi-avec-texte">
       <p class="surtitre" data-anime>${c.t('sophrologie.pourQuiSur')}</p>
       <h2 class="titre-section" data-anime="lignes">${c.t('sophrologie.pourQuiTitre')}</h2>
-      <ul class="pi-colonnes" data-anime="cascade">${c.s('sophrologie.pourQui').split('|').map((x) => html`<li>${x}</li>`)}</ul>
+      <ul class="pi-colonnes">${c.s('sophrologie.pourQui').split('|').map((x) => html`<li>${x}</li>`)}</ul>
       <p class="petit-titre" data-anime>${c.t('sophrologie.avecSur')}</p>
       <p data-anime>${c.t('sophrologie.avecTexte')}</p>
       ${vignettes(c, ['diplome-sophrologie'])}
