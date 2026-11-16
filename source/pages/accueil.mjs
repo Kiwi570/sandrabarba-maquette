@@ -23,6 +23,7 @@ export default (c) => {
         <a class="tel" href="tel:${c.site.contact.telephoneLien}">${c.site.contact.telephone}</a>
       </p>
       <p class="info-cle" data-info-cle data-anime="gsap">${c.t('accueil.info')}</p>
+      <p class="consigne-boite" aria-hidden="true"><span>↘</span> ${c.t('accueil.indiceSouris')}</p>
     </div>
     <div class="objet" data-grille="manipuler" data-objet>
       ${boite({ rangees: [c.s('accueil.boiteQuestion1'), c.s('accueil.boiteQuestion2'), ''], label: c.s('accueil.boiteLabel'), classe: 'boite--accueil', attrs: 'data-boite data-effet="boite-a-mots" data-grille="typo" data-iris-centre' })}
@@ -34,7 +35,7 @@ export default (c) => {
     <span class="bureau-lumiere" aria-hidden="true"></span>
     <div class="conteneur objet-bas">
       <p class="indice"><span class="indice-souris">${c.t('accueil.indiceSouris')}</span><span class="indice-tactile">${c.t('accueil.indiceTactile')}</span></p>
-      <ul class="tuiles" data-tuiles data-effet="tuiles">
+      <ul class="tuiles" data-tuiles data-effet="tuiles" data-ruban>
         ${mots.map((m) => html`<li><button type="button" class="tuile tuile--mot" data-mot="${m.cle}">${m.tuile}</button></li>`)}
       </ul>
       <div class="reponse" data-reponse>

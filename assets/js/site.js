@@ -1,6 +1,6 @@
 /* Sandra Barba — « La boîte à mots ». Effets propres au projet (le reste vient du socle).
    Chaque effet porte data-effet="nom-du-plan" dans les pages. */
-import { demarrer, boucle, etat, versObjet, quand } from './socle/index.js?v=3';
+import { demarrer, boucle, etat, versObjet, quand } from './socle/index.js?v=4';
 
 const gsap = window.gsap;
 const $ = (s, r = document) => r.querySelector(s);
@@ -243,11 +243,11 @@ function initPlongee() {
   const construire = () => {
     if (st) st.kill(); if (tl) tl.kill();
     gsap.set([boiteEl, ...$$('.rail', rails), dedans, texte, bureau, halo, sur, ...suivantes], { clearProps: 'transform,opacity,clipPath,visibility' });
-    gsap.set(toutes, { x: 0, y: 0, rotation: 0, scale: 1 });
-    const fr = cadre.getBoundingClientRect(), pr = panneau.getBoundingClientRect(), dr = dedans.getBoundingClientRect(), kr = bac.getBoundingClientRect();
+    gsap.set(toutes, { x: 0, y: 0, rotation: 0, scale: 1, opacity: 1 });
+    const fr = cadre.getBoundingClientRect(), pr = panneau.getBoundingClientRect(), dr = dedans.getBoundingClientRect();
     bases = toutes.map((l) => { const r = l.getBoundingClientRect(); return { x: r.left - dr.left + r.width / 2, y: r.top - dr.top + r.height / 2 }; });
-    const bx = kr.left - dr.left, by = kr.top - dr.top, bw = kr.width, bh = kr.height;
-    dansBac = toutes.map((l, i) => ({ x: bx + bw * (0.04 + tirage[i].fx * 0.92) - bases[i].x, y: by + bh * (0.3 + tirage[i].fy * 0.45) - bases[i].y, rotation: tirage[i].r, scale: 0.42 }));
+    /* Plus de bac : les lettres d'une phrase tombent en place, celles de la phrase précédente s'en vont vers le bas en s'effaçant. */
+    dansBac = toutes.map((l, i) => ({ x: (tirage[i].fx - 0.5) * 30, y: -0.55 * l.offsetHeight, rotation: tirage[i].r * 0.25, opacity: 0 }));
     etapes.forEach((ls, e) => { if (e > 0) ls.forEach((l) => gsap.set(l, dansBac[toutes.indexOf(l)])); });
     /* On entre dans la boîte : l'intérieur s'ouvre par une fenêtre qui part exactement du panneau de la boîte
        (même crème, mêmes mots), puis s'agrandit jusqu'aux bords de l'écran pendant que les mots grandissent.
@@ -273,11 +273,10 @@ function initPlongee() {
       .set(boiteEl, { visibility: 'hidden' }, 0.22)
       .fromTo(suivantes, { opacity: 0 }, { opacity: 1, duration: 0.04 }, 0.19)
       .fromTo(sur, { opacity: 0 }, { opacity: 1, duration: 0.04 }, 0.19);
-    const plan = [[null, 0.4], [0.44, 0.66], [0.7, null]];
+    const plan = [[null, 0.42], [0.46, 0.68], [0.72, null]];
     etapes.forEach((ls, e) => {
-      const idx = ls.map((l) => toutes.indexOf(l));
-      if (e > 0) tl.to(ls, { x: 0, y: 0, rotation: 0, scale: 1, duration: 0.1, ease: 'power3.out', stagger: { each: 0.002, from: 'random' } }, plan[e][0]);
-      if (plan[e][1] != null) tl.to(ls, { x: (j) => dansBac[idx[j]].x, y: (j) => dansBac[idx[j]].y, rotation: (j) => dansBac[idx[j]].rotation, scale: 0.42, duration: 0.04, ease: 'power2.in', stagger: { each: 0.001, from: 'random' } }, plan[e][1]);
+      if (e > 0) tl.to(ls, { x: 0, y: 0, rotation: 0, opacity: 1, duration: 0.08, ease: 'back.out(1.6)', stagger: { each: 0.0025, from: 'start' } }, plan[e][0]);
+      if (plan[e][1] != null) tl.to(ls, { y: (j, l) => 0.45 * l.offsetHeight, rotation: (j) => ((j % 2) ? 6 : -6), opacity: 0, duration: 0.035, ease: 'power2.in', stagger: { each: 0.0015, from: 'start' } }, plan[e][1]);
     });
     tl.to({}, { duration: 0.04 }, 0.96);
     let plonge = false;
@@ -298,7 +297,7 @@ function initPlongee() {
       trigger: sec, start: 'top top', end: 'bottom bottom', scrub: 0.5, animation: tl, invalidateOnRefresh: false,
       onUpdate: (x) => {
         const p = x.progress; versDedans(p > 0.03); sec.classList.toggle('zoom-fini', p > 0.215); document.documentElement.classList.toggle('fil-au-repos', p < 0.2 && x.isActive !== false && scrollY < sec.offsetTop + sec.offsetHeight * 0.2);
-        const fen = [[0.22, 0.4], [0.55, 0.65], [0.83, 1.01]];
+        const fen = [[0.22, 0.42], [0.55, 0.68], [0.81, 1.01]];
         legendes.forEach((l, n) => l.classList.toggle('actif', p >= fen[n][0] && p < fen[n][1]));
       },
     });

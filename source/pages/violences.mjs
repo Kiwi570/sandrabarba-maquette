@@ -84,7 +84,7 @@ export default (c) => {
       <p class="surtitre" data-anime>${c.t('violences.presseSur')}</p>
       <h2 class="titre-section" data-anime="lignes">${c.t('violences.presseTitre')}</h2>
       <p data-anime>${c.t('violences.presseTexte')}</p>
-      <p class="pi-note" data-anime>${c.t('violences.presseLien')} : ouvrez la vignette.</p>
+      <p class="pi-note" data-anime>${c.t('violences.presseLien')}&nbsp;: ouvrez la vignette.</p>
     </div>
     <div class="pi-vignettes-grandes">${vignettes(c, ['presse', 'diplome-stress'])}</div>
   </div>

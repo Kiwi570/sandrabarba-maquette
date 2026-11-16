@@ -87,3 +87,11 @@ Violences — **fait** : la couche éclairée de la lampe était décalée (tail
 Rendez-vous — **fait** : boîte « APPELEZ / 07 60 36 / 58 32 » plus grande et plus haute (environ 54 % de la largeur) ; plan : noms à 21 et minutes à 19 unités (16 px et plus à l'écran), « Orange » et « 25 min » ensemble, seulement les villes sur téléphone ; image du cabinet réduite sous la liste des étapes.
 
 Pas fait : la bande sombre de 15 px au bord droit des films est la barre de défilement du navigateur de test, pas la page.
+
+## Retour de l'utilisatrice du 16 novembre (v4) : corrections
+- Écran bas (1288 × 633) : tuiles à moitié sous la boîte et sous le bord de l'écran → bureau de 96 px, tuiles en haut du bureau, boîte limitée par la hauteur disponible (largeur ≤ (hauteur − en-tête − bureau − 72 px) × 3/2), chevauchement de la boîte sur le bureau réduit à 12 px.
+- Consigne cachée derrière les tuiles → passée dans la colonne de texte (`.consigne-boite`), indice du bureau masqué sur ordinateur ; emplacement du mot en pointillés dans la troisième rangée.
+- Lettres éparpillées dans la plongée (« bac ») → bac supprimé : chaque phrase tombe à sa place (légère rotation, sans dispersion) et la précédente sort par le bas en fondu.
+- Première rangée cachée sous l'en-tête → surtitre, rangées et légende posés sous l'en-tête.
+- Téléphones : indice remonté au-dessus du bois (GSAP écrase `transform` et `translate`, d'où `top`), rangée de tuiles qui glisse sur les écrans de moins de 700 px de haut, mise en page dédiée à l'horizontale (les réglages v4 de l'ordinateur sont limités aux écrans de plus de 500 px de haut).
+

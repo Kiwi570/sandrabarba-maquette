@@ -1,5 +1,14 @@
 # Journal des versions
 
+## v4 — 16 novembre 2026
+Premier écran de l'accueil et plongée, après les captures de l'utilisatrice (ordinateur portable, écran de 633 px de haut).
+- Les tuiles ne sont plus jamais cachées : la boîte prend la taille que laisse la hauteur de l'écran, le bureau est plus fin et les tuiles sont posées dessus en entier. Vérifié sur douze tailles, de 320 × 568 à 1536 × 730, plus le téléphone à l'horizontale.
+- La consigne « Glissez votre mot dans la boîte » passe dans la colonne de texte, sous le prix, au lieu d'être cachée derrière les tuiles. Dans la boîte, la troisième rangée montre l'emplacement du mot en pointillés.
+- Plongée : plus de bac de lettres éparpillées. Les lettres de chaque phrase tombent à leur place, puis sortent par le bas avant la phrase suivante. Les rangées et la légende commencent sous l'en-tête.
+- Téléphones : sur petit écran, les tuiles tiennent sur une rangée qu'on fait glisser du doigt ; « Touchez votre mot, ou faites-le glisser » n'est plus coupé par le bois. À l'horizontale, le texte est à gauche et la boîte à droite, au-dessus des tuiles.
+- Violences : espace insécable avant les deux-points. Formulaire : la mention « à compléter » est retirée (la politique de confidentialité reste à fournir, voir le README).
+- Fichiers JavaScript en version 4.
+
 ## v3 — 13 novembre 2026
 Second regard du directeur artistique sur les quatre pages intérieures, corrections faites.
 - Toutes les boîtes d'ouverture respirent seules sous un grand halo qui monte et descend ; chaque lettre se soulève au survol ; sur téléphone, la boîte est posée sur une bande de bois avec son ombre.

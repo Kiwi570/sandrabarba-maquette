@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="3" data-page="accueil">
+<html lang="fr" data-v="4" data-page="accueil">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/instrument-serif.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="/assets/fonts/bricolage-tuiles.woff" as="font" type="font/woff" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=3">
-<link rel="stylesheet" href="/assets/css/site.css?v=3">
-<link rel="modulepreload" href="/assets/js/site.js?v=3">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=3">
+<link rel="stylesheet" href="/assets/css/socle.css?v=4">
+<link rel="stylesheet" href="/assets/css/site.css?v=4">
+<link rel="modulepreload" href="/assets/js/site.js?v=4">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=4">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=3"></script>
+<script type="module" src="/assets/js/site.js?v=4"></script>
 <meta name="theme-color" content="#161d36">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -119,6 +119,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <a class="tel" href="tel:+33760365832">07 60 36 58 32</a>
       </p>
       <p class="info-cle" data-info-cle data-anime="gsap">Séance d’1 h · 65 € · au cabinet ou en visio</p>
+      <p class="consigne-boite" aria-hidden="true"><span>↘</span> Glissez votre mot dans la boîte</p>
     </div>
     <div class="objet" data-grille="manipuler" data-objet>
       <div class="boite boite--accueil" data-boite data-effet="boite-a-mots" data-grille="typo" data-iris-centre role="img" aria-label="Boîte lumineuse : choisissez le mot qui vous amène">
@@ -136,7 +137,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <span class="bureau-lumiere" aria-hidden="true"></span>
     <div class="conteneur objet-bas">
       <p class="indice"><span class="indice-souris">Glissez votre mot dans la boîte</span><span class="indice-tactile">Touchez votre mot, ou faites-le glisser</span></p>
-      <ul class="tuiles" data-tuiles data-effet="tuiles">
+      <ul class="tuiles" data-tuiles data-effet="tuiles" data-ruban>
         <li><button type="button" class="tuile tuile--mot" data-mot="deuil">LE DEUIL</button></li><li><button type="button" class="tuile tuile--mot" data-mot="peur">LA PEUR</button></li><li><button type="button" class="tuile tuile--mot" data-mot="couple">LE COUPLE</button></li><li><button type="button" class="tuile tuile--mot" data-mot="violences">LES VIOLENCES</button></li><li><button type="button" class="tuile tuile--mot" data-mot="sommeil">LE SOMMEIL</button></li><li><button type="button" class="tuile tuile--mot" data-mot="epuisement">L’ÉPUISEMENT</button></li><li><button type="button" class="tuile tuile--mot" data-mot="examens">LES EXAMENS</button></li><li><button type="button" class="tuile tuile--mot" data-mot="fille">MA FILLE</button></li><li><button type="button" class="tuile tuile--mot" data-mot="naissance">LA NAISSANCE</button></li>
       </ul>
       <div class="reponse" data-reponse>

@@ -1580,3 +1580,63 @@ html.js .scene-objet .boite--page { animation: boite-souffle 10s ease-in-out 3s 
   .pi-temps-collant { padding-block: calc(var(--entete-h) + 6px) 8px; }
   .pi-temps-grille { gap: 8px; }
 }
+
+/* ================= v4 : ouverture qui tient sur tous les écrans, intérieur de la boîte sans lettres en vrac ================= */
+/* la consigne vit dans la colonne de texte : plus rien ne passe derrière les tuiles */
+.consigne-boite { display: none; }
+@media (min-width: 761px) and (min-height: 501px) {
+  .consigne-boite { display: flex; align-items: center; gap: 10px; margin: 1.1rem 0 0; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; font-weight: 600; color: #f0c9a8; }
+  .consigne-boite span { font-size: 20px; letter-spacing: 0; color: var(--corail); }
+  .plongee .bureau .indice { display: none; }
+  /* le plateau : juste la place des tuiles, sous la boîte, jamais derrière */
+  .plongee .ouverture { --bureau-h: 96px; }
+  .plongee .bureau { padding: 30px 0 18px; min-height: var(--bureau-h); }
+  .plongee .bureau .tuiles { align-self: start; margin: 0; }
+  .plongee .objet { translate: 0 12px; }
+  .plongee .tuile--mot { min-height: 42px; font-size: 14.5px; }
+  /* la boîte ne dépasse jamais la hauteur disponible */
+  .plongee .objet .boite--accueil { width: min(100%, 720px, calc((100svh - var(--entete-h) - var(--bureau-h) - 72px) * 3 / 2)); }
+  .plongee .ouverture-grille { padding-block: 12px 0; align-items: center; }
+}
+@media (min-width: 761px) and (min-height: 501px) and (max-height: 700px) {
+  .plongee .ouverture-titre { font-size: clamp(2.2rem, 7.4vh, 3.6rem); }
+  .plongee .surtitre { margin-bottom: .6rem; }
+  .plongee .ouverture-actions { margin: .9rem 0 .5rem; }
+  .consigne-boite { margin-top: .7rem; }
+}
+@media (min-width: 761px) and (max-width: 1179px) and (min-height: 501px) { .plongee .ouverture { --bureau-h: 150px; } }
+/* dedans : tout commence sous l'en-tête ; plus de bac */
+.bac { display: none !important; }
+.dedans .scene-sur { top: calc(var(--entete-h) + 12px); }
+.rails { top: calc(var(--entete-h) + 60px); height: calc(100% - var(--entete-h) - 60px - 22%); }
+.rail { font-size: min(11vw, calc((100svh - var(--entete-h) - 60px) * .2)); }
+.dedans .legendes { top: auto; bottom: 7%; }
+@media (max-width: 760px) {
+  .dedans .scene-sur { top: calc(var(--entete-h) + 10px); }
+  .rails { top: calc(var(--entete-h) + 84px); height: calc(100% - var(--entete-h) - 84px - var(--barres-h) - 26%); }
+  .rail { font-size: min(13.5vw, 9vh); }
+  .dedans .legendes { bottom: calc(var(--barres-h) + 5%); }
+}
+/* l'emplacement du mot, en pointillés, tant que la boîte attend */
+.boite--accueil[data-vide] .boite-rangee[data-rangee="2"]::before { display: block; content: ''; position: absolute; inset: 20% 24%; border: 2px dashed rgba(165,35,82,.5); border-radius: .8cqw; }
+/* petit téléphone : les tuiles sur une rangée qu'on fait glisser */
+@media (max-width: 760px) and (max-height: 700px) {
+  .plongee .bureau .tuiles { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; width: calc(100% + 2 * var(--gouttiere)); margin-inline: calc(-1 * var(--gouttiere)); padding: 0 var(--gouttiere) 6px; scrollbar-width: none; }
+  .plongee .bureau .tuiles::-webkit-scrollbar { display: none; }
+  .plongee .tuile--mot { flex: none; }
+}
+@media (max-width: 760px) and (max-height: 700px) { .plongee .bureau { padding: 2px 0 6px; } .plongee .ouverture-titre { font-size: 1.6rem; } .plongee .ouverture-actions { margin: .4rem 0 .2rem; } }
+@media (max-width: 760px) and (max-height: 700px) { .plongee .bureau .indice { position: relative; z-index: 2; top: -14px; color: #f0c9a8; } .plongee .ouverture-actions + .info-cle, .plongee .info-cle { margin-bottom: 0; } }
+@media (max-width: 760px) { .plongee .bureau .indice { position: relative; z-index: 2; top: -14px; color: #f0c9a8; } }
+@media (max-width: 760px) and (min-height: 701px) { .plongee .bureau { margin-top: 10px; } }
+/* téléphone à l'horizontale : texte à gauche, boîte à droite, une rangée de tuiles qu'on fait glisser */
+@media (min-width: 761px) and (max-height: 500px) {
+  .plongee .bureau { padding: 9px 0; min-height: 0; }
+  .plongee .bureau .tuiles { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; margin: 0; padding-bottom: 2px; scrollbar-width: none; }
+  .plongee .bureau .tuiles::-webkit-scrollbar { display: none; }
+  .plongee .tuile--mot { flex: none; min-height: 44px; font-size: 15px; }
+  .plongee .ouverture-grille { grid-template-columns: minmax(0, 1fr) auto; align-items: center; padding-block: 4px 0; }
+  .plongee .objet .boite--accueil { width: calc((100svh - var(--entete-h) - 96px) * 3 / 2); }
+  .plongee .objet { translate: 0 6px; }
+  .plongee .ouverture-actions { flex-wrap: nowrap; }
+}
