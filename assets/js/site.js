@@ -1,6 +1,6 @@
 /* Sandra Barba — « La boîte à mots ». Effets propres au projet (le reste vient du socle).
    Chaque effet porte data-effet="nom-du-plan" dans les pages. */
-import { demarrer, boucle, etat, versObjet, quand } from './socle/index.js?v=5';
+import { demarrer, boucle, etat, versObjet, quand } from './socle/index.js?v=6';
 
 const gsap = window.gsap;
 const $ = (s, r = document) => r.querySelector(s);
@@ -601,9 +601,9 @@ function arriveePage(tl, t0) {
   const deja = boite && boite.appliquerDeja();
   tl.fromTo('.titre-ligne', { yPercent: 145, opacity: 1 }, { yPercent: 0, opacity: 1, duration: 0.8, stagger: 0.12, ease: 'power3.out' }, t0)
     .fromTo('.surtitre[data-anime="gsap"], .ouverture-chapo, .ouverture-actions, .info-cle, .indice, .page-chapo, .page-actions, .pi-chapo[data-anime="gsap"], .pi-actions[data-anime="gsap"]', { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, stagger: 0.07 }, t0 + 0.15);
-  if (!deja) tl.call(() => montrerLettres($('.boite--accueil')), null, t0 + 0.1);
+  tl.call(() => montrerLettres($('.boite--accueil')), null, t0 + 0.1); /* mot déjà choisi ou non, la boîte s'allume */
   if ($('.boite--page')) tl.call(() => montrerLettres($('.boite--page')), null, t0 + 0.2);
   tl.call(() => poserTitre(0), null, t0 + 0.05);
-  if ($('.tuiles') && !deja) tl.call(() => $('.tuiles').classList.add('vues'), null, t0 + 0.34).fromTo('.tuiles .tuile--mot', { y: 24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, stagger: 0.04, ease: 'back.out(1.8)' }, t0 + 0.35);
+  if ($('.tuiles')) tl.call(() => $('.tuiles').classList.add('vues'), null, t0 + 0.34).fromTo('.tuiles .tuile--mot:not(.posee)', { y: 24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, stagger: 0.04, ease: 'back.out(1.8)' }, t0 + 0.35);
   if (boite && !deja) tl.call(() => boite.demo(), null, t0 + 0.2);
 }

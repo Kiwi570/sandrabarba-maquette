@@ -1,5 +1,9 @@
 # Journal des versions
 
+## v6 — 16 novembre 2026
+- Retour sur l'accueil avec un mot déjà choisi (rechargement, retour d'une autre page) : la boîte affiche bien le mot et ses deux phrases, et toutes les tuiles reviennent sur le bureau ; seule la tuile choisie reste éteinte. Avant, la boîte restait vide et les tuiles invisibles.
+- Fichiers JavaScript en version 6.
+
 ## v5 — 16 novembre 2026
 Réponse au mot choisi, après la capture de l'utilisatrice (le panneau sortait de l'écran et passait sous la boîte).
 - La réponse s'affiche dans la colonne de texte, sous le titre, à la place du bouton, du prix et de la consigne : l'approche, la phrase, « Prendre rendez-vous · le mot » et « En savoir plus ». La boîte ne bouge plus.

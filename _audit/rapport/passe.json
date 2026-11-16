@@ -1,16 +1,15 @@
 {
- "id": "20261116-133347-standard-partiel",
- "date": "2026-11-16T13:39:39.535Z",
+ "id": "20261116-135557-standard-partiel",
+ "date": "2026-11-16T13:59:23.648Z",
  "niveau": "standard",
  "pages": "toutes",
  "etapes": [
   "fichiers",
-  "films",
   "parcours"
  ],
- "version": "5",
+ "version": "6",
  "echecs": 0,
- "aRegarder": 4,
+ "aRegarder": 3,
  "nonLances": 0,
  "manquants": 0,
  "statut": "complet"

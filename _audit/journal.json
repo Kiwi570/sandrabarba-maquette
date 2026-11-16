@@ -261,6 +261,33 @@
       ],
       "grilleDispenses": [],
       "notes": "Demande de l'utilisatrice à 14 h 21 avec une capture : après le clic sur un mot, le panneau de réponse sortait par le bas de l'écran et passait sous la boîte. La réponse remplace maintenant le bouton, le prix et la consigne dans la colonne de texte ; la boîte ne bouge pas ; la tuile choisie reste éteinte à sa place et un clic sur une autre tuile change de mot. Mesuré sur 9 tailles (1288 × 633 à 320 × 568, horizontale comprise) : rien de coupé, rien sous la boîte."
+    },
+    {
+      "version": 6,
+      "skill": "v10.12",
+      "perimetre": [
+        "accueil (retour avec un mot déjà choisi)"
+      ],
+      "etapes": [
+        {
+          "etape": "rechargement avec un mot déjà choisi : boîte et tuiles invisibles",
+          "budget": 15,
+          "debut": "2026-11-16T14:54:00+01:00",
+          "fin": "2026-11-16T15:02:00+01:00"
+        }
+      ],
+      "attentes": [],
+      "allersRetours": 1,
+      "modules": [],
+      "audit": {
+        "niveau": "standard",
+        "echecsPremierPassage": 0,
+        "relances": 0,
+        "corrections": []
+      },
+      "effetsRetires": [],
+      "grilleDispenses": [],
+      "notes": "Demande de l'utilisatrice à 14 h 54 avec une capture : après rechargement, boîte vide et tuiles absentes. L'animation d'arrivée sautait les lettres et les tuiles quand un mot était déjà choisi (cas où la réponse cachait autrefois les tuiles). Elles apparaissent maintenant toujours ; la tuile choisie reste éteinte."
     }
   ]
 }
