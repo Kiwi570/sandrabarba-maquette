@@ -1,5 +1,12 @@
 # Journal des versions
 
+## v5 — 16 novembre 2026
+Réponse au mot choisi, après la capture de l'utilisatrice (le panneau sortait de l'écran et passait sous la boîte).
+- La réponse s'affiche dans la colonne de texte, sous le titre, à la place du bouton, du prix et de la consigne : l'approche, la phrase, « Prendre rendez-vous · le mot » et « En savoir plus ». La boîte ne bouge plus.
+- Les tuiles restent sur le bureau : celle qui est dans la boîte reste éteinte à sa place, et un clic sur une autre tuile change de mot (le lien « Choisir un autre mot » n'est plus utile).
+- Téléphone : le titre laisse la place à la réponse ; sur les petits écrans, les tuiles passent sur une rangée qu'on fait glisser. Vérifié sur neuf tailles, de 1288 × 633 à 320 × 568, horizontale comprise : rien de coupé, rien sous la boîte ni sous la barre du bas.
+- Fichiers JavaScript en version 5.
+
 ## v4 — 16 novembre 2026
 Premier écran de l'accueil et plongée, après les captures de l'utilisatrice (ordinateur portable, écran de 633 px de haut).
 - Les tuiles ne sont plus jamais cachées : la boîte prend la taille que laisse la hauteur de l'écran, le bureau est plus fin et les tuiles sont posées dessus en entier. Vérifié sur douze tailles, de 320 × 568 à 1536 × 730, plus le téléphone à l'horizontale.

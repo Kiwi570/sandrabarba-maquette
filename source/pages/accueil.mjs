@@ -24,6 +24,17 @@ export default (c) => {
       </p>
       <p class="info-cle" data-info-cle data-anime="gsap">${c.t('accueil.info')}</p>
       <p class="consigne-boite" aria-hidden="true"><span>↘</span> ${c.t('accueil.indiceSouris')}</p>
+      <div class="reponse" data-reponse>
+        <div class="reponse-corps">
+          <p class="reponse-approche" data-reponse-approche></p>
+          <p class="reponse-texte" data-reponse-texte></p>
+        </div>
+        <p class="reponse-actions">
+          <a class="bouton" href="${c.url('rendez-vous', 'demande')}" data-reponse-rdv data-libelle="${c.libelle('rendez-vous')}">${c.t('accueil.reponseRdv')}</a>
+          <a class="lien-fleche" href="${c.url('psychotherapie')}" data-reponse-plus data-libelle="${c.libelle('psychotherapie')}">${c.t('accueil.reponsePlus')}</a>
+          <button type="button" class="lien-discret" data-reponse-autre>${c.t('accueil.reponseAutre')}</button>
+        </p>
+      </div>
     </div>
     <div class="objet" data-grille="manipuler" data-objet>
       ${boite({ rangees: [c.s('accueil.boiteQuestion1'), c.s('accueil.boiteQuestion2'), ''], label: c.s('accueil.boiteLabel'), classe: 'boite--accueil', attrs: 'data-boite data-effet="boite-a-mots" data-grille="typo" data-iris-centre' })}
@@ -38,17 +49,6 @@ export default (c) => {
       <ul class="tuiles" data-tuiles data-effet="tuiles" data-ruban>
         ${mots.map((m) => html`<li><button type="button" class="tuile tuile--mot" data-mot="${m.cle}">${m.tuile}</button></li>`)}
       </ul>
-      <div class="reponse" data-reponse>
-        <div class="reponse-corps">
-          <p class="reponse-approche" data-reponse-approche></p>
-          <p class="reponse-texte" data-reponse-texte></p>
-        </div>
-        <p class="reponse-actions">
-          <a class="bouton" href="${c.url('rendez-vous', 'demande')}" data-reponse-rdv data-libelle="${c.libelle('rendez-vous')}">${c.t('accueil.reponseRdv')}</a>
-          <a class="lien-fleche" href="${c.url('psychotherapie')}" data-reponse-plus data-libelle="${c.libelle('psychotherapie')}">${c.t('accueil.reponsePlus')}</a>
-          <button type="button" class="lien-discret" data-reponse-autre>${c.t('accueil.reponseAutre')}</button>
-        </p>
-      </div>
     </div>
   </div>
 </div>

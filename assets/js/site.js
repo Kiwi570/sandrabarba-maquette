@@ -1,6 +1,6 @@
 /* Sandra Barba — « La boîte à mots ». Effets propres au projet (le reste vient du socle).
    Chaque effet porte data-effet="nom-du-plan" dans les pages. */
-import { demarrer, boucle, etat, versObjet, quand } from './socle/index.js?v=4';
+import { demarrer, boucle, etat, versObjet, quand } from './socle/index.js?v=5';
 
 const gsap = window.gsap;
 const $ = (s, r = document) => r.querySelector(s);
@@ -101,12 +101,17 @@ function initBoite() {
     $('[data-reponse-texte]', rep).textContent = m.texte;
     const rdv = $('[data-reponse-rdv]', rep); rdv.href = m.rdv; rdv.textContent = `Prendre rendez-vous · ${m.tuile.toLowerCase()}`;
     const plus = $('[data-reponse-plus]', rep); plus.href = m.url; plus.dataset.libelle = m.libelle;
-    rep.removeAttribute('inert'); rep.classList.remove('reponse--cachee'); liste.classList.add('tuiles--cachees'); liste.setAttribute('inert', '');
-    if (gsap) { gsap.fromTo(rep, { y: 18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: 'power3.out', delay: 0.35 }); gsap.to(liste, { opacity: 0, y: 10, duration: 0.3 }); }
+    rep.removeAttribute('inert'); rep.classList.remove('reponse--cachee');
+    const ouv = boiteEl.closest('.ouverture'); if (ouv) ouv.classList.add('a-repondu');
+    if (gsap) gsap.fromTo(rep, { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: 'power3.out', delay: 0.3 });
     if (indice) indice.classList.add('indice--cache');
   };
   const poser = (tuile, m, depuis) => {
-    if (pose) return;
+    if (pose && pose.cle === m.cle) return;
+    if (pose) { /* changer de mot : l'ancienne tuile revient sur le bureau */
+      const ancienne = tuiles.find((x) => x.dataset.mot === pose.cle);
+      if (ancienne) { ancienne.classList.remove('posee'); if (gsap) gsap.fromTo(ancienne, { x: 0, y: -16, scale: 0.9, opacity: 0, rotation: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.45, ease: 'back.out(1.6)' }); }
+    }
     arreterDemo(); pose = m;
     ecrireMot({ cle: m.cle, tuile: m.tuile });
     majFil(); majRailMot();
@@ -115,6 +120,7 @@ function initBoite() {
     const dy = rb.top + rb.height / 2 - (rt.top + rt.height / 2) + (depuis ? depuis.y : 0);
     const fin = () => {
       tuile.classList.add('posee');
+      if (gsap) { gsap.set(tuile, { x: 0, y: 0, scale: 1, rotation: 0, opacity: 0 }); gsap.to(tuile, { opacity: 0.3, duration: 0.4, delay: 0.3 }); }
       boiteEl.removeAttribute('data-vide'); lumiere(true);
       poserRangee(rang[0], m.tuile);
       poserRangee(rang[1], r1, { delai: 0.25 });
@@ -130,9 +136,9 @@ function initBoite() {
     pose = null; ecrireMot(null); majFil(); majRailMot();
     lumiere(false); boiteEl.setAttribute('data-vide', '');
     poserRangee(rang[0], q1); poserRangee(rang[1], q2, { delai: 0.2 }); rang[2].innerHTML = '';
-    tuiles.forEach((t) => { t.classList.remove('posee'); if (gsap) gsap.set(t, { x: 0, y: 0, scale: 1, rotation: 0 }); });
-    rep.setAttribute('inert', ''); rep.classList.add('reponse--cachee'); liste.classList.remove('tuiles--cachees'); liste.removeAttribute('inert');
-    if (gsap) { gsap.to(rep, { opacity: 0, duration: 0.25 }); gsap.fromTo(liste, { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.45, delay: 0.15 }); }
+    tuiles.forEach((t) => { t.classList.remove('posee'); if (gsap) gsap.set(t, { x: 0, y: 0, scale: 1, rotation: 0, opacity: 1 }); });
+    rep.setAttribute('inert', ''); rep.classList.add('reponse--cachee');
+    const ouv = boiteEl.closest('.ouverture'); if (ouv) ouv.classList.remove('a-repondu');
     if (indice) indice.classList.remove('indice--cache');
     tuiles[0] && tuiles[0].focus({ preventScroll: true });
 
@@ -145,7 +151,7 @@ function initBoite() {
     let depart = null, glisse = false, x = 0, y = 0, hist = [];
     t.addEventListener('click', (e) => { e.preventDefault(); if (!glisse && m) poser(t, m); glisse = false; });
     t.addEventListener('pointerdown', (e) => {
-      if (pose || e.button > 0) return;
+      if ((pose && pose.cle === t.dataset.mot) || e.button > 0) return;
       arreterDemo();
       depart = { x: e.clientX, y: e.clientY }; hist = [{ x: 0, y: 0, t: performance.now() }];
       t.setPointerCapture(e.pointerId);
@@ -212,7 +218,7 @@ function initBoite() {
     if (!deja) return false;
     const m = donnees.find((d) => d.cle === deja.cle); const t = tuiles.find((x) => x.dataset.mot === deja.cle);
     if (!m || !t) return false;
-    pose = m; t.classList.add('posee'); boiteEl.removeAttribute('data-vide'); lumiere(true);
+    pose = m; t.classList.add('posee'); if (gsap) gsap.set(t, { opacity: 0.3 }); boiteEl.removeAttribute('data-vide'); lumiere(true);
     rang[0].innerHTML = lettresHtml(m.tuile); rang[1].innerHTML = lettresHtml(r1); rang[2].innerHTML = lettresHtml(r2);
     montrerReponse(m); if (gsap) gsap.set([rep], { opacity: 1, y: 0, clearProps: 'transform' });
     return true;

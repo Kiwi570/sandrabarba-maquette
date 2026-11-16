@@ -3,14 +3,14 @@
   "aRegarder": [
     {
       "niveau": "regarder",
-      "controle": "retour arrière : changement brusque",
-      "detail": "à 57 ms (différence 21 %) (films/retour-arrière-390.png)",
+      "controle": "retour avant : changement brusque",
+      "detail": "à 83 ms (différence 21 %) (films/retour-avant-390.png)",
       "etape": "films",
-      "page": "/",
+      "page": "/psychotherapie",
       "taille": "390×844",
-      "mode": "retour arrière",
+      "mode": "retour avant",
       "lieux": [
-        "390×844 retour arrière"
+        "390×844 retour avant"
       ]
     },
     {
@@ -49,6 +49,11 @@
   ],
   "nonLances": [],
   "oks": {
+    "vercel.json": 1,
+    ".vercelignore": 1,
+    "robots.txt": 1,
+    "numéro de version": 1,
+    "langues": 1,
     "films d’ouverture": 10,
     "films de transition": 10,
     "intro accélérable et passable": 7,
@@ -60,20 +65,24 @@
     "changements de hauteur": 4
   },
   "infos": [
+    "Numéro de version des fichiers : ?v=5",
+    "Journal v5 : 2 étape(s) notée(s), 19 min de travail pour 35 min de budget, 0 min d’attente de l’utilisateur.",
     "Audit standard : étapes lourdes sur /, /psychotherapie, /rendez-vous, /sophrologie, /violences.",
     "Accessibilité : axe-core 4.12.1 en plus des contrôles intégrés.",
-    "Ouverture / (1366×768) : 2867 ms depuis le premier octet",
-    "Ouverture /psychotherapie (1366×768) : 2644 ms depuis le premier octet",
-    "Ouverture /rendez-vous (1366×768) : 2530 ms depuis le premier octet",
+    "Ouverture / (1366×768) : 2862 ms depuis le premier octet",
+    "Ouverture /psychotherapie (1366×768) : 2602 ms depuis le premier octet",
+    "Ouverture /rendez-vous (1366×768) : 2616 ms depuis le premier octet",
     "film de l'ouverture /rendez-vous 1366×768 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
-    "Ouverture /sophrologie (1366×768) : 2662 ms depuis le premier octet",
-    "Ouverture /violences (1366×768) : 2617 ms depuis le premier octet",
-    "film de l'ouverture /violences 1366×768 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
-    "Ouverture / (390×844) : 2813 ms depuis le premier octet",
-    "Ouverture /psychotherapie (390×844) : 2590 ms depuis le premier octet",
-    "Ouverture /rendez-vous (390×844) : 2535 ms depuis le premier octet",
-    "Ouverture /sophrologie (390×844) : 2597 ms depuis le premier octet",
-    "Ouverture /violences (390×844) : 2584 ms depuis le premier octet",
+    "Ouverture /sophrologie (1366×768) : 2737 ms depuis le premier octet",
+    "Ouverture /violences (1366×768) : 2695 ms depuis le premier octet",
+    "Ouverture / (390×844) : 2779 ms depuis le premier octet",
+    "film de l'ouverture / 390×844 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
+    "Ouverture /psychotherapie (390×844) : 2604 ms depuis le premier octet",
+    "Ouverture /rendez-vous (390×844) : 2538 ms depuis le premier octet",
+    "Ouverture /sophrologie (390×844) : 2598 ms depuis le premier octet",
+    "film de l'ouverture /sophrologie 390×844 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
+    "Ouverture /violences (390×844) : 2566 ms depuis le premier octet",
+    "film de l'ouverture /violences 390×844 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
     "Changements de hauteur /rendez-vous : aucun effet ScrollTrigger, rien à recalculer.",
     "Aucun parcours propre au projet (_audit/parcours.mjs) : filtres, calculateurs, panier, réservation, fenêtres testés seulement par les contrôles généraux."
   ],

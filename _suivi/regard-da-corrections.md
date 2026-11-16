@@ -95,3 +95,8 @@ Pas fait : la bande sombre de 15 px au bord droit des films est la barre de déf
 - Première rangée cachée sous l'en-tête → surtitre, rangées et légende posés sous l'en-tête.
 - Téléphones : indice remonté au-dessus du bois (GSAP écrase `transform` et `translate`, d'où `top`), rangée de tuiles qui glisse sur les écrans de moins de 700 px de haut, mise en page dédiée à l'horizontale (les réglages v4 de l'ordinateur sont limités aux écrans de plus de 500 px de haut).
 
+## Retour de l'utilisatrice du 16 novembre, 14 h 21 (v5) : corrections
+- Après le clic sur un mot, le panneau de réponse (centré dans le bureau par `translate`, que GSAP remet à zéro) sortait de l'écran et passait sous la boîte → la réponse est dans `.ouverture-texte`, en flux, et remplace bouton, prix et consigne (`.a-repondu`) ; la grille garde une rangée fixe pour que la boîte ne bouge pas.
+- Tuiles cachées après le choix → gardées sur le bureau, la tuile choisie éteinte (opacité 0,3) ; une autre tuile remplace le mot directement.
+- Téléphone : titre masqué une fois le mot choisi, indice retiré, rangée glissante sous 700 px de haut.
+

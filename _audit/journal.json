@@ -225,6 +225,42 @@
       ],
       "grilleDispenses": [],
       "notes": "Demande de l'utilisatrice à 13 h 50 avec deux captures (écran d'ordinateur portable de 633 px de haut) : tuiles à moitié cachées en bas, consigne cachée derrière les tuiles, lettres éparpillées dans la boîte. Consigne passée dans la colonne de texte, boîte dimensionnée sur la hauteur disponible, bac supprimé (les lettres tombent en place puis sortent par le bas), rangées sous l'en-tête. Mesuré sur 12 tailles d'écran : aucune tuile sous la boîte ni hors écran."
+    },
+    {
+      "version": 5,
+      "skill": "v10.12",
+      "perimetre": [
+        "accueil (réponse au mot choisi)"
+      ],
+      "etapes": [
+        {
+          "etape": "réponse au mot choisi : dans la colonne de texte, tuiles gardées sur le bureau",
+          "budget": 25,
+          "debut": "2026-11-16T14:21:00+01:00",
+          "fin": "2026-11-16T14:33:00+01:00"
+        },
+        {
+          "etape": "mesures sur 9 tailles, audit et livraison",
+          "budget": 10,
+          "debut": "2026-11-16T14:33:00+01:00",
+          "fin": "2026-11-16T14:40:00+01:00"
+        }
+      ],
+      "attentes": [],
+      "allersRetours": 1,
+      "modules": [],
+      "audit": {
+        "niveau": "standard",
+        "echecsPremierPassage": 0,
+        "relances": 0,
+        "corrections": []
+      },
+      "effetsRetires": [
+        "panneau de réponse posé sur le bureau",
+        "lien « Choisir un autre mot » (on clique directement sur une autre tuile)"
+      ],
+      "grilleDispenses": [],
+      "notes": "Demande de l'utilisatrice à 14 h 21 avec une capture : après le clic sur un mot, le panneau de réponse sortait par le bas de l'écran et passait sous la boîte. La réponse remplace maintenant le bouton, le prix et la consigne dans la colonne de texte ; la boîte ne bouge pas ; la tuile choisie reste éteinte à sa place et un clic sur une autre tuile change de mot. Mesuré sur 9 tailles (1288 × 633 à 320 × 568, horizontale comprise) : rien de coupé, rien sous la boîte."
     }
   ]
 }

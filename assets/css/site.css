@@ -1640,3 +1640,48 @@ html.js .scene-objet .boite--page { animation: boite-souffle 10s ease-in-out 3s 
   .plongee .objet { translate: 0 6px; }
   .plongee .ouverture-actions { flex-wrap: nowrap; }
 }
+/* v5 : le mot choisi répond dans la colonne de texte ; les tuiles restent sur le bureau pour changer de mot */
+.ouverture-texte .reponse { display: block; width: auto; max-width: 34rem; margin: 1.1rem 0 0; padding: 0; background: none; box-shadow: none; border-radius: 0; }
+.ouverture-texte .reponse.reponse--cachee { display: none; }
+.ouverture-texte .reponse-approche { font-size: 15px; letter-spacing: .12em; margin: 0 0 .45rem; color: #f0c9a8; }
+.ouverture-texte .reponse-texte { font-family: var(--police-titres); font-size: clamp(1.3rem, 1rem + .9vw, 1.75rem); line-height: 1.22; color: var(--craie); margin: 0 0 1rem; }
+.ouverture-texte .reponse-actions { display: flex; flex-flow: row wrap; align-items: center; gap: 12px 26px; margin: 0; }
+.ouverture-texte .reponse-actions .lien-discret { flex-basis: 100%; justify-content: flex-start; text-align: left; width: max-content; font-size: 16px; }
+.a-repondu .ouverture-actions, .a-repondu .info-cle, .a-repondu .consigne-boite { display: none !important; }
+@media (max-width: 760px) {
+  .ouverture-texte .reponse { margin-top: .5rem; }
+  .ouverture-texte .reponse-approche { font-size: 14px; margin-bottom: .3rem; }
+  .ouverture-texte .reponse-texte { font-size: 1.2rem; margin-bottom: .7rem; }
+  .ouverture-texte .reponse-actions { gap: 8px 20px; }
+  .ouverture-texte .reponse-actions .bouton { min-height: 46px; }
+  .a-repondu .surtitre { display: none !important; }
+}
+@media (max-width: 760px) and (max-height: 700px) {
+  .a-repondu .bureau .tuiles { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; width: calc(100% + 2 * var(--gouttiere)); margin-inline: calc(-1 * var(--gouttiere)); padding: 0 var(--gouttiere) 6px; scrollbar-width: none; }
+  .a-repondu .bureau .tuiles::-webkit-scrollbar { display: none; }
+  .a-repondu .tuile--mot { flex: none; }
+}
+@media (min-width: 761px) and (max-height: 500px) {
+  .a-repondu .ouverture-titre { display: none; }
+  .ouverture-texte .reponse { margin-top: 0; }
+  .ouverture-texte .reponse-texte { font-size: 1.25rem; margin-bottom: .7rem; }
+  .ouverture-texte .reponse-actions { gap: 8px 22px; }
+}
+/* la boîte ne bouge pas quand la réponse s'affiche ; réponse compacte */
+@media (min-width: 761px) { .plongee .ouverture-grille { grid-template-rows: minmax(0, 1fr); } }
+.ouverture-texte .reponse-actions .lien-discret { display: none; }
+.ouverture-texte .reponse-actions { gap: 4px 22px; }
+.ouverture-texte .reponse-texte { font-size: clamp(1.2rem, .55rem + 1.05vw, 1.6rem); max-width: 30em; }
+@media (max-width: 760px) {
+  .a-repondu .ouverture-titre { display: none !important; }
+  .ouverture-texte .reponse { margin-top: 0; }
+  .ouverture-texte .reponse-texte { font-size: 1.15rem; }
+}
+@media (max-width: 760px) { .a-repondu .bureau .indice { display: none; } }
+@media (max-width: 760px) and (max-height: 600px) {
+  .ouverture-texte .reponse-approche { margin-bottom: .15rem; }
+  .ouverture-texte .reponse-texte { font-size: 1.05rem; margin-bottom: .45rem; }
+  .a-repondu .bureau { padding-top: 0; }
+}
+/* la tuile choisie reste à sa place, éteinte */
+.tuile--mot.posee { visibility: visible; opacity: .3; pointer-events: none; box-shadow: none; }
